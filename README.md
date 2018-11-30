@@ -1,4 +1,4 @@
-# Awesome Dotfiles
+# Dotfiles Config
 
 Simple, but extensive customization of ZSH, TMUX, and Vim.
 
@@ -65,7 +65,7 @@ Each plugin is sensitive to where you are and what you're doing, they reveal the
 | Key Stroke | What It Does |
 |------------|--------------|
 | Ctrl-H     | Runs ``cd ~/`` |
-| Ctrl-N     | Runs ``clears windows`` |
+| Ctrl-N     | Runs ``clear`` |
 | Ctrl-G     | Runs ``git add -A; git commit -v && git push`` |
 | Ctrl-V     | Runs ``fc``. Takes last command and puts it in a vim buffer. |
 | Ctrl-S     | Add's ``sudo`` to the beginning of the buffer. |
