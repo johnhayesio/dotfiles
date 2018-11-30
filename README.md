@@ -65,6 +65,7 @@ Each plugin is sensitive to where you are and what you're doing, they reveal the
 | Key Stroke | What It Does |
 |------------|--------------|
 | Ctrl-H     | Runs ``cd ~/`` |
+| Ctrl-K     | Runs ``cd..`` |
 | Ctrl-N     | Runs ``clear`` |
 | Ctrl-G     | Runs ``git add -A; git commit -v && git push`` |
 | Ctrl-V     | Runs ``fc``. Takes last command and puts it in a vim buffer. |

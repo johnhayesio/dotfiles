@@ -4,7 +4,7 @@
 		zle accept-line
 	}
 	zle -N up_widget
-	bindkey "^e" up_widget
+	bindkey "^k" up_widget
 
 # git
 	function git_prepare() {
@@ -31,8 +31,8 @@
 	}
 	zle -N goto_home
 	bindkey "^h" goto_home
-
-# Clear
+	
+# clear
   function ctrl_n() {
     BUFFER="clear"
     zle accept-line
