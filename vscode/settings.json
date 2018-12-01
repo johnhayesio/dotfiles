@@ -1,0 +1,53 @@
+{
+  "editor.tabSize": 2,
+  "editor.autoIndent": false,
+  "vim.autoindent": false,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 20,
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Hopscotch",
+  "workbench.iconTheme": "vscode-icons",
+  "gitlens.gitExplorer.files.layout": "auto",
+
+  "workbench.colorCustomizations": {
+    "editorBracketMatch.background": "#DD464C",
+    "editorBracketMatch.border": "#FD8B19",
+    "editor.wordHighlightBackground": "#ffffff",
+    "editor.wordHighlightBorder": "#DD464C",
+    "statusBar.background": "#0088A9",
+    "statusBar.noFolderBackground": "#0088A9",
+    "statusBar.debuggingBackground": "#0088A9",
+    "statusBar.foreground": "#FFFFFF"
+  },
+
+  "explorer.confirmDelete": false,
+  "workbench.statusBar.feedback.visible": false,
+
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.historyExplorer.enabled": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "liveServer.settings.NoBrowser": true,
+  "prettier.stylelintIntegration": true,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+
+}
