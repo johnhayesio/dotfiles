@@ -1,1 +1,0 @@
-so /Users/johnhayes/dotfiles/vim/vimrc.vim
