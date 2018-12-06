@@ -13,7 +13,11 @@ This is a list of all of the plugins that I use in VS Code:
   9. [Prettier - Code formatter (Esben Petersen)](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   10. [Sass (Robin Bentley)](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented)
   11. [stylelint (Shinnosuke Watanabe)](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
-  12. [WakaTime (WakaTime)](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
+  12. [Ternjs (hsiaosiyuan0)](https://marketplace.visualstudio.com/items?itemName=hsiaosiyuan0.ternjs)
+  13. [jshint (Dirk Baeumer)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)
+  14. [WakaTime (WakaTime)](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
+  15. [colorize (kamikillerto)](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize)
+  16. [eslint (Dirk Baeumer)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
   ## Note:
   This is my setup and may not work for you. Some plugins require accounts and modifications to the settings.json file. You can reference that file in this repository.
