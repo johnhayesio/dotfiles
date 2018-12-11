@@ -1,4 +1,4 @@
-# This is my sublime preferences
+# This is my Sublime 3 preferences
 
 ```
 {
