@@ -1,4 +1,4 @@
-# This is the packages I have installed for Sublime 3
+# This is the packages I have installed for Sublime 3.
 
 1. AdvancedNewFile
 2. All Autocomplete
