@@ -2,7 +2,7 @@
 
 Simple, but extensive customization of ZSH, TMUX, and Vim.
 
-## Setup Option
+## Setup Options
 
 There's 3 ways in which you can use this, depending on how much you think you'll be customizing.
 
