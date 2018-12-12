@@ -1,4 +1,4 @@
-# This is my keybindings for Sublime 3
+# This is my keybindings for Sublime 3.
 
 ```
 [
