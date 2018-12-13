@@ -19,7 +19,7 @@ set_prompt() {
 	# Git
 	if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
 		PS1+=', '
-		PS1+="%{$fg_bold[blue]%}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%{$reset_color%}"
+		PS1+="%{$fg_bold[white]%}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%{$reset_color%}"
 		if [ $(git status --short | wc -l) -gt 0 ]; then 
 			PS1+="%{$fg[red]%}+$(git status --short | wc -l | awk '{$1=$1};1')%{$reset_color%}"
 		fi
@@ -29,7 +29,7 @@ set_prompt() {
 	# Timer: http://stackoverflow.com/questions/2704635/is-there-a-way-to-find-the-running-time-of-the-last-executed-command-in-the-shel
 	if [[ $_elapsed[-1] -ne 0 ]]; then
 		PS1+=', '
-		PS1+="%{$fg[magenta]%}$_elapsed[-1]s%{$reset_color%}"
+		PS1+="%{$fg[green]%}$_elapsed[-1]s%{$reset_color%}"
 	fi
 
 	# PID
