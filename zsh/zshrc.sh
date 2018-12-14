@@ -19,14 +19,17 @@
   alias python="/usr/local/bin/python3"
   alias wtr="curl -4 http://wttr.in/Moscow\?m"
   alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/country"
-  alias md="/Applications/Typora.app/Contents/MacOS/Typora"
+  alias mkd="/Applications/Typora.app/Contents/MacOS/Typora"
   alias mkcd="foo(){ mkdir -p "$1"; cd "$1" }; foo "
   alias hs="history | grep"
   alias nis="npm install --save"
   alias nid="npm install --save-dev"
   alias nig="npm install --global"
   alias nls="npm list -g --depth=0"
-  alias bud="brew update && brew upgrade `brew outdated`"
+  alias bud="brew update && brew upgrade --all && brew cask update && brew cleanup && brew cask cleanup"
+  alias zshrc="vim $HOME/dotfiles/zsh/zshrc.sh"
+  alias man="help"
+  alias randpass="openssl rand -base64 "
 
 # ls, the common ones I use a lot shortened for rapid fire usage
   alias l="ls -lFh"
@@ -40,11 +43,20 @@
   alias lart="ls -1Fcart"
   alias lrt="ls -1Fcrt"
 
+# tmux
+  alias tn="tmux new-session -s"
+  alias ta="tmux attach -t"
+  alias tl="tmux ls"
+  alias tk="tmux kill-session -s"
+  alias ts="tmux kill-server"
+
 # Directories
   alias dotfiles="cd $HOME/dotfiles && clear && ls"
   alias library="cd $HOME/Library && clear && ls"
   alias dev="cd $HOME/Documents/projects-FEWD && clear && ls"
   alias home="$HOME && clear && ls"
+  alias drives="df -h"
+  alias usage="du -h -d1"
 
 # GIT
   alias gpo="git push origin master"
