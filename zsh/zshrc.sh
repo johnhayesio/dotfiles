@@ -14,6 +14,7 @@
 # GIT
   alias gpo="git push origin master"
   alias ga="git add"
+  alias gaa="git add -A"
   alias gc="git commit -v"
   alias gca="git commit -av"
   alias gp="gca && gpa"
