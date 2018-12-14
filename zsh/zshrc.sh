@@ -10,10 +10,6 @@
   alias q="exit"
   alias c="clear && ls"
   alias h="$HOME && ls"
-  alias l="ls -laFT"
-  alias ll="ls -laF"
-  alias k="ls -laFTrt"
-  alias kk="ls -laFrt"
   alias sl="sublime "
   alias ..="cd .. && ls"
   alias ...="cd ../.. && ls"
@@ -22,7 +18,7 @@
   alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
   alias python="/usr/local/bin/python3"
   alias wtr="curl -4 http://wttr.in/Moscow\?m"
-  alias myip="curl http://ipecho.net/plain"
+  alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/country"
   alias md="/Applications/Typora.app/Contents/MacOS/Typora"
   alias mkcd="foo(){ mkdir -p "$1"; cd "$1" }; foo "
   alias hs="history | grep"
@@ -31,6 +27,18 @@
   alias nig="npm install --global"
   alias nls="npm list -g --depth=0"
   alias bud="brew update && brew upgrade `brew outdated`"
+
+# ls, the common ones I use a lot shortened for rapid fire usage
+  alias l="ls -lFh"
+  alias la="ls -lAFh"
+  alias lr="ls -tRFh"
+  alias lt="ls -ltFh"
+  alias ll="ls -l"
+  alias lh="ls -a"
+  alias ldot="ls -ld .*"
+  alias lS="ls -1FSsh"
+  alias lart="ls -1Fcart"
+  alias lrt="ls -1Fcrt"
 
 # Directories
   alias dotfiles="cd $HOME/dotfiles && clear && ls"
