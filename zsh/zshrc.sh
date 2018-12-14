@@ -6,7 +6,28 @@
 
 # Aliases
 	alias v="vim -p"
-	
+  alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
+  alias python="/usr/local/bin/python3"
+  alias wtr="curl -4 http://wttr.in/Moscow\?m"
+  alias md="/Applications/Typora.app/Contents/MacOS/Typora"
+  
+
+# GIT
+  alias gupd="git pull up master --tags && gpom --tags"
+  alias gpum="git push up master"
+  alias gpom="git push origin master"
+  alias ga="git add"
+  alias gc="git commit -v"
+  alias gca="git commit -av"
+  alias gp="gca && gpa"
+  alias gs="git status"
+  alias gl="git log -3"
+  alias gl1="git log -1"
+  alias gl2="git log -2"
+  alias gpa="gpom --tags && gpum --tags"
+  alias gpl="git push origin master && git push live master"
+  alias gpull="git pull origin master"
+  alias gcm="git checkout master"	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
 	# alias vs="v `git status --porcelain | sed -ne 's/^ M //p'`"
 
