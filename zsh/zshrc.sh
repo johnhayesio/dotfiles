@@ -24,7 +24,7 @@
   alias gl="git log -3"
   alias gl1="git log -1"
   alias gl2="git log -2"
-  alias gpa="gpom --tags && gpum --tags"
+  alias gpa="gpum --tags"
   alias gpl="git push origin master && git push live master"
   alias gpull="git pull origin master"
   alias gcm="git checkout master"	
