@@ -9,8 +9,7 @@
   alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
   alias python="/usr/local/bin/python3"
   alias wtr="curl -4 http://wttr.in/Moscow\?m"
-  alias md="/Applications/Typora.app/Contents/MacOS/Typora"
-  
+  alias md="/Applications/Typora.app/Contents/MacOS/Typora"  
 
 # GIT
   alias gpo="git push origin master"
