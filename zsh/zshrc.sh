@@ -8,7 +8,7 @@
   alias v="vim -p"
   alias o="open"
   alias q="exit"
-  alias n="clear && ls"
+  alias c="clear && ls"
   alias h="$HOME && ls"
   alias l="ls -laFT"
   alias ll="ls -laF"
@@ -72,11 +72,11 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
 
 #Functions
 	# Custom cd
-	c() {
+	d() {
 	cd $1;
 		ls;
   }
-  alias cd="c"
+  alias cd="d"
 
 # For vim mappings: 
 	stty -ixon
