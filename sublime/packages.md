@@ -21,3 +21,7 @@
 19. SublimeLinter-json
 20. Syntax Highlighting for PostCSS
 21. TypeScript (For React Syntax)
+22. AutoFileName
+23. FileIcons
+24. GhostText
+25. GitHubinator
