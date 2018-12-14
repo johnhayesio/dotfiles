@@ -13,9 +13,7 @@
   
 
 # GIT
-  alias gupd="git pull up master --tags && gpom --tags"
-  alias gpum="git push up master"
-  alias gpom="git push origin master"
+  alias gpo="git push origin master"
   alias ga="git add"
   alias gc="git commit -v"
   alias gca="git commit -av"
@@ -24,7 +22,7 @@
   alias gl="git log -3"
   alias gl1="git log -1"
   alias gl2="git log -2"
-  alias gpa="gpum --tags"
+  alias gpa="gpo --tags"
   alias gpl="git push origin master && git push live master"
   alias gpull="git pull origin master"
   alias gcm="git checkout master"	
