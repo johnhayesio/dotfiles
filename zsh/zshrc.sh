@@ -6,16 +6,45 @@
 
 # Aliases
   alias v="vim -p"
+  alias o="open"
+  alias q="exit"
+  alias c="clear"
+  alias l="ls -laFT"
+  alias ll="ls -laF"
+  alias k="ls -laFTrt"
+  alias kk="ls -laFrt"
+  alias sl="sublime "
+  alias ..="cd .. && ls"
+  alias ...="cd ../.. && ls"
+  alias mem="top -l1 | grep PhysMem"
+  alias sv="sudo vim -p"
   alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
   alias python="/usr/local/bin/python3"
   alias wtr="curl -4 http://wttr.in/Moscow\?m"
-  alias md="/Applications/Typora.app/Contents/MacOS/Typora"  
+  alias myip="curl http://ipecho.net/plain"
+  alias md="/Applications/Typora.app/Contents/MacOS/Typora"
+  alias mkcd="foo(){ mkdir -p "$1"; cd "$1" }; foo "
+  alias hs="history | grep"
+  alias nis="npm install --save"
+  alias nid="npm install --save-dev"
+  alias nig="npm install --global"
+  alias nls="npm list -g --depth=0"
+  alias bud="brew update && brew upgrade `brew outdated`"
+
+# Directories
+  alias dotfiles="cd $HOME/dotfiles"
+  alias library="cd $HOME/Library"
+  alias dev="cd $HOME/Documents/projects-FEWD"
+  alias home="$HOME"
 
 # GIT
   alias gpo="git push origin master"
   alias ga="git add"
   alias gaa="git add -A"
   alias gc="git commit -v"
+  alias gd="git diff"
+  alias g-="git checkout -"
+  alias g--="git checkout -- "
   alias gca="git commit -av"
   alias gp="gca && gpa"
   alias gst="git status"
@@ -29,6 +58,11 @@
   alias gcm="git checkout master"	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
 	# alias vs="v `git status --porcelain | sed -ne 's/^ M //p'`"
+
+# youtube-dl
+  alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '$HOME/Documents/yt_DLs/Videos/%(title)s.%(ext)s' "
+  alias ytp="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '$HOME/Documents/yt_DLs/Playlists/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' "
+  alias ytm="youtube-dl -f mp3 -v -o '$HOME/Documents/yt_DLs/Audio/%(title)s.%(ext)s' "
 
 # Settings
 	export VISUAL=vim
