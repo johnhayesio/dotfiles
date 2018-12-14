@@ -33,10 +33,10 @@
   alias bud="brew update && brew upgrade `brew outdated`"
 
 # Directories
-  alias dotfiles="cd $HOME/dotfiles"
-  alias library="cd $HOME/Library"
-  alias dev="cd $HOME/Documents/projects-FEWD"
-  alias home="$HOME"
+  alias dotfiles="cd $HOME/dotfiles && clear && ls"
+  alias library="cd $HOME/Library && clear && ls"
+  alias dev="cd $HOME/Documents/projects-FEWD && clear && ls"
+  alias home="$HOME && clear && ls"
 
 # GIT
   alias gpo="git push origin master"
