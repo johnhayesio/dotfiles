@@ -103,7 +103,7 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
   mkcd() {
     dir="$*";
     mkdir -p "$dir";
-    cd "$*";
+    cd "$dir";
   }
 
 # For vim mappings: 
