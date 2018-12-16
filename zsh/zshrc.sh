@@ -31,6 +31,7 @@
   alias zshrc="vim $HOME/dotfiles/zsh/zshrc.sh"
   alias man="help"
   alias randpass="openssl rand -base64 "
+  alias server="live-server --no-browser"
 
 # ls, the common ones I use a lot shortened for rapid fire usage
   alias l="ls -lFh"
