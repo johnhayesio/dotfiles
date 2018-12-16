@@ -13,14 +13,15 @@
   alias sl="sublime "
   alias ..="cd .."
   alias ...="cd ../.."
+  alias rd="rm -rf "
+  alias md="mkdir -p "
   alias mem="top -l1 | grep PhysMem"
   alias sv="sudo vim -p"
   alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
   alias python="/usr/local/bin/python3"
   alias wtr="curl -4 http://wttr.in/Moscow\?m"
   alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/country"
-  alias mkd="/Applications/Typora.app/Contents/MacOS/Typora"
-  alias mkcd="foo(){ mkdir -p "$1"; cd "$1" }; foo "
+  alias mark="/Applications/Typora.app/Contents/MacOS/Typora"
   alias hs="history | grep"
   alias nis="npm install --save"
   alias nid="npm install --save-dev"
@@ -97,6 +98,13 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
 		ls;
   }
   alias cd="d"
+
+  # Make dir and cd
+  mkcd() {
+    dir="$*";
+    mkdir -p "$dir";
+    cd "$*";
+  }
 
 # For vim mappings: 
 	stty -ixon
