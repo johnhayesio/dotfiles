@@ -25,3 +25,4 @@
 23. FileIcons
 24. GhostText
 25. GitHubinator
+26. Babel
