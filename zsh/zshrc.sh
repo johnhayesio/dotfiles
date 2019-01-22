@@ -69,6 +69,7 @@
   alias g-="git checkout -"
   alias g--="git checkout -- "
   alias g-b="git checkout -b "
+  alias g-c="git checkout "
   alias gm="git merge "
   alias gca="git commit -av"
   alias gp="gca && gpa"
