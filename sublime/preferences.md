@@ -13,7 +13,7 @@
   "close_windows_when_empty": false,
   "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
   "detect_indentation": false,
-  "font_face": "source code pro",
+  "font_face": "Operator Mono",
   "font_size": 17,
   "ignored_packages":
   [
