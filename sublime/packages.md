@@ -8,17 +8,14 @@
 6. Emmet
 7. FileIcons
 8. GitGutter
-9. Hayaku - tools for writing CSS faster
-10. HTML-CSS-JS Prettify
-11. JavaScript & NodeJS Snippets
-12. Material Theme
-13. Package Control
-14. Sass
-15. SideBarEnhancements
-16. SublimeLinter
-17. SublimeLinter-jshint
-18. SublimeLinter-json
-19. Syntax Highlighting for PostCSS
-20. TeaCode Helper
-21. TypeScript (For React Syntax)
-22. WakaTime
+9. HTML-CSS-JS Prettify
+10. Material Theme
+11. Package Control
+12. Sass
+13. SideBarEnhancements
+14. SublimeLinter
+15. SublimeLinter-eslint
+16. SublimeLinter-json
+17. Syntax Highlighting for PostCSS
+18. TeaCode Helper
+19. WakaTime
