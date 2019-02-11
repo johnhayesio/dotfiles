@@ -1,14 +1,19 @@
 # This is my keybindings for Sublime Text 3.
 
-```
+```markdown
 [
-  { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
-  { "keys": ["ctrl+v"], "command": "toggle_side_bar" },
-  { "keys": ["j", "j"], "command": "exit_insert_mode",
-  "context":
-  [
-    { "key": "setting.command_mode", "operand": false },
-    { "key": "setting.is_widget", "operand": false }
-  ]}
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	{ "keys": ["ctrl+v"], "command": "toggle_side_bar" },
+  { "keys": ["alt+a"], "command": "alignment" },
+	{ "keys": ["j", "j"], "command": "exit_insert_mode",
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": false },
+		{ "key": "setting.is_widget", "operand": false }
+	]},
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" }
 ]
+
 ```
+

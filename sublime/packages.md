@@ -8,7 +8,7 @@
 6. Emmet
 7. FileIcons
 8. GitGutter
-9. HTML-CSS-JS Prettify
+9. JsPrettier
 10. Material Theme
 11. Package Control
 12. Sass
