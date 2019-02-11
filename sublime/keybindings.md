@@ -12,7 +12,9 @@
 		{ "key": "setting.is_widget", "operand": false }
 	]},
   { "keys": ["super+v"], "command": "paste_and_indent" },
-  { "keys": ["super+shift+v"], "command": "paste" }
+  { "keys": ["super+shift+v"], "command": "paste" },
+  { "keys": ["ctrl+h"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["ctrl+l"], "command": "move_to", "args": {"to": "eol", "extend": false} }
 ]
 
 ```
