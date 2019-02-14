@@ -4,7 +4,7 @@
 2. All Autocomplete
 3. AutoFileName
 4. Babel
-5. Color Highlighter
+5. Color Highlight
 6. Emmet
 7. FileIcons
 8. GitGutter
