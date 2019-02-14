@@ -9,13 +9,14 @@
 7. FileIcons
 8. GitGutter
 9. JsPrettier
-10. Material Theme
-11. Package Control
-12. Sass
-13. SideBarEnhancements
-14. SublimeLinter
-15. SublimeLinter-eslint
-16. SublimeLinter-json
-17. Syntax Highlighting for PostCSS
-18. TeaCode Helper
-19. WakaTime
+10. TrailingSpaces
+11. Material Theme
+12. Package Control
+13. Sass
+14. SideBarEnhancements
+15. SublimeLinter
+16. SublimeLinter-eslint
+17. SublimeLinter-json
+18. Syntax Highlighting for PostCSS
+19. TeaCode Helper
+20. WakaTime
