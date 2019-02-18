@@ -11,12 +11,13 @@
 9. JsPrettier
 10. TrailingSpaces
 11. Material Theme
-12. Package Control
-13. Sass
-14. SideBarEnhancements
-15. SublimeLinter
-16. SublimeLinter-eslint
-17. SublimeLinter-json
-18. Syntax Highlighting for PostCSS
-19. TeaCode Helper
-20. WakaTime
+12. Cobalt2 Theme (for Color Scheme)
+13. Package Control
+14. Sass
+15. SideBarEnhancements
+16. SublimeLinter
+17. SublimeLinter-eslint
+18. SublimeLinter-json
+19. Syntax Highlighting for PostCSS
+20. TeaCode Helper
+21. WakaTime
