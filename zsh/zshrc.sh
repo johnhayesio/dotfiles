@@ -10,7 +10,7 @@
   alias q="exit"
   alias c="clear && ls"
   alias h="$HOME && ls"
-  alias sl="open -a 'Sublime Text' "
+  alias sl="sublime "
   alias ..="cd .."
   alias ...="cd ../.."
   alias rd="rm -rf "
