@@ -1,13 +1,56 @@
 {
   "editor.tabSize": 2,
-  "editor.autoIndent": false,
+  "editor.autoIndent": true,
   "editor.wordWrap": "on",
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 20,
+  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 21,
+  "editor.lineHeight": 35,
   "editor.fontWeight": "500",
+  "editor.quickSuggestionsDelay": 30,
+  "editor.letterSpacing": 0.5,
+  "editor.cursorWidth": 5,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
+  "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "none",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "left",
+  "editor.rulers": [
+    80,
+    100
+  ],
+  "editor.minimap.showSlider": "always",
   "window.zoomLevel": 0,
   "workbench.iconTheme": "vscode-icons",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true
+  },
+  "editor.formatOnSave": true,
+  "prettier.disableLanguages": [
+    "js"
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.detectIndentation": false,
+  "files.insertFinalNewline": true,
+  "editor.showFoldingControls": "always",
+  "editor.find.seedSearchStringFromSelection": true,
+  "window.openFilesInNewWindow": "off",
+  "workbench.editor.enablePreview": true,
+  "editor.scrollBeyondLastLine": true,
+  "editor.useTabStops": true,
+  "editor.formatOnPaste": true,
+  "editor.parameterHints.enabled": false,
+  "editor.matchBrackets": true,
 
   "workbench.colorCustomizations": {
     "editor.background": "#15232E",
@@ -16,7 +59,7 @@
     "editorBracketMatch.border": "#FD8B19",
     "editor.wordHighlightBackground": "#ffffff",
     "editor.wordHighlightBorder": "#DD464C",
-    "statusBar.background": "#0088A9",
+    "statusBar.background": "#193549",
     "statusBar.noFolderBackground": "#000000",
     "statusBar.debuggingBackground": "#ff0000",
     "statusBar.foreground": "#FFFFFF"
