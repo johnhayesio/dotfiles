@@ -1,15 +1,15 @@
 {
   "editor.tabSize": 2,
   "editor.autoIndent": false,
-  "vim.autoindent": false,
   "editor.wordWrap": "on",
+  "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 20,
+  "editor.renderLineHighlight": "none",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Hopscotch",
   "workbench.iconTheme": "vscode-icons",
-  "gitlens.gitExplorer.files.layout": "auto",
 
   "workbench.colorCustomizations": {
+    "editor.background": "#15232E",
     "editorBracketMatch.background": "#DD464C",
     "editorBracketMatch.border": "#FD8B19",
     "editor.wordHighlightBackground": "#ffffff",
@@ -36,7 +36,6 @@
 
   "liveServer.settings.donotShowInfoMsg": true,
   "explorer.confirmDragAndDrop": false,
-  "gitlens.historyExplorer.enabled": true,
   "workbench.startupEditor": "newUntitledFile",
   "liveServer.settings.NoBrowser": true,
   "prettier.stylelintIntegration": true,
@@ -51,6 +50,6 @@
   "scss.validate": false,
   "gitlens.views.repositories.files.layout": "auto",
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true
-
+  "gitlens.views.lineHistory.enabled": true,
+  "workbench.colorTheme": "Cobalt2"
 }
