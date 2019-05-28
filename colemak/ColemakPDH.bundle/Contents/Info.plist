@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.programmercolemak</string>
+	<string>org.sil.ukelele.keyboardlayout.colemakpdh</string>
 	<key>CFBundleName</key>
-	<string>Programmer Colemak</string>
+	<string>ColemakPDH</string>
 	<key>CFBundleVersion</key>
 	<string>1.0.0</string>
 </dict>
