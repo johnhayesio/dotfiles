@@ -2,7 +2,7 @@
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.3.0.249 on 2019-05-27 at 23:40 (GMT+3)-->
 <!--Last edited by Ukelele version 3.3.0.249 on 2019-05-28 at 15:44 (GMT+3)-->
-<keyboard group="126" id="-16125" name="Programmer Colemak" maxout="1">
+<keyboard group="126" id="-26133" name="Programmer Colemak" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
