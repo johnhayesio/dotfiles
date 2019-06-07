@@ -2,7 +2,9 @@
   "editor.tabSize": 2,
   "editor.autoIndent": true,
   "editor.wordWrap": "on",
-  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "html.format.wrapLineLength": 0,
+  "editor.fontFamily": "Operator Mono Lig, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 21,
   "editor.lineHeight": 35,
   "editor.fontWeight": "500",
@@ -22,7 +24,6 @@
   ],
   "editor.minimap.showSlider": "always",
   "window.zoomLevel": 0,
-  "workbench.iconTheme": "vscode-icons",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -31,6 +32,18 @@
     "**/.DS_Store": true,
     "**/.next": true
   },
+  "indentRainbow.colors": [
+    "rgba(16,16,16,0.1)",
+    "rgba(16,16,16,0.2)",
+    "rgba(16,16,16,0.3)",
+    "rgba(16,16,16,0.4)",
+    "rgba(16,16,16,0.5)",
+    "rgba(16,16,16,0.6)",
+    "rgba(16,16,16,0.7)",
+    "rgba(16,16,16,0.8)",
+    "rgba(16,16,16,0.9)",
+    "rgba(16,16,16,1.0)"
+  ],
   "editor.formatOnSave": true,
   "prettier.disableLanguages": [
     "js"
@@ -96,5 +109,6 @@
   "gitlens.views.repositories.files.layout": "auto",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Cobalt2"
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.iconTheme": "material-icon-theme"
 }

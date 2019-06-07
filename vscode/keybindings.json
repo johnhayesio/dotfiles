@@ -26,37 +26,31 @@
     "command": "cursorEnd",
     "when": "editorTextFocus"
   },
-
   {
     "key": "ctrl+h",
     "command": "cursorHome",
     "when": "editorTextFocus"
   },
-
   {
     "key": "ctrl+k",
     "command": "cursorRight",
     "when": "editorTextFocus"
   },
-
   {
     "key": "ctrl+j",
     "command": "cursorLeft",
     "when": "editorTextFocus"
   },
-
   {
     "key": "ctrl+u",
     "command": "cursorUp",
     "when": "editorTextFocus"
   },
-
   {
     "key": "ctrl+n",
     "command": "cursorDown",
     "when": "editorTextFocus"
   },
-
   {
     "key": "ctrl+shift+f",
     "command": "actions.find"
@@ -68,5 +62,13 @@
   {
     "key": "ctrl+v",
     "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+shift+>",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
   }
 ]
