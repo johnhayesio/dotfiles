@@ -39,5 +39,4 @@
 	"update_check": false,
 	"word_wrap": true
 }
-
 ```
