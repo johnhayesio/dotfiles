@@ -13,19 +13,19 @@
 
 #### Main Layout
 
-![Main Layout](https://cl.ly/e18a88ceec7a/Image%2525202019-06-08%252520at%25252013.23.26.png)
+![Main Layout](https://cl.ly/f733950d9f12/Image%2525202019-06-08%252520at%25252013.48.27.png)
 
 #### Shift Layout
 
-![Shift Layout](https://cl.ly/9d818686d235/Image%2525202019-06-08%252520at%25252013.29.09.png)
+![Shift Layout](https://cl.ly/e03ef2799a81/Image%2525202019-06-08%252520at%25252013.49.47.png)
 
 #### AltGr Layout
 
-![AltGr Layout](https://cl.ly/0dd18c961a71/Image%2525202019-06-08%252520at%25252013.32.01.png)
+![AltGr Layout](https://cl.ly/f80d9e8453fc/Image%2525202019-06-08%252520at%25252013.50.49.png)
 
 #### Shift+AltGr Layout
 
-![Shift+AltGr Layout](https://cl.ly/155da783d35d/Image%2525202019-06-08%252520at%25252013.33.39.png)
+![Shift+AltGr Layout](https://cl.ly/fb4f7d7bbde9/Image%2525202019-06-08%252520at%25252013.51.39.png)
 
 
 
