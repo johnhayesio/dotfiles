@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.3.0.249 on 2019-05-27 at 23:40 (GMT+3)-->
-<!--Last edited by Ukelele version 3.3.0.249 on 2019-06-08 at 00:49 (GMT+3)-->
-<keyboard group="126" id="-28875" name="Colemak Programmer" maxout="1">
+<!--Last edited by Ukelele version 3.3.0.249 on 2019-06-08 at 12:56 (GMT+3)-->
+<keyboard group="126" id="-32011" name="Colemak Programmer" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
