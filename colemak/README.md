@@ -29,7 +29,7 @@
 
 
 
-#### This layout was taken from [Akiva](<https://forum.colemak.com/topic/2236-a-programmers-colemak-layout-with-full-theory-and-experimentation/>) using Ukelele to create the .bundle. The layout for Ukelele is also included in this repo.
+#### This layout was taken from [Akiva](<https://forum.colemak.com/topic/2236-a-programmers-colemak-layout-with-full-theory-and-experimentation/>) using Ukelele to create the .bundle. The layout for [Ukelele](<https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=Ukelele>) is also included in this repo.
 
 
 
