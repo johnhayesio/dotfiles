@@ -21,7 +21,7 @@
 
 #### AltGr Layout
 
-![AltGr Layout](https://cl.ly/f80d9e8453fc/Image%2525202019-06-08%252520at%25252013.50.49.png)
+![AltGr Layout](https://cl.ly/cff99848670a/Image%2525202019-06-08%252520at%25252015.01.23.png)
 
 #### Shift+AltGr Layout
 
