@@ -1,13 +1,19 @@
 {
+  "html.format.wrapLineLength": 0,
+  "terminal.integrated.fontSize": 25,
+  "window.zoomLevel": 0,
+  "window.openFilesInNewWindow": "off",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
   "editor.tabSize": 2,
   "editor.autoIndent": true,
   "editor.wordWrap": "on",
-  "html.format.wrapLineLength": 0,
   "editor.fontFamily": "Dank Mono, Operator Mono Lig, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 21,
+  "editor.fontSize": 25,
   "editor.lineHeight": 35,
-  "editor.fontWeight": "500",
+  // "editor.fontWeight": "700",
   "editor.quickSuggestionsDelay": 30,
   "editor.letterSpacing": 0.5,
   "editor.cursorWidth": 5,
@@ -15,56 +21,21 @@
   "editor.cursorStyle": "line",
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "none",
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.activityBar.visible": false,
-  "workbench.sideBar.location": "left",
-  "editor.rulers": [
-    80,
-    100
-  ],
+  "editor.rulers": [80, 100],
   "editor.minimap.showSlider": "always",
-  "window.zoomLevel": 0,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/.next": true
-  },
-  "indentRainbow.colors": [
-    "rgba(16,16,16,0.1)",
-    "rgba(16,16,16,0.2)",
-    "rgba(16,16,16,0.3)",
-    "rgba(16,16,16,0.4)",
-    "rgba(16,16,16,0.5)",
-    "rgba(16,16,16,0.6)",
-    "rgba(16,16,16,0.7)",
-    "rgba(16,16,16,0.8)",
-    "rgba(16,16,16,0.9)",
-    "rgba(16,16,16,1.0)"
-  ],
   "editor.formatOnSave": true,
-  "prettier.disableLanguages": [
-    "js"
-  ],
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
   "editor.detectIndentation": false,
-  "files.insertFinalNewline": true,
   "editor.showFoldingControls": "always",
   "editor.find.seedSearchStringFromSelection": true,
-  "window.openFilesInNewWindow": "off",
-  "workbench.editor.enablePreview": true,
   "editor.scrollBeyondLastLine": true,
   "editor.useTabStops": true,
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.parameterHints.enabled": false,
   "editor.matchBrackets": true,
 
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "left",
   "workbench.colorCustomizations": {
     "editor.background": "#15232E",
     "editorGroupHeader.tabsBackground": "#15232E",
@@ -77,9 +48,41 @@
     "statusBar.debuggingBackground": "#ff0000",
     "statusBar.foreground": "#FFFFFF"
   },
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": true,
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.iconTheme": "material-icon-theme",
 
-  "explorer.confirmDelete": false,
-  "workbench.statusBar.feedback.visible": false,
+  "files.associations": {
+    ".eslintrc": "jsonc",
+    "*.js": "javascriptreact",
+    ".eslintrc.json": "jsonc"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true
+  },
+  "files.insertFinalNewline": true,
+
+  "indentRainbow.colors": [
+    "rgba(16,16,16,0.1)",
+    "rgba(16,16,16,0.2)",
+    "rgba(16,16,16,0.3)",
+    "rgba(16,16,16,0.4)",
+    "rgba(16,16,16,0.5)",
+    "rgba(16,16,16,0.6)",
+    "rgba(16,16,16,0.7)",
+    "rgba(16,16,16,0.8)",
+    "rgba(16,16,16,0.9)",
+    "rgba(16,16,16,1.0)"
+  ],
+
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
 
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -93,23 +96,27 @@
   },
 
   "liveServer.settings.donotShowInfoMsg": true,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.startupEditor": "newUntitledFile",
   "liveServer.settings.NoBrowser": true,
-  "prettier.stylelintIntegration": true,
+
+  "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "postcss": "css",
     "javascript": "javascriptreact"
   },
   "emmet.syntaxProfiles": {
-    "postcss": "css"
+    "postcss": "css",
+    "javascript": "jsx",
+    "xml": {
+      "attr_quotes": "single"
+    }
   },
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
+
   "gitlens.views.repositories.files.layout": "auto",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Cobalt2",
-  "workbench.iconTheme": "material-icon-theme"
+
+  "prettier.requireConfig": true
 }
