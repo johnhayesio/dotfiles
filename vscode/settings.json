@@ -3,7 +3,7 @@
   "editor.autoIndent": true,
   "editor.wordWrap": "on",
   "html.format.wrapLineLength": 0,
-  "editor.fontFamily": "Operator Mono Lig, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Dank Mono, Operator Mono Lig, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 21,
   "editor.lineHeight": 35,
@@ -98,7 +98,8 @@
   "liveServer.settings.NoBrowser": true,
   "prettier.stylelintIntegration": true,
   "emmet.includeLanguages": {
-    "postcss": "css"
+    "postcss": "css",
+    "javascript": "javascriptreact"
   },
   "emmet.syntaxProfiles": {
     "postcss": "css"
