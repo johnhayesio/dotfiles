@@ -62,6 +62,7 @@
 
 # GIT
   alias gpo="git push origin master"
+  alias gpi="git push -u origin master"
   alias ga="git add"
   alias gaa="git add -A"
   alias gc="git commit -v"
@@ -84,6 +85,10 @@
   alias gcm="git checkout master"	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
 	# alias vs="v `git status --porcelain | sed -ne 's/^ M //p'`"
+
+# Code Starter Kits
+  alias css="git clone https://github.com/johnhayesio/simplecss.git"
+  alias react="git clone https://github.com/johnhayesio/parcelReact.git"
 
 # youtube-dl
   alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '$HOME/Documents/yt_DLs/Videos/%(title)s.%(ext)s' "
