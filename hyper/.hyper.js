@@ -4,6 +4,9 @@
 
 module.exports = {
   config: {
+    // Change hyper window opacity
+    opacity: 0.9,
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: "stable",
@@ -12,7 +15,7 @@ module.exports = {
     fontSize: 17,
 
     // font family with optional fallbacks
-    fontFamily: "Operator Mono",
+    fontFamily: "Dank Mono",
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -131,7 +134,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperalfred", "gitrocket", "space-pull", "hyperterm-tabs"],
+  plugins: [
+    "hyperalfred",
+    "gitrocket",
+    "space-pull",
+    "hyperterm-tabs",
+    "hyper-opacity"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
