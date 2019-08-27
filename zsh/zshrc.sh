@@ -14,7 +14,7 @@
   alias ..="cd .."
   alias ...="cd ../.."
   alias rd="rm -rf "
-  alias md="mkdir -p "
+  alias md="mkdir "
   alias mem="top -l1 | grep PhysMem"
   alias sv="sudo vim -p"
   alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
