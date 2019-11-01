@@ -29,6 +29,7 @@ set nocompatible
   Plug 'bling/vim-airline'
   Plug 'pangloss/vim-javascript'
   Plug 'othree/html5.vim'
+  Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 " Initialize plugin system
   call plug#end()
 

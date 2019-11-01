@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This installs all global packages for NPM",
   "main": ".hyper.js",
+  "private": true,
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,11 +14,8 @@
     "hn-cli": "*",
     "alfred-bitly": "*",
     "bitly-client": "*",
-    "bower": "*",
     "caniuse-cmd": "*",
     "fast-cli": "*",
-    "foundation-cli": "*",
-    "gulp-cli": "*",
     "how-2": "*",
     "idea": "*",
     "imageoptim-cli": "*",
@@ -29,6 +28,15 @@
     "prettier": "*",
     "set-default-browser": "*",
     "surge": "*",
-    "toggle-cli": "*"
+    "degit": "*",
+    "create-react-app": "*",
+    "purgecss": "*",
+    "heroku": "*",
+    "netlify-cli": "*",
+    "mongodb": "*",
+    "mpv": "*",
+    "mps-youtube": "*",
+    "pianobar": "*",
+    "mas": "*"
   }
 }
