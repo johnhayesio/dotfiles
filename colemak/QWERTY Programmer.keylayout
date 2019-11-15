@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.3.0.249 on 2019-11-15 at 17:03 (GMT+3)-->
-<!--Last edited by Ukelele version 3.3.0.249 on 2019-11-15 at 18:21 (GMT+3)-->
-<keyboard group="126" id="-13345" name="QWERTY Programmer" maxout="1">
+<!--Last edited by Ukelele version 3.3.0.249 on 2019-11-15 at 19:25 (GMT+3)-->
+<keyboard group="126" id="-25087" name="QWERTY Programmer" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
@@ -82,7 +82,7 @@
             <key code="46" output="m"/>
             <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
-            <key code="49" output=""/>
+            <key code="49" output=" "/>
             <key code="50" output="!"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
@@ -187,7 +187,7 @@
             <key code="46" output="M"/>
             <key code="47" output="&#x003E;"/>
             <key code="48" output="&#x0009;"/>
-            <key code="49" output=""/>
+            <key code="49" output=" "/>
             <key code="50" output="~"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
@@ -292,7 +292,7 @@
             <key code="46" output="1"/>
             <key code="47" output="3"/>
             <key code="48" output="&#x0009;"/>
-            <key code="49" output=""/>
+            <key code="49" output=" "/>
             <key code="50" output="¬"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
@@ -439,7 +439,7 @@
             <key code="46" output="¹"/>
             <key code="47" output="³"/>
             <key code="48" output="&#x0009;"/>
-            <key code="49" output=""/>
+            <key code="49" output=" "/>
             <key code="50" output="¤"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
