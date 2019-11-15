@@ -22,6 +22,7 @@
   alias wtr="curl -4 http://wttr.in/Moscow\?m"
   alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/country"
   alias mark="/Applications/Typora.app/Contents/MacOS/Typora"
+  alias tgl="toggl"
   alias hs="history | grep"
   alias nis="npm install --save "
   alias nid="npm install --save-dev "
