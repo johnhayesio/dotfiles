@@ -34,9 +34,6 @@
     "heroku": "*",
     "netlify-cli": "*",
     "mongodb": "*",
-    "mpv": "*",
-    "mps-youtube": "*",
-    "pianobar": "*",
-    "mas": "*"
+    "@dirdmaster/toggl-cli": "*"
   }
 }
