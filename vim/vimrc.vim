@@ -28,9 +28,10 @@
 	syntax on
 	filetype plugin indent on
   set term=xterm-256color
-  colorscheme monokai
+  colorscheme gruvbox
   set background=dark
-  "let g:gruvbox_contrast_dark = 'hard'
+  let g:gruvbox_contrast_dark = 'hard'
+  set guifont=Dank\ Mono
   highlight Normal ctermbg=None
 
 "Leader - (;)
@@ -206,7 +207,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Numbers	
 	set number
   set numberwidth=5
-  set norelativenumber
+  "set norelativenumber
 
 " Find files
 	set path+=**
