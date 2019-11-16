@@ -207,7 +207,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Numbers	
 	set number
   set numberwidth=5
-  "set norelativenumber
+  set relativenumber
 
 " Find files
 	set path+=**
