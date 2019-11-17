@@ -1,0 +1,4 @@
+#!/bin/bash
+tmux split-window -v -p 20
+sleep .15s 
+tmux split-window -h -p 50

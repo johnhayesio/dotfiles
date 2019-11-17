@@ -52,7 +52,8 @@
   alias tl="tmux ls"
   alias tk="tmux kill-session -s"
   alias ts="tmux kill-server"
-  alias tb="~/dotfiles/tmux/tmuxpane"
+  alias t2="~/dotfiles/tmux/tmuxpane2"
+  alias t3="~/dotfiles/tmux/tmuxpane3"
 
 # Directories
   alias dotfiles="cd $HOME/dotfiles && clear && ls"
