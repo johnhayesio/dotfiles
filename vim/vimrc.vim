@@ -3,19 +3,16 @@
 " - Avoid using standard Vim directory names like 'plugin'
 	call plug#begin('~/.vim/plugged')
 	Plug 'morhetz/gruvbox'
-  Plug 'crusoexia/vim-monokai'
   Plug 'bling/vim-airline'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  "Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-fugitive'
-  Plug 'scrooloose/syntastic'
   Plug 'tpope/vim-surround'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'scrooloose/nerdtree'
+  Plug 'airblade/vim-gitgutter'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'scrooloose/nerdcommenter'
-  "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " Initialize plugin system
@@ -72,6 +69,7 @@
   let g:coc_global_extensions = [
     \ 'coc-snippets',
     \ 'coc-pairs',
+    \ 'coc-emmet',
     \ 'coc-tsserver',
     \ 'coc-eslint', 
     \ 'coc-prettier', 
@@ -121,7 +119,7 @@
   nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
-  nnoremap <silent> K :call <SID>show_documentation()<CR>
+  nnoremap <silent> dC :call <SID>show_documentation()<CR>
 
   function! s:show_documentation()
     if (index(['vim','help'], &filetype) >= 0)
@@ -203,6 +201,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 	set autoindent
 	set dir=/tmp/
 	set nobackup
+  set encoding=UTF-8
 
 " Numbers	
 	set number
@@ -246,9 +245,6 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " HTML Editing
 	set matchpairs+=<:>
 
-" Emmet Tabbing
-  "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-
 " Treat <li> and <p> tags like the block tags they are
 	let g:html_indent_tags = 'li\|p'
 
@@ -256,16 +252,6 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 	set scrolloff=8
 	set sidescrolloff=15
 	set sidescroll=1
-
-" Syntastic Settings
-  set statusline+=%#warningmsg#
-  set statusline+=%{SyntasticStatuslineFlag()}
-  set statusline+=%*
-
-  let g:syntastic_always_populate_loc_list = 1
-  let g:syntastic_auto_loc_list = 1
-  let g:syntastic_check_on_open = 1
-  let g:syntastic_check_on_wq = 0
 
 " Make searching better
 	set gdefault
@@ -276,7 +262,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 	set showmatch
 	nnoremap <silent> <leader>, :noh<CR>
 	nnoremap <C-u> :nohl<CR><C-u>:echo "Search Cleared"<CR>
-	nnoremap <C-c> :set norelativenumber<CR>:set nonumber<CR>:echo "Line numbers turned off."<CR>
+"	nnoremap <C-c> :set norelativenumber<CR>:set nonumber<CR>:echo "Line numbers turned off."<CR>
 "	nnoremap <C-n> :set relativenumber<CR>:set number<CR>:echo "Line numbers turned on."<CR>
 
 " Quicker window movement
@@ -325,7 +311,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 	set diffopt+=vertical
 
 " Copy paste to/from clipboard
-	set pastetoggle=<F2>
+	set pastetoggle=<F3>
   nnoremap <leader>a <ESC>ggVG
   vnoremap <leader>c :w !pbcopy<CR><CR>
 
@@ -371,8 +357,8 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 		vnoremap <leader>out yOprintf(, <esc>pA);<esc>h%a
 
 	" Typescript
-		autocmd BufNewFile,BufRead *.ts set syntax=javascript
-		autocmd BufNewFile,BufRead *.tsx set syntax=javascript
+		"autocmd BufNewFile,BufRead *.ts set syntax=javascript
+		"autocmd BufNewFile,BufRead *.tsx set syntax=javascript
 
 	" Markup
 		inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
