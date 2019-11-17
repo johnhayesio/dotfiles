@@ -115,7 +115,6 @@
 	nnoremap <tab> %
 	vnoremap <tab> %
 
-	nnoremap <Space> za
 	nnoremap <leader>z zMzvzz
 
 	nnoremap vv 0v$
