@@ -8,6 +8,7 @@
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'airblade/vim-gitgutter'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'francoiscabrol/ranger.vim'
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " Initialize plugin system
   call plug#end()
@@ -55,6 +56,9 @@
 
   set cursorline
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
+
+" Open ranger when vim opens a directory
+  let g:ranger_replace_netrw = 1
 
 " Open new split panes to right and bottom, which more natural
 " set splitbelow
