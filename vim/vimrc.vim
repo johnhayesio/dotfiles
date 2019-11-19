@@ -16,6 +16,9 @@
 " Enter the current millenium
   set nocompatible
 
+" Set tabs to display filename only
+  set tabline=
+
 " Enable syntax and plugins (for netrw)
 	syntax on
 	filetype plugin indent on
