@@ -16,9 +16,6 @@
 " Enter the current millenium
   set nocompatible
 
-" Set tabs to display filename only
-  set tabline=
-
 " Enable syntax and plugins (for netrw)
 	syntax on
 	filetype plugin indent on
@@ -333,6 +330,44 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" Tabline
+  set tabline=%!MyTabLine()
+
+  function MyTabLine()
+    let s = ''
+    for i in range(tabpagenr('$'))
+      " select the highlighting
+      if i + 1 == tabpagenr()
+        let s .= '%#TabLineSel#'
+      else
+        let s .= '%#TabLine#'
+      endif
+  
+      " set the tab page number (for mouse clicks)
+      let s .= '%' . (i + 1) . 'T' 
+  
+      " the label is made by MyTabLabel()
+      let s .= ' %{MyTabLabel(' . (i + 1) . ')} '
+    endfor
+  
+    " after the last tab fill with TabLineFill and reset tab page nr
+    let s .= '%#TabLineFill#%T'
+  
+    " right-align the label to close the current tab page
+    if tabpagenr('$') > 1 
+      let s .= '%=%#TabLine#%999Xclose'
+    endif
+  
+    return s
+  endfunction
+  
+  function MyTabLabel(n)
+    let buflist = tabpagebuflist(a:n)
+    let winnr = tabpagewinnr(a:n)
+    let label =  bufname(buflist[winnr - 1]) 
+    return fnamemodify(label, ":t") 
+  endfunction
 
 " Future stuff
 	" Swap line
