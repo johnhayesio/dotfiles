@@ -160,9 +160,9 @@
 	nnoremap <leader>x :x<CR>
 
 	nnoremap <leader>e :Ex<CR>
-	nnoremap <leader>t :tabnew<CR>
-	nnoremap <leader>v :vsplit<CR>:w<CR>
-	nnoremap <leader>s :split<CR>:w<CR>
+	nnoremap <leader>t :tabnew<CR>:Ranger<CR>
+	nnoremap <leader>v :vsplit<CR>:w<CR>:Ranger<CR>
+	nnoremap <leader>s :split<CR>:w<CR>:Ranger<CR>
   nnoremap <leader>p :tabp<CR>
   nnoremap <leader>n :tabn<CR>
 
