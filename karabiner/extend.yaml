@@ -50,7 +50,7 @@ mappings:
     - ['-', f11]
     - ['=', f12]
     # system
-    - [q, esc]
+    - [q, 'CMD-esc']
     - ['[', esc]
     - [']', ins]
     - [space, return]
