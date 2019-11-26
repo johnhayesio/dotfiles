@@ -5,7 +5,9 @@
 	Plug 'morhetz/gruvbox'
   Plug 'bling/vim-airline'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'ctrlpvim/ctrlp.vim'
+  Plug '/usr/local/opt/fzf'
+  Plug 'junegunn/fzf.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
   Plug 'airblade/vim-gitgutter'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'francoiscabrol/ranger.vim'
@@ -197,8 +199,17 @@
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Ctrlp settings
-  let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-  nnoremap <Leader>o :CtrlP<cr>
+  "let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+  "nnoremap <Leader>o :CtrlP<cr>
+
+" FZF settings
+  nnoremap <leader>f :Files<cr>
+  nnoremap <leader>g :Rg<cr>
+
+" Ranger settings
+  let g:ranger_map_keys = 0
+  let g:ranger_replace_netrw = 1
+  map <leader>d :Ranger<cr>
 
 " coc config
   let g:coc_global_extensions = [
@@ -271,8 +282,8 @@
   nmap <F2> <Plug>(coc-rename)
 
 " Remap for format selected region
-  xmap <leader>f  <Plug>(coc-format-selected)
-  nmap <leader>f  <Plug>(coc-format-selected)
+  xmap <leader>u  <Plug>(coc-format-selected)
+  nmap <leader>u  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!

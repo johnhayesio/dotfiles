@@ -50,7 +50,7 @@ mappings:
     - ['-', f11]
     - ['=', f12]
     # system
-    - [q, 'CMD-esc']
+    - [q, CMD]
     - ['[', esc]
     - [']', ins]
     - [space, return]
@@ -60,7 +60,7 @@ mappings:
     - ["'", menu]
     - [a, OPT]
     - [s, SHIFT]
-    - [t, CMD]
+    - [t, CTRL]
     - [delete, return]
     - [esc, caps_lock]
     # navigation
@@ -76,8 +76,8 @@ mappings:
     - [x, CMD-x]
     - [c, CMD-c]
     - [v, CMD-v]
-    - [f, 'CMD-[']  # browser back
-    - [p, 'CMD-]']  # browser forward
+    - [f, CTRL-SHIFT-TAB]  # browser tab backward
+    - [p, CTRL-TAB]  # browser tab forward
     # mouse
     - [w, mouse_scroll_up]
     - [r, mouse_scroll_down]

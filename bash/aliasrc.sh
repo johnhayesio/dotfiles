@@ -5,6 +5,7 @@ alias mem="top -l1 | grep PhysMem"
 alias ka='killall'
 alias sdn='sudo shutdown -h now'
 alias randpass="openssl rand -base64 "
+alias rn="ranger"
 
 # Terminal
 alias o="open"
@@ -15,6 +16,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias rd="rm -rf "
 alias md="mkdir "
+
+alias tmux="vim $HOME/dotfiles/tmux/tmux.conf"
+alias vimrc="vim $HOME/dotfiles/vim/vimrc.vim"
 alias zshrc="vim $HOME/dotfiles/zsh/zshrc.sh"
 
 # List
@@ -54,6 +58,8 @@ alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/countr
 alias mark="/Applications/Typora.app/Contents/MacOS/Typora"
 alias tgl="toggl"
 alias server="live-server --no-browser"
+alias nb="newsboat"
+alias pc="castero"
 
 # NPM
 alias nis="npm install --save "
