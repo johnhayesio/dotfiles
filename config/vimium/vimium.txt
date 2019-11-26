@@ -13,7 +13,7 @@ gg: https://www.google.com/search?q=%s Google
 yt: https://www.youtube.com/results?search_query=%s Youtube
 dd: https://duckduckgo.com/?q=%s DuckDuckGo
 az: https://www.amazon.com/s/?field-keywords=%s Amazon
-aw: https://wiki.archlinux/?search=%s
+aw: https://wiki.archlinux.org/?search=%s
 eb: https://ebay.com/sch/%s
 wt: https://en.wiktionary.org/?search=%s
 lb: http://gen.lib.rus.ec/search.php?req=%s
