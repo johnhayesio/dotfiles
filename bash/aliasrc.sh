@@ -59,8 +59,8 @@ alias cc='calcurse -D ~/.config/calcurse'
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias python="/usr/local/bin/python3"
 alias wtr="curl -4 http://wttr.in/Moscow\?m"
-alias awtr="ansiweather -u metric -s true -a false"
-alias awtrf="ansiweather -u metric -s true -a false -F"
+alias awtr="ansiweather -l Moscow -u metric -s true -a false"
+alias awtrf="ansiweather -l Moscow -u metric -s true -a false -F"
 alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/country"
 alias tgl="toggl"
 alias server="live-server --no-browser"
@@ -147,6 +147,7 @@ alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
 # FZF
   se() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs -o $EDITOR ;}
   vf() { fzf | xargs -o $EDITOR ;}
+  kp() { ps -ef | fzf | awk '{print $2}' | xargs kill -9 ;}
 
  # Caniuse
  ciu() { caniuse | sort -rn | eval "fzf ${FZF_DEFAULT_OPTS} --ansi --header='[caniuse:features]'" | sed -e 's/^.*%\ *//g' | sed -e 's/   .*//g'; }
