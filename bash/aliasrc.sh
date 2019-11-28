@@ -43,6 +43,7 @@ alias ta="tmux attach -t"
 alias tl="tmux ls"
 alias tk="tmux kill-session -s"
 alias ts="tmux kill-server"
+alias t1="~/dotfiles/tmux/tmuxpane1"
 alias t2="~/dotfiles/tmux/tmuxpane2"
 alias t3="~/dotfiles/tmux/tmuxpane3"
 
