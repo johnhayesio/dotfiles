@@ -11,15 +11,19 @@ alias rn="ranger"
 alias o="open"
 alias q="exit"
 alias c="clear && ls"
-alias h="$HOME && ls"
-alias ..="cd .."
-alias ...="cd ../.."
+alias h="$HOME && clear && ls"
+alias ..="cd .. && clear && ls"
+alias ...="cd ../.. && clear && ls"
 alias rd="rm -rf "
 alias md="mkdir "
 
+# Config Files
 alias tmux="vim $HOME/dotfiles/tmux/tmux.conf"
 alias vimrc="vim $HOME/dotfiles/vim/vimrc.vim"
 alias zshrc="vim $HOME/dotfiles/zsh/zshrc.sh"
+alias skhdrc="vim ~/.skhdrc"
+alias chunkwmrc="vim ~/.chunkwmrc"
+alias aliasrc="vim ~/dotfiles/bash/aliasrc.sh"
 
 # List
 alias l="ls -lFh"
@@ -55,7 +59,6 @@ alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias python="/usr/local/bin/python3"
 alias wtr="curl -4 http://wttr.in/Moscow"
 alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/country"
-alias mark="/Applications/Typora.app/Contents/MacOS/Typora"
 alias tgl="toggl"
 alias server="live-server --no-browser"
 alias nb="newsboat"
@@ -65,7 +68,9 @@ alias pc="castero"
 alias nis="npm install --save "
 alias nid="npm install --save-dev "
 alias nig="npm install --global "
-alias nls="npm list -g --depth=0"
+alias nls="npm list --global --depth=0"
+alias nus="npm uninstall "
+alias nug="npm uninstall --global "
 
 # Brew
 alias bud="brew update && brew upgrade && brew cask update && brew cleanup && brew cask cleanup"
@@ -97,20 +102,29 @@ alias gcm="git checkout master"
 
 # Code Starter Kits
 alias css="git clone https://github.com/johnhayesio/simplecss.git"
-alias react="git clone https://github.com/johnhayesio/parcelReact.git"
+alias react="git clone https://github.com/johnhayesio/simple-react.git"
 
 # Directories
 alias dotfiles="cd $HOME/dotfiles && clear && ls"
-alias library="cd $HOME/Library && clear && ls"
+alias lib="cd $HOME/Library && clear && ls"
 alias dev="cd $HOME/Documents/projects-FEWD && clear && ls"
 alias home="$HOME && clear && ls"
 alias drives="df -h"
 alias usage="du -h -d1"
+alias scripts="~/.scripts && clear && ls"
+alias config="~/.config && clear && ls"
+alias docs="~/Documents && clear && ls"
+alias dls="~/Downloads && clear && ls"
 
 # youtube-dl
-alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '$HOME/Documents/yt_DLs/Videos/%(title)s.%(ext)s'"
-ytp="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '$HOME/Documents/yt_DLs/Playlists/%(playlist)s/%alias (playlist_index)s - %(title)s.%(ext)s'"
-alias ytm="youtube-dl -f mp3 -v -o '$HOME/Documents/yt_DLs/Audio/%(title)s.%(ext)s'"
+alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '$HOME/Documents/yt_DLs/Videos/%(title)s.%(ext)s' "
+alias ytp="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '$HOME/Documents/yt_DLs/Playlists/%(playlist)s/%alias (playlist_index)s - %(title)s.%(ext)s' "
+alias ytm="youtube-dl -f mp3 -v -o '$HOME/Documents/yt_DLs/Audio/%(title)s.%(ext)s' "
+alias ytl="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Videos/%(title)s.%(ext)s' "
+
+# Video Playback
+alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no-macosx-autoplay "
+alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
 
 #Functions
 # Custom cd
