@@ -8,6 +8,7 @@
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
 " Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'wakatime/vim-wakatime'
   Plug 'airblade/vim-gitgutter'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'francoiscabrol/ranger.vim'
