@@ -28,6 +28,7 @@
   let g:gruvbox_contrast_dark = 'hard'
   set guifont=Dank\ Mono
   highlight Normal ctermbg=None
+  highlight Comment cterm=italic
 
 " Leader - (;)
 	let mapleader=";"
