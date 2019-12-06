@@ -1,3 +1,5 @@
+neofetch
+
 # Vars
 	HISTFILE=~/.zsh_history
 	SAVEHIST=1000 
