@@ -1,0 +1,383 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'C
+	/Users/johnhayes/dotfiles
+	..
+1575547590
+'D
+	/Users/johnhayes/Downloads
+	..
+1575547487
+'b
+	/Users/johnhayes/bin/
+	..
+1575544466
+'c
+	/Users/johnhayes/Documents/projects-FEWD
+	..
+1575547576
+'d
+	/Users/johnhayes/Documents
+	..
+1575547479
+'h
+	/Users/johnhayes/
+	..
+1574712886
+'z
+	/Users/johnhayes/.config/vifm
+	..
+1574712886
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/Users/johnhayes/Documents/Appen
+	Guidelines
+2
+d/Users/johnhayes/Documents/Appen/Guidelines
+	ReligionEvaluation.pdf
+6
+d/Users/johnhayes/Documents/Appen
+	Guidelines
+2
+d/Users/johnhayes/Documents
+	Appen
+4
+d/Users/johnhayes
+	dotfiles
+20
+d/Users/johnhayes/dotfiles
+	sublime
+5
+d/Users/johnhayes/dotfiles/sublime
+	preferences.md
+4
+d/Users/johnhayes/dotfiles
+	sublime
+5
+d/Users/johnhayes
+	dotfiles
+20
+d/Users
+	johnhayes
+3
+d/
+	Users
+4
+d/Users
+	johnhayes
+3
+d/Users/johnhayes
+	Google Drive
+8
+d/Users
+	johnhayes
+3
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Downloads
+	47593104401_e0695d8c36_b.jpg
+2
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Downloads
+	47593104401_e0695d8c36_b.jpg
+2
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Downloads
+	Store Visit Instructions.pdf
+3
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/.config/vifm
+	scripts
+2
+d/Users/johnhayes/.config/vifm/scripts
+	README
+1
+d/Users/johnhayes/.config/vifm
+	colors
+1
+d/Users/johnhayes/.config/vifm/colors
+	Default.vifm
+1
+d/Users/johnhayes/.config/vifm
+	colors
+1
+d/Users/johnhayes/.config/vifm/colors
+	Default.vifm
+3
+d/Users/johnhayes/.config/vifm
+	scripts
+2
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Downloads
+	Store Visit Instructions.pdf
+3
+d/Users/johnhayes/.config/vifm
+	vifmrc
+5
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Downloads
+	Store Visit Instructions.pdf
+3
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Downloads
+	Store Visit Instructions.pdf
+3
+d/Users/johnhayes
+	Documents
+5
+d/Users/johnhayes/Documents
+	..
+0
+d/Users/johnhayes/Downloads
+	..
+0
+d/Users/johnhayes/Documents
+	..
+0
+d/Users/johnhayes/Downloads
+	..
+0
+d/Users/johnhayes
+	dotfiles
+20
+d/Users/johnhayes/dotfiles
+	..
+0
+d/Users/johnhayes
+	dotfiles
+20
+d/Users/johnhayes/dotfiles
+	..
+0
+d/Users/johnhayes
+	Documents
+5
+d/Users/johnhayes/Documents
+	projects-FEWD
+14
+d/Users/johnhayes/Documents/projects-FEWD
+	..
+0
+d/Users/johnhayes/dotfiles
+	..
+0
+d/Users/johnhayes/Documents/projects-FEWD
+	..
+0
+d/Users/johnhayes
+	dotfiles
+20
+d/Users/johnhayes/dotfiles
+	..
+0
+d/Users/johnhayes
+	dotfiles
+20
+d/Users/johnhayes/Documents/projects-FEWD
+	..
+0
+d/Users/johnhayes
+	Desktop
+4
+d/Users/johnhayes/Desktop
+	..
+0
+d/Users/johnhayes
+	HAZEL
+9
+d/Users/johnhayes/Documents
+	yt_DLs
+15
+d/Users/johnhayes/Downloads
+	Store Visit Instructions.pdf
+3
+d/Users/johnhayes/.config/vifm
+	vifmrc
+5
+d/Users/johnhayes/Documents
+	yt_DLs
+15
+d/Users/johnhayes/Downloads
+	Task Archive - Backup data - 20191202 - 1 of 4 HITs.bak
+4
+d/Users/johnhayes
+	HAZEL
+9
+d/Users/johnhayes/.config/vifm
+	..
+0
+d/Users/johnhayes
+	Public
+17
+d/Users/johnhayes/Documents
+	yt_DLs
+15
+d/Users/johnhayes/Documents/projects-FEWD
+	svelte-js
+19
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js
+	meetup-project
+1
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/meetup-project
+	src
+2
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/meetup-project/src
+	main.js
+4
+d/Users/johnhayes/.config/vifm
+	colors
+1
+d/Users/johnhayes/.config
+	vifm
+15
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Documents/projects-FEWD
+	svelte-js
+19
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js
+	svelte-starter
+3
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/svelte-starter
+	src
+2
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/svelte-starter/src
+	..
+0
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/svelte-starter
+	src
+2
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js
+	svelte-scoreboard
+2
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/svelte-scoreboard
+	src
+2
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/svelte-scoreboard/src
+	main.js
+5
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js/svelte-scoreboard
+	src
+2
+d/Users/johnhayes/Documents/projects-FEWD/svelte-js
+	svelte-scoreboard
+2
+d/Users/johnhayes/Documents/projects-FEWD
+	starter-kits
+17
+d/Users/johnhayes/Documents/projects-FEWD/starter-kits
+	bs4StarterKit
+2
+d/Users/johnhayes/Documents/projects-FEWD/starter-kits/bs4StarterKit
+	src
+2
+d/Users/johnhayes/Documents/projects-FEWD/starter-kits/bs4StarterKit/src
+	scss
+1
+d/Users/johnhayes/Documents/projects-FEWD/starter-kits/bs4StarterKit
+	src
+2
+d/Users/johnhayes/.config/vifm
+	vifminfo
+4
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/.config/vifm
+	scripts
+2
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Downloads
+	..
+0
+d/Users/johnhayes/Documents
+	yt_DLs
+15
+d/Users/johnhayes
+	Downloads
+6
+d/Users/johnhayes/Documents/projects-FEWD
+	gistnotes
+5
+d/Users/johnhayes/Documents/projects-FEWD/gistnotes
+	TODOS.md
+1
+d/Users/johnhayes/Documents/projects-FEWD
+	learning-projects
+8
+d/Users/johnhayes/Documents/projects-FEWD/learning-projects
+	devcamper_api
+2
+d/Users/johnhayes/Documents/projects-FEWD/learning-projects/devcamper_api
+	server.js
+13
+d/Users/johnhayes/dotfiles/vim
+	nerdvimrc.vim
+1
+d
+
+# Right window history (oldest to newest):
+D/Users/johnhayes
+	Applications
+1
+D
+
+# Command line history (oldest to newest):
+:q
+:marks
+:!vf
+:rg --files
+:!rg --files
+:!rg --files | fzf
+:!rg --files | fzf | xargs $EDITOR
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

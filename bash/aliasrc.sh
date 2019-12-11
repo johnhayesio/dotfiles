@@ -1,7 +1,7 @@
 #!/bin/sh
 # System
-alias hs="history | grep"
-alias mem="top -l1 | grep PhysMem"
+alias hs="history | rg"
+alias mem="top -l1 | rg PhysMem"
 alias ka='killall'
 alias sdn='sudo shutdown -h now'
 alias randpass="openssl rand -base64 "
@@ -131,6 +131,7 @@ alias ytl="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio
 # Video Playback
 alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no-macosx-autoplay "
 alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
+alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 
 #Functions
 # Custom cd
@@ -146,6 +147,11 @@ alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
     mkdir -p "$dir";
     cd "$dir";
   }
+
+# MPV playlist start at number
+mpvps() {
+  mpv --playlist="$1" --playlist-start="$2"
+}
 
 # FZF
   se() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs -o $EDITOR ;}
