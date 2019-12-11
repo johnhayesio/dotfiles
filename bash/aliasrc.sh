@@ -158,5 +158,7 @@ mpvps() {
   vf() { fzf | xargs -o $EDITOR ;}
   kp() { ps -ef | fzf | awk '{print $2}' | xargs kill -9 ;}
 
+  alias fuz="~/dotfiles/bash/fuz.sh"
+
  # Caniuse
  ciu() { caniuse | sort -rn | eval "fzf ${FZF_DEFAULT_OPTS} --ansi --header='[caniuse:features]'" | sed -e 's/^.*%\ *//g' | sed -e 's/   .*//g'; }
