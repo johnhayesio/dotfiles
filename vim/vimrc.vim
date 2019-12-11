@@ -99,10 +99,10 @@
   let g:netrw_sort_by = "exten"
   
 " Quicker window movement
-	nnoremap <C-j> <C-w>j
-	nnoremap <C-k> <C-w>k
-	nnoremap <C-h> <C-w>h
-	nnoremap <C-l> <C-w>l
+	nnoremap <leader>j <C-w>j
+	nnoremap <leader>k <C-w>k
+	nnoremap <leader>h <C-w>h
+	nnoremap <leader>l <C-w>l
 " " <c-h> is interpreted as <bs> in neovim
 " " This is a bandaid fix until the team decides how
 " " they want to handle fixing
@@ -165,12 +165,15 @@
 	inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
-	nnoremap <leader>e :Ex<CR>
 	nnoremap <leader>t :tabnew<CR>:Vifm<CR>
 	nnoremap <leader>v :vsplit<CR>:w<CR>:Vifm<CR>
 	nnoremap <leader>s :split<CR>:w<CR>:Vifm<CR>
   nnoremap <leader>p :tabp<CR>
   nnoremap <leader>n :tabn<CR>
+
+  " Vifm commands
+	nnoremap <leader>e :Vifm<CR>
+  nnoremap <leader>d :DiffVifm<CR>
 
 " Copy paste to/from clipboard
   nnoremap <leader>fs <ESC>ggVG
