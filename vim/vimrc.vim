@@ -11,7 +11,8 @@
   Plug 'wakatime/vim-wakatime'
   Plug 'airblade/vim-gitgutter'
   Plug 'christoomey/vim-tmux-navigator'
-  Plug 'francoiscabrol/ranger.vim'
+" Plug 'francoiscabrol/ranger.vim'
+  Plug 'vifm/vifm.vim'
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " Initialize plugin system
   call plug#end()
@@ -23,6 +24,7 @@
 	syntax on
 	filetype plugin indent on
   set term=xterm-256color
+  let g:gruvbox_italic=1
   colorscheme gruvbox
   set background=dark
   let g:gruvbox_contrast_dark = 'hard'
@@ -62,7 +64,7 @@
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 
 " Open ranger when vim opens a directory
-  let g:ranger_replace_netrw = 1
+" let g:ranger_replace_netrw = 1
 
 " Open new split panes to right and bottom, which more natural
 " set splitbelow
@@ -164,9 +166,9 @@
 	nnoremap <leader>x :x<CR>
 
 	nnoremap <leader>e :Ex<CR>
-	nnoremap <leader>t :tabnew<CR>:Ranger<CR>
-	nnoremap <leader>v :vsplit<CR>:w<CR>:Ranger<CR>
-	nnoremap <leader>s :split<CR>:w<CR>:Ranger<CR>
+	nnoremap <leader>t :tabnew<CR>:Vifm<CR>
+	nnoremap <leader>v :vsplit<CR>:w<CR>:Vifm<CR>
+	nnoremap <leader>s :split<CR>:w<CR>:Vifm<CR>
   nnoremap <leader>p :tabp<CR>
   nnoremap <leader>n :tabn<CR>
 
@@ -209,9 +211,9 @@
   nnoremap <leader>g :Rg<cr>
 
 " Ranger settings
-  let g:ranger_map_keys = 0
-  let g:ranger_replace_netrw = 1
-  map <leader>d :Ranger<cr>
+" let g:ranger_map_keys = 0
+" let g:ranger_replace_netrw = 1
+" map <leader>d :Ranger<cr>
 
 " coc config
   let g:coc_global_extensions = [
