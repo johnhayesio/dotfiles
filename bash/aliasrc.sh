@@ -137,6 +137,7 @@ alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 # Custom cd
 	d() {
 	cd $1;
+    clear;
 		ls;
   }
   alias cd="d"
@@ -145,6 +146,7 @@ alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
   mkcd() {
     dir="$*";
     mkdir -p "$dir";
+    clear;
     cd "$dir";
   }
 
