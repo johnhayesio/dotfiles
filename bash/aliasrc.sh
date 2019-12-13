@@ -7,10 +7,17 @@ alias sdn='sudo shutdown -h now'
 alias randpass="openssl rand -base64 "
 alias rn="ranger"
 
+# Screens
+alias sc="screen"
+alias sn="screen -S"
+alias sx="screen -x"
+alias sl="screen -ls"
+
 # Terminal
 alias o="open"
 alias q="exit"
 alias c="clear && ls"
+alias cl="clear"
 alias h="$HOME && clear && ls"
 alias ..="cd .. && clear && ls"
 alias ...="cd ../.. && clear && ls"
