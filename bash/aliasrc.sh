@@ -18,7 +18,7 @@ alias rd="rm -rf "
 alias md="mkdir "
 
 # Config Files
-alias tmux="vim $HOME/dotfiles/tmux/tmux.conf"
+alias tmx="vim $HOME/dotfiles/tmux/tmux.conf"
 alias vimrc="vim $HOME/dotfiles/vim/vimrc.vim"
 alias zshrc="vim $HOME/dotfiles/zsh/zshrc.sh"
 alias skhdrc="vim ~/.skhdrc"
