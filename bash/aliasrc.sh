@@ -67,6 +67,7 @@ alias vup="vim +PlugUpdate"
 alias mrgx="perldoc perlreref"
 alias msed="man sed"
 alias mrg="man rg"
+alias cvi="curl -s https://www.fprintf.net/vimCheatSheet.html | html2text"
 
 # Apps
 alias cc='calcurse -D ~/.config/calcurse'
