@@ -204,6 +204,7 @@
 
 " Prettier command for coc
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
+  nnoremap <leader>ff :Prettier<CR>
 
 " Ctrlp settings
   "let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
