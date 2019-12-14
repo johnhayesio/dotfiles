@@ -39,6 +39,7 @@ alias lr="ls -tRFh"
 alias lt="ls -ltFh"
 alias ll="ls -l"
 alias lh="ls -a"
+alias lf="ls -p | rg -v /"
 alias ldot="ls -ld .*"
 alias lS="ls -1FSsh"
 alias lart="ls -1Fcart"
@@ -60,6 +61,11 @@ alias sv="sudo vim -p"
 alias vcp="vim +PlugClean +qall"
 alias vip="vim +PlugInstall +qall"
 alias vup="vim +PlugUpdate"
+
+# References
+alias mrgx="perldoc perlreref"
+alias msed="man sed"
+alias mrg="man rg"
 
 # Apps
 alias cc='calcurse -D ~/.config/calcurse'
