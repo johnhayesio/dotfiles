@@ -165,9 +165,9 @@
 	inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
-	nnoremap <leader>t :tabnew<CR>:Vifm<CR>
-	nnoremap <leader>v :vsplit<CR>:w<CR>:Vifm<CR>
-	nnoremap <leader>s :split<CR>:w<CR>:Vifm<CR>
+	nnoremap <leader>t :tabnew<CR>:Files<CR>
+	nnoremap <leader>v :vsplit<CR>:w<CR>:Files<CR>
+	nnoremap <leader>s :split<CR>:w<CR>:Files<CR>
   nnoremap <leader>p :tabp<CR>
   nnoremap <leader>n :tabn<CR>
 
