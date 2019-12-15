@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # System
 alias hs="history | rg"
 alias mem="top -l1 | rg PhysMem"
@@ -132,7 +132,7 @@ alias dev="cd $HOME/Documents/projects-FEWD && clear && ls"
 alias home="$HOME && clear && ls"
 alias drives="df -h"
 alias usage="du -h -d1"
-alias scripts="~/.scripts && clear && ls"
+alias scripts="~/dotfiles/bash && clear && ls"
 alias config="~/.config && clear && ls"
 alias docs="~/Documents && clear && ls"
 alias dls="~/Downloads && clear && ls"
@@ -169,7 +169,7 @@ alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
   mpvps() { mpv --playlist="$1" --playlist-start="$2" }
 
 # FZF
-  se() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs -o $EDITOR }
+  se() { du -a ~/dotfiles/bash/* ~/.config/* | awk '{print $2}' | fzf | xargs -o $EDITOR }
   vf() { fzf | xargs -o $EDITOR }
   kp() { ps -ef | fzf | awk '{print $2}' | xargs kill -9 }
 

@@ -7,7 +7,7 @@ neofetch
 	setopt share_history # setopt inc_append_history
 
 # Aliases
-  source ~/dotfiles/bash/aliasrc.sh
+  source ~/dotfiles/bash/aliasrc
 
 # Settings
   export VISUAL=vim
