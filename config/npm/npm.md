@@ -1,0 +1,33 @@
+/usr/local/lib
+├── @dirdmaster/toggl-cli@0.3.0
+├── bitly-client@1.7.2
+├── caniuse-cmd@1.3.1
+├── create-react-app@3.2.0
+├── degit@2.2.2
+├── eslint@6.7.1
+├── fast-cli@2.3.0
+├── fkill-cli@5.2.0
+├── gifify@2.4.3
+├── gistup@0.1.3
+├── git-stats-importer@2.4.10
+├── imageoptim-cli@3.0.2
+├── imgur-uploader-cli@2.0.1
+├── is-up-cli@2.0.0
+├── jsome@2.5.0
+├── live-server@1.2.1
+├── markdown-to-medium@1.4.4
+├── markserv@1.17.2
+├── netlify-cli@2.21.0
+├── newsroom-cli@0.1.11
+├── nodemon@2.0.1
+├── npm@6.13.4
+├── npm-check-updates@3.2.2
+├── npm-name-cli@2.6.1
+├── pageres-cli@5.0.0
+├── prettier@1.19.1
+├── purgecss@1.4.1
+├── release-it@12.4.3
+├── surge@0.21.3
+├── wikit@4.3.1
+└── ytdl@1.0.1
+
