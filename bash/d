@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Custom cd
+d() {
+cd $1;
+  clear;
+  ls;
+}
+alias cd="d"

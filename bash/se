@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Scripts editor
+se() { du -a ~/dotfiles/bash/* ~/.config/* | awk '{print $2}' | fzf | xargs -o $EDITOR ;}
+se

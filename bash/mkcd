@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Make dir and cd
+mkcd() {
+  dir="$*";
+  mkdir -p "$dir";
+  clear;
+  cd "$dir";
+}

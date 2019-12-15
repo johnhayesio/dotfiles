@@ -1,4 +1,3 @@
-#!/bin/bash
 # System
 alias hs="history | rg"
 alias mem="top -l1 | rg PhysMem"
@@ -147,33 +146,3 @@ alias ytl="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio
 alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no-macosx-autoplay "
 alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
-
-#Functions
-# Custom cd
-	d() {
-	cd $1;
-    clear;
-		ls;
-  }
-  alias cd="d"
-
-# Make dir and cd
-  mkcd() {
-    dir="$*";
-    mkdir -p "$dir";
-    clear;
-    cd "$dir";
-  }
-
-# MPV playlist start at number
-  mpvps() { mpv --playlist="$1" --playlist-start="$2" }
-
-# FZF
-  se() { du -a ~/dotfiles/bash/* ~/.config/* | awk '{print $2}' | fzf | xargs -o $EDITOR }
-  vf() { fzf | xargs -o $EDITOR }
-  kp() { ps -ef | fzf | awk '{print $2}' | xargs kill -9 }
-
-  alias fuz="~/dotfiles/bash/fuz"
-
-# Caniuse
-  ciu() { caniuse | sort -rn | eval "fzf ${FZF_DEFAULT_OPTS} --ansi --header='[caniuse:features]'" | sed -e 's/^.*%\ *//g' | sed -e 's/   .*//g'; }
