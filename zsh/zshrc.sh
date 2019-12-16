@@ -6,14 +6,15 @@ neofetch
 	setopt inc_append_history # To save every command before it is executed 
 	setopt share_history # setopt inc_append_history
 
-# Scripts
-  source ~/dotfiles/bash/aliasrc
-  source ~/dotfiles/bash/d
-  source ~/dotfiles/bash/mkcd
-
 # Settings
   export VISUAL=vim
   source ~/dotfiles/zsh/plugins/fixls.zsh
+
+# Aliases
+  source ~/dotfiles/bash/aliasrc
+  
+# Scripts
+  source ~/dotfiles/zsh/scripts.sh
 
 # For vim mappings: 
 	stty -ixon

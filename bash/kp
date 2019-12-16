@@ -1,5 +1,2 @@
-#!/bin/bash
-
 # Kill processes
 kp() { ps -ef | fzf | awk '{print $2}' | xargs kill -9 ;}
-kp

@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.3.0.249 on 2019-11-15 at 17:03 (GMT+3)-->
-<!--Last edited by Ukelele version 3.3.0.249 on 2019-12-15 at 00:05 (GMT+3)-->
-<keyboard group="126" id="-7885" name="QWERTY2 Programmer" maxout="1">
+<!--Last edited by Ukelele version 3.3.0.249 on 2019-12-16 at 12:48 (GMT+3)-->
+<keyboard group="126" id="-597" name="QWERTY2 Programmer" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
@@ -53,7 +53,7 @@
             <key code="17" output="t"/>
             <key code="18" output="["/>
             <key code="19" output="]"/>
-            <key code="20" output="\"/>
+            <key code="20" output="/"/>
             <key code="21" output="&#x0022;"/>
             <key code="22" output="&#x003E;"/>
             <key code="23" output="&#x003C;"/>
@@ -66,13 +66,13 @@
             <key code="30" output="|"/>
             <key code="31" output="o"/>
             <key code="32" output="u"/>
-            <key code="33" output="/"/>
+            <key code="33" output="\"/>
             <key code="34" output="i"/>
             <key code="35" output="p"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="l"/>
             <key code="38" output="j"/>
-            <key code="39" output="&#x0022;"/>
+            <key code="39" output="&#x0027;"/>
             <key code="40" output="k"/>
             <key code="41" output=";"/>
             <key code="42" output="@"/>
@@ -177,7 +177,7 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="L"/>
             <key code="38" output="J"/>
-            <key code="39" output="&#x0027;"/>
+            <key code="39" output="&#x0022;"/>
             <key code="40" output="K"/>
             <key code="41" output=":"/>
             <key code="42" output="@"/>

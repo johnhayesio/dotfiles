@@ -23,6 +23,7 @@ alias ..="cd .. && clear && ls"
 alias ...="cd ../.. && clear && ls"
 alias rd="rm -rf"
 alias md="mkdir -p"
+alias fz="~/dotfiles/bash/fuz"
 
 # Config Files
 alias tmx="vim $HOME/dotfiles/tmux/tmux.conf"

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # FZF Viewer
 set -e
 
