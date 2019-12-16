@@ -148,3 +148,4 @@ alias ytl="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio
 alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no-macosx-autoplay"
 alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
+alias mpvps="~/dotfiles/bash/mpvps"

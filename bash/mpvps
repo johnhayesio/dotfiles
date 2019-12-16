@@ -1,2 +1,2 @@
 # MPV playlist start
-mpvps() { mpv --playlist="$1" --playlist-start="$2" ;}
+mpv --playlist="$1" --playlist-start="$2"
