@@ -1,2 +1,5 @@
+#!/bin/bash
+
 # MPV playlist start
-mpv --playlist="$1" --playlist-start="$2"
+mpvps() { mpv --playlist=$1 --playlist-start=$2 ;}
+mpvps $1 $2

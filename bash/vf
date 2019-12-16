@@ -1,2 +1,4 @@
+#!/bin/bash
+
 # View files
 vf() { fzf | xargs -o $EDITOR ;}

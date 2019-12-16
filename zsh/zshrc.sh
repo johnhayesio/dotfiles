@@ -14,7 +14,7 @@ neofetch
   source ~/dotfiles/bash/aliasrc
   
 # Scripts
-  source ~/dotfiles/zsh/scripts.sh
+  source ~/dotfiles/zsh/scripts
 
 # For vim mappings: 
 	stty -ixon

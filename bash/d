@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Custom cd
 d() {
 cd $1;
