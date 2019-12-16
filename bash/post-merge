@@ -8,3 +8,5 @@ if git diff-tree --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet 'packa
 else
   echo "$(date): No changes in package.json found."
 fi
+
+# ln -fv ~/dotfiles/bash/post-merge .git/hooks
