@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Check arguments
+psc() {
+if [ $# -ne 1 ]; then
+  echo "One argument is required, run: $0 file-path"
+  exit 1
+fi
+
+IFS=$'\n'
+FILENAME=$1
+COUNT=1
+
+while read line
+do
+  echo "$COUNT: $line"
+  let COUNT++
+done < $FILENAME
+}
