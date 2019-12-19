@@ -138,6 +138,9 @@ alias config="~/.config && clear && ls"
 alias docs="cd ~/Documents && clear && ls"
 alias dls="cd ~/Downloads && clear && ls"
 
+# Misc
+alias psc="awk '{print NR \": \" $0}'"
+
 # youtube-dl
 alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Videos/%(title)s.%(ext)s'"
 alias ytp="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Playlists/%(playlist)s/%alias (playlist_index)s - %(title)s.%(ext)s'"
