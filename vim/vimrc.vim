@@ -85,7 +85,7 @@
 	set gdefault
 	set ignorecase
 	set smartcase
-	set nohlsearch
+	set hlsearch
 	set incsearch
 	set showmatch
 	nnoremap <silent> <leader>, :noh<CR>
