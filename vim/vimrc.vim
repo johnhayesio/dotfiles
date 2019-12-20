@@ -85,11 +85,11 @@
 	set gdefault
 	set ignorecase
 	set smartcase
-	set hlsearch
+	set nohlsearch
 	set incsearch
 	set showmatch
 	nnoremap <silent> <leader>, :noh<CR>
-	nnoremap <C-u> :nohl<CR><C-u>:echo "Search Cleared"<CR>
+	nnoremap <C-u> :nohl<CR>:echo "Search Cleared"<CR>
   nnoremap <C-c> :set norelativenumber<CR>:set nonumber<CR>:echo "Line numbers turned off."<CR>
   nnoremap <C-n> :set relativenumber<CR>:set number<CR>:echo "Line numbers turned on."<CR>
 
@@ -117,6 +117,9 @@
 	nnoremap L $
 	nnoremap J G
 	nnoremap K gg
+
+" Set wildmenu
+  set wildmenu
 
 " Remap Escape to jk
   inoremap jk <ESC>

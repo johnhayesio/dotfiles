@@ -1,0 +1,5 @@
+#!/bin/bash
+
+psc() {
+  awk '{print NR ": " $0}' $1
+}
