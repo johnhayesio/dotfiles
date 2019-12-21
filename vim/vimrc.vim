@@ -41,6 +41,7 @@
 	set dir=/tmp/
 	set nobackup
   set encoding=UTF-8
+  set showcmd
 
 " Numbers	
 	set number
@@ -52,6 +53,7 @@
 	set shiftwidth=2
 	set shiftround
 	set expandtab
+  set linebreak
 
 " Set defaults font
 	set history=1000
@@ -107,16 +109,16 @@
 " " This is a bandaid fix until the team decides how
 " " they want to handle fixing
 " it...(https://github.com/neovim/neovim/issues/2048)
-	nnoremap <silent> <bs> :TmuxNavigateLeft<cr>
+	nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
 
 " Navigation within find
 	nnoremap n nzzzv
 	nnoremap N Nzzzv
 
-	nnoremap H 0
-	nnoremap L $
-	nnoremap J G
-	nnoremap K gg
+"	nnoremap H 0
+"	nnoremap L $
+"	nnoremap J G
+"	nnoremap K gg
 
 " Set wildmenu
   set wildmenu
@@ -134,7 +136,7 @@
 
 " Display extra white space
 	set listchars=tab:\|\
-  nnoremap <leader><tab> :set list!<cr>
+  nnoremap <leader><tab> :set list!<CR>
 
 " Always use vertical diffs
 	set diffopt+=vertical
@@ -184,14 +186,14 @@
   nnoremap <leader>r :r !pbpaste<CR><CR>
 
 " Zoom a Vim pane, <C-w>= to re-balance
-	nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
-	nnoremap <leader>= :wincmd =<cr>
+	nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
+	nnoremap <leader>= :wincmd =<CR>
 
 " Resize panes
-	nnoremap <silent> <Right> :vertical resize +5<cr>
-	nnoremap <silent> <Left> :vertical resize -5<cr>
-	nnoremap <silent> <Up> :resize +5<cr>
-	nnoremap <silent> <Down> :resize -5<cr>
+	nnoremap <silent> <Right> :vertical resize +5<CR>
+	nnoremap <silent> <Left> :vertical resize -5<CR>
+	nnoremap <silent> <Up> :resize +5<CR>
+	nnoremap <silent> <Down> :resize -5<CR>
 
 " Switch between the last two files
 	nnoremap <leader><leader> <c-^>
@@ -211,16 +213,16 @@
 
 " Ctrlp settings
   "let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-  "nnoremap <Leader>o :CtrlP<cr>
+  "nnoremap <Leader>o :CtrlP<CR>
 
 " FZF settings
-  nnoremap <leader>f :Files<cr>
-  nnoremap <leader>g :Rg<cr>
+  nnoremap <leader>f :Files<CR>
+  nnoremap <leader>g :Rg<CR>
 
 " Ranger settings
 " let g:ranger_map_keys = 0
 " let g:ranger_replace_netrw = 1
-" map <leader>d :Ranger<cr>
+" map <leader>d :Ranger<CR>
 
 " coc config
   let g:coc_global_extensions = [
@@ -259,11 +261,11 @@
 " Use <c-space> to trigger completion.
   inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Use <CR> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Or use `complete_info` if your vim support it, like:
-" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+" inoremap <expr> <CR> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
   nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -337,15 +339,15 @@ augroup mygroup
 
 " Using CocList
 " Show all diagnostics
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<CR>
 " Manage extensions
-nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent> <space>e  :<C-u>CocList extensions<CR>
 " Show commands
-nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+nnoremap <silent> <space>c  :<C-u>CocList commands<CR>
 " Find symbol of current document
-nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+nnoremap <silent> <space>o  :<C-u>CocList outline<CR>
 " Search workspace symbols
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>s  :<C-u>CocList -I symbols<CR>
 " Do default action for next item.
 nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
