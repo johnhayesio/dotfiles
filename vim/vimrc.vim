@@ -190,10 +190,10 @@
 	nnoremap <leader>= :wincmd =<CR>
 
 " Resize panes
-	nnoremap <silent> <Right> :vertical resize +5<CR>
-	nnoremap <silent> <Left> :vertical resize -5<CR>
-	nnoremap <silent> <Up> :resize +5<CR>
-	nnoremap <silent> <Down> :resize -5<CR>
+	nnoremap <silent> <Right> :vertical resize -5<CR>
+	nnoremap <silent> <Left> :vertical resize +5<CR>
+	nnoremap <silent> <Up> :resize -5<CR>
+	nnoremap <silent> <Down> :resize +5<CR>
 
 " Switch between the last two files
 	nnoremap <leader><leader> <c-^>
