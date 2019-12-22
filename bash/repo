@@ -1,54 +1,114 @@
 #!/bin/bash
 
-repo() {
-  echo -n "What is your username? "
-  read UNAME
+source "$HOME/.github.conf" 2>/dev/null
 
-  echo -n "What is the repo name? "
+if [ $# -gt 1 ]; then
+  echo
+  echo "Only one argument can be supplied. Please run repo command again."
+  echo
+  exit 1
+fi
+
+if [ $# -eq 1 ]; then
+  case $1 in
+    -h|--help)
+      echo
+      echo "Enter only a flag. A descriptor is not used with a flag."
+      echo
+      echo "repo [-h or --help] [-l (list all repos)] [-d (delete a repo)] [-i (init config file)]"
+      echo
+      exit 1
+      ;;
+    -i)
+      rm -rf $HOME/.github.conf
+      echo
+      echo -n "Enter your Github username: "
+      read github_User
+      echo -n "Enter your Github token: "
+      read github_Token
+      echo "GITHUB_USER=$github_User" >> $HOME/.github.conf 
+      echo "GITHUB_TOKEN=$github_Token" >> $HOME/.github.conf
+      echo
+      echo "Github config file successfully created. Please run repo command again."
+      echo
+      exit 1
+      ;;
+    -d)
+      echo
+      echo -n "Enter repo to remove: "
+      read delete_Repo
+      delete_Msg=$(curl -s -X "DELETE" -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/$GITHUB_USER/$delete_Repo | jq --raw-output '.message')
+      if [ "$delete_Msg" = "Not Found" ]; then
+        echo
+        echo "Repo not found and could not be removed."
+        echo
+      else
+        echo
+        echo "$delete_Repo repo has been removed from Github."
+        echo
+      fi
+      exit 1
+      ;;
+    -l)
+      echo
+      curl -s -X "GET" -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user/repos?sort=created | jq -jr '.[]|"Repo: ", .name, if .private == true then " *Private" else "" end, "\n"'
+      echo
+      exit 1
+      ;;
+  esac
+fi
+
+if [ -z "$GITHUB_TOKEN" ]; then
+  echo
+  echo "Token not found. Please run repo -i to create a config file."
+  echo
+else 
+  echo
+  echo -n "Enter the new repo name? "
   read REPO
 
-  echo -n "What is the repo description? "
+  echo -n "Enter the new repo description? "
   read DESC
 
-  echo -n "Is this repo private? (y/n) "
+  echo -n "Is this new repo private? (y/n) "
   read PRIVATE
 
   case $PRIVATE in
     y|yes)
-      private_Msg=$(curl -u "$UNAME" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'", "private":"true"}' | jq --raw-output '.message')
+      private_Msg=$(curl -s -X 'POST' -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'", "private":"true"}' | jq --raw-output '.message')
 
-    if [ "$private_Msg" = "null" ]; then
-      echo
-      echo "Private repo created at https://github.com/$UNAME/$REPO"
-      echo
-      git init
-      echo
-      git add .
-      git commit -m "inital commit"
-      echo
-      git remote add origin https://github.com/$UNAME/$REPO.git
-      sleep 1
-      git push -u origin master
-    else
-      echo
-      echo "Private repo could not be created. Please try again."
-      echo
-    fi
-    ;;
+      if [ "$private_Msg" = "null" ]; then
+        echo
+        echo "Private repo created at https://github.com/$GITHUB_USER/$REPO."
+        echo
+        git init
+        echo
+        git add .
+        git commit -m "inital commit"
+        echo
+        git remote add origin https://github.com/$GITHUB_USER/$REPO.git
+        sleep 1
+        git push -u origin master
+      else
+        echo
+        echo "Private repo could not be created. Please try again."
+        echo
+      fi
+      ;;
 
   n|no)
-    public_Msg=$(curl -u "$UNAME" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'"}' | jq --raw-output '.message')
+    public_Msg=$(curl -s -X 'POST' -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'"}' | jq --raw-output '.message')
 
     if [ "$public_Msg" = "null" ]; then
       echo
-      echo "Public repo created at https://github.com/$UNAME/$REPO"
+      echo "Public repo created at https://github.com/$GITHUB_USER/$REPO."
       echo
       git init
       echo
       git add .
       git commit -m "inital commit"
       echo
-      git remote add origin https://github.com/$UNAME/$REPO.git
+      git remote add origin https://github.com/$GITHUB_USER/$REPO.git
       sleep 1
       git push -u origin master
     else
@@ -58,4 +118,4 @@ repo() {
     fi
     ;;
   esac
-}
+fi
