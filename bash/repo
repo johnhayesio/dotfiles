@@ -1,0 +1,32 @@
+#!/bin/bash
+
+repo() {
+  echo -n "What is your username? "
+  read UNAME
+
+  echo -n "What is the repo name? "
+  read REPO
+
+  echo -n "What is the repo description? "
+  read DESC
+
+  asset_Msg=$(curl -u "$UNAME" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'"}' | jq --raw-output '.message')
+
+  if [ "$asset_Msg" = "null" ]; then
+    echo
+    echo "——————————————————————————————————————————————————"
+    echo "Repo created at https://github.com/$UNAME/$REPO"
+    echo
+    echo "Run the following commands in terminal:"
+    echo "git remote add origin https://github.com/$UNAME/$REPO.git"
+    echo "git push -u origin master"
+    echo "——————————————————————————————————————————————————"
+    echo
+  else
+    echo
+    echo "——————————————————————————————————————————————————"
+    echo "Repo could not be created. Please try again."
+    echo "——————————————————————————————————————————————————"
+    echo
+  fi
+}
