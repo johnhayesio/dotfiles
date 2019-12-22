@@ -10,23 +10,52 @@ repo() {
   echo -n "What is the repo description? "
   read DESC
 
-  asset_Msg=$(curl -u "$UNAME" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'"}' | jq --raw-output '.message')
+  echo -n "Is this repo private? (y/n) "
+  read PRIVATE
 
-  if [ "$asset_Msg" = "null" ]; then
-    echo
-    echo "——————————————————————————————————————————————————"
-    echo "Repo created at https://github.com/$UNAME/$REPO"
-    echo
-    echo "Run the following commands in terminal:"
-    echo "git remote add origin https://github.com/$UNAME/$REPO.git"
-    echo "git push -u origin master"
-    echo "——————————————————————————————————————————————————"
-    echo
-  else
-    echo
-    echo "——————————————————————————————————————————————————"
-    echo "Repo could not be created. Please try again."
-    echo "——————————————————————————————————————————————————"
-    echo
-  fi
+  case $PRIVATE in
+    y|yes)
+      private_Msg=$(curl -u "$UNAME" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'", "private":"true"}' | jq --raw-output '.message')
+
+    if [ "$private_Msg" = "null" ]; then
+      echo
+      echo "Private repo created at https://github.com/$UNAME/$REPO"
+      echo
+      git init
+      echo
+      git add .
+      git commit -m "inital commit"
+      echo
+      git remote add origin https://github.com/$UNAME/$REPO.git
+      sleep 1
+      git push -u origin master
+    else
+      echo
+      echo "Private repo could not be created. Please try again."
+      echo
+    fi
+    ;;
+
+  n|no)
+    public_Msg=$(curl -u "$UNAME" https://api.github.com/user/repos -d '{"name":"'"$REPO"'", "description":"'"$DESC"'"}' | jq --raw-output '.message')
+
+    if [ "$public_Msg" = "null" ]; then
+      echo
+      echo "Public repo created at https://github.com/$UNAME/$REPO"
+      echo
+      git init
+      echo
+      git add .
+      git commit -m "inital commit"
+      echo
+      git remote add origin https://github.com/$UNAME/$REPO.git
+      sleep 1
+      git push -u origin master
+    else
+      echo
+      echo "Public repo could not be created. Please try again."
+      echo
+    fi
+    ;;
+  esac
 }
