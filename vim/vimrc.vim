@@ -138,7 +138,8 @@
 
 " Display extra white space
 	set listchars=tab:\|\
-  nnoremap <leader><tab> :set list!<CR>
+  nnoremap <C-l> :set list!<CR>:echo "White space characters turned on."<CR>
+  nnoremap <leader><tab> :set list!<CR>:echo "White space characters turned off."<CR>
 
 " Always use vertical diffs
 	set diffopt+=vertical
@@ -163,8 +164,8 @@
 		autocmd FileType gitcommit setlocal spell
 
 " File and Window Management 
-	inoremap <leader>w <Esc>:w<CR>
-	nnoremap <leader>w :w<CR>
+	inoremap <leader>w <Esc>:w<CR>:echo "Filed saved."<CR>
+	nnoremap <leader>w :w<CR>:echo "File saved."<CR>
 
 	inoremap <leader>q <ESC>:q!<CR>
 	nnoremap <leader>q :q!<CR>
@@ -184,8 +185,8 @@
 
 " Copy paste to/from clipboard
   nnoremap <leader>fs <ESC>ggVG
-  vnoremap <leader>c :w !pbcopy<CR><CR>
-  nnoremap <leader>r :r !pbpaste<CR><CR>
+  vnoremap <leader>c :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
+  nnoremap <leader>r :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
 
 " Zoom a Vim pane, <C-w>= to re-balance
 	nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
