@@ -125,7 +125,8 @@
   map <F7> :set spelllang=ru<CR>:echo "Spellcheck lang set to RU."<CR>
 
 " Distraction-free writing
-  nnoremap <leader>y :Goyo \| set linebreak<CR>
+  nnoremap <leader>y :Goyo 120 \| set linebreak<CR>
+  nnoremap <C-y> :Goyo!<CR>
 
 "	nnoremap H 0
 "	nnoremap L $
