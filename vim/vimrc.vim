@@ -32,6 +32,7 @@
   set guifont=Dank\ Mono
   highlight Normal ctermbg=None
   highlight Comment cterm=italic
+  highlight Search cterm=underline,bold ctermfg=red
 
 " Leader - (;)
 	let mapleader=";"
@@ -112,6 +113,9 @@
 " Navigation within find
 	nnoremap n nzzzv
 	nnoremap N Nzzzv
+
+  nnoremap <leader>mg :hi SpellBad cterm=underline,bold ctermfg=red<CR>
+  nnoremap <leader>mu :hi clear SpellBad<CR>
 
 "	nnoremap H 0
 "	nnoremap L $
