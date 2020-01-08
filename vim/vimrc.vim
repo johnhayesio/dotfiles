@@ -34,6 +34,7 @@
   highlight Normal ctermbg=None
   highlight Comment cterm=italic
   highlight Search cterm=underline,bold ctermfg=red
+  highlight Folded cterm=bold ctermfg=lightblue
 
 " Leader - (;)
 	let mapleader=";"
