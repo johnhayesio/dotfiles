@@ -7,12 +7,13 @@
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
-" Plug 'ctrlpvim/ctrlp.vim'
   Plug 'wakatime/vim-wakatime'
   Plug 'airblade/vim-gitgutter'
   Plug 'christoomey/vim-tmux-navigator'
-" Plug 'francoiscabrol/ranger.vim'
   Plug 'vifm/vifm.vim'
+  Plug 'tpope/vim-surround'
+  Plug 'SirVer/ultisnips'
+  Plug 'mlaursen/vim-react-snippets'
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " Initialize plugin system
   call plug#end()
@@ -64,9 +65,6 @@
 
   set cursorline
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
-
-" Open ranger when vim opens a directory
-" let g:ranger_replace_netrw = 1
 
 " Open new split panes to right and bottom, which more natural
 " set splitbelow
@@ -171,8 +169,8 @@
 	nnoremap <leader>x :x<CR>
 
 	nnoremap <leader>t :tabnew<CR>:Files<CR>
-	nnoremap <leader>v :vsplit<CR>:w<CR>:Files<CR>
-	nnoremap <leader>s :split<CR>:w<CR>:Files<CR>
+	nnoremap <leader>v :vsplit<CR>:Files<CR>
+	nnoremap <leader>s :split<CR>:Files<CR>
   nnoremap <leader>p :tabp<CR>
   nnoremap <leader>n :tabn<CR>
 
@@ -211,18 +209,9 @@
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
   nnoremap <leader>ff :Prettier<CR>
 
-" Ctrlp settings
-  "let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-  "nnoremap <Leader>o :CtrlP<CR>
-
 " FZF settings
   nnoremap <leader>f :Files<CR>
   nnoremap <leader>g :Rg<CR>
-
-" Ranger settings
-" let g:ranger_map_keys = 0
-" let g:ranger_replace_netrw = 1
-" map <leader>d :Ranger<CR>
 
 " coc config
   let g:coc_global_extensions = [
