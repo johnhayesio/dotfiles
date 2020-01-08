@@ -12,6 +12,7 @@
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'vifm/vifm.vim'
   Plug 'tpope/vim-surround'
+  Plug 'junegunn/goyo.vim'
   Plug 'SirVer/ultisnips'
   Plug 'mlaursen/vim-react-snippets'
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
@@ -117,11 +118,14 @@
 	nnoremap n nzzzv
 	nnoremap N Nzzzv
 
-  " Spellcheck
+" Spellcheck
   nnoremap <leader>m :hi SpellBad cterm=underline,bold ctermfg=red<CR>:echo "Spellcheck turned on."<CR>
   nnoremap <C-m> :hi clear SpellBad<CR>:echo "Spellcheck turned off."<CR>
   map <F6> :set spelllang=en_us<CR>:echo "Spellcheck lang set to EN_US."<CR>
   map <F7> :set spelllang=ru<CR>:echo "Spellcheck lang set to RU."<CR>
+
+" Distraction-free writing
+  nnoremap <leader>y :Goyo \| set linebreak<CR>
 
 "	nnoremap H 0
 "	nnoremap L $
