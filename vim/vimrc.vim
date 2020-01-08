@@ -114,8 +114,8 @@
 	nnoremap n nzzzv
 	nnoremap N Nzzzv
 
-  nnoremap <leader>mg :hi SpellBad cterm=underline,bold ctermfg=red<CR>
-  nnoremap <leader>mu :hi clear SpellBad<CR>
+  nnoremap <leader>m :hi SpellBad cterm=underline,bold ctermfg=red<CR>:echo "Spellcheck turned on."<CR>
+  nnoremap <C-m> :hi clear SpellBad<CR>:echo "Spellcheck turned off."<CR>
 
 "	nnoremap H 0
 "	nnoremap L $
