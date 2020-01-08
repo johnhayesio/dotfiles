@@ -159,6 +159,10 @@
 	set ttyfast
 	set mouse=a
 
+" Save text folding
+  autocmd BufWinLeave *.* mkview
+  autocmd BufWinEnter *.* silent loadview
+
 " Language Specific
 " General
 	" Typescript
