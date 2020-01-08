@@ -21,7 +21,7 @@
 " Enter the current millenium
   set nocompatible
 
-" Enable syntax and plugins (for netrw)
+" Enable syntax and plugins
 	syntax on
 	filetype plugin indent on
   set term=xterm-256color
@@ -49,6 +49,9 @@
 	set number
   set numberwidth=5
   set relativenumber
+
+" Enable autocompletion
+  set wildmode=longest,list,full
 
 " Softtabs, 2 spaces
 	set tabstop=2
