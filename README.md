@@ -9,7 +9,7 @@ There's 3 ways in which you can use this, depending on how much you think you'll
 One of the key features is that this implementation stays in sync across all your machines. So depending on how much you'd like to customize your configuration, you have a few options:
 
 * Little Customization: Just clone this repo and jump to [Installation](#installation).
-* Mild Customization: [Fork]() this repo, and clone your own fork. Keep an eye on this repo for bugfixes and other improvements that you'd like to incorporate into your fork. Then jump to [Installation](#installation).
+* Mild Customization: [Fork]() this repo, and clone your own fork. Keep an eye on this repo for bug fixes and other improvements that you'd like to incorporate into your fork. Then jump to [Installation](#installation).
 * Most Customization: Building your own dotfiles from scratch! Read through these docs and create your own dotfiles! You can add this repository as a [git module](https://git-scm.com/book/en/v2/Git-Tools-Submodules) and source the parts you like. 
 
 If you're unsure, just read the docs, clone this repository, and jump to [Installation](#installation).
@@ -31,13 +31,13 @@ This script guides you through the following:
 
 Pretty convenient for configuring new servers.
 
-# Sumary of Changes
+# Summary of Changes
 
-## Basic runtime opperations 
+## Basic runtime operations 
 
 All default dotfiles (`.zshrc`, `.vimrc`, etc) source something within the dotfiles repository. This helps separate changes that are synced across all your machines with system specific changes.
 
-Upon launching a new shell, the first thing that's evaulated is `zshrc_manager.sh`. This script first launches tmux. Then once zsh logs in, within tmux, it updates the dotfiles repository, and sources the changes.
+Upon launching a new shell, the first thing that's evaluated is `zshrc_manager.sh`. This script first launches tmux. Then once zsh logs in, within tmux, it updates the dotfiles repository, and sources the changes.
 
 ## [Zsh](https://en.wikipedia.org/wiki/Z_shell)
 
@@ -69,8 +69,8 @@ Each plugin is sensitive to where you are and what you're doing, they reveal the
 | Ctrl-N     | Runs ``clear`` |
 | Ctrl-G     | Runs ``git add -A; git commit -v && git push`` |
 | Ctrl-V     | Runs ``fc``. Takes last command and puts it in a vim buffer. |
-| Ctrl-S     | Add's ``sudo`` to the beginning of the buffer. |
-| Ctrl-L     | Run's ``ls``. |
+| Ctrl-S     | Adds ``sudo`` to the beginning of the buffer. |
+| Ctrl-L     | Runs ``ls``. |
 | Ctrl-O     | Equivalent to hitting ``Enter``. |
 
 ### Plugins
@@ -82,12 +82,12 @@ Each plugin is sensitive to where you are and what you're doing, they reveal the
 
 ## [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor))
 
-* Leader key has ben remapped to `;`
+* Leader key has been remapped to `;`
 
 ## [Tmux](https://en.wikipedia.org/wiki/Tmux)
 
 * Ctrl-B has been remapped to the backtick character (&#96;). If you want to type the actual backtick character (&#96;) itself, just hit the key twice.
 * `%` has been remapped to `v`.
 * Use vim movement keys for moving between panes. 
-* Copy buffer is coppied to xclip.
+* Copy buffer is copied to xclip.
 * Status bar tells you date, time, user, and hostname. Especially useful with nested ssh sessions. 
