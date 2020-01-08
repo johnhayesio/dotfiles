@@ -138,8 +138,8 @@
 
 " Display extra white space
 	set listchars=tab:\|\
-  nnoremap <C-l> :set list!<CR>:echo "White space characters turned on."<CR>
-  nnoremap <leader><tab> :set list!<CR>:echo "White space characters turned off."<CR>
+  nnoremap <leader><tab> :set list!<CR>:echo "White space characters turned on."<CR>
+  nnoremap <C-l> :set nolist!<CR>:echo "White space characters turned off."<CR>
 
 " Always use vertical diffs
 	set diffopt+=vertical
