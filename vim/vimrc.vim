@@ -229,6 +229,9 @@
   nnoremap <leader>f :Files<CR>
   nnoremap <leader>g :Rg<CR>
 
+" Remove trailing white space
+  nnoremap <leader>b :%s/\s\+$//e
+
 " coc config
   let g:coc_global_extensions = [
     \ 'coc-snippets',
