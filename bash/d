@@ -4,6 +4,6 @@
 d() {
 cd $1;
   clear;
-  ls;
+  l;
 }
 alias cd="d"
