@@ -1,0 +1,44 @@
+#!/bin/bash
+fv() {
+  if [ $# -eq 0 ]; then
+    echo
+    echo "An argument must be supplied."
+    echo "Run fv -h or fv --help for usage."
+    echo
+  fi
+
+  if [ $# -gt 0 ]; then
+    case $1 in
+      -h|--help)
+        echo
+        echo "An argument must be supplied."
+        echo
+        echo "fv [-a (searches all files)]"
+        echo "fv [-d (searches within a directory)]"
+        echo
+        echo "Examples:"
+        echo "fv -a App.js"
+        echo "fv -d src App.js"
+        echo
+        ;;
+      -a|--all)
+        if [ $# -gt 2 ]; then
+          echo
+          echo "Error: Only two arguments can be supplied."
+          echo "Run command fv -a filename.ext"
+          echo
+        fi
+        find . -name "$2" -not -path "./node_modules/*" | xargs -o vim
+        ;;
+      -d|--directory)
+        if [ $# -gt 3 ]; then
+          echo
+          echo "Error: Only three arguments can be supplied."
+          echo "Run command fv -d directory filename.ext"
+          echo
+        fi
+        find $2 -name "$3" | xargs -o vim
+        ;;
+    esac
+  fi
+}
