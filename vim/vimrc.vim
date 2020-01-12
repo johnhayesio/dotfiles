@@ -199,6 +199,9 @@
 	nnoremap <leader>e :Vifm<CR>
   nnoremap <leader>d :DiffVifm<CR>
 
+  " Silence bash commands
+  command! -nargs=1 Silence execute ':silent !'.<q-args> | execute ':redraw!'
+
 " Copy paste to/from clipboard
   nnoremap <leader>fs <ESC>ggVG
   vnoremap <leader>c :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>

@@ -28,7 +28,7 @@ fv() {
           echo "Run command fv -a filename.ext"
           echo
         fi
-        find . -name "$2" -not -path "./node_modules/*" | xargs -o vim
+        find . -path ./node_modules -prune -o -name "$2" -print | xargs -o vim -p
         ;;
       -d|--directory)
         if [ $# -gt 3 ]; then
@@ -37,7 +37,7 @@ fv() {
           echo "Run command fv -d directory filename.ext"
           echo
         fi
-        find $2 -name "$3" | xargs -o vim
+        find $2 -path ./node_modules -prune -o -name "$3" -print | xargs -o vim -p
         ;;
     esac
   fi
