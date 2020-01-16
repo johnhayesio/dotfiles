@@ -1,0 +1,10 @@
+#!/bin/bash
+mps() {
+  if [ $# -eq 0 ]; then
+    fzf | xargs -I {} mpv --playlist={}
+  elif [ $# -eq 1 ]; then
+    fzf | xargs -I {} mpv --playlist={} --playlist-start=$1
+  else
+    exit 1
+  fi
+}

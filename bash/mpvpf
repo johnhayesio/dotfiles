@@ -1,4 +1,0 @@
-#!/bin/bash
-mpvpf() {
-  find . -iname $1 -exec awk '{print $0}' {} + | xargs -o mpv
-}
