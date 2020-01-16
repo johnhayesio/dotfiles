@@ -234,7 +234,7 @@
   nnoremap <leader>ff :Prettier<CR>
 
 " FZF settings
-  nnoremap <leader>f :Files<CR>
+  nnoremap <leader>o :Files<CR>
   nnoremap <leader>g :Rg<CR>
 
 " Remove trailing white space
