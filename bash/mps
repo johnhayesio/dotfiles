@@ -5,6 +5,8 @@ mps() {
   elif [ $# -eq 1 ]; then
     fzf | xargs -I {} mpv --playlist={} --playlist-start=$(($1 - 1))
   else
-    exit 1
+    echo
+    echo "Only one argument is valid for specifying the start number of the video in the playlist."
+    echo
   fi
 }
