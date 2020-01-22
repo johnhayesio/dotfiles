@@ -233,6 +233,9 @@
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
   nnoremap <leader>ff :Prettier<CR>
 
+" Open markdown in Marked
+  command! Marked silent !open -a "Marked 2.app" "%:p" 
+
 " FZF settings
   nnoremap <leader>o :Files<CR>
   nnoremap <leader>g :Rg<CR>
