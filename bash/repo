@@ -15,9 +15,14 @@ if [ $# -eq 1 ]; then
       echo
       echo "Enter only a flag. A descriptor is not used with a flag."
       echo
-      echo "repo [-h or --help] [-l (list all repos)] [-d (delete a repo)] [-i (init config file)]"
+      echo "repo [-h or --help] [-n (init local repo)] [-l (list all repos)] [-d (delete a repo)] [-i (init config file)]"
       echo
       exit 1
+      ;;
+    -n)
+      git init
+      git add .
+      git commit -m "initial commit"
       ;;
     -i)
       rm -rf $HOME/.github.conf
