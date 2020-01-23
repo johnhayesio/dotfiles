@@ -1,0 +1,44 @@
+#!/bin/bash
+ff() {
+  if [ $# -eq 0 ]; then
+    echo
+    echo "An argument must be supplied."
+    echo "Run ff -h or ff --help for usage."
+    echo
+  fi
+
+  if [ $# -gt 0 ]; then
+    case $1 in
+      -h|--help)
+        echo
+        echo "An argument must be supplied."
+        echo
+        echo "ff [-a (searches all files)]"
+        echo "ff [-d (searches within a directory)]"
+        echo
+        echo "Examples:"
+        echo "ff -a App"
+        echo "ff -d src App"
+        echo
+        ;;
+      -a|--all)
+        if [ $# -gt 2 ]; then
+          echo
+          echo "Error: Only two arguments can be supplied."
+          echo "Run command ff -a filename"
+          echo
+        fi
+        find . -path ./node_modules -prune -o -iname "*$2*" -type f
+        ;;
+      -d|--directory)
+        if [ $# -gt 3 ]; then
+          echo
+          echo "Error: Only three arguments can be supplied."
+          echo "Run command ff -d directory filename"
+          echo
+        fi
+        find $2 -path ./node_modules -prune -o -iname "*$3*" -type f
+        ;;
+    esac
+  fi
+}

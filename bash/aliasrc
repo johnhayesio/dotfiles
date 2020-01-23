@@ -157,6 +157,3 @@ alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no
 alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 alias mpvps="~/dotfiles/bash/mpvps"
-
-# Find
-alias ff="xargs -I REPLACESTRING find . -iname '*REPLACESTRING*' -type f <<<"
