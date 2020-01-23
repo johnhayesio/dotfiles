@@ -119,6 +119,7 @@ alias gca="git commit -av"
 alias gp="gca && gpa"
 alias gst="git status"
 alias gsh="git show"
+alias gla="git log --oneline --decorate --all"
 alias gl="git log -3"
 alias gl1="git log -1"
 alias gl2="git log -2"
@@ -156,3 +157,6 @@ alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no
 alias crad="mpv --no-video https://www.youtube.com/watch\?v\=bebuiaSKtU4"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 alias mpvps="~/dotfiles/bash/mpvps"
+
+# Find
+alias ff="xargs -I REPLACESTRING find . -iname '*REPLACESTRING*' -type f <<<"
