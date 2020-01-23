@@ -1,0 +1,3 @@
+#!/bin/bash
+
+fd() { find . -iname "*$1*" -type f -exec cp {} ./$2 \; }
