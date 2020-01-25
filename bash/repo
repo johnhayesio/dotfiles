@@ -23,6 +23,7 @@ if [ $# -eq 1 ]; then
       git init
       git add .
       git commit -m "initial commit"
+      exit 1
       ;;
     -i)
       rm -rf $HOME/.github.conf
