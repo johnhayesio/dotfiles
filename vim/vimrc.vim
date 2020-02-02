@@ -15,6 +15,8 @@
   Plug 'junegunn/goyo.vim'
   Plug 'SirVer/ultisnips'
   Plug 'mlaursen/vim-react-snippets'
+  Plug 'yuezk/vim-js'
+  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " Initialize plugin system
   call plug#end()
