@@ -2,6 +2,7 @@ adwaita-icon-theme
 ansiweather
 aom
 asciidoc
+aspell
 atk
 bash-completion
 bdw-gc
@@ -19,6 +20,7 @@ docbook
 docbook-xsl
 docgen
 emacs
+exercism
 faad2
 fdk-aac
 fdupes
@@ -40,6 +42,7 @@ girara
 git
 glib
 gmp
+gnu-sed
 gnutls
 gobject-introspection
 graphite2
@@ -71,6 +74,7 @@ libarchive
 libass
 libassuan
 libbluray
+libcaca
 libcroco
 libde265
 libepoxy
@@ -80,6 +84,7 @@ libffi
 libgcrypt
 libgpg-error
 libheif
+libiconv
 libidn2
 libmagic
 libnotify
@@ -112,6 +117,7 @@ mas
 meson
 mongodb
 mongodb-community
+mplayer
 mps-youtube
 mpv
 msgpack
@@ -123,6 +129,7 @@ neofetch
 nettle
 newsboat
 ninja
+node
 nspr
 nss
 oniguruma
@@ -165,6 +172,7 @@ skhd
 snappy
 socat
 source-highlight
+speedtest
 speex
 sphinx-doc
 sqlite
@@ -184,6 +192,7 @@ vim
 w3m
 watch
 webp
+weechat
 wget
 x264
 x265
