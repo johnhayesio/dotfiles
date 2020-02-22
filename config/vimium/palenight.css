@@ -1,5 +1,5 @@
 /*
-Dracula theme for Vimium
+Palenight theme for Vimium
 by Trollwut (trollwut@trollwut.org). This code is in the public domain.
 To use:
   1. Copy the code.
@@ -15,7 +15,7 @@ To use:
 div > .vimiumHintMarker {
   background: #212533;
   font-size: 12px;
-  border: 0.25em solid #FACB61;
+  border: 0.25em solid #facb61;
   border-radius: 0.34em;
   box-shadow: 0em 0.1em 0.6em 0.1em rgba(0, 0, 0, 0.4);
 }
@@ -29,7 +29,7 @@ div > .vimiumHintMarker span {
 
 /* Link hint matching characters */
 div > .vimiumHintMarker > .matchingCharacter {
-  color: #3B3D51;
+  color: #3b3d51;
 }
 
 #vomnibar input {
@@ -42,8 +42,8 @@ div > .vimiumHintMarker > .matchingCharacter {
   padding: 4px;
   background-color: #212533;
   border-radius: 3px;
-  border: 1px solid #3B3D51;
-  box-shadow: #C492ED 0px 0px 1px;
+  border: 1px solid #3b3d51;
+  box-shadow: #c492ed 0px 0px 1px;
   width: 100%;
   outline: none;
   box-sizing: border-box;
@@ -52,9 +52,9 @@ div > .vimiumHintMarker > .matchingCharacter {
 #vomnibar .vomnibarSearchArea {
   display: block;
   padding: 10px;
-  background-color: #3B3D51;
+  background-color: #3b3d51;
   border-radius: 4px 4px 0 0;
-  border-bottom: 1px solid #C492ED;
+  border-bottom: 1px solid #c492ed;
 }
 
 #vomnibar ul {
@@ -66,7 +66,7 @@ div > .vimiumHintMarker > .matchingCharacter {
 }
 
 #vomnibar li {
-  border-bottom: 1px solid #3B3D51;
+  border-bottom: 1px solid #3b3d51;
   line-height: 1.1em;
   padding: 7px 10px;
   font-size: 16px;
@@ -83,7 +83,7 @@ div > .vimiumHintMarker > .matchingCharacter {
 }
 
 #vomnibar li .vomnibarSource {
-  color: #C492ED;
+  color: #c492ed;
   margin-right: 4px;
 }
 #vomnibar li .vomnibarRelevancy {
@@ -100,29 +100,33 @@ div > .vimiumHintMarker > .matchingCharacter {
 
 #vomnibar li .vomnibarUrl {
   white-space: nowrap;
-  color: #BEE084;
+  color: #bee084;
 }
 
 #vomnibar li .vomnibarMatch {
   font-weight: bold;
-  color: #FACB61;
+  color: #facb61;
 }
 
-#vomnibar li em, #vomnibar li .vomnibarTitle {
+#vomnibar li em,
+#vomnibar li .vomnibarTitle {
   color: #f8f8f2;
   margin-left: 4px;
   font-weight: normal;
 }
-#vomnibar li em { font-style: italic; }
-#vomnibar li em .vomnibarMatch, #vomnibar li .vomnibarTitle .vomnibarMatch {
-  color: #FACB61;
+#vomnibar li em {
+  font-style: italic;
+}
+#vomnibar li em .vomnibarMatch,
+#vomnibar li .vomnibarTitle .vomnibarMatch {
+  color: #facb61;
 }
 
 #vomnibar li.vomnibarSelected {
-  background-color: #3B3D51;
+  background-color: #3b3d51;
   font-weight: normal;
 }
 
 #vomnibarInput::selection {
-  background-color: #93DCFF;
+  background-color: #93dcff;
 }
