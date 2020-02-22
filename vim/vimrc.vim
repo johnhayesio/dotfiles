@@ -3,6 +3,7 @@
 " - Avoid using standard Vim directory names like 'plugin'
 	call plug#begin('~/.vim/plugged')
 	Plug 'morhetz/gruvbox'
+  Plug 'drewtempelmeyer/palenight.vim'
   Plug 'bling/vim-airline'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug '/usr/local/opt/fzf'
@@ -27,11 +28,15 @@
 " Enable syntax and plugins
 	syntax on
 	filetype plugin indent on
-  set term=xterm-256color
-  let g:gruvbox_italic=1
-  colorscheme gruvbox
   set background=dark
-  let g:gruvbox_contrast_dark = 'hard'
+  set term=xterm-256color
+  set termguicolors
+  set t_Co=256
+  "let g:gruvbox_italic=1
+  let g:palenight_terminal_italics=1
+  let g:airline_theme = "palenight"
+  colorscheme palenight
+  "let g:gruvbox_contrast_dark = 'hard'
   set guifont=Dank\ Mono
   highlight Normal ctermbg=None
   highlight Comment cterm=italic
