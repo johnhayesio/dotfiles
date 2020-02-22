@@ -4,6 +4,7 @@
 	call plug#begin('~/.vim/plugged')
 	Plug 'morhetz/gruvbox'
   Plug 'drewtempelmeyer/palenight.vim'
+  Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'bling/vim-airline'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug '/usr/local/opt/fzf'
