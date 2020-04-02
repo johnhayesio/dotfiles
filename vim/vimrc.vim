@@ -2,9 +2,7 @@
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 	call plug#begin('~/.vim/plugged')
-	Plug 'morhetz/gruvbox'
   Plug 'drewtempelmeyer/palenight.vim'
-  Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'bling/vim-airline'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug '/usr/local/opt/fzf'
@@ -33,11 +31,9 @@
   set term=xterm-256color
   set termguicolors
   set t_Co=256
-  "let g:gruvbox_italic=1
   let g:palenight_terminal_italics=1
   let g:airline_theme = "palenight"
   colorscheme palenight
-  "let g:gruvbox_contrast_dark = 'hard'
   set guifont=Dank\ Mono
   highlight Normal ctermbg=None
   highlight Comment cterm=italic
