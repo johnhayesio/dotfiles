@@ -8,6 +8,7 @@ neofetch
 
 # Settings
   export VISUAL=vim
+  export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!node_modules" --glob "!.git" --glob "!.meteor"'
   source ~/dotfiles/zsh/plugins/fixls.zsh
 
 # Aliases

@@ -245,6 +245,8 @@
   command! Marked silent !open -a "Marked 2.app" "%:p" 
 
 " FZF settings
+  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!node_modules" --glob "!.git" --glob "!.meteor" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+
   nnoremap <leader>o :Files<CR>
   nnoremap <leader>g :Rg<CR>
 
