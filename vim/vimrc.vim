@@ -153,6 +153,9 @@
 
 	nnoremap vv 0v$
 
+  "Expanding tabs on edit
+  inoremap <leader><CR> <CR><C-o>==<C-o>O 
+
 " Display extra white space
 	set listchars=tab:\|\
   nnoremap <leader><tab> :set list<CR>:echo "White space characters turned on."<CR>
@@ -194,9 +197,9 @@
 	inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
-	nnoremap <leader>t :tabnew<CR>:Vifm<CR>
-	nnoremap <leader>v :vsplit<CR>:Vifm<CR>
-	nnoremap <leader>s :split<CR>:Vifm<CR>
+	nnoremap <leader>t :tabnew<CR>:Files<CR>
+	nnoremap <leader>v :vsplit<CR>:Files<CR>
+	nnoremap <leader>s :split<CR>:Files<CR>
   nnoremap <leader>p :tabp<CR>
   nnoremap <leader>n :tabn<CR>
 
