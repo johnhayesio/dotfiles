@@ -39,6 +39,15 @@ fv() {
         fi
         find $2 -path ./node_modules -prune -o -name "*$3*" -print | xargs -o vim -p
         ;;
+      -l|--list)
+        if [ $# -gt 2 ]; then
+          echo
+          echo "Error: Only two arguments can be supplied."
+          echo "Run command fv -l filename.ext"
+          echo
+        fi
+        find . -path ./node_modules -prune -o -name "*$2*" -print | fzf | xargs -o vim -p
+        ;;
     esac
   fi
 }

@@ -60,6 +60,7 @@
   set wildmode=longest,list,full
 
 " Softtabs, 2 spaces
+  set smartindent
 	set tabstop=2
 	set shiftwidth=2
 	set shiftround
@@ -193,9 +194,9 @@
 	inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
-	nnoremap <leader>t :tabnew<CR>:Files<CR>
-	nnoremap <leader>v :vsplit<CR>:Files<CR>
-	nnoremap <leader>s :split<CR>:Files<CR>
+	nnoremap <leader>t :tabnew<CR>:Vifm<CR>
+	nnoremap <leader>v :vsplit<CR>:Vifm<CR>
+	nnoremap <leader>s :split<CR>:Vifm<CR>
   nnoremap <leader>p :tabp<CR>
   nnoremap <leader>n :tabn<CR>
 
@@ -299,6 +300,14 @@
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
+
+" Handle buffers
+  nnoremap <leader>B :ls<CR>
+  nnoremap <leader>C :%bd\|e#\|bd#<CR>
+  nnoremap <leader>V :vert sb
+  nnoremap <leader>H :sb 
+  nnoremap <leader>N :bn<CR>
+  command! BufOnly silent! execute "%bd|e#|bd#"
 
 " Use K to show documentation in preview window
   nnoremap <silent> dC :call <SID>show_documentation()<CR>
