@@ -4,6 +4,7 @@
 	call plug#begin('~/.vim/plugged')
   Plug 'drewtempelmeyer/palenight.vim'
   Plug 'bling/vim-airline'
+  Plug 'ycm-core/YouCompleteMe'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
@@ -172,21 +173,6 @@
   autocmd BufWinLeave *.* mkview
   autocmd BufWinEnter *.* silent loadview
 
-" Language Specific
-" General
-	" Typescript
-		autocmd BufNewFile,BufRead *.ts set syntax=javascript
-		autocmd BufNewFile,BufRead *.tsx set syntax=javascript
-
-	" Markup
-		inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
-		autocmd FileType markdown setlocal spell
-		autocmd BufRead,BufNewFile *.md setlocal textwidth=100
-
-	" Automatically wrap at 100 characters and spell check git commit messages
-		autocmd FileType gitcommit setlocal textwidth=100
-		autocmd FileType gitcommit setlocal spell
-
 " File and Window Management 
 	inoremap <leader>w <Esc>:w<CR>:echo "Filed saved."<CR>
 	nnoremap <leader>w :w<CR>:echo "File saved."<CR>
@@ -253,6 +239,14 @@
 " Remove trailing white space
   nnoremap <leader>b :%s/\s\+$//e
 
+" Handle buffers
+  nnoremap <leader>B :ls<CR>
+  nnoremap <leader>C :%bd\|e#\|bd#<CR>
+  nnoremap <leader>V :vert sb
+  nnoremap <leader>H :sb 
+  nnoremap <leader>N :bn<CR>
+  command! BufOnly silent! execute "%bd|e#|bd#"
+
 " coc config
   let g:coc_global_extensions = [
     \ 'coc-snippets',
@@ -274,21 +268,10 @@
 " always show signcolumns
   set signcolumn=yes
 
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
-  inoremap <silent><expr> <TAB>
-        \ pumvisible() ? "\<C-n>" :
-        \ <SID>check_back_space() ? "\<TAB>" :
-        \ coc#refresh()
-  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
   function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~# '\s'
   endfunction
-
-" Use <c-space> to trigger completion.
-  inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <CR> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
@@ -299,21 +282,22 @@
 " Use `[g` and `]g` to navigate diagnostics
   nmap <silent> [g <Plug>(coc-diagnostic-prev)
   nmap <silent> ]g <Plug>(coc-diagnostic-next)
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+  inoremap <silent><expr> <TAB>
+        \ pumvisible() ? "\<C-n>" :
+        \ <SID>check_back_space() ? "\<TAB>" :
+        \ coc#refresh()
+  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" Use <c-space> to trigger completion.
+  inoremap <silent><expr> <c-space> coc#refresh()
 
 " Remap keys for gotos
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
-
-" Handle buffers
-  nnoremap <leader>B :ls<CR>
-  nnoremap <leader>C :%bd\|e#\|bd#<CR>
-  nnoremap <leader>V :vert sb
-  nnoremap <leader>H :sb 
-  nnoremap <leader>N :bn<CR>
-  command! BufOnly silent! execute "%bd|e#|bd#"
-
 " Use K to show documentation in preview window
   nnoremap <silent> dC :call <SID>show_documentation()<CR>
 
@@ -376,21 +360,21 @@ augroup mygroup
 
 " Using CocList
 " Show all diagnostics
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<CR>
+  nnoremap <silent> <space>a  :<C-u>CocList diagnostics<CR>
 " Manage extensions
-nnoremap <silent> <space>e  :<C-u>CocList extensions<CR>
+  nnoremap <silent> <space>e  :<C-u>CocList extensions<CR>
 " Show commands
-nnoremap <silent> <space>c  :<C-u>CocList commands<CR>
+  nnoremap <silent> <space>c  :<C-u>CocList commands<CR>
 " Find symbol of current document
-nnoremap <silent> <space>o  :<C-u>CocList outline<CR>
+  nnoremap <silent> <space>o  :<C-u>CocList outline<CR>
 " Search workspace symbols
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<CR>
+  nnoremap <silent> <space>s  :<C-u>CocList -I symbols<CR>
 " Do default action for next item.
-nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+  nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
-nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+  nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+  nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Tabline
   set tabline=%!MyTabLine()
@@ -430,6 +414,20 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
     return fnamemodify(label, ":t") 
   endfunction
 
+" Language Specific
+" General
+	" Typescript
+		autocmd BufNewFile,BufRead *.ts set syntax=javascript
+		autocmd BufNewFile,BufRead *.tsx set syntax=javascript
+
+	" Markup
+		inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
+		autocmd FileType markdown setlocal spell
+		autocmd BufRead,BufNewFile *.md setlocal textwidth=100
+
+	" Automatically wrap at 100 characters and spell check git commit messages
+		autocmd FileType gitcommit setlocal textwidth=100
+		autocmd FileType gitcommit setlocal spell
 " Future stuff
 	" Swap line
 	" Insert blank below and above
