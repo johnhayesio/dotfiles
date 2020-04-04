@@ -152,6 +152,10 @@ alias config="~/.config && clear && l"
 alias docs="cd ~/Documents && clear && l"
 alias dls="cd ~/Downloads && clear && l"
 
+# Searching
+alias rgv="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' --glob '!.git' | fzf | xargs -o vim -p"
+alias rgf="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' --glob '!.git' | fzf"
+
 # youtube-dl
 alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Videos/%(title)s.%(ext)s'"
 alias ytp="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Playlists/%(playlist)s/%alias (playlist_index)s - %(title)s.%(ext)s'"
