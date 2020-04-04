@@ -40,6 +40,7 @@ giflib
 giflossy
 girara
 git
+git-filter-repo
 glib
 gmp
 gnu-sed
@@ -73,6 +74,7 @@ libao
 libarchive
 libass
 libassuan
+libb2
 libbluray
 libcaca
 libcroco
@@ -111,6 +113,7 @@ little-cms2
 lua
 lua@5.1
 luajit
+lz4
 lzo
 mad
 mas
@@ -156,6 +159,7 @@ pv
 python
 python3
 python@2
+python@3.8
 qt
 ranger
 readline
@@ -180,7 +184,6 @@ tesseract
 texi2html
 thefuck
 theora
-tmux
 uchardet
 unbound
 unibilium
@@ -205,3 +208,4 @@ zathura-pdf-poppler
 zimg
 zsh
 zsh-completions
+zstd
