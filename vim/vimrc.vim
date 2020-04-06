@@ -4,7 +4,7 @@
 	call plug#begin('~/.vim/plugged')
   Plug 'drewtempelmeyer/palenight.vim'
   Plug 'bling/vim-airline'
-  Plug 'ycm-core/YouCompleteMe'
+  "Plug 'ycm-core/YouCompleteMe'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
@@ -36,7 +36,7 @@
   let g:airline_theme = "palenight"
   colorscheme palenight
   set guifont=Dank\ Mono
-  highlight Normal ctermbg=None
+  highlight Normal ctermbg=none
   highlight Comment cterm=italic
   highlight Search cterm=underline,bold ctermfg=red
   highlight Folded cterm=bold ctermfg=lightblue
@@ -84,9 +84,9 @@
 
 " Auto resize Vim splits to active split
 	set winwidth=104
-	set winheight=5
-	set winminheight=5
 	set winheight=999
+	set winminwidth=5
+	set winminheight=5
   
 " Scrolling
 	set scrolloff=8
@@ -115,6 +115,7 @@
 	nnoremap <leader>k <C-w>k
 	nnoremap <leader>h <C-w>h
 	nnoremap <leader>l <C-w>l
+  nnoremap <leader>? <C-w><C-r>
 " " <c-h> is interpreted as <bs> in neovim
 " " This is a bandaid fix until the team decides how
 " " they want to handle fixing
@@ -155,7 +156,7 @@
 	nnoremap vv 0v$
 
   "Expanding tabs on edit
-  inoremap <leader><CR> <CR><C-o>==<C-o>O 
+  inoremap <leader><CR> <CR><CR><C-o>k<Tab>
 
 " Display extra white space
 	set listchars=tab:\|\
