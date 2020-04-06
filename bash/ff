@@ -15,6 +15,7 @@ ff() {
         echo
         echo "ff [-a (searches all files)]"
         echo "ff [-d (searches within a directory)]"
+        echo "ff [-l (searches all files and opens fuzzy finder)]"
         echo
         echo "Examples:"
         echo "ff -a App"
@@ -38,6 +39,15 @@ ff() {
           echo
         fi
         find $2 -path ./node_modules -prune -o -iname "*$3*" -type f
+        ;;
+      -l|--list)
+        if [ $# -gt 2 ]; then
+          echo
+          echo "Error: Only two arguments can be supplied."
+          echo "Run command fv -l filename.ext"
+          echo
+        fi
+        find . -path ./node_modules -prune -o -name "*$2*" -print | fzf
         ;;
     esac
   fi

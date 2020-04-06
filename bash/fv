@@ -15,10 +15,12 @@ fv() {
         echo
         echo "fv [-a (searches all files)]"
         echo "fv [-d (searches within a directory)]"
+        echo "fv [-l (searches all files and opens fuzzy finder)]"
         echo
         echo "Examples:"
         echo "fv -a App.js"
         echo "fv -d src App.js"
+        echo "fv -l App"
         echo
         ;;
       -a|--all)
