@@ -1,4 +1,4 @@
-" Specify a directory for plugins
+1   
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 	call plug#begin('~/.vim/plugged')
@@ -354,6 +354,9 @@ augroup mygroup
   nmap <silent> <C-d> <Plug>(coc-range-select)
   xmap <silent> <C-d> <Plug>(coc-range-select)
 
+" Number lines
+  nnoremap <leader>L :g/^$/d<CR> :%s/^/\=printf('%02d ', line('.'))<CR>
+
 " Use `:Format` to format current buffer
   command! -nargs=0 Format :call CocAction('format')
 
@@ -437,6 +440,7 @@ augroup mygroup
 	" Automatically wrap at 100 characters and spell check git commit messages
 		autocmd FileType gitcommit setlocal textwidth=100
 		autocmd FileType gitcommit setlocal spell
+
 " Future stuff
 	" Swap line
 	" Insert blank below and above
