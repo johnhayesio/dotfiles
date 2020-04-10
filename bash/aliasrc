@@ -136,6 +136,10 @@ alias gpl="git push origin master && git push live master"
 alias gpull="git pull origin master"
 alias gcm="git checkout master"	
 
+# Copy last commit
+alias gccs="git log -1 --pretty=format:%H | pbcopy"
+alias gccm="git log -1 --pretty=format:%s | pbcopy"
+
 # Code Starter Kits
 alias css="git clone https://github.com/johnhayesio/simplecss.git"
 alias react="git clone https://github.com/johnhayesio/simple-react.git"
