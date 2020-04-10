@@ -19,16 +19,17 @@
 ├── mup@1.4.6
 ├── newsroom-cli@0.1.11
 ├── node-gyp@6.1.0
-├── nodemon@2.0.2
+├── nodemon@2.0.3
 ├── npm@6.14.4
-├── npm-check-updates@4.1.0
+├── npm-check-updates@4.1.2
 ├── npm-name-cli@3.0.0
 ├── pageres-cli@5.0.0
-├── prettier@2.0.2
-├── purgecss@2.1.0
-├── release-it@13.4.0
+├── parcel-bundler@1.12.4
+├── prettier@2.0.4
+├── purgecss@2.1.2
+├── release-it@13.5.2
 ├── surge@0.21.3
-├── wikit@4.3.1
+├── wikit@4.4.0
 ├── yarn@1.22.4
 └── ytdl@1.2.0
 

@@ -8,6 +8,7 @@ bash-completion
 bdw-gc
 boost
 brightness
+broot
 cairo
 calcurse
 cask
@@ -169,6 +170,7 @@ rtmpdump
 rubberband
 ruby
 sc-im
+screen
 screenresolution
 sdl2
 shared-mime-info
@@ -184,6 +186,7 @@ tesseract
 texi2html
 thefuck
 theora
+tree
 uchardet
 unbound
 unibilium

@@ -7,38 +7,33 @@ Alfred 4.app
 Anki.app
 Audacity.app
 Audio Hijack.app
-Backup and Sync.app
 BetterTouchTool.app
 Beyond Compare.app
 Bitwarden.app
+Brave Browser.app
 CleanMyMac X.app
 CloudApp.app
 Contexts.app
 Cyberduck.app
-DeskCover Pro.app
 Discord.app
 Electrum.app
 Exodus.app
 ExpressVPN.app
-Fantastical 2.app
 Finder.app
 Firefox Developer Edition.app
-Firefox.app
+Firework-ee6387a634e45d8e.app
 Firework.app
 Folx.app
 GitKraken.app
-GoToMeeting.app
 Google Chrome Canary.app
 Google Chrome.app
 Grammarly for Safari.app
-Grids.app
 HP
 HP Easy Scan.app
 Headset.app
 Hewlett-Packard
 Icons8.app
 ImageOptim.app
-Inquisit Player.app
 Karabiner-Elements.app
 Karabiner-EventViewer.app
 Keka.app
@@ -56,7 +51,6 @@ Microsoft Word.app
 MongoDB Compass.app
 Navicat Premium.app
 Nielsen
-NordVPN.localized
 Notion.app
 Numbers.app
 Numi.app
@@ -71,15 +65,11 @@ Radio Silence.app
 Rocket.app
 Safari.app
 ScreenFlow.app
-ScreenFocus.app
-Screenium 3.app
+SideNotes.app
 Sip.app
 SkyFonts
 Skype.app
 Slack.app
-SnapMotion.app
-SoundSource.app
-Sourcetree.app
 Spark.app
 Sublime Merge.app
 SyphonInject.app
@@ -100,6 +90,5 @@ Xcode.app
 __MACOSX
 iTerm.app
 krisp.app
-thinkorswim
 xScope.app
 zoom.us.app
