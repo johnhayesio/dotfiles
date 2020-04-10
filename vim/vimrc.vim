@@ -4,7 +4,6 @@
 	call plug#begin('~/.vim/plugged')
   Plug 'drewtempelmeyer/palenight.vim'
   Plug 'bling/vim-airline'
-  "Plug 'ycm-core/YouCompleteMe'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
@@ -15,9 +14,9 @@
   Plug 'tpope/vim-surround'
   Plug 'junegunn/goyo.vim'
   Plug 'SirVer/ultisnips'
-  Plug 'mlaursen/vim-react-snippets'
   Plug 'yuezk/vim-js'
   Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'Yggdroot/indentLine'
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " Initialize plugin system
   call plug#end()
@@ -40,6 +39,10 @@
   highlight Comment cterm=italic
   highlight Search cterm=underline,bold ctermfg=red
   highlight Folded cterm=bold ctermfg=lightblue
+
+" Indent Line
+  let g:indentLine_char = "⎸"
+  let g:indentLine_enabled = 0
 
 " Leader - (;)
 	let mapleader=";"
@@ -102,6 +105,7 @@
 	set showmatch
 	nnoremap <silent> <leader>, :noh<CR>
 	nnoremap <C-u> :nohl<CR>:echo "Search Cleared"<CR>
+  nnoremap <C-t> :IndentLinesToggle<CR>:echo "Indent Lines Toggled"<CR>
   nnoremap <C-c> :set norelativenumber<CR>:set nonumber<CR>:echo "Line numbers turned off."<CR>
   nnoremap <C-n> :set relativenumber<CR>:set number<CR>:echo "Line numbers turned on."<CR>
 
@@ -151,8 +155,10 @@
 	nnoremap <tab> %
 	vnoremap <tab> %
 
+" Set current line middle screen
 	nnoremap <leader>z zMzvzz
 
+" Visually select line
 	nnoremap vv 0v$
 
   "Expanding tabs on edit
@@ -195,7 +201,7 @@
   nnoremap <leader>d :DiffVifm<CR>
 
   " Silence bash commands
-  command! -nargs=1 Silence execute ':silent !'.<q-args> | execute ':redraw!'
+  command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
 
 " Copy paste to/from clipboard
   nnoremap <leader>fs <ESC>ggVG
@@ -247,6 +253,7 @@
   nnoremap <leader>H :sb 
   nnoremap <leader>N :bn<CR>
   command! BufOnly silent! execute "%bd|e#|bd#"
+  command! BufAll silent! execute "%bd"
 
 " coc config
   let g:coc_global_extensions = [
@@ -420,6 +427,7 @@ augroup mygroup
 	" Typescript
 		autocmd BufNewFile,BufRead *.ts set syntax=javascript
 		autocmd BufNewFile,BufRead *.tsx set syntax=javascript
+    autocmd BufNewFile,BufRead *.json set syntax=javascript
 
 	" Markup
 		inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
