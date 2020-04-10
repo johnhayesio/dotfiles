@@ -45,7 +45,7 @@
   let g:indentLine_enabled = 0
 
 " Leader - (;)
-	let mapleader=";"
+	let mapleader=" "
 
 " Vim general settings
 	set backspace=indent,eol,start
