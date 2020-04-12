@@ -4,6 +4,7 @@ set nocompatible
 " Enable syntax and plugins
 syntax on
 filetype plugin indent on
+let g:sneak#label = 1
 
 " Vim general settings
 set hidden
@@ -86,10 +87,17 @@ nnoremap <silent> <Left> :vertical resize +5<CR>
 nnoremap <silent> <Up> :vertical resize -5<CR>
 nnoremap <silent> <Down> :vertical resize +5<CR>
 
-" Switch between last two files
-nnoremap gn :bn<CR>
-nnoremap gp :bp<CR>
-nnoremap gb :buffers<CR>
+" Short commands
+nnoremap <silent>gl :bn<CR>
+nnoremap <silent>gh :bp<CR>
+nnoremap <silent>gb :buffers<CR>
+nnoremap <silent>gt :tabnew<CR>
+nnoremap <silent>gn :tabn<CR>
+nnoremap <silent>gp :tabp<CR>
+nnoremap <silent>gf :Files<CR>
+nnoremap <silent>gx :Rg<CR>
+nnoremap <silent>gv :vsplit<CR>
+nnoremap <silent>gs :split<CR>
 
 " Default 4000 leads to noticeable delays and poor user experience
 set updatetime=50
@@ -113,6 +121,8 @@ Plug 'wakatime/vim-wakatime'
 Plug 'vifm/vifm.vim'
 Plug 'tpope/vim-surround'
 Plug 'mkitt/tabline.vim'
+Plug 'justinmk/vim-sneak'
+Plug 'wincent/vcs-jump'
 
 call plug#end()
 
@@ -142,6 +152,16 @@ function! s:check_back_space() abort
 endfunction
 
 " Coc for all files excluding typescript
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-emmet',
+  \ 'coc-tsserver',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-json',
+  \ ]
+
 fun! GoCoc()
   inoremap <buffer> <silent><expr> <TAB>
         \ pumvisible() ? "\<C-n>" :
@@ -156,6 +176,7 @@ fun! GoCoc()
   nmap <buffer> <silent>gy <Plug>(coc-type-definition)
   nmap <buffer> <silent>gi <Plug>(coc-implementation)
   nmap <buffer> <silent>gr <Plug>(coc-references)
+  nmap <F2> <Plug>(coc-rename)
   nnoremap <buffer> <silent>cr :CocRestart
 endfun
 
@@ -171,6 +192,9 @@ command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
 command! Marked silent !open -a "Marked 2.app" "%:p"
 command! RemoveWhite silent! execute "%s/\s\+$//e"
 command! BufOnly silent! execute "%bd|e#|bd#"
+
+" Format files with Prettier
+nnoremap <silent>gq :Prettier<CR>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Vim autocmd
