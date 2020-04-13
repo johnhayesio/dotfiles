@@ -3,13 +3,13 @@
 fr() {
   if [ $# -eq 0 ]; then
     echo
-    echo "Please run fd command again with a filename and directory"
-    echo "Example: fd App.js src"
+    echo "Please run fr command again with a filename and directory"
+    echo "Example: fr App.js src"
     echo
   elif [ $# -eq 1 ]; then
     echo
-    echo "Please run fd command again with a filename and directory"
-    echo "Example: fd App.js src"
+    echo "Please run fr command again with a filename and directory"
+    echo "Example: fr App.js src"
     echo
   else
     mkdir -p $2
