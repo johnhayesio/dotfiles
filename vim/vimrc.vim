@@ -25,7 +25,8 @@ set numberwidth=5
 
 " Enable autocompletion
 set wildmenu
-set wildmode=longest,list,full
+set wildmode=longest:full,full
+set completeopt+=menuone,noinsert,noselect
 
 " Softtabs, 2 spaces
 set smartindent
@@ -98,6 +99,7 @@ nnoremap <silent>gf :Files<CR>
 nnoremap <silent>gx :Rg<CR>
 nnoremap <silent>gv :vsplit<CR>
 nnoremap <silent>gs :split<CR>
+nnoremap <silent>ga :Silent screen -x server<CR>
 
 " Default 4000 leads to noticeable delays and poor user experience
 set updatetime=50
@@ -139,13 +141,7 @@ highlight Comment cterm=italic
 highlight Search cterm=underline,bold ctermfg=red
 highlight Folded cterm=bold ctermfg=lightblue
 
-" YouCompleteMe for typescript files
-fun! GoYCM()
-  nnoremap <buffer> <silent>gd :YcmCompleter GoTo<CR>
-  nnoremap <buffer> <silent>gr :YcmCompleter GoToReferences<CR>
-  nnoremap <buffer> <silent>rr :YcmCompleter RefactorRename<space>
-endfun
-
+" Coc config
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -162,23 +158,40 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ ]
 
-fun! GoCoc()
-  inoremap <buffer> <silent><expr> <TAB>
-        \ pumvisible() ? "\<C-n>" :
-        \ <SID>check_back_space() ? "\<TAB>" :
-        \ coc#refresh()
+inoremap <buffer> <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
 
-  inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-  inoremap <buffer> <silent><expr> <C-space> coc#refresh()
+inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <buffer> <silent><expr> <C-space> coc#refresh()
 
-  " GoTo code navigation.
-  nmap <buffer> <silent>gd <Plug>(coc-definition)
-  nmap <buffer> <silent>gy <Plug>(coc-type-definition)
-  nmap <buffer> <silent>gi <Plug>(coc-implementation)
-  nmap <buffer> <silent>gr <Plug>(coc-references)
-  nmap <F2> <Plug>(coc-rename)
-  nnoremap <buffer> <silent>cr :CocRestart
-endfun
+" GoTo code navigation.
+nmap <buffer> <silent>gd <Plug>(coc-definition)
+nmap <buffer> <silent>gy <Plug>(coc-type-definition)
+nmap <buffer> <silent>gi <Plug>(coc-implementation)
+nmap <buffer> <silent>gr <Plug>(coc-references)
+nmap <F2> <Plug>(coc-rename)
+nnoremap <buffer> <silent>cr :CocRestart
+
+" Use K to show documentation in preview window
+nnoremap <silent> gk :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+augroup mygroup
+  autocmd!
+" Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+" Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
 
 " Trim whitespace pre-save
 fun! TrimWhitespace()
@@ -199,5 +212,3 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Vim autocmd
 autocmd BufWritePre * :call TrimWhitespace()
-autocmd FileType typescript :call GoYCM()
-autocmd FileType html,css,javascript,javascriptreact :call GoCoc()
