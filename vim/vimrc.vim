@@ -114,7 +114,6 @@ set signcolumn=yes
 " Enter plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'ycm-core/YouCompleteMe'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'bling/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
