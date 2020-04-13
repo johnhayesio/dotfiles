@@ -9,6 +9,6 @@ source ~/dotfiles/bash/se
 source ~/dotfiles/bash/vf
 source ~/dotfiles/bash/fv
 source ~/dotfiles/bash/ff
-source ~/dotfiles/bash/fd
+source ~/dotfiles/bash/fr
 source ~/dotfiles/bash/psc
 source ~/dotfiles/bash/mps

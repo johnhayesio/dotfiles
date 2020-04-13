@@ -1,6 +1,6 @@
 #!/bin/bash
 
-fd() { 
+fr() {
   if [ $# -eq 0 ]; then
     echo
     echo "Please run fd command again with a filename and directory"
