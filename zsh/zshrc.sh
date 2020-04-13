@@ -2,23 +2,24 @@ neofetch
 
 # Vars
 	HISTFILE=~/.zsh_history
-	SAVEHIST=10000 
-	setopt inc_append_history # To save every command before it is executed 
+	SAVEHIST=10000
+	setopt inc_append_history # To save every command before it is executed
 	setopt share_history # setopt inc_append_history
 
 # Settings
   export VISUAL=vim
   export EDITOR=vim
   export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!node_modules" --glob "!.git" --glob "!.meteor"'
+  export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
   source ~/dotfiles/zsh/plugins/fixls.zsh
 
 # Aliases
   source ~/dotfiles/bash/aliasrc
-  
+
 # Scripts
   source ~/dotfiles/bash/scripts
 
-# For vim mappings: 
+# For vim mappings:
 	stty -ixon
 
 source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/history.zsh
