@@ -95,7 +95,8 @@ nnoremap <silent>gb :buffers<CR>
 nnoremap <silent>gt :tabnew<CR>
 nnoremap <silent>gn :tabn<CR>
 nnoremap <silent>gp :tabp<CR>
-nnoremap <silent>gf :Files<CR>
+nnoremap <silent>go :FzfFiles<CR>
+nnoremap <silent>gf :FzfFiles!<CR>
 nnoremap <silent>gx :Rg<CR>
 nnoremap <silent>gv :vsplit<CR>
 nnoremap <silent>gs :split<CR>
@@ -199,6 +200,12 @@ fun! TrimWhitespace()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
 endfun
+
+" Fzf settings
+let g:fzf_command_prefix='Fzf'
+let g:fzf_layout = { 'down': '~40%' }
+command! -nargs=? -bang -complete=dir FzfFiles
+      \ call fzf#vim#files(<q-args>, <bang>0 ? fzf#vim#with_preview('up:60%') : {}, <bang>0)
 
 " Vim commands
 command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
