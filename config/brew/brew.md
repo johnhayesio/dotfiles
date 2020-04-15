@@ -5,6 +5,7 @@ asciidoc
 aspell
 atk
 bash-completion
+bat
 bdw-gc
 boost
 brightness
@@ -23,6 +24,7 @@ docgen
 emacs
 exercism
 faad2
+fd
 fdk-aac
 fdupes
 ffmpeg

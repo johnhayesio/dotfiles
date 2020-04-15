@@ -42,6 +42,7 @@ Keynote.app
 Logitech
 Loopback.app
 Magnet.app
+ManyCam
 Marked 2.app
 Mate Translate.app
 Microsoft Edge.app
@@ -64,6 +65,7 @@ Qbserve.app
 Radio Silence.app
 Rocket.app
 Safari.app
+Screen.app
 ScreenFlow.app
 SideNotes.app
 Sip.app

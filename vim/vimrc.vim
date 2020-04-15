@@ -125,6 +125,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'wincent/vcs-jump'
+Plug 'jparise/vim-graphql' " GraphQL Syntax
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 call plug#end()
