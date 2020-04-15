@@ -121,9 +121,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
 Plug 'vifm/vifm.vim'
 Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'wincent/vcs-jump'
+Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 call plug#end()
 
@@ -149,7 +151,6 @@ endfunction
 " Coc for all files excluding typescript
 let g:coc_global_extensions = [
   \ 'coc-snippets',
-  \ 'coc-pairs',
   \ 'coc-emmet',
   \ 'coc-tsserver',
   \ 'coc-eslint',
