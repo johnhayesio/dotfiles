@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Scripts
+source ~/dotfiles/bash/gli
 source ~/dotfiles/bash/forgit
 source ~/dotfiles/bash/d
 source ~/dotfiles/bash/mkcd

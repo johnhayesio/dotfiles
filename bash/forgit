@@ -203,8 +203,11 @@ FORGIT_FZF_DEFAULT_OPTS="
 $FZF_DEFAULT_OPTS
 --ansi
 --height='80%'
---bind='ctrl-k:preview-up,ctrl-p:preview-up'
---bind='ctrl-j:preview-down,ctrl-n:preview-down'
+--bind='j:up,k:down'
+--bind='ctrl-k:preview-up'
+--bind='ctrl-j:preview-down'
+--bind='ctrl-b:preview-page-up'
+--bind='ctrl-f:preview-page-down'
 --bind='ctrl-r:toggle-all'
 --bind='ctrl-s:toggle-sort'
 --bind='?:toggle-preview'
