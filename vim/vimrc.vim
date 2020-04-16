@@ -20,7 +20,7 @@ set showcmd
 set path=$PWD/**
 
 " Numbers
-set number
+set relativenumber
 set numberwidth=5
 
 " Enable autocompletion
