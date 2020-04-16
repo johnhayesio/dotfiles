@@ -43,6 +43,7 @@ giflib
 giflossy
 girara
 git
+git-delta
 git-filter-repo
 glib
 gmp
@@ -72,6 +73,8 @@ jpeg
 jq
 json-c
 lame
+lazygit
+lazynpm
 leptonica
 libao
 libarchive
@@ -112,6 +115,7 @@ libvorbis
 libvpx
 libvterm
 libyaml
+libzip
 little-cms2
 lua
 lua@5.1
@@ -158,6 +162,7 @@ pinentry
 pixman
 pkg-config
 poppler
+powerlevel10k
 pv
 python
 python3
@@ -188,6 +193,7 @@ tesseract
 texi2html
 thefuck
 theora
+tldr
 tree
 uchardet
 unbound
