@@ -6,6 +6,8 @@ alias sdn="sudo shutdown -h now"
 alias randpass="openssl rand -base64"
 alias grep="grep --color"
 alias rn="ranger"
+alias lg="lazygit"
+alias lzn="lazynpm"
 
 # Screens
 alias sc="screen"
@@ -134,7 +136,7 @@ alias grc="git log --oneline --name-status -10"
 alias gpa="gpo --tags"
 alias gpl="git push origin master && git push live master"
 alias gpull="git pull origin master"
-alias gcm="git checkout master"	
+alias gcm="git checkout master"
 
 # Copy last commit
 alias gccs="git log -1 --pretty=format:%H | pbcopy"
