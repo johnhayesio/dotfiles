@@ -29,6 +29,7 @@
 ├── purgecss@2.1.2
 ├── release-it@13.5.2
 ├── surge@0.21.3
+├── trash-cli@3.0.0
 ├── wikit@4.4.0
 ├── yarn@1.22.4
 └── ytdl@1.3.0
