@@ -26,7 +26,7 @@ set numberwidth=5
 " Enable autocompletion
 set wildmenu
 set wildmode=longest:full,full
-set completeopt+=menuone,noinsert,noselect
+set completeopt+=menuone,noinsert,noselect,preview
 
 " Softtabs, 2 spaces
 set smartindent
@@ -58,6 +58,25 @@ set hlsearch
 set incsearch
 set showmatch
 
+" Netrw settings
+let g:netrw_banner = 0
+let g:netrw_liststyle = 1
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+
+function! CloseNetrw()
+  let i = bufnr("$")
+  while (i >= 1)
+    if (getbufvar(i, "&filetype") == "netrw")
+      silent exe "bwipeout " . i
+    endif
+    let i-=1
+  endwhile
+endfunction
+
+autocmd BufWinEnter * call CloseNetrw()
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -88,18 +107,6 @@ nnoremap <silent> <Left> :vertical resize +5<CR>
 nnoremap <silent> <Up> :vertical resize -5<CR>
 nnoremap <silent> <Down> :vertical resize +5<CR>
 
-" Short commands
-nnoremap <silent>gl :bn<CR>
-nnoremap <silent>gh :bp<CR>
-nnoremap <silent>gb :buffers<CR>
-nnoremap <silent>gt :tabnew<CR>
-nnoremap <silent>gn :tabn<CR>
-nnoremap <silent>gp :tabp<CR>
-nnoremap <silent>go :Files<CR>
-nnoremap <silent>gx :Rg<CR>
-nnoremap <silent>gv :vsplit<CR>
-nnoremap <silent>gs :split<CR>
-nnoremap <silent>ga :Silent screen -x server<CR>
 
 " Default 4000 leads to noticeable delays and poor user experience
 set updatetime=50
@@ -200,6 +207,9 @@ fun! TrimWhitespace()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
 endfun
+
+" Short commands
+nnoremap <silent>gs :Silent screen -x server<CR>
 
 " Vim commands
 command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
