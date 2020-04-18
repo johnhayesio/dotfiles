@@ -136,6 +136,9 @@ alias grc="git log --oneline --name-status -10"
 alias gpa="gpo --tags"
 alias gpl="git push origin master && git push live master"
 alias gpull="git pull origin master"
+alias ggull="git pull gitlab master"
+alias g-pu="git pull origin"
+alias g-gu="git pull gitlab"
 alias gcm="git checkout master"
 
 # Copy last commit
