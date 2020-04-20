@@ -5,7 +5,7 @@ alias ka="killall"
 alias sdn="sudo shutdown -h now"
 alias randpass="openssl rand -base64"
 alias grep="grep --color"
-alias rn="ranger"
+alias ctags="`brew --prefix`/bin/ctags"
 alias lg="lazygit"
 alias lzn="lazynpm"
 
