@@ -106,6 +106,9 @@ alias bud="brew update && brew upgrade && brew cask update && brew cleanup && br
 alias bip="brew search | eval \"fzf -m --header='[brew:install]'\""
 
 # GIT
+alias gsu="git-standup"
+alias gsa="git-standup -a"
+alias gsn="git-standup -d"
 alias gpo="git push origin master"
 alias g-p="git push origin"
 alias gpg="git push gitlab master"
@@ -177,8 +180,8 @@ alias ytl="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio
 
 # Video Playback
 alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no-macosx-autoplay"
-alias chill="mpv --no-video https://www.youtube.com/watch\?v\=5qap5aO4i9A"
-alias coffee="mpv --no-video https://www.youtube.com/watch\?v\=RgVs8mkgHSU"
+alias chill="mpv --no-video https://www.youtube.com/watch\?v\=5qap5aO4i9A > /dev/null 2>&1 &"
+alias coffee="mpv --no-video https://www.youtube.com/watch\?v\=RgVs8mkgHSU > /dev/null 2>&1 &"
 alias mfp="~/dotfiles/bash/mfp"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 alias mpvps="~/dotfiles/bash/mpvps"
