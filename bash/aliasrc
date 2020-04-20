@@ -182,6 +182,8 @@ alias ytl="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio
 alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no-macosx-autoplay"
 alias chill="mpv --no-video https://www.youtube.com/watch\?v\=5qap5aO4i9A > /dev/null 2>&1 &"
 alias coffee="mpv --no-video https://www.youtube.com/watch\?v\=RgVs8mkgHSU > /dev/null 2>&1 &"
+alias jazz="mpv --no-video https://www.youtube.com/watch\?v\=DSGyEsJ17cI > /dev/null 2>&1 &"
+alias piano="mpv --no-video https://www.youtube.com/watch\?v\=XULUBg_ZcAU > /dev/null 2>&1 &"
 alias mfp="~/dotfiles/bash/mfp"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 alias mpvps="~/dotfiles/bash/mpvps"
