@@ -15,6 +15,7 @@ calcurse
 cask
 chunkwm
 cmake
+ctags
 curl
 desktop-file-utils
 dnote
@@ -45,6 +46,7 @@ girara
 git
 git-delta
 git-filter-repo
+git-standup
 glib
 gmp
 gnu-sed
@@ -127,6 +129,7 @@ mas
 meson
 mongodb
 mongodb-community
+mpg123
 mplayer
 mps-youtube
 mpv
@@ -208,12 +211,14 @@ watch
 webp
 weechat
 wget
+wifi-password
 x264
 x265
 xvid
 xz
 yarn
 youtube-dl
+z
 zathura
 zathura-pdf-poppler
 zimg
