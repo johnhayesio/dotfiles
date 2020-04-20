@@ -1,0 +1,80 @@
+#!/bin/bash
+set -o nounset
+
+# -- global variables ----------------------------------------------------------
+host="musicforprogramming.net"
+content_host="datashat.net"
+menu=false
+
+# -- functions -----------------------------------------------------------------
+get_djs() {
+    wget -q -O - "http://$host/" 2> /dev/null | \
+    grep -oE "(\?[a-z]+\">[0-9]+: [0-9a-zA-Z_+ ]+)|(\"selected\">[0-9]+: [0-9a-zA-Z_+ ]+)" | \
+        grep -oE "[0-9]+: [0-9a-zA-Z_+ ]+" | \
+        awk -F': ' '{print $2}'
+}
+
+play() {
+    green="\033[1;32m"
+    echo -e "$green-->$normal playing episode $1 by $2"
+    dj=$(tr ' ' '_' <<< "$2" | tr '[A-Z]' '[a-z]' | sed 's/+/and/g')
+    filename="music_for_programming_$1-$dj.mp3"
+    mpg123 -q "http://$content_host/$filename" > /dev/null 2>&1 &
+}
+
+usage() {
+    echo "usage: progmusic [-m]
+        -m show episode menu"
+}
+
+show_menu() {
+    IFS=$'\n'
+    echo "Choose episode:"
+    select dj in $1
+    do
+        if [[ -n "$dj" ]]
+        then
+            play "$REPLY" "$dj"
+            break
+        else
+            echo "invalid option"
+        fi
+    done
+}
+
+random_episode() {
+    no_of_episodes=$(wc -l <<< "$1")
+    episode_no=$(( $RANDOM % $no_of_episodes))
+    episode_line=$(( $episode_no + 1 ))
+    dj=$(sed -n ${episode_line}p <<< "$1")
+    play "$episode_line" "$dj"
+}
+
+assert_in_path() {
+    hash $1 2>&- || { echo >&2 "ERROR: $1 not installed, exiting.." && exit 1; }
+}
+
+# -- initialize ----------------------------------------------------------------
+assert_in_path mpg123 && assert_in_path wget
+
+while getopts "m" opt
+do
+    case $opt in
+        m) menu=true ;;
+        *) usage && exit 1 ;;
+    esac
+done
+
+# -- main ----------------------------------------------------------------------
+bold="\033[1m"
+normal="\033[0m"
+
+echo -e "$bold===[$normal  CLI for http://musicforprogramming.net/ $bold]===
+    $normal Credits Datassette http://datassette.net/\n"
+
+if djs=$(get_djs)
+then
+    $menu && show_menu "$djs" || random_episode "$djs"
+else
+    echo "ERROR: failed to get episodes"
+fi

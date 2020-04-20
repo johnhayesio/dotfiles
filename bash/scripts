@@ -13,4 +13,5 @@ source ~/dotfiles/bash/fv
 source ~/dotfiles/bash/ff
 source ~/dotfiles/bash/fr
 source ~/dotfiles/bash/psc
+source ~/dotfiles/bash/mfp
 source ~/dotfiles/bash/mps
