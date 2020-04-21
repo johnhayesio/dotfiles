@@ -216,6 +216,7 @@ command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
 command! Marked silent !open -a "Marked 2.app" "%:p"
 command! RemoveWhite silent! execute "%s/\s\+$//e"
 command! BufOnly silent! execute "%bd|e#|bd#"
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!node_modules" --glob "!.git" --glob "!.meteor" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 
 " Format files with Prettier
 nnoremap <silent>gq :Prettier<CR>
