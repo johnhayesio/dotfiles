@@ -17,7 +17,8 @@ set encoding=UTF-8
 set showcmd
 
 " Find files by name
-set path=$PWD/**
+set path+=**
+set wildignore=**/node_modules/**,**.git**
 
 " Numbers
 set relativenumber
@@ -132,7 +133,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'wincent/vcs-jump'
+
 Plug 'jparise/vim-graphql' " GraphQL Syntax
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 call plug#end()
