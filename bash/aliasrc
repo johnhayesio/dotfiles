@@ -91,6 +91,7 @@ alias tgl="toggl"
 alias server="live-server --no-browser"
 alias nb="newsboat"
 alias pc="castero"
+alias marked="open -a 'Marked 2'"
 
 # NPM
 alias nis="npm install --save"
