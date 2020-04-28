@@ -3,6 +3,7 @@ Adapter.app
 Adobe Creative Cloud
 Adobe Photoshop 2020
 Adobe XD
+Alacritty.app
 Alfred 4.app
 Anki.app
 Audacity.app
@@ -34,6 +35,7 @@ Headset.app
 Hewlett-Packard
 Icons8.app
 ImageOptim.app
+Jamm.app
 Karabiner-Elements.app
 Karabiner-EventViewer.app
 Keka.app
@@ -50,6 +52,7 @@ Microsoft Excel.app
 Microsoft PowerPoint.app
 Microsoft Word.app
 MongoDB Compass.app
+MusicManager.app
 Navicat Premium.app
 Nielsen
 Notion.app
@@ -93,4 +96,3 @@ __MACOSX
 iTerm.app
 krisp.app
 xScope.app
-zoom.us.app
