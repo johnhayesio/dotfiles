@@ -133,6 +133,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'wincent/vcs-jump'
+Plug 'tpope/vim-commentary'
 
 Plug 'jparise/vim-graphql' " GraphQL Syntax
 Plug 'yuezk/vim-js'
