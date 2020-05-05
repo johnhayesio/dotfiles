@@ -18,7 +18,7 @@ set showcmd
 
 " Find files by name
 set path+=**
-set wildignore=**/node_modules/**,**.git**
+set wildignore=*/node_modules/*,*.git*
 
 " Numbers
 set relativenumber
@@ -86,6 +86,11 @@ nnoremap <C-l> <C-w>l
 
 " Remap Escape to jk
 inoremap jk <ESC>
+cnoremap jk <ESC>
+
+" Map last file toggle
+nnoremap kj <C-^>
+vnoremap kj <C-^>
 
 " Use tab to jump between blocks
 nnoremap <tab> %
