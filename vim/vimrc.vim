@@ -78,6 +78,12 @@ endfunction
 
 autocmd BufWinEnter * call CloseNetrw()
 
+" RainbowParentheses
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+
+autocmd FileType * RainbowParentheses
+
 " Set mapleader - ;
 let mapleader = ";"
 
@@ -183,6 +189,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'wincent/vcs-jump'
 Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree'
+Plug 'junegunn/rainbow_parentheses.vim'
 
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
