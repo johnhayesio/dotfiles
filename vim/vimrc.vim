@@ -132,6 +132,10 @@ nnoremap <space>gd :Git diff<CR>
 nnoremap <space>gp :Git push origin --all<CR>
 nnoremap <space>gg :Git push gitlab --all<CR>
 nnoremap <space>ga :Git push gitlab --all<CR>:Git push origin --all<CR>
+nnoremap <space>vd :VcsJump diff
+nnoremap <space>vm :VcsJump merge
+nnoremap <space>vn :cnext<CR>
+nnoremap <space>vp :cprev<CR>
 nnoremap <leader>ff :Prettier<CR>
 nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
 nmap <space>gj <plug>(signify-next-hunk)
