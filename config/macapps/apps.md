@@ -6,6 +6,7 @@ Adobe XD
 Alacritty.app
 Alfred 4.app
 Anki.app
+Around.app
 Audacity.app
 Audio Hijack.app
 BetterTouchTool.app
@@ -16,6 +17,7 @@ CleanMyMac X.app
 CloudApp.app
 Contexts.app
 Cyberduck.app
+Dato.app
 Discord.app
 Electrum.app
 Exodus.app
@@ -25,7 +27,6 @@ Firefox Developer Edition.app
 Firework-ee6387a634e45d8e.app
 Firework.app
 Folx.app
-GitKraken.app
 Google Chrome Canary.app
 Google Chrome.app
 Grammarly for Safari.app
@@ -35,7 +36,6 @@ Headset.app
 Hewlett-Packard
 Icons8.app
 ImageOptim.app
-Jamm.app
 Karabiner-Elements.app
 Karabiner-EventViewer.app
 Keka.app
@@ -81,15 +81,12 @@ SyphonInject.app
 TriggerClientUI.app
 Ukelele.app
 Upwork.app
-Userlytics Recorder.app
 Utilities
 VLC.app
 Vanilla.app
-Vidrio.app
 VirtualBox.app
 Visual Studio Code.app
 Wattagio.app
-Webcam Settings.app
 Webull.app
 Xcode.app
 __MACOSX

@@ -125,6 +125,7 @@ luajit
 lz4
 lzo
 mad
+mailhog
 mas
 meson
 mongodb

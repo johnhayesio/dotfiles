@@ -1,4 +1,4 @@
-/Users/johnhayes/.nvm/versions/node/v12.16.1/lib
+/Users/johnhayes/.nvm/versions/node/v12.16.2/lib
 ├── bitly-client@1.7.2
 ├── caniuse-cmd@1.3.1
 ├── create-react-app@3.4.1
