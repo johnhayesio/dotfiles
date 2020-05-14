@@ -109,10 +109,10 @@ inoremap <leader>x <ESC>:x<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>b :ls<CR>
 nnoremap <leader>n :bn<CR>
-nnoremap <leader>p :bp<CR>
+nnoremap <leader>p :BufOnly<CR>
 nnoremap <leader>hf <ESC>ggVG
 vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
-nnoremap <leader>pc :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
+nnoremap <leader>cp :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
 nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
 nnoremap <leader>= :wincmd =<CR>
 nnoremap <leader>gc :Silent screen -x client<CR>
@@ -258,7 +258,7 @@ command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
 command! Marked silent !open -a "Marked 2.app" "%:p"
 command! RemoveWhite silent! execute "%s/\s\+$//e"
 command! BufOnly silent! execute "%bd|e#|bd#"
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!node_modules" --glob "!.git" --glob "!.meteor" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!node_modules" --glob "!.git" --glob "!.meteor" --glob "!package-lock.json" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Vim autocmd
