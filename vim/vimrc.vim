@@ -121,6 +121,7 @@ nnoremap <leader>= :wincmd =<CR>
 nnoremap <leader>gc :Silent screen -x client<CR>
 nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
+nnoremap <leader>gpv :GV<CR>
 nnoremap <leader>gpb :Git blame<CR>
 nnoremap <leader>gpd :Git diff<CR>
 nnoremap <leader>gpo :Git push origin --all<CR>
