@@ -107,7 +107,7 @@ inoremap <leader>q <ESC>:q!<CR>
 nnoremap <leader>q :q!<CR>
 inoremap <leader>x <ESC>:x<CR>
 nnoremap <leader>x :x<CR>
-nnoremap <leader>l :ls<CR>
+nnoremap <leader>l :Buffers<CR>
 nnoremap <leader>n :bn<CR>
 nnoremap <leader>p :bp<CR>
 nnoremap <leader>d :bd<CR>
