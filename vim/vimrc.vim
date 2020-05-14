@@ -253,6 +253,8 @@ nmap <buffer> <silent>gd <Plug>(coc-definition)
 nmap <buffer> <silent>gy <Plug>(coc-type-definition)
 nmap <buffer> <silent>gi <Plug>(coc-implementation)
 nmap <buffer> <silent>gr <Plug>(coc-references)
+nmap <buffer> <silent>ge <Plug>(coc-diagnostic-next)
+nmap <buffer> <silent>gE <Plug>(coc-diagnostic-next-error)
 nmap <F2> <Plug>(coc-rename)
 nnoremap <buffer> <silent>cr :CocRestart<CR><CR>
 
