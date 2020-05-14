@@ -206,6 +206,7 @@ endfunction
 
 " Coc for all files excluding typescript
 let g:coc_global_extensions = [
+  \ 'coc-explorer',
   \ 'coc-snippets',
   \ 'coc-emmet',
   \ 'coc-tsserver',
@@ -229,7 +230,7 @@ nmap <buffer> <silent>gy <Plug>(coc-type-definition)
 nmap <buffer> <silent>gi <Plug>(coc-implementation)
 nmap <buffer> <silent>gr <Plug>(coc-references)
 nmap <F2> <Plug>(coc-rename)
-nnoremap <buffer> <silent>cr :CocRestart
+nnoremap <buffer> <silent>cr :CocRestart<CR><CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent>gk :call <SID>show_documentation()<CR>
