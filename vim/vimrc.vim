@@ -121,12 +121,16 @@ nnoremap <leader>= :wincmd =<CR>
 nnoremap <leader>gc :Silent screen -x client<CR>
 nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
-nnoremap <leader>gpv :GV<CR>
-nnoremap <leader>gpb :Git blame<CR>
-nnoremap <leader>gpd :Git diff<CR>
-nnoremap <leader>gpo :Git push origin --all<CR>
-nnoremap <leader>gpg :Git push gitlab --all<CR>
-nnoremap <leader>gpa :Git push gitlab --all<CR>:Git push origin --all<CR>
+nnoremap <space>gs :G<CR>
+nnoremap <space>gc :Git commit<CR>
+nnoremap <space>gh :diffget //3<CR>
+nnoremap <space>gl :diffget //2<CR>
+nnoremap <space>gv :GV<CR>
+nnoremap <space>gb :Git blame<CR>
+nnoremap <space>gd :Git diff<CR>
+nnoremap <space>gp :Git push origin --all<CR>
+nnoremap <space>gg :Git push gitlab --all<CR>
+nnoremap <space>ga :Git push gitlab --all<CR>:Git push origin --all<CR>
 nnoremap <leader>ff :Prettier<CR>
 nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
 nmap <space>gj <plug>(signify-next-hunk)
