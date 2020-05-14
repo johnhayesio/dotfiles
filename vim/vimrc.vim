@@ -195,7 +195,7 @@ Plug 'mbbill/undotree'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'shumphrey/fugitive-gitlab'
+Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'junegunn/gv.vim'
 
 Plug 'jparise/vim-graphql' " GraphQL Syntax
