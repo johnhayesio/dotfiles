@@ -113,7 +113,7 @@ nnoremap <leader>p :bp<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>bo :BufOnly<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
-nnoremap <leader>hf <ESC>ggVG
+nnoremap <leader>fh <ESC>ggVG
 vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
 nnoremap <leader>cp :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
 nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
