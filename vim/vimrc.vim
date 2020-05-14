@@ -99,8 +99,8 @@ nnoremap <leader>o :Find<CR>
 vnoremap <leader>o :Find<CR>
 nnoremap <leader>e :Files<CR>
 vnoremap <leader>e :Files<CR>
-nnoremap <leader>v :Vifm<CR>
-nnoremap <leader>d :DiffVifm<CR>
+nnoremap <leader>vi :Vifm<CR>
+nnoremap <leader>vd :DiffVifm<CR>
 inoremap <leader>w <Esc>:w<CR>:echo "Filed saved."<CR>
 nnoremap <leader>w :w<CR>:echo "File saved."<CR>
 inoremap <leader>q <ESC>:q!<CR>
@@ -109,7 +109,10 @@ inoremap <leader>x <ESC>:x<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>b :ls<CR>
 nnoremap <leader>n :bn<CR>
-nnoremap <leader>p :BufOnly<CR>
+nnoremap <leader>p :bp<CR>
+nnoremap <leader>d :bd<CR>
+nnoremap <leader>bo :BufOnly<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>hf <ESC>ggVG
 vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
 nnoremap <leader>cp :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
@@ -173,6 +176,7 @@ Plug 'mkitt/tabline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'wincent/vcs-jump'
 Plug 'tpope/vim-commentary'
+Plug 'mbbill/undotree'
 
 Plug 'jparise/vim-graphql' " GraphQL Syntax
 Plug 'yuezk/vim-js'
