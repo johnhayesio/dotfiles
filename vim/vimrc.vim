@@ -121,7 +121,11 @@ nnoremap <leader>= :wincmd =<CR>
 nnoremap <leader>gc :Silent screen -x client<CR>
 nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
-nnoremap <leader>gp :Git push gitlab --all<CR>:Git push origin --all<CR>
+nnoremap <leader>gpb :Git blame<CR>
+nnoremap <leader>gpd :Git diff<CR>
+nnoremap <leader>gpo :Git push origin --all<CR>
+nnoremap <leader>gpg :Git push gitlab --all<CR>
+nnoremap <leader>gpa :Git push gitlab --all<CR>:Git push origin --all<CR>
 nnoremap <leader>ff :Prettier<CR>
 nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
 nmap <space>gj <plug>(signify-next-hunk)
@@ -167,7 +171,9 @@ set shortmess+=c
 " Always show signcolumns
 set signcolumn=yes
 
-" Enter plugins
+" Gitlab for fugitive GBrowse
+let g:fugitive_gitlab_domains = ['https://my.gitlab.com']
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'drewtempelmeyer/palenight.vim'
@@ -188,6 +194,7 @@ Plug 'mbbill/undotree'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'shumphrey/fugitive-gitlab'
 Plug 'junegunn/gv.vim'
 
 Plug 'jparise/vim-graphql' " GraphQL Syntax
