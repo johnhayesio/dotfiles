@@ -249,12 +249,12 @@ inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <buffer> <silent><expr> <C-space> coc#refresh()
 
 " GoTo code navigation.
-nmap <buffer> <silent>gd <Plug>(coc-definition)
-nmap <buffer> <silent>gy <Plug>(coc-type-definition)
-nmap <buffer> <silent>gi <Plug>(coc-implementation)
-nmap <buffer> <silent>gr <Plug>(coc-references)
-nmap <buffer> <silent>ge <Plug>(coc-diagnostic-next)
-nmap <buffer> <silent>gE <Plug>(coc-diagnostic-next-error)
+nmap <buffer> <leader>gd <Plug>(coc-definition)
+nmap <buffer> <leader>gy <Plug>(coc-type-definition)
+nmap <buffer> <leader>gi <Plug>(coc-implementation)
+nmap <buffer> <leader>gr <Plug>(coc-references)
+nmap <buffer> <leader>ge <Plug>(coc-diagnostic-next-error)
+nmap <buffer> <leader>gE <Plug>(coc-diagnostic-next)
 nmap <F2> <Plug>(coc-rename)
 nnoremap <buffer> <silent>cr :CocRestart<CR><CR>
 
