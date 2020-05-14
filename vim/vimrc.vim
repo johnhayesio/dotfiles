@@ -122,7 +122,7 @@ nnoremap <leader>gc :Silent screen -x client<CR>
 nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
 nnoremap <space>gs :G<CR>
-nnoremap <space>gc :Git commit<CR>
+nnoremap <space>gc :Git commit -v<CR>
 nnoremap <space>gh :diffget //3<CR>
 nnoremap <space>gl :diffget //2<CR>
 nnoremap <space>gv :GV<CR>
