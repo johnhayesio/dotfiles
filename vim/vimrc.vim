@@ -123,6 +123,8 @@ nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
 nnoremap <leader>ff :Prettier<CR>
 nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
+nmap <space>gj <plug>(signify-next-hunk)
+nmap <space>gk <plug>(signify-prev-hunk)
 nnoremap <leader><leader> <C-^>
 vnoremap <leader><leader> <C-^>
 
@@ -131,10 +133,14 @@ nnoremap <leader>m :hi SpellBad cterm=underline,bold ctermfg=red<CR>:echo "Spell
 nnoremap <C-m> :hi clear SpellBad<CR>:echo "Spellcheck turned off."<CR>
 
 " Resize panes easily
-nnoremap <silent> <Right> :vertical resize -5<CR>
 nnoremap <silent> <Left> :vertical resize +5<CR>
-nnoremap <silent> <Up> :vertical resize -5<CR>
-nnoremap <silent> <Down> :vertical resize +5<CR>
+nnoremap <silent> <M-l> :vertical resize +5<CR>
+nnoremap <silent> <Right> :vertical resize -5<CR>
+nnoremap <silent> <M-h> :vertical resize -5<CR>
+nnoremap <silent> <Up> :resize +5<CR>
+nnoremap <silent> <M-k> :resize +5<CR>
+nnoremap <silent> <Down> :resize -5<CR>
+nnoremap <silent> <M-j> :resize -5<CR>
 
 " Use tab to jump between blocks
 nnoremap <tab> %
