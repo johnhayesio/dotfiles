@@ -82,11 +82,11 @@ autocmd BufWinEnter * call CloseNetrw()
 let mapleader = ";"
 
 " Quicker window movement
-nnoremap <leader>j <C-w>j
-nnoremap <leader>k <C-w>k
-nnoremap <leader>h <C-w>h
-nnoremap <leader>l <C-w>l
-nnoremap <leader>? <C-w><C-r>
+nnoremap <space>j <C-w>j
+nnoremap <space>k <C-w>k
+nnoremap <space>h <C-w>h
+nnoremap <space>l <C-w>l
+nnoremap <space>? <C-w><C-r>
 
 " Remap Escape to jk
 inoremap jk <ESC>
@@ -107,11 +107,11 @@ inoremap <leader>q <ESC>:q!<CR>
 nnoremap <leader>q :q!<CR>
 inoremap <leader>x <ESC>:x<CR>
 nnoremap <leader>x :x<CR>
-nnoremap <leader>b :ls<CR>
+nnoremap <leader>l :ls<CR>
 nnoremap <leader>n :bn<CR>
 nnoremap <leader>p :bp<CR>
 nnoremap <leader>d :bd<CR>
-nnoremap <leader>bo :BufOnly<CR>
+nnoremap <leader>b :BufOnly<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>fh <ESC>ggVG
 vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
