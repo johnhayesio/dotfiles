@@ -256,7 +256,7 @@ nmap <buffer> <leader>gr <Plug>(coc-references)
 nmap <buffer> <leader>ge <Plug>(coc-diagnostic-next-error)
 nmap <buffer> <leader>gE <Plug>(coc-diagnostic-next)
 nmap <F2> <Plug>(coc-rename)
-nnoremap <buffer> <silent>cr :CocRestart<CR><CR>
+nnoremap <buffer> <leader>cr :CocRestart<CR><CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent>gk :call <SID>show_documentation()<CR>
