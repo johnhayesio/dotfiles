@@ -121,6 +121,7 @@ nnoremap <leader>= :wincmd =<CR>
 nnoremap <leader>gc :Silent screen -x client<CR>
 nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
+nnoremap <leader>gp :Git push gitlab --all<CR>:Git push origin --all<CR>
 nnoremap <leader>ff :Prettier<CR>
 nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
 nmap <space>gj <plug>(signify-next-hunk)
