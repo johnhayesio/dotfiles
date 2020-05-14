@@ -121,6 +121,7 @@ nnoremap <leader>= :wincmd =<CR>
 nnoremap <leader>gc :Silent screen -x client<CR>
 nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
+nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <space>gs :G<CR>
 nnoremap <space>gc :Git commit -v<CR>
 nnoremap <space>gf :diffget //2<CR>
@@ -253,7 +254,6 @@ nmap <buffer> <leader>gd <Plug>(coc-definition)
 nmap <buffer> <leader>gy <Plug>(coc-type-definition)
 nmap <buffer> <leader>gi <Plug>(coc-implementation)
 nmap <buffer> <leader>gr <Plug>(coc-references)
-nmap <buffer> <leader>ge :CocList diagnostics<CR>
 nmap <F2> <Plug>(coc-rename)
 nnoremap <buffer> <leader>cr :CocRestart<CR><CR>
 
