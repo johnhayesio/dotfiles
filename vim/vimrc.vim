@@ -178,6 +178,11 @@ Plug 'wincent/vcs-jump'
 Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree'
 
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
+
 Plug 'jparise/vim-graphql' " GraphQL Syntax
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
