@@ -78,19 +78,60 @@ endfunction
 
 autocmd BufWinEnter * call CloseNetrw()
 
+" Set mapleader - ;
+let mapleader = ";"
+
 " Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>h <C-w>h
+nnoremap <leader>l <C-w>l
+nnoremap <leader>? <C-w><C-r>
 
 " Remap Escape to jk
 inoremap jk <ESC>
 cnoremap jk <ESC>
 
-" Map last file toggle
-nnoremap kj <C-^>
-vnoremap kj <C-^>
+" Remaps
+nnoremap <leader>r :set ft=javascriptreact<CR>
+vnoremap <leader>r :set ft=javascriptreact<CR>
+nnoremap <leader>o :Find<CR>
+vnoremap <leader>o :Find<CR>
+nnoremap <leader>e :Files<CR>
+vnoremap <leader>e :Files<CR>
+nnoremap <leader>v :Vifm<CR>
+nnoremap <leader>d :DiffVifm<CR>
+inoremap <leader>w <Esc>:w<CR>:echo "Filed saved."<CR>
+nnoremap <leader>w :w<CR>:echo "File saved."<CR>
+inoremap <leader>q <ESC>:q!<CR>
+nnoremap <leader>q :q!<CR>
+inoremap <leader>x <ESC>:x<CR>
+nnoremap <leader>x :x<CR>
+nnoremap <leader>b :ls<CR>
+nnoremap <leader>n :bn<CR>
+nnoremap <leader>p :bp<CR>
+nnoremap <leader>hf <ESC>ggVG
+vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
+nnoremap <leader>pc :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
+nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
+nnoremap <leader>= :wincmd =<CR>
+nnoremap <leader>gc :Silent screen -x client<CR>
+nnoremap <leader>gs :Silent screen -x server<CR>
+nnoremap <leader>gl :Silent lazygit<CR>
+nnoremap <leader>ff :Prettier<CR>
+nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
+nnoremap <leader><leader> <C-^>
+vnoremap <leader><leader> <C-^>
+
+" Spellcheck
+nnoremap <leader>m :hi SpellBad cterm=underline,bold ctermfg=red<CR>:echo "Spellcheck turned on."<CR>
+nnoremap <C-m> :hi clear SpellBad<CR>:echo "Spellcheck turned off."<CR>
+
+" Resize panes easily
+nnoremap <silent> <Right> :vertical resize -5<CR>
+nnoremap <silent> <Left> :vertical resize +5<CR>
+nnoremap <silent> <Up> :vertical resize -5<CR>
+nnoremap <silent> <Down> :vertical resize +5<CR>
 
 " Use tab to jump between blocks
 nnoremap <tab> %
@@ -106,13 +147,6 @@ set mouse=a
 " Save text folding
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
-
-" Resize panes easily
-nnoremap <silent> <Right> :vertical resize -5<CR>
-nnoremap <silent> <Left> :vertical resize +5<CR>
-nnoremap <silent> <Up> :vertical resize -5<CR>
-nnoremap <silent> <Down> :vertical resize +5<CR>
-
 
 " Default 4000 leads to noticeable delays and poor user experience
 set updatetime=50
@@ -194,7 +228,7 @@ nmap <F2> <Plug>(coc-rename)
 nnoremap <buffer> <silent>cr :CocRestart
 
 " Use K to show documentation in preview window
-nnoremap <silent> gk :call <SID>show_documentation()<CR>
+nnoremap <silent>gk :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -219,18 +253,12 @@ fun! TrimWhitespace()
   call winrestview(l:save)
 endfun
 
-" Short commands
-nnoremap <silent>gs :Silent screen -x server<CR>
-
 " Vim commands
 command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
 command! Marked silent !open -a "Marked 2.app" "%:p"
 command! RemoveWhite silent! execute "%s/\s\+$//e"
 command! BufOnly silent! execute "%bd|e#|bd#"
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!node_modules" --glob "!.git" --glob "!.meteor" --color "always" '.shellescape(<q-args>), 1, <bang>0)
-
-" Format files with Prettier
-nnoremap <silent>gq :Prettier<CR>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Vim autocmd
