@@ -31,10 +31,12 @@ alias repo="~/dotfiles/bash/repo"
 # Config Files
 alias tmx="vim ~/dotfiles/tmux/tmux.conf"
 alias vimrc="vim ~/dotfiles/vim/vimrc.vim"
+alias nvimrc="nvim ~/.config/nvim/init.vim"
 alias zshrc="vim ~/dotfiles/zsh/zshrc.sh"
 alias skhdrc="vim ~/.skhdrc"
 alias chunkwmrc="vim ~/.chunkwmrc"
 alias aliasrc="vim ~/dotfiles/bash/aliasrc"
+alias naliasrc="nvim ~/dotfiles/bash/aliasrc"
 
 # List
 alias l="ls -lFh"
@@ -64,10 +66,15 @@ alias t3="~/dotfiles/tmux/tmuxpane3"
 
 # VIM
 alias v="vim -p"
+alias nv="nvim -p"
 alias sv="sudo vim -p"
+alias nsv="sudo nvim -p"
 alias vcp="vim +PlugClean +qall"
+alias nvcp="nvim +PlugClean +qall"
 alias vip="vim +PlugInstall +qall"
+alias nvip="nvim +PlugInstall +qall"
 alias vup="vim +PlugUpdate"
+alias nvup="nvim +PlugUpdate"
 
 # References
 alias mrgx="perldoc perlreref"
