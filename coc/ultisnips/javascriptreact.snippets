@@ -1,0 +1,197 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet cl "console.log()" b
+console.log($1);
+endsnippet
+
+snippet ipt "import PropTypes" b
+import PropTypes from "prop-types";
+endsnippet
+
+snippet isc "import styled-components" b
+import styled from "styled-components";
+endsnippet
+
+snippet msp "mapStateToProps" b
+const mapStateToProps = state => ({
+	key: state
+});
+endsnippet
+
+snippet rfc "Functional component export (no props)" b
+import React from "react";
+
+const ${1:`!v expand('%:t:r')`} = () => {
+	return (
+		<div>
+			<h1>${1:`!v expand('%:t:r')`}</h1>
+		</div>
+	)
+};
+
+export default $1;
+endsnippet
+
+snippet rfcp "Functional component export (propTypes)" b
+import React from "react";
+import PropTypes from "prop-types";
+
+const ${1:`!v expand('%:t:r')`} = props => {
+	return (
+		<div>
+			<h1>${1:`!v expand('%:t:r')`}</h1>
+		</div>
+	)
+};
+
+${1:`!v expand('%:t:r')`}.propTypes = {
+	key: value
+}
+
+export default $1;
+endsnippet
+
+snippet rrfc "React/Redux functional component (no-props)" b
+import React from "react";
+import {connect} from "react-redux";
+
+const ${1:`!v expand('%:t:r')`} = () => {
+	return (
+		<div>
+			<h1>${1:`!v expand('%:t:r')`}</h1>
+		</div>
+	)
+};
+
+const mapStateToProps = (state) => {
+	key: state
+}
+
+export default connect(mapStateToProps)($1);
+endsnippet
+
+snippet rrfcp "React/Redux functional component (propTypes)" b
+import React from "react";
+import {connect} from "react-redux";
+import PropTypes from "prop-types";
+
+const ${1:`!v expand('%:t:r')`} = () => {
+	return (
+		<div>
+			<h1>${1:`!v expand('%:t:r')`}</h1>
+		</div>
+	)
+};
+
+${1:`!v expand('%:t:r')`}.propTypes = {
+	key: value
+}
+
+const mapStateToProps = (state) => {
+	key: state
+}
+
+export default connect(mapStateToProps)($1);
+endsnippet
+
+snippet pp "Get Props"
+${props => props.${1}};
+endsnippet
+
+snippet cn "className"
+className="$1"
+endsnippet
+
+snippet pt "PropTypes Definition" b
+${1:`!v expand('%:t:r')`.}propTypes = {
+	${2:className}: ${3:PropTypes.string},
+};
+endsnippet
+
+snippet pt.a "PropTypes Array" w
+PropTypes.array${1:,}
+endsnippet
+
+snippet pt.ar "PropTypes Array Required" w
+PropTypes.array.isRequired${1:,}
+endsnippet
+
+snippet pt.b "PropTypes Boolean" w
+PropTypes.bool${1:,}
+endsnippet
+
+snippet pt.br "PropTypes Boolean Required" w
+PropTypes.bool.isRequired${1:,}
+endsnippet
+
+snippet pt.f "PropTypes Function" w
+PropTypes.func${1:,}
+endsnippet
+
+snippet pt.fr "PropTypes Function Required" w
+PropTypes.func.isRequired${1:,}
+endsnippet
+
+snippet pt.n "PropTypes Number" w
+PropTypes.number${1:,}
+endsnippet
+
+snippet pt.nr "PropTypes Number Required" w
+PropTypes.number.isRequired${1:,}
+endsnippet
+
+snippet pt.o "PropTypes Object" w
+PropTypes.object${1:,}
+endsnippet
+
+snippet pt.or "PropTypes Object Required" w
+PropTypes.object.isRequired${1:,}
+endsnippet
+
+snippet pt.s "PropType String" w
+PropTypes.string${1:,}
+endsnippet
+
+snippet pt.sr "PropType String Required" w
+PropTypes.string.isRequired${1:,}
+endsnippet
+
+snippet pt.no "PropTypes Node" w
+PropTypes.node${1:,}
+endsnippet
+
+snippet pt.nor "PropTypes Node Required" w
+PropTypes.node.isRequired${1:,}
+endsnippet
+
+snippet pt.e "PropTypes Element" w
+PropTypes.element${1:,}
+endsnippet
+
+snippet pt.er "PropTypes Element Required" w
+PropTypes.element.isRequired${1:,}
+endsnippet
