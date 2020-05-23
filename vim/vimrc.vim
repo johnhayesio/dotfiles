@@ -123,6 +123,7 @@ nnoremap <leader>gs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <space>gs :G<CR>
+nnoremap <space>gr :Git! diff --staged<CR>
 nnoremap <space>gc :Git commit -v<CR>
 nnoremap <space>gf :diffget //2<CR>
 nnoremap <space>gh :diffget //3<CR>
