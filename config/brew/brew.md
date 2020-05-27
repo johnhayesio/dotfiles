@@ -13,7 +13,6 @@ broot
 cairo
 calcurse
 cask
-chunkwm
 cmake
 ctags
 curl
@@ -32,6 +31,7 @@ ffmpeg
 findutils
 flac
 fontconfig
+fontforge
 freetype
 frei0r
 fribidi
@@ -49,6 +49,7 @@ git-filter-repo
 git-standup
 glib
 gmp
+gnu-getopt
 gnu-sed
 gnutls
 gobject-introspection
@@ -105,11 +106,13 @@ librsvg
 libsamplerate
 libsndfile
 libsoxr
+libspiro
 libstfl
 libtasn1
 libtermkey
 libtiff
 libtool
+libuninameslist
 libunistring
 libuv
 libvidstab
@@ -119,6 +122,7 @@ libvterm
 libyaml
 libzip
 little-cms2
+lsd
 lua
 lua@5.1
 luajit
@@ -140,6 +144,7 @@ mycli
 nasm
 ncurses
 neofetch
+neovim
 nettle
 newsboat
 ninja
@@ -185,7 +190,6 @@ screen
 screenresolution
 sdl2
 shared-mime-info
-skhd
 snappy
 socat
 source-highlight
@@ -193,6 +197,8 @@ speedtest
 speex
 sphinx-doc
 sqlite
+srt
+terminal-notifier
 tesseract
 texi2html
 thefuck
@@ -215,6 +221,7 @@ wget
 wifi-password
 x264
 x265
+xmlto
 xvid
 xz
 yarn
