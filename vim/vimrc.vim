@@ -42,7 +42,7 @@ set cmdheight=2 " Give more space for displaying messages
 set updatetime=50 " Shorter update time
 set shortmess+=c " Don't pass messages to ins-completion-menu
 set laststatus=2 " Always display status bar
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
 call plug#begin('~/.vim/plugged')
 
