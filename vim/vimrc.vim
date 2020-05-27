@@ -101,7 +101,7 @@ nnoremap <leader>w :w<CR>:echo "File saved."<CR>
 nnoremap <leader>q :q!<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>r :set ft=javascriptreact<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pf :Find<CR>
 nnoremap <leader>pr :Rg<SPACE>
@@ -145,10 +145,11 @@ inoremap jk <ESC>
 cnoremap jk <ESC>
 
 " Netrw Config
-let g:netrw_browse_split = 2
-let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
-let g:netrw_winsize = 25
+let g:netrw_liststyle = 1
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
 
 function! CloseNetrw()
   let i = bufnr("$")
