@@ -21,7 +21,6 @@ neofetch
 
 # Scripts
   source ~/dotfiles/bash/scripts
-  source $(dirname $(gem which colorls))/tab_complete.sh
 
 # For vim mappings:
 	stty -ixon
