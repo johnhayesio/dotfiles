@@ -1,70 +1,154 @@
-" Enter the current millenium
-set nocompatible
+syntax on " Enable syntax highlighting
+filetype plugin indent on " Enable indenting for files
 
-" Enable syntax and plugins
-syntax on
-filetype plugin indent on
-let g:sneak#label = 1
+set nocompatible " Use vim settings, not vi settings
+set termguicolors " Enable true color support
+set number " Enable line numbers
+set relativenumber " Enable relative numbers
+set hidden " Manage multiple buffers effectively
+set autoindent " Enable auto-indenting
+set softtabstop=2 " Indent by 2 spaces using tab
+set shiftwidth=2 " Indent by 2 spaces when auto-indenting
+set tabstop=2 " Show existing tab with 2 spaces
+set expandtab " On pressing tab, insert 4 spaces
+set backspace=indent,eol,start " Allow backspacing
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir " Set undo history directory
+set noswapfile " Disable swap files
+set nobackup " Disable backup files
+set nowritebackup " Disable backup files during writing
+set incsearch " Find the next match while typing search
+set nohlsearch " Disable search highlighting
+set noshowmatch " Disable match bracket highlighting
+set wrap " Wrap words visually
+set linebreak " Wrap only at breakat options
+set smartcase " Ignore case while searching unless typing a capital letter
+set history=1000 " Set larger history for executed commands
+set noerrorbells " Disable beep on errors
+set encoding=utf-8 " Use Unicode support
+set mouse=a " Enable mouse for scrolling and resizing
+set path+=** " Search current and all subdirectories using find command
+set wildignore=*/node_modules/*,*.git* " Ignore node_modules and git directories using find command
+set wildmenu " Display command line's tab as a menu
+set wildmode=longest:full,full " Set wildmenu mode to full name
+set completeopt+=menuone,noinsert,noselect,preview " Set options for autocompletion
+set splitbelow " Split panes to the bottom when opening
+set splitright " Split panes to the right when opening
+set winwidth=110 " Resize splits to active splits
+set winheight=999 " Resize splits to active splits
+set winminwidth=5 " Resize splits to active splits
+set winminheight=5 " Resize splits to active splits
+set cmdheight=2 " Give more space for displaying messages
+set updatetime=50 " Shorter update time
+set shortmess+=c " Don't pass messages to ins-completion-menu
+set laststatus=2 " Always display status bar
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 
-" Vim general settings
-set hidden
-set backspace=indent,eol,start
-set autoindent
-set dir=/tmp/
-set nobackup
-set nowritebackup
-set encoding=UTF-8
-set showcmd
+call plug#begin('~/.vim/plugged')
 
-" Find files by name
-set path+=**
-set wildignore=*/node_modules/*,*.git*
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jremmen/vim-ripgrep'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+Plug 'vim-utils/vim-man'
+Plug 'mbbill/undotree'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'wakatime/vim-wakatime'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug '/usr/local/opt/fzf'
 
-" Numbers
-set relativenumber
-set numberwidth=5
+Plug 'drewtempelmeyer/palenight.vim'
 
-" Enable autocompletion
-set wildmenu
-set wildmode=longest:full,full
-set completeopt+=menuone,noinsert,noselect,preview
+call plug#end()
 
-" Softtabs, 2 spaces
-set smartindent
-set tabstop=2
-set shiftwidth=2
-set shiftround
-set expandtab
-set linebreak
+" --- vim go (polyglot) settings.
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_generate_tags = 1
+let g:go_highlight_format_strings = 1
+let g:go_highlight_variable_declarations = 1
+let g:go_auto_sameids = 1
 
-" Set defaults
-set history=1000
-set undolevels=1000
-set noerrorbells
+colorscheme palenight
+let g:palenight_terminal_italics=1
+set background=dark
 
-" Open new split panes to right and bottom
-set splitbelow
-set splitright
+if executable('rg')
+    let g:rg_derive_root='true'
+endif
 
-" Auto resize Vim splits to active split
-set winwidth=110
-set winheight=999
-set winminwidth=5
-set winminheight=5
+let loaded_matchparen = 1
+let mapleader = ";"
 
-" Make search better
-set ignorecase
-set smartcase
-set hlsearch
-set incsearch
-set showmatch
+" Custom mappings
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <leader>w :w<CR>:echo "File saved."<CR>
+nnoremap <leader>q :q!<CR>
+nnoremap <leader>x :x<CR>
+nnoremap <leader>r :set ft=javascriptreact<CR>
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+nnoremap <leader>pe :Files<CR>
+nnoremap <leader>pf :Find<CR>
+nnoremap <leader>pr :Rg<SPACE>
+nnoremap <leader>gc :Silent screen -x client<CR>
+nnoremap <leader>gs :Silent screen -x server<CR>
+nnoremap <leader>gl :Silent lazygit<CR>
+nnoremap <leader>ge :CocList diagnostics<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
+nnoremap <leader>= :wincmd =<CR>
+nnoremap <silent> <Left> :vertical resize +5<CR>
+nnoremap <silent> <Right> :vertical resize -5<CR>
+nnoremap <silent> <Up> :resize +5<CR>
+nnoremap <silent> <Down> :resize -5<CR>
+nnoremap <leader><leader> <C-^>
+nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
+nnoremap <tab> %
+nnoremap <leader>c* *Ncgn
+nnoremap <leader>cp :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
+nnoremap <space>gs :G<CR>
+nnoremap <space>gr :Git! diff --staged<CR>
+nnoremap <space>gc :Git commit -v<CR>
+nnoremap <space>gf :diffget //2<CR>
+nnoremap <space>gh :diffget //3<CR>
+nnoremap <space>gv :GV<CR>
+nnoremap <space>gb :Git blame<CR>
+nnoremap <space>gd :Git diff<CR>
+nnoremap <space>gp :Git push origin --all<CR>
+nnoremap <space>gg :Git push gitlab --all<CR>
+nnoremap <space>ga :Git push gitlab --all<CR>:Git push origin --all<CR>
 
-" Netrw settings
+vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
+vnoremap <tab> %
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+vnoremap X "_d
+
+inoremap <C-c> <esc>
+inoremap jk <ESC>
+
+cnoremap jk <ESC>
+
+" Netrw Config
+let g:netrw_browse_split = 2
+let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
-let g:netrw_liststyle = 1
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 15
+let g:netrw_winsize = 25
 
 function! CloseNetrw()
   let i = bufnr("$")
@@ -78,163 +162,12 @@ endfunction
 
 autocmd BufWinEnter * call CloseNetrw()
 
-" Set mapleader - ;
-let mapleader = ";"
-
-" Quicker window movement
-nnoremap <space>j <C-w>j
-nnoremap <space>k <C-w>k
-nnoremap <space>h <C-w>h
-nnoremap <space>l <C-w>l
-nnoremap <space>? <C-w><C-r>
-
-" Remap Escape to jk
-inoremap jk <ESC>
-cnoremap jk <ESC>
-
-" Remaps
-nnoremap <leader>r :set ft=javascriptreact<CR>
-vnoremap <leader>r :set ft=javascriptreact<CR>
-nnoremap <leader>o :Find<CR>
-vnoremap <leader>o :Find<CR>
-nnoremap <leader>e :Files<CR>
-vnoremap <leader>e :Files<CR>
-nnoremap <leader>vi :Vifm<CR>
-nnoremap <leader>vd :DiffVifm<CR>
-inoremap <leader>w <Esc>:w<CR>:echo "Filed saved."<CR>
-nnoremap <leader>w :w<CR>:echo "File saved."<CR>
-inoremap <leader>q <ESC>:q!<CR>
-nnoremap <leader>q :q!<CR>
-inoremap <leader>x <ESC>:x<CR>
-nnoremap <leader>x :x<CR>
-nnoremap <leader>l :Buffers<CR>
-nnoremap <leader>n :bn<CR>
-nnoremap <leader>p :bp<CR>
-nnoremap <leader>d :bd<CR>
-nnoremap <leader>b :BufOnly<CR>
-nnoremap <leader>u :UndotreeToggle<CR>
-nnoremap <leader>fh <ESC>ggVG
-vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
-nnoremap <leader>cp :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
-nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
-nnoremap <leader>= :wincmd =<CR>
-nnoremap <leader>gc :Silent screen -x client<CR>
-nnoremap <leader>gs :Silent screen -x server<CR>
-nnoremap <leader>gl :Silent lazygit<CR>
-nnoremap <leader>ge :CocList diagnostics<CR>
-nnoremap <space>gs :G<CR>
-nnoremap <space>gr :Git! diff --staged<CR>
-nnoremap <space>gc :Git commit -v<CR>
-nnoremap <space>gf :diffget //2<CR>
-nnoremap <space>gh :diffget //3<CR>
-nnoremap <space>gv :GV<CR>
-nnoremap <space>gb :Git blame<CR>
-nnoremap <space>gd :Git diff<CR>
-nnoremap <space>gp :Git push origin --all<CR>
-nnoremap <space>gg :Git push gitlab --all<CR>
-nnoremap <space>ga :Git push gitlab --all<CR>:Git push origin --all<CR>
-nnoremap <space>vd :VcsJump diff
-nnoremap <space>vm :VcsJump merge
-nnoremap <space>vn :cnext<CR>
-nnoremap <space>vp :cprev<CR>
-nnoremap <leader>ff :Prettier<CR>
-nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
-nmap <space>gj <plug>(signify-next-hunk)
-nmap <space>gk <plug>(signify-prev-hunk)
-nnoremap <leader><leader> <C-^>
-vnoremap <leader><leader> <C-^>
-
-" Spellcheck
-nnoremap <leader>m :hi SpellBad cterm=underline,bold ctermfg=red<CR>:echo "Spellcheck turned on."<CR>
-nnoremap <C-m> :hi clear SpellBad<CR>:echo "Spellcheck turned off."<CR>
-
-" Resize panes easily
-nnoremap <silent> <Left> :vertical resize +5<CR>
-nnoremap <silent> <M-l> :vertical resize +5<CR>
-nnoremap <silent> <Right> :vertical resize -5<CR>
-nnoremap <silent> <M-h> :vertical resize -5<CR>
-nnoremap <silent> <Up> :resize +5<CR>
-nnoremap <silent> <M-k> :resize +5<CR>
-nnoremap <silent> <Down> :resize -5<CR>
-nnoremap <silent> <M-j> :resize -5<CR>
-
-" Use tab to jump between blocks
-nnoremap <tab> %
-vnoremap <tab> %
-
-" Always use vertical diffs
-set diffopt+=vertical
-
-" Allow mouse usage
-set ttyfast
-set mouse=a
-
-" Save text folding
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
-
-" Default 4000 leads to noticeable delays and poor user experience
-set updatetime=50
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
-" Always show signcolumns
-set signcolumn=yes
-
-" Gitlab for fugitive GBrowse
-let g:fugitive_gitlab_domains = ['https://my.gitlab.com']
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'bling/vim-airline'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'wakatime/vim-wakatime'
-Plug 'vifm/vifm.vim'
-Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
-Plug 'mkitt/tabline.vim'
-Plug 'justinmk/vim-sneak'
-Plug 'wincent/vcs-jump'
-Plug 'tpope/vim-commentary'
-Plug 'mbbill/undotree'
-
-Plug 'mhinz/vim-signify'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'shumphrey/fugitive-gitlab.vim'
-Plug 'junegunn/gv.vim'
-
-Plug 'jparise/vim-graphql' " GraphQL Syntax
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-
-call plug#end()
-
-set background=dark
-set term=xterm-256color
-set termguicolors
-set t_Co=256
-let g:palenight_terminal_italics=1
-let g:airline_theme="palenight"
-colorscheme palenight
-set guifont=Dank\ Mono
-highlight Normal ctermbg=none
-highlight Comment cterm=italic
-highlight Search cterm=underline,bold ctermfg=red
-highlight Folded cterm=bold ctermfg=lightblue
-
-" Coc config
+" Coc Config
 function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Coc for all files excluding typescript
 let g:coc_global_extensions = [
   \ 'coc-explorer',
   \ 'coc-snippets',
@@ -281,15 +214,14 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" Explorer
 nmap <space>e :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
-" Trim whitespace pre-save
+" Trim whitespace on save
 fun! TrimWhitespace()
-  let l:save = winsaveview()
-  keeppatterns %s/\s\+$//e
-  call winrestview(l:save)
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
 endfun
 
 " Vim commands
@@ -302,3 +234,5 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Vim autocmd
 autocmd BufWritePre * :call TrimWhitespace()
+autocmd BufWinEnter *.* silent loadview
+autocmd BufWinLeave *.* mkview
