@@ -1,4 +1,4 @@
-neofetch
+pfetch
 
 # Vars
 	HISTFILE=~/.zsh_history
