@@ -89,7 +89,7 @@ if executable('rg')
 endif
 
 let loaded_matchparen = 1
-let mapleader = ";"
+let mapleader = " "
 
 " Custom mappings
 nnoremap <leader>h :wincmd h<CR>
@@ -105,10 +105,15 @@ nnoremap <leader>pv :Vex<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pf :Find<CR>
 nnoremap <leader>pr :Rg<SPACE>
-nnoremap <leader>gc :Silent screen -x client<CR>
-nnoremap <leader>gs :Silent screen -x server<CR>
+nnoremap <leader>gxc :Silent screen -x client<CR>
+nnoremap <leader>gxs :Silent screen -x server<CR>
 nnoremap <leader>gl :Silent lazygit<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
+nnoremap <leader>gf :diffget //2<CR>
+nnoremap <leader>gh :diffget //3<CR>
+nnoremap <leader>gp :Git push origin --all<CR>
+nnoremap <leader>gg :Git push gitlab --all<CR>
+nnoremap <leader>ga :Git push gitlab --all<CR>:Git push origin --all<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <leader>- :wincmd _<CR>:wincmd \|<CR>
 nnoremap <leader>= :wincmd =<CR>
@@ -121,17 +126,6 @@ nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
 nnoremap <tab> %
 nnoremap <leader>c* *Ncgn
 nnoremap <leader>cp :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
-nnoremap <space>gs :G<CR>
-nnoremap <space>gr :Git! diff --staged<CR>
-nnoremap <space>gc :Git commit -v<CR>
-nnoremap <space>gf :diffget //2<CR>
-nnoremap <space>gh :diffget //3<CR>
-nnoremap <space>gv :GV<CR>
-nnoremap <space>gb :Git blame<CR>
-nnoremap <space>gd :Git diff<CR>
-nnoremap <space>gp :Git push origin --all<CR>
-nnoremap <space>gg :Git push gitlab --all<CR>
-nnoremap <space>ga :Git push gitlab --all<CR>:Git push origin --all<CR>
 
 vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
 vnoremap <tab> %
@@ -173,6 +167,7 @@ let g:coc_global_extensions = [
   \ 'coc-explorer',
   \ 'coc-snippets',
   \ 'coc-emmet',
+  \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint',
   \ 'coc-prettier',
