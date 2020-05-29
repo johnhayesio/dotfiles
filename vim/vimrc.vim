@@ -20,6 +20,7 @@ set nowritebackup " Disable backup files during writing
 set incsearch " Find the next match while typing search
 set nohlsearch " Disable search highlighting
 set noshowmatch " Disable match bracket highlighting
+set noshowmode " Disable mode when using lightline
 set wrap " Wrap words visually
 set linebreak " Wrap only at breakat options
 set smartcase " Ignore case while searching unless typing a capital letter
@@ -38,11 +39,12 @@ set winwidth=110 " Resize splits to active splits
 set winheight=999 " Resize splits to active splits
 set winminwidth=5 " Resize splits to active splits
 set winminheight=5 " Resize splits to active splits
-set cmdheight=2 " Give more space for displaying messages
+" set cmdheight=2 " Give more space for displaying messages
 set updatetime=50 " Shorter update time
 set shortmess+=c " Don't pass messages to ins-completion-menu
+set signcolumn=yes " Always show signcolumn
 set laststatus=2 " Always display status bar
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
+" set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 
 call plug#begin('~/.vim/plugged')
 
@@ -61,6 +63,7 @@ Plug 'junegunn/fzf.vim'
 Plug '/usr/local/opt/fzf'
 
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -79,6 +82,31 @@ let g:go_highlight_generate_tags = 1
 let g:go_highlight_format_strings = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_auto_sameids = 1
+
+" --- lightline settings
+let g:lightline = {
+  \ 'colorscheme': 'ayu_mirage',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead'
+    \ },
+  \ 'mode_map': {
+    \ 'n' : 'N',
+    \ 'i' : 'I',
+    \ 'R' : 'R',
+    \ 'v' : 'V',
+    \ 'V' : 'VL',
+    \ "\<C-v>": 'VB',
+    \ 'c' : 'C',
+    \ 's' : 'S',
+    \ 'S' : 'SL',
+    \ "\<C-s>": 'SB',
+    \ 't': 'T',
+    \ },
+  \ }
 
 colorscheme palenight
 let g:palenight_terminal_italics=1
@@ -125,6 +153,7 @@ nnoremap <leader><leader> <C-^>
 nnoremap <leader>, :noh<CR>:echo "Search Cleared"<CR>
 nnoremap <tab> %
 nnoremap <leader>c* *Ncgn
+nnoremap <leader>c# #Ncgn
 nnoremap <leader>cp :r !pbpaste<CR><CR>:echo "Text pasted from clipboard."<CR>
 
 vnoremap <leader>cc :w !pbcopy<CR><CR>:echo "Text copied to clipboard."<CR>
