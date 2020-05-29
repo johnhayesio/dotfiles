@@ -85,13 +85,23 @@ let g:go_auto_sameids = 1
 
 " --- lightline settings
 let g:lightline = {
-  \ 'colorscheme': 'ayu_mirage',
+  \ 'colorscheme': 'palenight',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+    \   'right': [ [ 'coc_error', 'coc_warning', 'coc_hint', 'coc_info', 'lineinfo' ],
+    \              [ 'percent' ],
+    \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
     \ },
     \ 'component_function': {
     \   'gitbranch': 'FugitiveHead'
+    \ },
+    \ 'component_expand': {
+    \   'coc_error'        : 'LightlineCocErrors',
+    \   'coc_warning'      : 'LightlineCocWarnings',
+    \   'coc_info'         : 'LightlineCocInfos',
+    \   'coc_hint'         : 'LightlineCocHints',
+    \   'coc_fix'          : 'LightlineCocFixes',
     \ },
   \ 'mode_map': {
     \ 'n' : 'N',
@@ -105,8 +115,37 @@ let g:lightline = {
     \ 'S' : 'SL',
     \ "\<C-s>": 'SB',
     \ 't': 'T',
-    \ },
-  \ }
+  \ },
+\ }
+
+let g:lightline.component_type = {
+  \   'coc_error'        : 'error',
+  \   'coc_warning'      : 'warning',
+  \   'coc_info'         : 'tabsel',
+  \   'coc_hint'         : 'middle',
+  \   'coc_fix'          : 'middle',
+\ }
+
+function! s:lightline_coc_diagnostic(kind, sign) abort
+  let info = get(b:, 'coc_diagnostic_info', 0)
+  if empty(info) || get(info, a:kind, 0) == 0
+    return ''
+  endif
+  return printf('%d', info[a:kind])
+endfunction
+
+function! LightlineCocErrors() abort
+  return s:lightline_coc_diagnostic('error', 'E')
+endfunction
+function! LightlineCocWarnings() abort
+  return s:lightline_coc_diagnostic('warning', 'W')
+endfunction
+function! LightlineCocInfos() abort
+  return s:lightline_coc_diagnostic('information', 'I')
+endfunction
+function! LightlineCocHints() abort
+  return s:lightline_coc_diagnostic('hints', 'H')
+endfunction
 
 colorscheme palenight
 let g:palenight_terminal_italics=1
@@ -261,3 +300,4 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd BufWinEnter *.* silent loadview
 autocmd BufWinLeave *.* mkview
+autocmd User CocDiagnosticChange call lightline#update()
