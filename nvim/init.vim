@@ -127,6 +127,9 @@ nnoremap <leader>gxs :Silent screen -x server<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
+nnoremap <silent> <leader>gap :Git push origin --all<CR>
+nnoremap <silent> <leader>gag :Git push gitlab --all<CR>
+nnoremap <silent> <leader>gar :Git push gitlab --all<CR>:Git push origin --all<CR>
 nnoremap <leader><leader> <C-^>
 nnoremap <silent> <Left> :vertical resize +5<CR>
 nnoremap <silent> <Right> :vertical resize -5<CR>
