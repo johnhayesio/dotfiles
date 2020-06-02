@@ -93,6 +93,7 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'junegunn/fzf.vim'
 
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'arcticicestudio/nord-vim'
 
 Plug 'ThePrimeagen/vim-be-good'
 
@@ -114,8 +115,11 @@ let g:go_highlight_format_strings = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_auto_sameids = 1
 
-colorscheme palenight
-let g:palenight_terminal_italics=1
+" colorscheme palenight
+" let g:palenight_terminal_italics = 1
+colorscheme nord
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
 set background=dark
 
 if executable('rg')
