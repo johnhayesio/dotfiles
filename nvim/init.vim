@@ -73,7 +73,7 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=%#Directory#
+set statusline+=%#WildMenu#
 set statusline+=\ %{StatusDiagnostic()}
 
 call plug#begin('~/.config/nvim/plugged')
