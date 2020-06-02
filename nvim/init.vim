@@ -143,10 +143,10 @@ nnoremap <leader>gxs :term screen -x server<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
+nnoremap <leader><leader> <C-^>
 nnoremap <silent> <leader>gap :Git push origin --all<CR>:echo "Github push complete"<CR>
 nnoremap <silent> <leader>gag :Git push gitlab --all<CR>:echo "Gitlab push complete"<CR>
 nnoremap <silent> <leader>gar :Git push gitlab --all<CR>:Git push origin --all<CR>:echo "Gitlab/Github push complete"<CR>
-nnoremap <leader><leader> <C-^>
 nnoremap <silent> <Left> :vertical resize +10<CR>
 nnoremap <silent> <Right> :vertical resize -10<CR>
 
