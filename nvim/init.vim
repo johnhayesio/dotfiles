@@ -31,6 +31,8 @@ set path+=** " Search current and all subdirectories using find command
 set wildignore=*/node_modules/*,*.git* " Ignore node_modules and git directories using find command
 set wildmenu " Display command line's tab as a menu
 set wildmode=longest:full,full " Set wildmenu mode to full name
+set splitbelow " Split panes to the bottom when opening
+set splitright " Split panes to the right when opening
 set cmdheight=2 " Give more space for displaying messages
 set updatetime=50 " Shorter update time
 set shortmess+=c " Don't pass messages to ins-completion-menu
@@ -127,9 +129,6 @@ nnoremap <leader>gxs :Silent screen -x server<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
-nnoremap <silent> <leader>gap :Git push origin --all<CR>
-nnoremap <silent> <leader>gag :Git push gitlab --all<CR>
-nnoremap <silent> <leader>gar :Git push gitlab --all<CR>:Git push origin --all<CR>
 nnoremap <leader><leader> <C-^>
 nnoremap <silent> <Left> :vertical resize +5<CR>
 nnoremap <silent> <Right> :vertical resize -5<CR>
