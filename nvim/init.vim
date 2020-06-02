@@ -124,14 +124,14 @@ nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>r :set ft=javascriptreact<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pr :Rg<SPACE>
-nnoremap <leader>gxc :Silent screen -x client<CR>
-nnoremap <leader>gxs :Silent screen -x server<CR>
+nnoremap <leader>gxc :term screen -x client<CR>
+nnoremap <leader>gxs :term screen -x server<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
-nnoremap <leader>gap :Git push origin --all<CR>
-nnoremap <leader>gag :Git push gitlab --all<CR>
-nnoremap <leader>gar :Git push gitlab --all<CR>:Git push origin --all<CR>
+nnoremap <leader>gap :Git push origin --all<CR>:echo "Github pushed"<CR>
+nnoremap <leader>gag :Git push gitlab --all<CR>:echo "Gitlab pushed"<CR>
+nnoremap <leader>gar :Git push gitlab --all<CR>:Git push origin --all<CR>:echo "Gitlab/Github pushed"<CR>
 nnoremap <leader><leader> <C-^>
 nnoremap <silent> <Left> :vertical resize +5<CR>
 nnoremap <silent> <Right> :vertical resize -5<CR>
@@ -190,10 +190,6 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
-
-"Vim commands
-command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
-command! Marked silent !open -a "Marked 2.app" "%:p"
 
 " Vim autocmd
 autocmd BufWritePre * :call TrimWhitespace()
