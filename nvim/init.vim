@@ -33,7 +33,6 @@ set wildmenu " Display command line's tab as a menu
 set wildmode=longest:full,full " Set wildmenu mode to full name
 set splitbelow " Split panes to the bottom when opening
 set splitright " Split panes to the right when opening
-set cmdheight=2 " Give more space for displaying messages
 set updatetime=50 " Shorter update time
 set shortmess+=c " Don't pass messages to ins-completion-menu
 set laststatus=2 " Always display status bar
@@ -145,6 +144,11 @@ inoremap jk <ESC>
 
 cnoremap jk <ESC>
 
+tnoremap <ESC> <C-\><C-n><C-w>h
+tnoremap <ESC> <C-\><C-n><C-w>j
+tnoremap <ESC> <C-\><C-n><C-w>k
+tnoremap <ESC> <C-\><C-n><C-w>l
+
 " Coc Config
 function! s:check_back_space() abort
     let col = col('.') - 1
@@ -192,4 +196,13 @@ fun! TrimWhitespace()
 endfun
 
 " Vim autocmd
+augroup toggle_relative_number
+  au!
+  autocmd InsertEnter * :setlocal norelativenumber
+  autocmd InsertLeave * :setlocal relativenumber
+augroup END
+augroup TerminalStuff
+  au!
+  autocmd TermOpen * setlocal nonumber norelativenumber
+augroup END
 autocmd BufWritePre * :call TrimWhitespace()
