@@ -29,14 +29,10 @@ alias fz="~/dotfiles/bash/fuz"
 alias repo="~/dotfiles/bash/repo"
 
 # Config Files
-alias tmx="vim ~/dotfiles/tmux/tmux.conf"
-alias vimrc="vim ~/dotfiles/vim/vimrc.vim"
-alias nvimrc="nvim ~/.config/nvim/init.vim"
-alias zshrc="vim ~/dotfiles/zsh/zshrc.sh"
-alias skhdrc="vim ~/.skhdrc"
-alias chunkwmrc="vim ~/.chunkwmrc"
-alias aliasrc="vim ~/dotfiles/bash/aliasrc"
-alias naliasrc="nvim ~/dotfiles/bash/aliasrc"
+alias vimrc="nvim ~/.config/nvim/init.vim"
+alias tmx="nvim ~/dotfiles/tmux/tmux.conf"
+alias zshrc="nvim ~/dotfiles/zsh/zshrc.sh"
+alias aliasrc="nvim ~/dotfiles/bash/aliasrc"
 
 # List
 alias ls="lsd"
@@ -66,16 +62,11 @@ alias t2="~/dotfiles/tmux/tmuxpane2"
 alias t3="~/dotfiles/tmux/tmuxpane3"
 
 # VIM
-alias v="vim -p"
-alias nv="nvim -p"
-alias sv="sudo vim -p"
-alias nsv="sudo nvim -p"
-alias vcp="vim +PlugClean +qall"
-alias nvcp="nvim +PlugClean +qall"
-alias vip="vim +PlugInstall +qall"
-alias nvip="nvim +PlugInstall +qall"
-alias vup="vim +PlugUpdate"
-alias nvup="nvim +PlugUpdate"
+alias v="nvim"
+alias sv="sudo nvim"
+alias vcp="nvim +PlugClean +qall"
+alias vip="nvim +PlugInstall +qall"
+alias vup="nvim +PlugUpdate"
 
 # References
 alias mrgx="perldoc perlreref"
@@ -178,7 +169,7 @@ alias docs="cd ~/Documents && clear && l"
 alias dls="cd ~/Downloads && clear && l"
 
 # Searching
-alias rgv="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' --glob '!.git' | fzf | xargs -o vim -p"
+alias rgv="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' --glob '!.git' | fzf | xargs -o nvim"
 alias rgf="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' --glob '!.git' | fzf"
 
 # youtube-dl
