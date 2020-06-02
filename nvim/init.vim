@@ -132,8 +132,8 @@ nnoremap <leader>gap :Git push origin --all<CR>:echo "Github pushed"<CR>
 nnoremap <leader>gag :Git push gitlab --all<CR>:echo "Gitlab pushed"<CR>
 nnoremap <leader>gar :Git push gitlab --all<CR>:Git push origin --all<CR>:echo "Gitlab/Github pushed"<CR>
 nnoremap <leader><leader> <C-^>
-nnoremap <silent> <Left> :vertical resize +5<CR>
-nnoremap <silent> <Right> :vertical resize -5<CR>
+nnoremap <silent> <Left> :vertical resize +10<CR>
+nnoremap <silent> <Right> :vertical resize -10<CR>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
