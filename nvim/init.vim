@@ -144,10 +144,10 @@ inoremap jk <ESC>
 
 cnoremap jk <ESC>
 
-tnoremap <ESC> <C-\><C-n><C-w>h
-tnoremap <ESC> <C-\><C-n><C-w>j
-tnoremap <ESC> <C-\><C-n><C-w>k
-tnoremap <ESC> <C-\><C-n><C-w>l
+tnoremap <C-w>h <C-\><C-n><C-w>h
+tnoremap <C-w>j <C-\><C-n><C-w>j
+tnoremap <C-w>k <C-\><C-n><C-w>k
+tnoremap <C-w>l <C-\><C-n><C-w>l
 
 " Coc Config
 function! s:check_back_space() abort
