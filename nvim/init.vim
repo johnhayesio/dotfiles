@@ -68,13 +68,14 @@ set statusline+=\ %f
 set statusline+=%m
 set statusline+=\ %y
 set statusline+=%=
+set statusline+=%#WildMenu#
+set statusline+=%{StatusDiagnostic()}
 set statusline+=%#CursorColumn#
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=%#WildMenu#
-set statusline+=\ %{StatusDiagnostic()}
+set statusline+=\ 
 
 call plug#begin('~/.config/nvim/plugged')
 
