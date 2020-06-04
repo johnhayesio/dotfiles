@@ -1,4 +1,5 @@
 4K Video Downloader.app
+__MACOSX
 Adapter.app
 Adobe Creative Cloud
 Adobe Photoshop 2020
@@ -30,20 +31,22 @@ Folx.app
 Google Chrome Canary.app
 Google Chrome.app
 Grammarly for Safari.app
+Headset.app
+Hewlett-Packard ⇒ /Applications/HP
 HP
 HP Easy Scan.app
-Headset.app
-Hewlett-Packard
+HuionTablet.app
 Icons8.app
 ImageOptim.app
+iTerm.app
 Karabiner-Elements.app
 Karabiner-EventViewer.app
 Keka.app
 Keyboard Maestro.app
 Keynote.app
+krisp.app
 Logitech
 Loopback.app
-Magnet.app
 ManyCam
 Marked 2.app
 Mate Translate.app
@@ -52,19 +55,18 @@ Microsoft Excel.app
 Microsoft PowerPoint.app
 Microsoft Word.app
 MongoDB Compass.app
+Moom.app
 MusicManager.app
 Navicat Premium.app
-Nielsen
 Notion.app
 Numbers.app
 Numi.app
 One Switch.app
+Pages.app
 PDF Expert.app
 PDF Squeezer.app
-Pages.app
 PopClip.app
 Postman.app
-Qbserve.app
 Radio Silence.app
 Rocket.app
 Safari.app
@@ -82,14 +84,11 @@ TriggerClientUI.app
 Ukelele.app
 Upwork.app
 Utilities
-VLC.app
 Vanilla.app
 VirtualBox.app
 Visual Studio Code.app
+VLC.app
 Wattagio.app
 Webull.app
 Xcode.app
-__MACOSX
-iTerm.app
-krisp.app
 xScope.app
