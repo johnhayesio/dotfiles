@@ -4,7 +4,7 @@
 		zle accept-line
 	}
 	zle -N up_widget
-	bindkey "^k" up_widget
+	bindkey "^b" up_widget
 
 # git
 	function git_prepare() {
@@ -17,21 +17,21 @@
 			then
 				BUFFER="git add -A; git commit -v && git push"
 		fi
-				
+
 		zle accept-line
 	}
 	zle -N git_prepare
 	bindkey "^g" git_prepare
 
 # home
-	function goto_home() { 
+	function goto_home() {
 		BUFFER="cd ~/"$BUFFER
 		zle end-of-line
 		zle accept-line
 	}
 	zle -N goto_home
-	bindkey "^h" goto_home
-	
+	bindkey "^t" goto_home
+
 # clear
   function ctrl_n() {
     BUFFER="clear"
@@ -41,12 +41,12 @@
   bindkey "^n" ctrl_n
 
 # LS
-  function ctrl_l() {
-    BUFFER="ls"
+  function ctrl_e() {
+    BUFFER="ls -l"
     zle accept-line
   }
-  zle -N ctrl_l
-  bindkey "^l" ctrl_l
+  zle -N ctrl_e
+  bindkey "^e" ctrl_e
 
 # Edit and rerun
 	function edit_and_run() {
