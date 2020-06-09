@@ -187,3 +187,6 @@ alias piano="mpv --no-video https://www.youtube.com/watch\?v\=XULUBg_ZcAU > /dev
 alias mfp="~/dotfiles/bash/mfp"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 alias mpvps="~/dotfiles/bash/mpvps"
+
+# Fun Terminal
+# alias vt='[ $[$RANDOM % 10] = 0 ] && cd ~/Documents/misc-RESOURCES/vt100 && ./slowcat.pl $(/bin/ls | grep .vt | shuf -n 1) || clear'
