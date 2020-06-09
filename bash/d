@@ -6,4 +6,3 @@ cd $1;
   clear;
   l;
 }
-alias cd="d"
