@@ -68,7 +68,7 @@ set statusline+=\ %f
 set statusline+=%m
 set statusline+=\ %y
 set statusline+=%=
-set statusline+=%#WildMenu#
+set statusline+=%#healthError#
 set statusline+=%{StatusDiagnostic()}
 set statusline+=%#CursorColumn#
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
@@ -90,7 +90,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'ycm-core/YouCompleteMe'
 Plug 'junegunn/fzf.vim'
 
 Plug 'drewtempelmeyer/palenight.vim'
@@ -135,6 +134,9 @@ let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
+map [q :cn<CR>
+map ]q :cp<CR>
+
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -143,8 +145,8 @@ nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>r :set ft=javascriptreact<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pr :Rg<SPACE>
-nnoremap <leader>gxc :term screen -x client<CR>
-nnoremap <leader>gxs :term screen -x server<CR>
+nnoremap <leader>gxc :vs term://screen -x client<CR>
+nnoremap <leader>gxs :vs term://screen -x server<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
