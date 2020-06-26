@@ -1,10 +1,11 @@
 /Users/johnhayes/.nvm/versions/node/v12.16.2/lib
 ├── bitly-client@1.7.2
 ├── caniuse-cmd@1.3.1
+├── cli-typer@1.0.0 (github:balzss/cli-typer#26b8de07aca113bdf16cb9b2e7157acf8499112c)
 ├── create-react-app@3.4.1
 ├── degit@2.8.0
 ├── diffchecker@0.1.4
-├── eslint@7.0.0
+├── eslint@7.1.0
 ├── fast-cli@2.3.0
 ├── fkill-cli@6.0.1
 ├── gifify@2.4.3
@@ -17,8 +18,8 @@
 ├── live-server@1.2.1
 ├── markdown-to-medium@1.4.4
 ├── markserv@1.17.4
-├── mup@1.4.6
-├── neovim@4.8.0
+├── mup@1.5.1
+├── neovim@4.9.0
 ├── newsroom-cli@0.1.11
 ├── node-gyp@6.1.0
 ├── nodemon@2.0.4
@@ -29,7 +30,7 @@
 ├── parcel-bundler@1.12.4
 ├── prettier@2.0.5
 ├── purgecss@2.2.1
-├── release-it@13.6.0
+├── release-it@13.6.1
 ├── surge@0.21.3
 ├── trash-cli@3.0.0
 ├── wikit@4.4.0

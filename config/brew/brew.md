@@ -14,6 +14,7 @@ cairo
 calcurse
 cask
 cmake
+cpanminus
 ctags
 curl
 desktop-file-utils
@@ -53,6 +54,7 @@ gnu-getopt
 gnu-sed
 gnutls
 gobject-introspection
+gotop
 graphite2
 grip
 gsettings-desktop-schemas
@@ -143,7 +145,6 @@ mujs
 mycli
 nasm
 ncurses
-neofetch
 neovim
 nettle
 newsboat
@@ -166,6 +167,7 @@ pcre
 pcre2
 pdfgrep
 perl
+pfetch
 pianobar
 pinentry
 pixman
@@ -198,17 +200,21 @@ speex
 sphinx-doc
 sqlite
 srt
+task
 terminal-notifier
 tesseract
 texi2html
 thefuck
 theora
+timewarrior
 tldr
+tmux
 tree
 uchardet
 unbound
 unibilium
 urlview
+utf8proc
 util-linux
 vapoursynth
 vifm

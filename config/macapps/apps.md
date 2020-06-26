@@ -63,6 +63,7 @@ Numbers.app
 Numi.app
 One Switch.app
 Pages.app
+Parallels Desktop.app
 PDF Expert.app
 PDF Squeezer.app
 PopClip.app
@@ -81,6 +82,7 @@ Spark.app
 Sublime Merge.app
 SyphonInject.app
 TriggerClientUI.app
+Type Fu.app
 Ukelele.app
 Upwork.app
 Utilities
