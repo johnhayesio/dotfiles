@@ -17,6 +17,7 @@ cmake
 cpanminus
 ctags
 curl
+dasht
 desktop-file-utils
 dnote
 docbook
@@ -54,7 +55,9 @@ gnu-getopt
 gnu-sed
 gnutls
 gobject-introspection
+googler
 gotop
+graphicsmagick
 graphite2
 grip
 gsettings-desktop-schemas
@@ -73,6 +76,7 @@ imagemagick
 imageoptim-cli
 imlib2
 intltool
+jasper
 jemalloc
 jpeg
 jq
@@ -149,6 +153,7 @@ neovim
 nettle
 newsboat
 ninja
+nnn
 node
 nspr
 nss
