@@ -75,7 +75,7 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=\ 
+set statusline+=\
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -86,11 +86,15 @@ Plug 'junegunn/gv.vim'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'sheerun/vim-polyglot'
+Plug 'sunaku/vim-dasht'
 Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'voldikss/vim-floaterm'
+Plug 'vimwiki/vimwiki'
 
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'arcticicestudio/nord-vim'
@@ -137,16 +141,17 @@ let g:netrw_winsize = 15
 map [q :cn<CR>
 map ]q :cp<CR>
 
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
+map <leader>/ <Plug>(easymotion-bd-w)
+nmap <leader>/ <Plug>(easymotion-overwin-w)
+nmap f <Plug>(easymotion-overwin-f2)
+
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>r :set ft=javascriptreact<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pr :Rg<SPACE>
-nnoremap <leader>gxc :vs term://screen -x client<CR>
-nnoremap <leader>gxs :vs term://screen -x server<CR>
+nnoremap <leader>gxf :FloatermNew --name=
+nnoremap <leader>gxe :FloatermShow
+nnoremap <leader>gxt :60vs<CR>:term<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
@@ -170,6 +175,22 @@ tnoremap <C-w>h <C-\><C-n><C-w>h
 tnoremap <C-w>j <C-\><C-n><C-w>j
 tnoremap <C-w>k <C-\><C-n><C-w>k
 tnoremap <C-w>l <C-\><C-n><C-w>l
+
+" Dasht Mappings
+let g:dasht_results_window = 'vnew'
+
+nnoremap <Leader>kc :Dasht<Space>
+nnoremap <Leader>ka :Dasht!<Space>
+nnoremap <silent> <Leader>KC :call Dasht([expand('<cword>'), expand('<cWORD>')])<Return>
+nnoremap <silent> <Leader>KA :call Dasht([expand('<cword>'), expand('<cWORD>')], '!')<Return>
+vnoremap <silent> <Leader>KC y:<C-U>call Dasht(getreg(0))<Return>
+vnoremap <silent> <Leader>KA y:<C-U>call Dasht(getreg(0), '!')<Return>
+
+" Floaterm Mappings
+let g:floaterm_keymap_new    = '<F5>'
+let g:floaterm_keymap_prev   = '<F6>'
+let g:floaterm_keymap_next   = '<F7>'
+let g:floaterm_keymap_toggle = '<F8>'
 
 " Coc Config
 function! s:check_back_space() abort
