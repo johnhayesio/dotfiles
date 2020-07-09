@@ -75,7 +75,7 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=\
+set statusline+=\ 
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -138,11 +138,13 @@ let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
+hi EasyMotionShade ctermbg=none ctermfg=red
+
 map [q :cn<CR>
 map ]q :cp<CR>
 
-map <leader>/ <Plug>(easymotion-bd-w)
-nmap <leader>/ <Plug>(easymotion-overwin-w)
+map s <Plug>(easymotion-bd-w)
+nmap s <Plug>(easymotion-overwin-w)
 nmap f <Plug>(easymotion-overwin-f2)
 
 nnoremap <leader>u :UndotreeShow<CR>
