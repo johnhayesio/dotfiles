@@ -2,7 +2,6 @@
 
 # Scripts
 source ~/dotfiles/bash/gli
-# source ~/dotfiles/bash/forgit
 source ~/dotfiles/bash/d
 source ~/dotfiles/bash/mkcd
 source ~/dotfiles/bash/ciu
@@ -12,5 +11,6 @@ source ~/dotfiles/bash/vf
 source ~/dotfiles/bash/fv
 source ~/dotfiles/bash/ff
 source ~/dotfiles/bash/fr
+source ~/dotfiles/bash/fym
 source ~/dotfiles/bash/psc
 source ~/dotfiles/bash/mps

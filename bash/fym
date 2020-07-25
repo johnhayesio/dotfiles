@@ -1,0 +1,3 @@
+#!/bin/bash
+
+fym() { curl -X GET 'http://heckyesmarkdown.com/go/?u='$1'&read=1&md=1'; }
