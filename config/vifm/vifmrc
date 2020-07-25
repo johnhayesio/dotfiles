@@ -136,6 +136,7 @@ command! zip zip -r %f.zip %f
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
+command! nf :touch %a
 command! reload :write | restart
 
 " ------------------------------------------------------------------------------
@@ -175,6 +176,10 @@ filetype *.pdf
        \ open -a Skim.app,
 fileviewer *.pdf pdftotext -nopgbrk %c -
 
+filetype *.md
+       \ {Open in Marked}
+       \ open -a Marked\ 2.app
+
 " PostScript
 filetype *.ps,*.eps open -a Preview.app
 
@@ -196,7 +201,7 @@ fileviewer *.flac soxi
 
 " Video
 filetype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
-        \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+        \*.fl[icv],*.m2v,*.mov,*.webm,*.mts,*.m4v,*.r[am],*.qt,*.divx,
         \*.as[fx]
        \ {Open in mpv}
        \ mpv %f,
@@ -205,21 +210,25 @@ filetype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
        \ {Open in MPlayerX}
        \ open -a MPlayerX.app,
 fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
-          \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+          \*.fl[icv],*.m2v,*.mov,*.webm,*.mts,*.m4v,*.r[am],*.qt,*.divx,
           \*.as[fx]
          \ ffprobe -pretty %c 2>&1
 
 " Web
 filetype *.html,*.htm
+       \ {Open in Vim}
+       \ vim %f;
+       \ {Open in Chrome}
+       \ open -a Google\ Chrome.app,
        \ {Open in Firefox}
        \ open -a Firefox.app,
        \ {Open in Safari}
        \ open -a Safari.app,
-       \ {Open in Chrome}
-       \ open -a Google\ Chrome.app,
-       \ {Open in vim}
-       \ vim,
 fileviewer *.html,*.htm w3m -dump -T text/html
+
+filetype *.js,*.jsx,*.ts,*.tsx,*.css,*.sass,*.scss,*.json,*.txt
+       \ {Open in Vim}
+       \ vim %f;
 
 " Object
 filetype *.o nm %f | less
