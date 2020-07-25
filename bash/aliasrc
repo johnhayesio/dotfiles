@@ -67,6 +67,7 @@ alias sv="sudo nvim"
 alias vcp="nvim +PlugClean +qall"
 alias vip="nvim +PlugInstall +qall"
 alias vup="nvim +PlugUpdate"
+alias wiki="nvim ~/vimwiki/index.md"
 
 # References
 alias mrgx="perldoc perlreref"
