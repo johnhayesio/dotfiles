@@ -1,15 +1,18 @@
 /Users/johnhayes/.nvm/versions/node/v12.16.2/lib
+├── @prettier/plugin-php@0.14.3
 ├── bitly-client@1.7.2
 ├── caniuse-cmd@1.3.1
 ├── cli-typer@1.0.0 (github:balzss/cli-typer#26b8de07aca113bdf16cb9b2e7157acf8499112c)
 ├── create-react-app@3.4.1
 ├── degit@2.8.0
 ├── diffchecker@0.1.4
-├── eslint@7.3.1
+├── eslint@7.5.0
+├── expo-cli@3.22.3
 ├── fast-cli@2.3.0
 ├── fkill-cli@6.0.1
 ├── gifify@2.4.3
 ├── gistup@0.1.3
+├── graphql-cli@4.0.0
 ├── imageoptim-cli@3.0.2
 ├── imgur-uploader-cli@2.0.1
 ├── is-up-cli@3.0.0
@@ -24,18 +27,19 @@
 ├── newsroom-cli@0.1.11
 ├── node-gyp@7.0.0
 ├── nodemon@2.0.4
-├── npm@6.14.5
-├── npm-check-updates@7.0.1
+├── npm@6.14.6
+├── npm-check-updates@7.0.2
 ├── npm-name-cli@3.0.0
 ├── pageres-cli@5.0.0
 ├── parcel-bundler@1.12.4
 ├── prettier@2.0.5
 ├── purgecss@2.3.0
-├── release-it@13.6.4
-├── surge@0.21.3
+├── release-it@13.6.5
+├── sequelize-cli@6.2.0
+├── surge@0.21.6
 ├── trash-cli@3.0.0
-├── vercel@19.1.1
+├── vercel@19.2.0
 ├── wikit@4.4.0
 ├── yarn@1.22.4
-└── ytdl@1.3.2
+└── ytdl@1.3.4
 

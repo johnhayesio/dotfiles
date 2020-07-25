@@ -10,6 +10,7 @@ bdw-gc
 boost
 brightness
 broot
+browsh
 cairo
 calcurse
 cask
@@ -18,6 +19,7 @@ cpanminus
 ctags
 curl
 dasht
+dav1d
 desktop-file-utils
 dnote
 docbook
@@ -81,6 +83,7 @@ jemalloc
 jpeg
 jq
 json-c
+krb5
 lame
 lazygit
 lazynpm
@@ -103,6 +106,7 @@ libgpg-error
 libheif
 libiconv
 libidn2
+liblqr
 libmagic
 libnotify
 libogg
@@ -161,7 +165,6 @@ oniguruma
 opencore-amr
 openexr
 openjpeg
-openssl
 openssl@1.1
 opus
 p11-kit
@@ -173,11 +176,13 @@ pcre2
 pdfgrep
 perl
 pfetch
+php-cs-fixer
 pianobar
 pinentry
 pixman
 pkg-config
 poppler
+postgresql
 powerlevel10k
 pv
 python
@@ -186,6 +191,7 @@ python@2
 python@3.8
 qt
 ranger
+rav1e
 readline
 reattach-to-user-namespace
 ripgrep
@@ -205,6 +211,7 @@ speex
 sphinx-doc
 sqlite
 srt
+streamlink
 task
 terminal-notifier
 tesseract
