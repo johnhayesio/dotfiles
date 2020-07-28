@@ -15,6 +15,7 @@ cairo
 calcurse
 cask
 cmake
+cointop
 cpanminus
 ctags
 curl
@@ -85,6 +86,7 @@ jq
 json-c
 krb5
 lame
+lazydocker
 lazygit
 lazynpm
 leptonica
@@ -198,6 +200,7 @@ ripgrep
 rtmpdump
 rubberband
 ruby
+s3cmd
 sc-im
 screen
 screenresolution

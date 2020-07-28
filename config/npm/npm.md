@@ -2,8 +2,10 @@
 ├── @prettier/plugin-php@0.14.3
 ├── bitly-client@1.7.2
 ├── caniuse-cmd@1.3.1
-├── cli-typer@1.0.0 (github:balzss/cli-typer#26b8de07aca113bdf16cb9b2e7157acf8499112c)
+├── carbon-now-cli@1.4.0
+├── cash-cli@4.2.1
 ├── create-react-app@3.4.1
+├── create-react-native-app@3.5.0
 ├── degit@2.8.0
 ├── diffchecker@0.1.4
 ├── eslint@7.5.0
@@ -34,12 +36,13 @@
 ├── parcel-bundler@1.12.4
 ├── prettier@2.0.5
 ├── purgecss@2.3.0
-├── release-it@13.6.5
-├── sequelize-cli@6.2.0
+├── release-it@13.6.6
 ├── surge@0.21.6
 ├── trash-cli@3.0.0
+├── updates@10.3.3
 ├── vercel@19.2.0
 ├── wikit@4.4.0
+├── wipe-modules@1.2.0
 ├── yarn@1.22.4
 └── ytdl@1.3.4
 
