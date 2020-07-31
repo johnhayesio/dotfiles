@@ -26,5 +26,8 @@ browser linkhandler
 macro , open-in-browser
 macro t set browser "youtube-dl --add-metadata -ic"; open-in-browser ; set browser linkhandler
 macro a set browser "youtube-dl --add-metadata -xic -f bestaudio/best"; open-in-browser ; set browser linkhandler
-macro v set browser "mpv"; open-in-browser ; set browser linkhandler
+macro l set browser "mpv --screen=1 --ytdl-format='bestvideo[height<=?480][vcodec!=vp9]+bestaudio/best'" ; open-in-browser ; set browser linkhandler
+macro m set browser "mpv --screen=1 --ytdl-format='bestvideo[height<=?720][vcodec!=vp9]+bestaudio/best'" ; open-in-browser ; set browser linkhandler
+macro h set browser "mpv --screen=1 --ytdl-format='bestvideo[height<=?1080][vcodec!=vp9]+bestaudio/best'" ; open-in-browser ; set browser linkhandler
 macro w set browser "w3m"; open-in-browser ; set browser linkhandler
+macro v set browser "vlc"; open-in-browser ; set browser linkhandler

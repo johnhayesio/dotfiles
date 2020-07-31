@@ -14,6 +14,11 @@ pfetch
   export FZF_DEFAULT_OPTS="--no-mouse --height 50% -1 --reverse --multi --inline-info --preview='[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --preview-window='right:hidden:wrap' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-a:select-all+accept,ctrl-y:execute-silent(echo {+} | pbcopy)'"
   export FZF_CTRL_T_COMMAND="fd $FD_OPTIONS"
   export FZF_CTRL_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
+  export ANDROID_HOME=/Volumes/Expansion/Android/sdk
+  export PATH=$PATH:$ANDROID_HOME/emulator
+  export PATH=$PATH:$ANDROID_HOME/tools
+  export PATH=$PATH:$ANDROID_HOME/tools/bin
+  export PATH=$PATH:$ANDROID_HOME/platform-tools
   source ~/dotfiles/zsh/plugins/fixls.zsh
 
 # Aliases
