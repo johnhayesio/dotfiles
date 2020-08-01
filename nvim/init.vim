@@ -95,6 +95,7 @@ Plug 'tpope/vim-commentary'
 Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'vuciv/vim-bujo'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
 
@@ -139,6 +140,11 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
 hi EasyMotionShade ctermbg=none ctermfg=red
+
+" vim TODO
+nmap <Leader>tu <Plug>BujoChecknormal
+nmap <Leader>th <Plug>BujoAddnormal
+let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
 
 map [q :cn<CR>
 map ]q :cp<CR>
