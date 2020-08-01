@@ -86,9 +86,11 @@ Plug 'junegunn/gv.vim'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'sheerun/vim-polyglot'
+Plug 'stephpy/vim-php-cs-fixer'
+Plug 'shime/vim-livedown'
 Plug 'sunaku/vim-dasht'
 Plug 'tpope/vim-surround'
-Plug 'easymotion/vim-easymotion'
+Plug 'unblevable/quick-scope'
 Plug 'tpope/vim-commentary'
 Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -96,10 +98,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
 
-Plug 'drewtempelmeyer/palenight.vim'
 Plug 'arcticicestudio/nord-vim'
 
-Plug 'ThePrimeagen/vim-be-good'
+Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 
 call plug#end()
 
@@ -134,7 +135,6 @@ let loaded_matchparen = 1
 let mapleader = " "
 
 let g:netrw_browse_split = 2
-let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
@@ -143,16 +143,19 @@ hi EasyMotionShade ctermbg=none ctermfg=red
 map [q :cn<CR>
 map ]q :cp<CR>
 
-map s <Plug>(easymotion-bd-w)
-nmap s <Plug>(easymotion-overwin-w)
-nmap f <Plug>(easymotion-overwin-f2)
+" quickscope settings
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+highlight QuickScopePrimary guifg='#00C7DF' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopeSecondary guifg='#afff5f' gui=underline ctermfg=81 cterm=underline
+let g:qs_max_chars=150
 
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>r :set ft=javascriptreact<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pr :Rg<SPACE>
 nnoremap <leader>gxf :FloatermNew --name=
-nnoremap <leader>gxe :FloatermShow
+nnoremap <leader>gxb :FloatermNew --height=0.8 --width=0.8 --name=
+nnoremap <leader>gxe :FloatermShow 
 nnoremap <leader>gxt :60vs<CR>:term<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
@@ -194,6 +197,9 @@ let g:floaterm_keymap_prev   = '<F6>'
 let g:floaterm_keymap_next   = '<F7>'
 let g:floaterm_keymap_toggle = '<F8>'
 
+" Vimwiki Config
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+
 " Coc Config
 function! s:check_back_space() abort
     let col = col('.') - 1
@@ -206,6 +212,7 @@ let g:coc_global_extensions = [
   \ 'coc-emmet',
   \ 'coc-pairs',
   \ 'coc-tsserver',
+  \ 'coc-phpls',
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-vetur',
@@ -250,4 +257,8 @@ augroup TerminalStuff
   au!
   autocmd TermOpen * setlocal nonumber norelativenumber
 augroup END
+augroup cmdline
+  au!
+  autocmd CmdlineLeave : echo ''
+augroup end
 autocmd BufWritePre * :call TrimWhitespace()
