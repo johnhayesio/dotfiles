@@ -35,6 +35,7 @@ set splitbelow " Split panes to the bottom when opening
 set splitright " Split panes to the right when opening
 set updatetime=50 " Shorter update time
 set shortmess+=c " Don't pass messages to ins-completion-menu
+set cursorline " Enable highlighting for current line of code
 set laststatus=2 " Always display status bar
 
 " Config Statusline
@@ -61,7 +62,7 @@ function! StatusDiagnostic() abort
 endfunction
 
 set statusline=
-set statusline+=%#PmenuSel#
+set statusline+=%#DiffChange#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#StatusLineNC#
 set statusline+=\ %f
@@ -70,7 +71,7 @@ set statusline+=\ %y
 set statusline+=%=
 set statusline+=%#healthError#
 set statusline+=%{StatusDiagnostic()}
-set statusline+=%#CursorColumn#
+set statusline+=%#StatusLineNC#
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
@@ -99,9 +100,10 @@ Plug 'vuciv/vim-bujo'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
 
-Plug 'arcticicestudio/nord-vim'
-
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
+
+Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -121,12 +123,17 @@ let g:go_highlight_format_strings = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_auto_sameids = 1
 
-" colorscheme palenight
-" let g:palenight_terminal_italics = 1
-colorscheme nord
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
+colorscheme gruvbox
 set background=dark
+let g:gruvbox_italic=1
+" let g:nord_italic = 1
+" let g:nord_italic_comments = 1
+" let g:nord_cursor_line_number_background = 1
+" let g:nord_uniform_diff_background = 1
+" let g:palenight_terminal_italics = 1
+
+highlight clear SignColumn
+highlight Comment cterm=italic gui=italic
 
 if executable('rg')
   let g:rg_derive_root='true'
@@ -139,13 +146,6 @@ let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
 
-hi EasyMotionShade ctermbg=none ctermfg=red
-
-" vim TODO
-nmap <Leader>tu <Plug>BujoChecknormal
-nmap <Leader>th <Plug>BujoAddnormal
-let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
-
 map [q :cn<CR>
 map ]q :cp<CR>
 
@@ -154,6 +154,11 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 highlight QuickScopePrimary guifg='#00C7DF' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#afff5f' gui=underline ctermfg=81 cterm=underline
 let g:qs_max_chars=150
+
+"vim TODO
+nmap <Leader>tu <Plug>BujoChecknormal
+nmap <Leader>th <Plug>BujoAddnormal
+let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
 
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>r :set ft=javascriptreact<CR>
@@ -230,6 +235,7 @@ inoremap <buffer> <silent><expr> <TAB>
   \ <SID>check_back_space() ? "\<TAB>" :
   \ coc#refresh()
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 inoremap <buffer> <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <buffer> <silent><expr> <C-space> coc#refresh()
 
