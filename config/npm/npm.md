@@ -8,8 +8,8 @@
 ├── create-react-native-app@3.5.0
 ├── degit@2.8.0
 ├── diffchecker@0.1.4
-├── eslint@7.5.0
-├── expo-cli@3.22.3
+├── eslint@7.6.0
+├── expo-cli@3.23.3
 ├── fast-cli@2.3.0
 ├── fkill-cli@6.0.1
 ├── gifify@2.4.3
@@ -30,7 +30,7 @@
 ├── node-gyp@7.0.0
 ├── nodemon@2.0.4
 ├── npm@6.14.6
-├── npm-check-updates@7.0.2
+├── npm-check-updates@7.0.3
 ├── npm-name-cli@3.0.0
 ├── pageres-cli@5.0.0
 ├── parcel-bundler@1.12.4
@@ -38,11 +38,11 @@
 ├── purgecss@2.3.0
 ├── release-it@13.6.6
 ├── surge@0.21.6
-├── trash-cli@3.0.0
+├── trash-cli@3.1.0
 ├── updates@10.3.3
 ├── vercel@19.2.0
 ├── wikit@4.4.0
 ├── wipe-modules@1.2.0
 ├── yarn@1.22.4
-└── ytdl@1.3.4
+└── ytdl@1.3.5
 

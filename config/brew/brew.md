@@ -1,6 +1,7 @@
 adwaita-icon-theme
 ansiweather
 aom
+aria2
 asciidoc
 aspell
 atk
@@ -119,6 +120,7 @@ libsamplerate
 libsndfile
 libsoxr
 libspiro
+libssh2
 libstfl
 libtasn1
 libtermkey
@@ -169,6 +171,7 @@ openexr
 openjpeg
 openssl@1.1
 opus
+osx-cpu-temp
 p11-kit
 p7zip
 pandoc
@@ -200,6 +203,7 @@ ripgrep
 rtmpdump
 rubberband
 ruby
+s-search
 s3cmd
 sc-im
 screen
@@ -236,10 +240,12 @@ vifm
 vim
 w3m
 watch
+watchman
 webp
 weechat
 wget
 wifi-password
+wp-cli
 x264
 x265
 xmlto
