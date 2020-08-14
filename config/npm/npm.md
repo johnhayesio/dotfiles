@@ -9,7 +9,7 @@
 ├── degit@2.8.0
 ├── diffchecker@0.1.4
 ├── eslint@7.6.0
-├── expo-cli@3.23.3
+├── expo-cli@3.24.0
 ├── fast-cli@2.3.0
 ├── fkill-cli@6.0.1
 ├── gifify@2.4.3
@@ -27,10 +27,10 @@
 ├── mup@1.5.1
 ├── neovim@4.9.0
 ├── newsroom-cli@0.1.11
-├── node-gyp@7.0.0
+├── node-gyp@7.1.0
 ├── nodemon@2.0.4
 ├── npm@6.14.6
-├── npm-check-updates@7.0.3
+├── npm-check-updates@7.1.0
 ├── npm-name-cli@3.0.0
 ├── pageres-cli@5.0.0
 ├── parcel-bundler@1.12.4
@@ -39,7 +39,7 @@
 ├── release-it@13.6.6
 ├── surge@0.21.6
 ├── trash-cli@3.1.0
-├── updates@10.3.3
+├── updates@10.3.4
 ├── vercel@19.2.0
 ├── wikit@4.4.0
 ├── wipe-modules@1.2.0

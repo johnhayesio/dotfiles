@@ -53,6 +53,7 @@ git
 git-delta
 git-filter-repo
 git-standup
+glances
 glib
 gmp
 gnu-getopt
