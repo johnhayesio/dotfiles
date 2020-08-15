@@ -14,6 +14,8 @@
 ├── fkill-cli@6.0.1
 ├── gifify@2.4.3
 ├── gistup@0.1.3
+├── git-stats@2.10.12
+├── git-stats-importer@2.4.11
 ├── graphql-cli@4.0.0
 ├── imageoptim-cli@3.0.2
 ├── imgur-uploader-cli@2.0.1

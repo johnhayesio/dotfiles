@@ -37,6 +37,7 @@ Firework-ee6387a634e45d8e.app
 Firework.app
 Folx.app
 FontForge.app
+Git Streaks.app
 Google Chrome Canary.app
 Google Chrome.app
 Grammarly for Safari.app
@@ -81,6 +82,7 @@ Pages.app
 Parallels Desktop.app
 PDF Expert.app
 PDF Squeezer.app
+Poolside FM.app
 PopClip.app
 Postman.app
 Radio Silence.app
