@@ -126,11 +126,10 @@ let g:go_auto_sameids = 1
 colorscheme gruvbox
 set background=dark
 let g:gruvbox_italic=1
-" let g:nord_italic = 1
-" let g:nord_italic_comments = 1
-" let g:nord_cursor_line_number_background = 1
-" let g:nord_uniform_diff_background = 1
-" let g:palenight_terminal_italics = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_cursor_line_number_background = 1
+let g:nord_uniform_diff_background = 1
 
 highlight clear SignColumn
 highlight Comment cterm=italic gui=italic
@@ -273,4 +272,5 @@ augroup cmdline
   au!
   autocmd CmdlineLeave : echo ''
 augroup end
+autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 autocmd BufWritePre * :call TrimWhitespace()
