@@ -16,10 +16,13 @@ ff() {
         echo "ff [-a (searches all files)]"
         echo "ff [-d (searches within a directory)]"
         echo "ff [-l (searches all files and opens fuzzy finder)]"
+        echo "ff [-g (searches all files and opens fuzzy finder)]"
         echo
         echo "Examples:"
         echo "ff -a App"
         echo "ff -d src App"
+        echo "ff -l App"
+        echo "ff -g ."
         echo
         ;;
       -a|--all)
@@ -44,10 +47,19 @@ ff() {
         if [ $# -gt 2 ]; then
           echo
           echo "Error: Only two arguments can be supplied."
-          echo "Run command fv -l filename.ext"
+          echo "Run command ff -l filename.ext"
           echo
         fi
         find . -path ./node_modules -prune -o -name "*$2*" -print | fzf
+        ;;
+      -g|--git)
+        if [ $# -gt 2 ]; then
+          echo
+          echo "Error: Only two arguments can be supplied."
+          echo "Run command ff -g directory"
+          echo
+        fi
+        find $2 -name .git -print -execdir git status \;
         ;;
     esac
   fi
