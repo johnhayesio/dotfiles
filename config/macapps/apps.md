@@ -5,15 +5,12 @@ Adapter.app
 Adobe Creative Cloud
 Adobe Photoshop 2020
 Adobe XD
-Alacritty.app
 Alfred 4.app
 Android Studio.app
-Anki.app
 Around.app
 Audacity.app
 Audio Hijack.app
 BetterTouchTool.app
-Beyond Compare.app
 Bitwarden.app
 Brave Browser.app
 CleanMyMac X.app
@@ -46,9 +43,7 @@ Hewlett-Packard ⇒ /Applications/HP
 HP
 HP Easy Scan.app
 HuionTablet.app
-Icons8.app
 ImageOptim.app
-Insomnia.app
 iTerm.app
 iZotope RX 7 Audio Editor.app
 Jiggler.app
@@ -64,7 +59,6 @@ Loopback.app
 ManyCam
 Marked 2.app
 Mate Translate.app
-Microsoft Edge.app
 Microsoft Excel.app
 Microsoft PowerPoint.app
 Microsoft Word.app
@@ -72,14 +66,11 @@ mmhmm.app
 MongoDB Compass.app
 Moom.app
 MusicManager.app
-Navicat Premium.app
-Notability.app
 Notion.app
 Numbers.app
 Numi.app
 One Switch.app
 Pages.app
-Parallels Desktop.app
 PDF Expert.app
 PDF Squeezer.app
 Poolside FM.app
@@ -88,18 +79,15 @@ Postman.app
 Radio Silence.app
 Rocket.app
 Safari.app
-Screen.app
 ScreenFlow.app
 Sip.app
 SkyFonts
 Skype.app
 Slack.app
 Spark.app
-SQLPro Studio.app
 Sublime Merge.app
 SyphonInject.app
 TriggerClientUI.app
-Type Fu.app
 Ukelele.app
 Upwork.app
 Utilities

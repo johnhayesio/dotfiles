@@ -66,7 +66,9 @@ graphicsmagick
 graphite2
 grip
 gsettings-desktop-schemas
+gtk+
 gtk+3
+gtk-mac-integration
 harfbuzz
 heroku
 heroku-node
