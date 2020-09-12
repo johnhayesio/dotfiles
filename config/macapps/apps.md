@@ -23,14 +23,16 @@ Exodus.app
 ExpressVPN.app
 Finder.app
 Firefox Developer Edition.app
+Firework-469756cb1f4b084d.app
 Firework-62174607625fbbe7.app
+Firework-62cc5b9e7ec7ebdf.app
 Firework-7bf97a6260ceafc0.app
 Firework-806cea9a6e400f7c.app
 Firework-b1297fb01997d9f8.app
 Firework-b8ec90b0119c2a27.app
-Firework-cdccfc5676f1f031.app
 Firework-db3db5a7500e01fe.app
 Firework-ee6387a634e45d8e.app
+Firework-f32a7d566d9e400d.app
 Firework.app
 Folx.app
 FontForge.app
@@ -42,7 +44,6 @@ Headset.app
 Hewlett-Packard ⇒ /Applications/HP
 HP
 HP Easy Scan.app
-HuionTablet.app
 ImageOptim.app
 iTerm.app
 iZotope RX 7 Audio Editor.app
@@ -80,11 +81,11 @@ Radio Silence.app
 Rocket.app
 Safari.app
 ScreenFlow.app
+Session.app
 Sip.app
 SkyFonts
 Skype.app
 Slack.app
-Spark.app
 Sublime Merge.app
 SyphonInject.app
 TriggerClientUI.app
@@ -96,7 +97,7 @@ VirtualBox.app
 Visual Studio Code.app
 VLC.app
 Wattagio.app
-Webull.app
+Webull Desktop.app
 XAMPP
 Xcode.app
 xScope.app

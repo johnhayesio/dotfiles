@@ -99,6 +99,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vuciv/vim-bujo'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
+Plug 'mattn/calendar-vim'
 
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 
@@ -160,6 +161,7 @@ nmap <Leader>th <Plug>BujoAddnormal
 let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
 
 nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <leader>ca :Calendar<CR>:vertical resize +5<CR>
 nnoremap <leader>r :set ft=javascriptreact<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pr :Rg<SPACE>
@@ -170,10 +172,10 @@ nnoremap <leader>gxt :60vs<CR>:term<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
-nnoremap <leader><leader> <C-^>
-nnoremap <silent> <leader>gap :Git push origin --all<CR>:echo "Github push complete"<CR>
-nnoremap <silent> <leader>gag :Git push gitlab --all<CR>:echo "Gitlab push complete"<CR>
-nnoremap <silent> <leader>gar :Git push gitlab --all<CR>:Git push origin --all<CR>:echo "Gitlab/Github push complete"<CR>
+nnoremap <silent> <leader>gao :Git push origin --all<CR>:echo "Origin push complete"<CR>
+nnoremap <silent> <leader>gah :Git push github --all<CR>:echo "Github push complete"<CR>
+nnoremap <silent> <leader>gal :Git push gitlab --all<CR>:echo "Gitlab push complete"<CR>
+nnoremap <silent> <leader>gar :Git push gitlab --all<CR>:Git push github --all<CR>:Git push origin --all<CR>:echo "All repos push complete"<CR>
 nnoremap <silent> <Left> :vertical resize +10<CR>
 nnoremap <silent> <Right> :vertical resize -10<CR>
 
@@ -208,7 +210,7 @@ let g:floaterm_keymap_next   = '<F7>'
 let g:floaterm_keymap_toggle = '<F8>'
 
 " Vimwiki Config
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto_diary_index': 1}]
 
 " Coc Config
 function! s:check_back_space() abort
