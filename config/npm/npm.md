@@ -8,6 +8,7 @@
 ├── create-react-native-app@3.5.1
 ├── degit@2.8.0
 ├── diffchecker@0.1.4
+├── empty-trash-cli@1.0.1
 ├── eslint@7.8.1
 ├── expo-cli@3.26.2
 ├── fast-cli@2.4.0
