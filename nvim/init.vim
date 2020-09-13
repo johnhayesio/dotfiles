@@ -175,7 +175,7 @@ nnoremap <leader>gh :diffget //3<CR>
 nnoremap <silent> <leader>gao :Git push origin --all<CR>:echo "Origin push complete"<CR>
 nnoremap <silent> <leader>gah :Git push github --all<CR>:echo "Github push complete"<CR>
 nnoremap <silent> <leader>gal :Git push gitlab --all<CR>:echo "Gitlab push complete"<CR>
-nnoremap <silent> <leader>gar :Git push gitlab --all<CR>:Git push github --all<CR>:Git push origin --all<CR>:echo "All repos push complete"<CR>
+nnoremap <silent> <leader>gar :Git push all --all<CR>:echo "All repos push complete"<CR>
 nnoremap <silent> <Left> :vertical resize +10<CR>
 nnoremap <silent> <Right> :vertical resize -10<CR>
 
