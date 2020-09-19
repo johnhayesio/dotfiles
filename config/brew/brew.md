@@ -69,6 +69,7 @@ gsettings-desktop-schemas
 gtk+
 gtk+3
 gtk-mac-integration
+guile
 harfbuzz
 heroku
 heroku-node
@@ -83,6 +84,7 @@ imagemagick
 imageoptim-cli
 imlib2
 intltool
+jansson
 jasper
 jemalloc
 jpeg
