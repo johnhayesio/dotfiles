@@ -107,9 +107,9 @@ alias bud="brew update && brew upgrade && brew cask update && brew cleanup && br
 alias bip="brew search | eval \"fzf -m --header='[brew:install]'\""
 
 # GIT
-alias gsu="git-standup"
-alias gsa="git-standup -a"
-alias gsn="git-standup -d"
+alias gsu="git standup"
+alias gsa="git standup -a"
+alias gsn="git standup -d"
 alias gza="git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add -p"
 alias gpo="git push origin master"
 alias g-o="git push origin --all"
