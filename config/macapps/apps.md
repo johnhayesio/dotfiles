@@ -13,29 +13,22 @@ Audacity.app
 Audio Hijack.app
 BetterTouchTool.app
 Bitwarden.app
-Brave Browser.app
 CleanMyMac X.app
 CloudApp.app
 Contexts.app
 Cyberduck.app
 Dato.app
-Electrum.app
 Exodus.app
 ExpressVPN.app
 Final Cut Pro.app
 Finder.app
-Firefox Developer Edition.app
 Firework-469756cb1f4b084d.app
-Firework-62cc5b9e7ec7ebdf.app
 Firework-7bf97a6260ceafc0.app
 Firework-806cea9a6e400f7c.app
-Firework-9734d4b46f77cb3c.app
 Firework-b1297fb01997d9f8.app
 Firework-b8ec90b0119c2a27.app
 Firework-c5ac6ed82f2619b5.app
 Firework-db3db5a7500e01fe.app
-Firework-ee6387a634e45d8e.app
-Firework-ee747c804f0fe452.app
 Firework-f32a7d566d9e400d.app
 Firework.app
 Folx.app
@@ -57,7 +50,6 @@ Karabiner-EventViewer.app
 Keka.app
 Keyboard Maestro.app
 Keynote.app
-Kindle.app
 krisp.app
 LibreOffice.app
 Logic Pro X.app
@@ -74,7 +66,6 @@ mmhmm.app
 MongoDB Compass.app
 Moom.app
 MusicManager.app
-Notion.app
 Numbers.app
 Numi.app
 One Switch.app
@@ -88,12 +79,11 @@ Radio Silence.app
 Rocket.app
 Safari.app
 ScreenFlow.app
-Session.app
+Send to Kindle
 Sip.app
 SkyFonts
 Skype.app
 Slack.app
-Sublime Merge.app
 SyphonInject.app
 TriggerClientUI.app
 Ukelele.app

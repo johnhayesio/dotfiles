@@ -10,10 +10,10 @@
 ├── diffchecker@0.1.4
 ├── empty-trash-cli@1.0.1
 ├── eslint@7.10.0
-├── expo-cli@3.27.10
+├── expo-cli@3.27.12
 ├── fast-cli@2.4.0
 ├── fkill-cli@6.0.1
-├── gatsby-cli@2.12.100
+├── gatsby-cli@2.12.101
 ├── gifify@2.4.3
 ├── gistup@0.1.3
 ├── git-stats@2.10.12
@@ -48,6 +48,6 @@
 ├── vercel@20.1.1
 ├── wikit@4.4.1
 ├── wipe-modules@1.2.0
-├── yarn@1.22.7
+├── yarn@1.22.10
 └── ytdl@1.3.5
 

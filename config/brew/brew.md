@@ -51,6 +51,7 @@ giflossy
 girara
 git
 git-delta
+git-extras
 git-filter-repo
 git-standup
 glances
