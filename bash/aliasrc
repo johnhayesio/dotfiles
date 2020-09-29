@@ -182,9 +182,10 @@ alias rgf="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' -
 
 # youtube-dl
 alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Videos/%(title)s.%(ext)s'"
-alias ytp="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Playlists/%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s'"
-alias ytm="youtube-dl -f mp3 -v -o '~/Documents/yt_DLs/Audio/%(title)s.%(ext)s'"
-alias ytl="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Videos/%(title)s.%(ext)s'"
+alias ytp="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Playlists/Video/%(playlist)s/%(playlist_index)02d. %(title)s.%(ext)s'"
+alias ytm="youtube-dl -x --audio-format mp3 -v -o '~/Documents/yt_DLs/Audios/%(title)s.%(ext)s'"
+alias ytl="youtube-dl -x --audio-format mp3 -v -o '~/Documents/yt_DLs/Playlists/Audio/%(playlist)s/%(playlist_index)02d. %(title)s.%(ext)s'"
+alias yts="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Videos/%(title)s.%(ext)s'"
 
 # Video Playback
 alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no-macosx-autoplay"
