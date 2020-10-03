@@ -161,8 +161,11 @@ alias gccs="git log -1 --pretty=format:%H | pbcopy"
 alias gccm="git log -1 --pretty=format:%s | pbcopy"
 
 # Code Starter Kits
-alias css="git clone https://github.com/johnhayesio/simplecss.git"
-alias react="git clone https://github.com/johnhayesio/simple-react.git"
+alias simplecss="git clone https://github.com/johnhayesio/simplecss.git"
+alias simplereact="git clone https://github.com/johnhayesio/simple-react.git"
+alias html5bp="git clone https://github.com/h5bp/html5-boilerplate.git"
+alias reactkit="git clone https://github.com/kriasoft/react-starter-kit.git"
+alias reactshot="git clone https://github.com/coryhouse/react-slingshot.git"
 
 # Directories
 alias dotfiles="cd ~/dotfiles && clear && l"
@@ -192,6 +195,9 @@ alias vlcn="vlc --no-video-deco --no-embedded-video --no-playlist-autostart --no
 alias lofi="mpv --no-video https://www.youtube.com/watch\?v\=5qap5aO4i9A > /dev/null 2>&1 &"
 alias jazz="mpv --no-video https://www.youtube.com/watch\?v\=DSGyEsJ17cI > /dev/null 2>&1 &"
 alias coffee="mpv --no-video https://www.youtube.com/watch\?v\=DSGyEsJ17cI > /dev/null 2>&1 &"
+alias cafe="mpv --no-video https://www.youtube.com/watch\?v\=eDrUEn8c4Rw > /dev/null 2>&1 &"
+alias restaurant="mpv --no-video https://www.youtube.com/watch\?v\=h2zkV-l_TbY > /dev/null 2>&1 &"
+alias office="mpv --no-video https://www.youtube.com/watch\?v\=8tKpjMh_OUw > /dev/null 2>&1 &"
 alias piano="mpv --no-video https://www.youtube.com/watch\?v\=XULUBg_ZcAU > /dev/null 2>&1 &"
 alias house="mpv --no-video https://www.youtube.com/watch\?v\=wKOEl_vwPSo > /dev/null 2>&1 &"
 alias life="mpv --no-video https://www.youtube.com/watch\?v\=36YnV9STBqc > /dev/null 2>&1 &"
@@ -202,7 +208,6 @@ alias starbucks="mpv --no-video https://www.youtube.com/watch\?v\=-5KAN9_CzSA > 
 alias reggae="mpv --no-video https://www.youtube.com/watch\?v\=u6kdx-Q61l0 > /dev/null 2>&1 &"
 alias rtnews="mpv --no-video https://www.youtube.com/watch\?v\=NvCSr7qzAAM > /dev/null 2>&1 &"
 alias r24news="mpv --no-video https://www.youtube.com/watch\?v\=8T9SFZDP60Q > /dev/null 2>&1 &"
-alias mos24news="mpv --no-video https://www.youtube.com/watch\?v\=LHqgL3MEiPQ > /dev/null 2>&1 &"
 alias mfp="~/dotfiles/bash/mfp"
 alias mpvp="xargs -I REPLACESTRING mpv --playlist=REPLACESTRING <<<"
 alias mpvps="~/dotfiles/bash/mpvps"
