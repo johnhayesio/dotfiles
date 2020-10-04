@@ -183,9 +183,9 @@ vnoremap K :m '<-2<CR>gv=gv
 vnoremap X "_d
 
 inoremap <C-c> <ESC>
-inoremap jk <ESC>
+inoremap jj <ESC>
 
-cnoremap jk <ESC>
+cnoremap jj <ESC>
 
 tnoremap <C-w>h <C-\><C-n><C-w>h
 tnoremap <C-w>j <C-\><C-n><C-w>j
