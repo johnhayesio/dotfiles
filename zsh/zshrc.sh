@@ -1,5 +1,12 @@
 pfetch
 
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Vars
 	HISTFILE=~/.zsh_history
 	SAVEHIST=10000
@@ -26,6 +33,7 @@ pfetch
 
 # Scripts
   source ~/dotfiles/bash/scripts
+	source /Users/johnhayes/Library/Preferences/org.dystroy.broot/launcher/bash/br
 
 # For vim mappings:
 	stty -ixon
@@ -55,3 +63,6 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 fi
 
 source ~/dotfiles/zsh/prompt.sh
+
+eval $(thefuck --alias)
+eval "$(starship init zsh)"
