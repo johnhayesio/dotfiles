@@ -10,8 +10,6 @@ bat
 bdw-gc
 boost
 brightness
-broot
-browsh
 cairo
 calcurse
 cask
@@ -23,12 +21,10 @@ curl
 dasht
 dav1d
 desktop-file-utils
-dnote
 docbook
 docbook-xsl
 docgen
 emacs
-exercism
 faad2
 fd
 fdk-aac
@@ -195,7 +191,6 @@ pixman
 pkg-config
 poppler
 postgresql
-powerlevel10k
 pv
 python
 python3
@@ -226,6 +221,7 @@ speex
 sphinx-doc
 sqlite
 srt
+starship
 streamlink
 task
 terminal-notifier
