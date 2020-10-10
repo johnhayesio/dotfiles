@@ -41,6 +41,7 @@
 ├── purgecss@3.0.0
 ├── release-it@14.0.4
 ├── surge@0.21.6
+├── svg-term-cli@2.1.1
 ├── trash-cli@3.1.0
 ├── updates@11.2.4
 ├── vercel@20.1.2

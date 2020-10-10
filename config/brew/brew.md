@@ -3,11 +3,13 @@ ansiweather
 aom
 aria2
 asciidoc
+asciinema
 aspell
 atk
 bash-completion
 bat
 bdw-gc
+bench
 boost
 brightness
 cairo
@@ -117,6 +119,7 @@ libnotify
 libogg
 libomp
 libpng
+libpq
 librsvg
 libsamplerate
 libsndfile
@@ -137,6 +140,7 @@ libvpx
 libvterm
 libyaml
 libzip
+litecli
 little-cms2
 lsd
 lua
@@ -159,6 +163,7 @@ msgpack
 mujs
 mycli
 nasm
+ncdu
 ncurses
 neovim
 nettle
@@ -184,6 +189,7 @@ pcre2
 pdfgrep
 perl
 pfetch
+pgcli
 php-cs-fixer
 pianobar
 pinentry
@@ -232,6 +238,7 @@ theora
 timewarrior
 tldr
 tmux
+tokei
 tree
 uchardet
 unbound
