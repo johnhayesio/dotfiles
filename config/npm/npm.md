@@ -32,7 +32,7 @@
 ├── newsroom-cli@0.1.11
 ├── node-gyp@7.1.0
 ├── nodemon@2.0.4
-├── npm@6.14.6
+├── npm@6.14.8
 ├── npm-check-updates@9.0.4
 ├── npm-name-cli@3.0.0
 ├── pageres-cli@5.0.0

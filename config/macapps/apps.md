@@ -76,7 +76,7 @@ Poolside FM.app
 PopClip.app
 Postman.app
 Radio Silence.app
-Rocket.app
+ResponsivelyApp.app
 Safari.app
 ScreenFlow.app
 Send to Kindle
@@ -84,6 +84,7 @@ Sip.app
 SkyFonts
 Skype.app
 Slack.app
+Sourcetree.app
 SyphonInject.app
 TriggerClientUI.app
 Ukelele.app
