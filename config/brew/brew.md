@@ -146,6 +146,7 @@ lsd
 lua
 lua@5.1
 luajit
+luarocks
 lz4
 lzo
 mad
@@ -200,6 +201,7 @@ python
 python3
 python@2
 python@3.8
+python@3.9
 qt
 ranger
 rav1e
