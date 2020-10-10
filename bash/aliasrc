@@ -27,7 +27,6 @@ alias ...="cd ../.. && clear && l"
 alias rm="trash"
 alias rd="rm -rf"
 alias md="mkdir -pv"
-alias fz="~/dotfiles/bash/fuz"
 alias repo="~/dotfiles/bash/repo"
 
 # Config Files
