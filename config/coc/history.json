@@ -1,0 +1,83 @@
+{
+  "commands": {
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2Falgorithms": [
+      "sni"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-version2%2Fclient%2Fsrc%2Fcomponents": [
+      "editSn"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-version2%2Fclient%2Fsrc%2Fcomponents%2Fhome": [
+      "editSni"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-version2%2Fclient": [
+      "snippets.edit",
+      "editSn",
+      "editSni"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-v2%2Fclient": [
+      "edit",
+      "editSni",
+      "plugin",
+      "prettier.for",
+      "editSn",
+      "updateall",
+      "diag",
+      "snip"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2Flearning-projects%2Fhousehunter_v1%2Fserver": [
+      "uninst"
+    ],
+    "%2FUsers%2Fjohnhayes%2F": {
+      "config%2Fnvim": [
+        "snipp"
+      ]
+    }
+  },
+  "lists": {
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2Flearning-projects%2Fdevconnector%2Ffrontend": [
+      "sni"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-v2%2Fclient": [
+      "exten",
+      "di",
+      "snipp",
+      "setting"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2Flearning-projects%2Fhousehunter-v1%2Fserver": [
+      "command",
+      "exten",
+      "ext"
+    ],
+    "%2FUsers%2Fjohnhayes%2F": {
+      "config%2Fnvim": [
+        "snip"
+      ]
+    }
+  },
+  "diagnostics": {
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2Flearning-projects%2Fdevconnector%2Ffrontend": [
+      " o"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-v2%2Fclient": [
+      " ",
+      "Profil"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-v2%2Fserver": [
+      ":cnext",
+      "{{{"
+    ]
+  },
+  "extensions": {
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-version2%2Fclient%2Fsrc%2Fcomponents%2Fhome": [
+      "coc-sni"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2FLectureSource%2Flecturesource-v2%2Fclient": [
+      "coc-pre"
+    ],
+    "%2FUsers%2Fjohnhayes%2FDocuments%2Fprojects-FEWD%2Flearning-projects%2Fhousehunter-v1%2Fserver": [
+      "coc-",
+      "coc-pre",
+      "esl"
+    ]
+  }
+}

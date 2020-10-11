@@ -75,7 +75,6 @@ heroku
 heroku-node
 hicolor-icon-theme
 html2text
-htop
 httpie
 hub
 hyperfine
@@ -158,7 +157,6 @@ mongodb
 mongodb-community
 mpg123
 mplayer
-mps-youtube
 mpv
 msgpack
 mujs

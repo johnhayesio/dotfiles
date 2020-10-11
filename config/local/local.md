@@ -407,7 +407,6 @@ hmac256 -> ../Cellar/libgcrypt/1.8.6/bin/hmac256
 hn
 howdoi
 html2text -> ../Cellar/html2text/2.0.0/bin/html2text
-htop -> ../Cellar/htop/3.0.2/bin/htop
 http -> ../Cellar/httpie/2.2.0_1/bin/http
 https -> ../Cellar/httpie/2.2.0_1/bin/https
 httpserv -> ../Cellar/nss/3.57/bin/httpserv
@@ -540,7 +539,6 @@ mpg123-id3dump -> ../Cellar/mpg123/1.26.3/bin/mpg123-id3dump
 mpg123-strip -> ../Cellar/mpg123/1.26.3/bin/mpg123-strip
 mpicalc -> ../Cellar/libgcrypt/1.8.6/bin/mpicalc
 mplayer -> ../Cellar/mplayer/1.4/bin/mplayer
-mpsyt -> ../Cellar/mps-youtube/0.2.8_11/bin/mpsyt
 mpv -> ../Cellar/mpv/0.32.0_5/bin/mpv
 msgattrib -> ../Cellar/gettext/0.21/bin/msgattrib
 msgcat -> ../Cellar/gettext/0.21/bin/msgcat

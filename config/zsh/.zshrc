@@ -1,0 +1,1 @@
+source '/Users/johnhayes/dotfiles/zsh/zshrc_manager.sh'

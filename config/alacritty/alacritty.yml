@@ -73,7 +73,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: MesloLGS NF
+    family: DankMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -84,7 +84,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: MesloLGS NF
+    family: DankMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -95,7 +95,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: MesloLGS NF
+    family: DankMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -149,7 +149,7 @@ colors:
     blue:    '0x82aaff'
     magenta: '0xc792ea'
     cyan:    '0x89ddff'
-    white:   '0x959dcb'
+    white:   '0xffffff'
 
   bright:
     black:   '0x676e95'
@@ -174,7 +174,7 @@ colors:
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   cursor:
-    text: '0x292d3e'
+    # text: '0x292d3e'
     cursor: '0x959dcb'
 
   # Selection colors
@@ -190,15 +190,15 @@ colors:
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  #dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
+  # dim:
+  # black:   '0x000000'
+  # red:     '0x8c3336'
+  # green:   '0x7a8530'
+  # yellow:  '0x97822e'
+  # blue:    '0x506d8f'
+  # magenta: '0x80638e'
+  # cyan:    '0x497e7a'
+  # white:   '0xffffff'
 
   # Indexed Colors
   #
@@ -208,7 +208,13 @@ colors:
   # Example:
   #   `- { index: 16, color: '0xff00ff' }`
   #
-  indexed_colors: []
+  indexed_colors:
+    - { index: 16, color: '0xf78c6c' }
+    - { index: 17, color: '0xff5370' }
+    - { index: 18, color: '0x444267' }
+    - { index: 19, color: '0x32374d' }
+    - { index: 20, color: '0x8796b0' }
+    - { index: 21, color: '0x959dcb' }
 
 # Visual Bell
 #

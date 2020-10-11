@@ -11,7 +11,7 @@
 " If you would like to use another vi clone such as Elvis or Vile
 " you will need to change this setting.
 
-set vicmd=vim
+set vicmd=nvim
 " set vicmd=elvis\ -G\ termcap
 " set vicmd=vile
 
@@ -131,11 +131,12 @@ mark h ~/
 " %m run the command in a menu window
 
 command! df df -h %m 2> /dev/null
-command! diff vim -d %f %F
+command! diff nvim -d %f %F
 command! zip zip -r %f.zip %f
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
+command! md :mkdir -p %a
 command! nf :touch %a
 command! reload :write | restart
 
@@ -216,8 +217,8 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
 
 " Web
 filetype *.html,*.htm
-       \ {Open in Vim}
-       \ vim %f;
+       \ {Open in Neovim}
+       \ nvim %f;
        \ {Open in Chrome}
        \ open -a Google\ Chrome.app,
        \ {Open in Firefox}
@@ -227,8 +228,8 @@ filetype *.html,*.htm
 fileviewer *.html,*.htm w3m -dump -T text/html
 
 filetype *.js,*.jsx,*.ts,*.tsx,*.css,*.sass,*.scss,*.json,*.txt
-       \ {Open in Vim}
-       \ vim %f;
+       \ {Open in Neovim}
+       \ nvim %f;
 
 " Object
 filetype *.o nm %f | less
