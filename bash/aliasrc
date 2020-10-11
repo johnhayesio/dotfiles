@@ -30,13 +30,13 @@ alias repo="~/dotfiles/bash/repo"
 
 # Config Files
 alias vimrc="nvim -u NONE ~/.config/nvim/init.vim"
-alias zshrc="nvim ~/dotfiles/zsh/zshrc.sh"
+alias zshrc="nvim ~/dotfiles/config/zsh/zshrc.sh"
 alias aliasrc="nvim ~/dotfiles/bash/aliasrc"
 
 # List
 alias ls="exa"
 alias l="exa -lFh"
-alias la="exa -lAFh"
+alias la="exa -laFh"
 alias lr="exa -tRFh"
 alias lt="exa -ltFh"
 alias ll="exa -l"
@@ -71,7 +71,7 @@ alias marked="open -a 'Marked 2'"
 alias myip="curl ifconfig.co && curl ifconfig.co/city && curl ifconfig.co/country"
 alias cc="calcurse -D ~/.config/calcurse"
 alias server="live-server --no-browser"
-alias nb="newsboat"
+alias yt="newsboat"
 alias pc="castero"
 
 alias wtr="curl -4 http://wttr.in/Moscow\?m"
