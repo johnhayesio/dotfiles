@@ -22,11 +22,11 @@ Exodus.app
 ExpressVPN.app
 Final Cut Pro.app
 Finder.app
-Firework-469756cb1f4b084d.app
 Firework-7bf97a6260ceafc0.app
 Firework-806cea9a6e400f7c.app
-Firework-b1297fb01997d9f8.app
+Firework-469756cb1f4b084d.app
 Firework-b8ec90b0119c2a27.app
+Firework-b1297fb01997d9f8.app
 Firework-c5ac6ed82f2619b5.app
 Firework-db3db5a7500e01fe.app
 Firework-f32a7d566d9e400d.app
@@ -34,11 +34,11 @@ Firework.app
 Folx.app
 FontForge.app
 Git Streaks.app
-Google Chrome Canary.app
 Google Chrome.app
+Google Chrome Canary.app
 Grammarly for Safari.app
 Headset.app
-Hewlett-Packard
+Hewlett-Packard -> /Applications/HP
 HP
 HP Easy Scan.app
 ImageOptim.app

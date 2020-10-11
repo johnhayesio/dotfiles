@@ -6,11 +6,12 @@ asciidoc
 asciinema
 aspell
 atk
+bash
 bash-completion
 bat
 bdw-gc
-bench
 boost
+bottom
 brightness
 cairo
 calcurse
@@ -27,6 +28,7 @@ docbook
 docbook-xsl
 docgen
 emacs
+exa
 faad2
 fd
 fdk-aac
@@ -60,7 +62,6 @@ gnu-sed
 gnutls
 gobject-introspection
 googler
-gotop
 graphicsmagick
 graphite2
 grip
@@ -77,6 +78,7 @@ html2text
 htop
 httpie
 hub
+hyperfine
 icu4c
 ilmbase
 imagemagick
@@ -142,7 +144,6 @@ libyaml
 libzip
 litecli
 little-cms2
-lsd
 lua
 lua@5.1
 luajit
@@ -163,6 +164,7 @@ msgpack
 mujs
 mycli
 nasm
+nb
 ncdu
 ncurses
 neovim
@@ -198,6 +200,7 @@ pkg-config
 poppler
 postgresql
 pv
+pygments
 python
 python3
 python@2
@@ -217,6 +220,7 @@ s3cmd
 sc-im
 screen
 screenresolution
+sd
 sdl2
 shared-mime-info
 snappy
@@ -230,13 +234,14 @@ srt
 starship
 streamlink
 task
+tealdeer
 terminal-notifier
 tesseract
 texi2html
 thefuck
 theora
+tig
 timewarrior
-tldr
 tmux
 tokei
 tree

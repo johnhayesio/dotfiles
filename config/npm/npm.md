@@ -1,6 +1,5 @@
 /Users/johnhayes/.nvm/versions/node/v12.18.4/lib
 ├── @prettier/plugin-php@0.15.0
-├── bitly-client@1.7.2
 ├── caniuse-cmd@1.3.1
 ├── carbon-now-cli@1.4.0
 ├── cash-cli@4.2.1
@@ -10,7 +9,6 @@
 ├── diffchecker@0.1.4
 ├── eslint@7.11.0
 ├── expo-cli@3.27.14
-├── fast-cli@2.4.0
 ├── fkill-cli@6.0.1
 ├── gatsby-cli@2.12.107
 ├── gifify@2.4.3
@@ -28,7 +26,6 @@
 ├── markdown-to-medium@1.4.4
 ├── markserv@1.17.4
 ├── mup@1.5.1
-├── neovim@4.9.0
 ├── newsroom-cli@0.1.11
 ├── node-gyp@7.1.0
 ├── nodemon@2.0.4
@@ -42,11 +39,8 @@
 ├── release-it@14.0.4
 ├── surge@0.21.6
 ├── svg-term-cli@2.1.1
-├── trash-cli@3.1.0
-├── updates@11.2.4
 ├── vercel@20.1.2
 ├── wikit@4.4.1
 ├── wipe-modules@1.2.0
-├── yarn@1.22.10
-└── ytdl@1.3.5
+└── yarn@1.22.10
 
