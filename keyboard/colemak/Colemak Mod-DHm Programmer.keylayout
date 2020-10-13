@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 3.3.0.249 on 2020-10-13 at 16:48 (CDT)-->
-<keyboard group="126" id="-27834" name="Colemak DH" maxout="1">
+<!--Last edited by Ukelele version 3.3.0.249 on 2020-10-13 at 18:02 (CDT)-->
+<keyboard group="126" id="-14936" name="Colemak DH" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="16c" modifiers="f4"/>
         <layout first="18" last="18" mapSet="984" modifiers="f4"/>
@@ -391,7 +391,7 @@
             <key code="9" output="©"/>
             <key code="10" output="§"/>
             <key code="11" output="."/>
-            <key code="12" output="œ"/>
+            <key code="12" output="&#x001B;"/>
             <key code="13" action="∑"/>
             <key code="14" output="ƒ"/>
             <key code="15" output="π"/>
@@ -418,7 +418,7 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="6"/>
             <key code="38" output="4"/>
-            <key code="39" output="&#x0022;"/>
+            <key code="39" output="&#x0008;"/>
             <key code="40" output="5"/>
             <key code="41" output="&#x000D;"/>
             <key code="42" output="½"/>
