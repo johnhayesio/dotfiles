@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BuildVersion</key>
-	<string>1.0.0</string>
-	<key>ProjectName</key>
-	<string>Colemak Programmer</string>
-	<key>SourceVersion</key>
+	<key>CFBundleIdentifier</key>
+	<string>org.sil.ukelele.keyboardlayout.colemakmod-dhmprogrammer</string>
+	<key>CFBundleName</key>
+	<string>Colemak Mod-DHm Programmer</string>
+	<key>CFBundleVersion</key>
 	<string>1.0.0</string>
 </dict>
 </plist>

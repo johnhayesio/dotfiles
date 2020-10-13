@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 3.3.0.249 on 2020-10-13 at 05:24 (CDT)-->
-<keyboard group="126" id="-12986" name="Colemak DH" maxout="1">
+<!--Last edited by Ukelele version 3.3.0.249 on 2020-10-13 at 05:03 (CDT)-->
+<keyboard group="126" id="-30801" name="Colemak Mod-DHm" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="16c" modifiers="f4"/>
         <layout first="18" last="18" mapSet="984" modifiers="f4"/>
@@ -47,7 +47,7 @@
             <key code="1" output="r"/>
             <key code="2" output="s"/>
             <key code="3" output="t"/>
-            <key code="4" output="k"/>
+            <key code="4" output="m"/>
             <key code="5" output="g"/>
             <key code="6" output="x"/>
             <key code="7" output="c"/>
@@ -88,7 +88,7 @@
             <key code="42" output="\"/>
             <key code="43" output=","/>
             <key code="44" output="/"/>
-            <key code="45" output="m"/>
+            <key code="45" output="k"/>
             <key code="46" output="h"/>
             <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
@@ -159,7 +159,7 @@
             <key code="1" output="R"/>
             <key code="2" output="S"/>
             <key code="3" output="T"/>
-            <key code="4" output="K"/>
+            <key code="4" output="M"/>
             <key code="5" output="G"/>
             <key code="6" output="X"/>
             <key code="7" output="C"/>
@@ -200,7 +200,7 @@
             <key code="42" output="|"/>
             <key code="43" output="&#x003C;"/>
             <key code="44" output="?"/>
-            <key code="45" output="M"/>
+            <key code="45" output="K"/>
             <key code="46" output="H"/>
             <key code="47" output="&#x003E;"/>
             <key code="48" output="&#x0009;"/>
