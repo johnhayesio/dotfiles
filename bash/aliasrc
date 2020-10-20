@@ -86,7 +86,7 @@ alias nug="npm uninstall --global"
 
 # Brew
 alias bud="brew update && brew upgrade && brew cleanup"
-alias bip="brew search | eval \"fzf -m --header='[brew:install]'\""
+alias bip="brew search | fzf -m --header='[brew:install]' | xargs brew install"
 
 # GIT
 alias gst="git status"
@@ -161,6 +161,9 @@ alias config="~/.config && clear && l"
 # Searching
 alias rgv="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' --glob '!.git' | fzf | xargs -o nvim"
 alias rgf="rg --files --hidden --follow --no-ignore-vcs --glob '!node_modules' --glob '!.git' | fzf"
+
+# Scripts
+alias fnpm="cat package.json | jq -r '.scripts | keys[]' | fzf --header 'Select npm script to run' | xargs npm run"
 
 # youtube-dl
 alias ytv="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -v -o '~/Documents/yt_DLs/Videos/%(title)s.%(ext)s'"
