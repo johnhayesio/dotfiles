@@ -1,0 +1,7 @@
+#!/bin/bash
+fignore() {
+  curl -s 'https://api.github.com/repos/github/gitignore/git/trees/master?recursive=1' | \
+  jq -r '.tree | .[] | select(.type == "blob" and (.path | endswith(".gitignore"))) | .path' | \
+  fzf --header 'Select .gitignore to download' | \
+  xargs -I{} bash -c 'curl -s https://raw.githubusercontent.com/github/gitignore/master/{} -o .gitignore && echo "Downloaded {} as .gitignore"'
+}

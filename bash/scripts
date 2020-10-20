@@ -8,6 +8,7 @@ source ~/dotfiles/bash/ciu
 source ~/dotfiles/bash/kp
 source ~/dotfiles/bash/se
 source ~/dotfiles/bash/vf
+source ~/dotfiles/bash/fignore
 source ~/dotfiles/bash/fv
 source ~/dotfiles/bash/ff
 source ~/dotfiles/bash/fr
