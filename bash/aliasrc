@@ -1,5 +1,6 @@
 # System
-alias hs="history | rg"
+alias ghs="history | rg"
+alias ths="history | awk '{print $2}' | awk 'BEGIN {FS=\"|\"}{print $1}' | sort | uniq -c | sort -n | tail | sort -nr"
 alias mem="top -l1 | rg PhysMem"
 alias ka="killall"
 alias sdn="sudo shutdown -h now"
@@ -120,7 +121,7 @@ alias gpr="git remote | xargs -L1 git push --all"
 alias g-po="git pull origin --all"
 alias g-pm="git pull origin master"
 alias gp="gaa && gca && gpo"
-alias go="gaa && gca && gpr"
+alias gr="gaa && gca && gpr"
 
 alias g-="git checkout -"
 alias g--="git checkout --"
