@@ -582,7 +582,7 @@ nettle-pbkdf2 -> ../Cellar/nettle/3.6/bin/nettle-pbkdf2
 newsboat -> ../Cellar/newsboat/2.21/bin/newsboat
 ngettext -> ../Cellar/gettext/0.21/bin/ngettext
 ninja -> ../Cellar/ninja/1.10.1_2/bin/ninja
-nnn -> ../Cellar/nnn/3.4/bin/nnn
+nnn
 nonspr10 -> ../Cellar/nss/3.58/bin/nonspr10
 normalize.py -> ../Cellar/ffmpeg/4.3.1_1/bin/normalize.py
 notify-send -> ../Cellar/libnotify/0.7.9/bin/notify-send

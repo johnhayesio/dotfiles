@@ -24,6 +24,7 @@ export NVM_DIR="$HOME/.nvm"
   export FZF_CTRL_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
   export ANDROID_HOME=/Volumes/Expansion/Android/sdk
 	export GOPATH=/Users/$USER/go
+	export BROWSER=lynx
   export PATH=$PATH:$ANDROID_HOME/emulator
   export PATH=$PATH:$ANDROID_HOME/tools
   export PATH=$PATH:$ANDROID_HOME/tools/bin
