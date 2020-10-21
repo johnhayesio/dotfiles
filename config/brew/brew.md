@@ -17,6 +17,7 @@ cairo
 calcurse
 cask
 cmake
+cmatrix
 cointop
 cpanminus
 ctags
@@ -34,6 +35,7 @@ fd
 fdk-aac
 fdupes
 ffmpeg
+figlet
 findutils
 flac
 fontconfig
@@ -60,6 +62,7 @@ gmp
 gnu-getopt
 gnu-sed
 gnutls
+go
 gobject-introspection
 googler
 graphicsmagick
@@ -147,6 +150,7 @@ lua
 lua@5.1
 luajit
 luarocks
+lynx
 lz4
 lzo
 mad
@@ -155,6 +159,7 @@ mas
 meson
 mongodb
 mongodb-community
+mongodb-database-tools
 mpg123
 mplayer
 mpv
@@ -197,6 +202,7 @@ pixman
 pkg-config
 poppler
 postgresql
+procs
 pv
 pygments
 python
@@ -271,6 +277,7 @@ z
 zathura
 zathura-pdf-poppler
 zimg
+zoxide
 zsh
 zsh-completions
 zstd
