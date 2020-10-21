@@ -174,7 +174,6 @@ neovim
 nettle
 newsboat
 ninja
-nnn
 node
 nspr
 nss
