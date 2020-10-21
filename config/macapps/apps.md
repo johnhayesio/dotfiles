@@ -29,6 +29,7 @@ Firework-b8ec90b0119c2a27.app
 Firework-b1297fb01997d9f8.app
 Firework-c5ac6ed82f2619b5.app
 Firework-db3db5a7500e01fe.app
+Firework-ee6eff442aa28099.app
 Firework-f32a7d566d9e400d.app
 Firework.app
 Folx.app
@@ -86,6 +87,7 @@ Skype.app
 Slack.app
 Sourcetree.app
 SyphonInject.app
+thinkorswim
 TriggerClientUI.app
 Ukelele.app
 Upwork.app
