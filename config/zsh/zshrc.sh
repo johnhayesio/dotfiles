@@ -23,6 +23,7 @@ export NVM_DIR="$HOME/.nvm"
   export FZF_CTRL_T_COMMAND="fd $FD_OPTIONS"
   export FZF_CTRL_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
   export ANDROID_HOME=/Volumes/Expansion/Android/sdk
+	export GOPATH=/Usrs/$USER/go
   export PATH=$PATH:$ANDROID_HOME/emulator
   export PATH=$PATH:$ANDROID_HOME/tools
   export PATH=$PATH:$ANDROID_HOME/tools/bin
@@ -47,7 +48,6 @@ source ~/dotfiles/config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highligh
 source ~/dotfiles/config/zsh/keybindings.sh
 
 source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
-source /usr/local/etc/profile.d/z.sh
 source $HOME/.cargo/env
 
 # Fix for arrow-key searching
@@ -66,5 +66,6 @@ fi
 
 source ~/dotfiles/config/zsh/prompt.sh
 
-eval $(thefuck --alias)
+eval "$(zoxide init zsh)"
+eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
