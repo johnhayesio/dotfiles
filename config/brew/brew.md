@@ -77,6 +77,7 @@ harfbuzz
 heroku
 heroku-node
 hicolor-icon-theme
+hors
 html2text
 httpie
 hub
