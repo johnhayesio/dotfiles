@@ -110,7 +110,7 @@ alias gl2="git log -2"
 alias gla="git log --oneline --decorate --all"
 alias gls="git log --oneline --name-status -10"
 
-alias gf="xargs -I REPLACESTRING git log --oneline --grep='REPLACESTRING' <<<"
+alias ggr='_git_grep() { git log --oneline --grep="$1" | fzf;}; _git_grep'
 alias gai="git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add -p"
 
 alias gsu="git standup"
