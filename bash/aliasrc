@@ -10,7 +10,10 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias lzg="lazygit"
 alias lzn="lazynpm"
 alias lzd="lazydocker"
-alias snip="cat \$(ls -d ~/.nb/snip/* | fzf) | pbcopy"
+
+alias snip="the-way"
+alias snips="the-way search"
+alias snipnb="cat \$(ls -d ~/.nb/snip/* | fzf) | pbcopy"
 
 # Screens
 alias sc="screen"
