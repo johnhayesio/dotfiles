@@ -1,5 +1,5 @@
 /Users/johnhayes/.nvm/versions/node/v12.18.4/lib
-├── @prettier/plugin-php@0.15.0
+├── @prettier/plugin-php@0.15.1
 ├── caniuse-cmd@1.3.1
 ├── carbon-now-cli@1.4.0
 ├── cash-cli@4.2.1
