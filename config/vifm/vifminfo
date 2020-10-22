@@ -33,7 +33,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -42,48 +42,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/Users/johnhayes/Downloads
-	..
-0
-d/Users/johnhayes/Documents/projects-FEWD
-	LectureSource
-1
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource
-	lecturesource-v2
-4
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource/lecturesource-v2
-	server
-3
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource/lecturesource-v2/server
-	public
-7
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource/lecturesource-v2/server/public
-	fonts
-1
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource/lecturesource-v2/server
-	public
-7
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource/lecturesource-v2
-	server
-3
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource
-	file-preview
-2
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource/file-preview
-	public
-7
-d/Users/johnhayes/Documents/projects-FEWD/LectureSource/file-preview/public
-	..
-0
-d/Users/johnhayes/Documents
-	yt_DLs
-16
-d/Users/johnhayes/Downloads
-	linkedin.png
-10
-d/Users/johnhayes
-	Downloads
-4
 d/Users/johnhayes/Documents/projects-FEWD
 	LectureSource
 1
@@ -340,8 +298,50 @@ d/Users/johnhayes
 	Downloads
 4
 d/Users/johnhayes/Downloads
-	products_and_images.zip
-24
+	..
+0
+d/Users/johnhayes/Documents/projects-FEWD
+	LectureSource
+3
+d/Users/johnhayes
+	vimwiki
+4
+d/Users/johnhayes/vimwiki
+	diary
+2
+d/Users/johnhayes/vimwiki/diary
+	..
+0
+d/Users/johnhayes/vimwiki
+	gruvbox.alfredappearance
+32
+d/Users/johnhayes/go
+	bin
+1
+d/Users/johnhayes/go/bin
+	wuzz
+2
+d/Users/johnhayes/go
+	src
+3
+d/Users/johnhayes/go/src
+	wuzz
+4
+d/Users/johnhayes/go/src/wuzz
+	wuzz
+1
+d/Users/johnhayes/go/src
+	..
+0
+d/Users/johnhayes/Documents
+	yt_DLs
+20
+d/Users/johnhayes/Documents/projects-FEWD
+	gist-code
+8
+d/Users/johnhayes/Documents/projects-FEWD/gist-code
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -384,6 +384,66 @@ D/Users/johnhayes/Documents/projects-FEWD/learning-projects/pro-shop/frontend
 D/Users/johnhayes/Documents/projects-FEWD/learning-projects/pro-shop/frontend/src
 	products.js
 6
+D/Users/johnhayes/Documents/projects-FEWD/learning-projects
+	..
+0
+D/Users/johnhayes/Documents
+	..
+0
+D/Users/johnhayes
+	dotfiles
+16
+D/Users/johnhayes/dotfiles
+	karabiner
+4
+D/Users/johnhayes/dotfiles/karabiner
+	..
+0
+D/Users/johnhayes/dotfiles
+	nvim
+5
+D/Users/johnhayes/dotfiles/nvim
+	..
+0
+D/Users/johnhayes/dotfiles
+	nvim
+5
+D/Users/johnhayes/dotfiles/nvim
+	..
+0
+D/Users/johnhayes/dotfiles
+	sublime
+6
+D/Users/johnhayes/dotfiles/sublime
+	..
+0
+D/Users/johnhayes/dotfiles
+	terminal
+7
+D/Users/johnhayes/dotfiles/terminal
+	..
+0
+D/Users/johnhayes/dotfiles
+	terminal
+7
+D/Users/johnhayes
+	dotfiles
+16
+D/Users/johnhayes/dotfiles
+	config
+3
+D/Users/johnhayes/dotfiles/config
+	..
+0
+D/Users/johnhayes/dotfiles
+	config
+3
+D/Users/johnhayes/dotfiles/config
+	..
+0
+D/Users/johnhayes/Documents
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -398,7 +458,6 @@ D
 :mkdir img
 :touch Register.jsx
 :marks
-:help
 :nf 
 :nf test.txt
 :nf HowItWorks.js
@@ -408,6 +467,7 @@ D
 :mkdir images
 :mkdir uploads
 :mkdir tmp
+:help
 :q
 
 # Search history (oldest to newest):
@@ -422,6 +482,9 @@ D
 /XAM
 /yt
 /index
+/.alfre
+/dotfil
+/gist
 
 # Prompt history (oldest to newest):
 ptypescript-grider-24:38.txt
@@ -452,6 +515,7 @@ pMaroon 5 - Girls Like You.mp3
 # Local filter history (oldest to newest):
 
 # Registers:
+""/Users/johnhayes/go/bin/wuzz
 
 # Directory stack (oldest to newest):
 
