@@ -413,7 +413,7 @@ heif-thumbnailer -> ../Cellar/libheif/1.9.1/bin/heif-thumbnailer
 heroku -> ../Cellar/heroku/7.45.0/bin/heroku
 hmac256 -> ../Cellar/libgcrypt/1.8.6/bin/hmac256
 hn
-howdoi
+hors -> ../Cellar/hors/0.7.2/bin/hors
 html2text -> ../Cellar/html2text/2.0.0/bin/html2text
 http -> ../Cellar/httpie/2.2.0_1/bin/http
 https -> ../Cellar/httpie/2.2.0_1/bin/https
