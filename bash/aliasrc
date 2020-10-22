@@ -13,7 +13,6 @@ alias lzd="lazydocker"
 
 alias snip="the-way"
 alias snips="the-way search"
-alias snipnb="cat \$(ls -d ~/.nb/snips/* | fzf) | pbcopy"
 alias snipn='_cp_nbsnip() { rg -I "$1" ~/.nb/snips | fzf | pbcopy;}; _cp_nbsnip'
 
 # Screens
@@ -112,7 +111,7 @@ alias gla="git log --oneline --decorate --all"
 alias gls="git log --oneline --name-status -10"
 
 alias gf="xargs -I REPLACESTRING git log --oneline --grep='REPLACESTRING' <<<"
-alias gza="git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add -p"
+alias gai="git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add -p"
 
 alias gsu="git standup"
 alias gsa="git standup -a"
