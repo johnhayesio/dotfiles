@@ -1,0 +1,70 @@
+/* Gruvbox Vomnibar CSS */
+/* Installation: Open Vimium Options -> Click "Show Advanced Options" and paste this into the CSS for Vimium UI text area. */
+
+div > .vimiumHintMarker {
+  /* linkhint boxes */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF785),
+  color-stop(100%,#FFBD44));
+  border: 1px solid #FF8030;
+}
+
+div > .vimiumHintMarker span {
+  /* linkhint text */
+  color: #1D2021;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+input#vomnibarInput.vimiumReset {
+	color: #EBDBB2 !important;
+  background-color: #3C3836 !important;
+}
+
+#vomnibar {
+   width: 50%;
+   max-width: 960px;
+   top: 123px;
+   left: 25%;
+   border-color: #3C3836;
+   border-width: 3px;
+   background-color: #1D2021;
+   box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+}
+
+#vomnibar .vomnibarSearchArea {
+   background-color: #3C3836;
+   border-bottom: #3C3836;
+}
+
+#vomnibar input {
+   background-color: #EBDBB2;
+   border-color: #1D2021;
+}
+
+#vomnibar ul {
+    background-color: #1D2021;
+}
+
+#vomnibar li {
+   border-bottom: #1D2021;
+}
+
+#vomnibar li .vomnibarUrl {
+   color: #7FA598;
+}
+
+#vomnibar li .vomnibarMatch {
+   color: #B8BB26;
+}
+
+#vomnibar li.vomnibarSelected {
+    background-color: #3C3836;
+}
+
+#vomnibar li em .vomnibarMatch, #vomnibar li .vomnibarTitle .vomnibarMatch {
+   color: #EBDBB2;
+}
+
+#vomnibar li em, #vomnibar li .vomnibarTitle {
+   color: #EBDBB2;
+}
