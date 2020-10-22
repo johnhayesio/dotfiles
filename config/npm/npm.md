@@ -11,7 +11,6 @@
 ├── eslint@7.11.0
 ├── expo-cli@3.28.1
 ├── fkill-cli@6.0.1
-├── fx@20.0.2
 ├── gatsby-cli@2.12.111
 ├── gifify@2.4.3
 ├── gistup@0.1.3
