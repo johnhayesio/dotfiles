@@ -19,7 +19,6 @@ docutils        0.15.2
 gevent          20.6.2
 greenlet        0.4.16
 grequests       0.6.0
-howdoi          2.0.7
 idna            2.10
 jmespath        0.10.0
 keep            2.9
