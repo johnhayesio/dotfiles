@@ -32,6 +32,7 @@ alias ...="cd ../.. && clear && l"
 alias rd="rm -rf"
 alias md="mkdir -pv"
 alias repo="~/dotfiles/bash/repo"
+alias clc="fc -ln -1 | awk '{\$1=\$1}1' | pbcopy"
 
 # Golang
 alias wuzz="$GOPATH/bin/wuzz"
