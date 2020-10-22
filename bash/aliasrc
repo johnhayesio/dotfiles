@@ -29,6 +29,10 @@ alias rd="rm -rf"
 alias md="mkdir -pv"
 alias repo="~/dotfiles/bash/repo"
 
+# Golang
+alias wuzz="$GOPATH/bin/wuzz"
+alias mop="$GOPATH/bin/mop"
+
 # Config Files
 alias vimrc="nvim -u NONE ~/.config/nvim/init.vim"
 alias zshrc="nvim ~/dotfiles/config/zsh/zshrc.sh"
