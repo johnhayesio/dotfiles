@@ -13,7 +13,6 @@ alias lzd="lazydocker"
 
 alias snip="the-way"
 alias snips="the-way search"
-alias snipn='_cp_nbsnip() { rg -I "$1" ~/.nb/snips | fzf | pbcopy;}; _cp_nbsnip'
 
 # Screens
 alias sc="screen"
