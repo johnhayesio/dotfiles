@@ -56,6 +56,7 @@ git-delta
 git-extras
 git-filter-repo
 git-standup
+gitui
 glances
 glib
 gmp
