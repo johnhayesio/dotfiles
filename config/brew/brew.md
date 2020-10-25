@@ -216,6 +216,7 @@ ranger
 rav1e
 readline
 reattach-to-user-namespace
+remind
 ripgrep
 rtmpdump
 rubberband
