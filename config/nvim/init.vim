@@ -91,6 +91,7 @@ Plug 'stephpy/vim-php-cs-fixer'
 Plug 'shime/vim-livedown'
 Plug 'sunaku/vim-dasht'
 Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
 Plug 'unblevable/quick-scope'
 Plug 'tpope/vim-commentary'
 Plug 'wakatime/vim-wakatime'
@@ -99,11 +100,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'vuciv/vim-bujo'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
-Plug 'mattn/calendar-vim'
 
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 
-Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 
 call plug#end()
@@ -161,6 +160,8 @@ let g:qs_max_chars=150
 nmap <Leader>tu <Plug>BujoChecknormal
 nmap <Leader>th <Plug>BujoAddnormal
 let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
+
+let g:closetag_filetypes = 'javascriptreact'
 
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>ca :Calendar<CR>:vertical resize +5<CR>
