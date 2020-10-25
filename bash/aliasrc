@@ -84,8 +84,8 @@ alias awtri="ansiweather -l Moscow -u imperial -s true -a false"
 alias awtrf="ansiweather -l Moscow -u metric -s true -a false -F"
 alias awtrfi="ansiweather -l Moscow -u imperial -s true -a false -F"
 
-alias rmd='_remind() { remind $1 ~/.nb/home/remind.rem;}; _remind'
-alias rmp="remind -c1 -p ~/.nb/home/remind.rem | rem2ps | ps2pdf - | open -f -a Preview"
+alias rmd='_remind() { remind -m $1 ~/.nb/home/remind.rem;}; _remind'
+alias rmp="remind -m -c1 -p ~/.nb/home/remind.rem | rem2ps | ps2pdf - | open -f -a Preview"
 
 # NPM
 alias nls="npm list --global --depth=0"
