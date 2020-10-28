@@ -22,7 +22,7 @@
 autoload -U colors && colors
 
 # Settings
-: "${ZSH_GIT_PROMPT_SHOW_UPSTREAM=""}"
+: "${ZSH_GIT_PROMPT_SHOW_UPSTREAM="full"}"
 : "${ZSH_GIT_PROMPT_SHOW_STASH=""}"
 : "${ZSH_GIT_PROMPT_ENABLE_SECONDARY=""}"
 : "${ZSH_GIT_PROMPT_NO_ASYNC=""}"
@@ -34,7 +34,7 @@ autoload -U colors && colors
 : "${ZSH_THEME_GIT_PROMPT_SUFFIX=")"}"
 : "${ZSH_THEME_GIT_PROMPT_SEPARATOR="|"}"
 : "${ZSH_THEME_GIT_PROMPT_DETACHED="%{$fg_bold[cyan]%}:"}"
-: "${ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[blue]%}"}"
+: "${ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[green]%}"}"
 : "${ZSH_THEME_GIT_PROMPT_UPSTREAM_SYMBOL="%{$fg_bold[yellow]%}⟳ "}"
 : "${ZSH_THEME_GIT_PROMPT_UPSTREAM_PREFIX="%{$fg[red]%}(%{$fg[yellow]%}"}"
 : "${ZSH_THEME_GIT_PROMPT_UPSTREAM_SUFFIX="%{$fg[red]%})"}"

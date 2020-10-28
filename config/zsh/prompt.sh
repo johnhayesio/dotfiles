@@ -34,7 +34,7 @@ set_prompt() {
 	# Timer: http://stackoverflow.com/questions/2704635/is-there-a-way-to-find-the-running-time-of-the-last-executed-command-in-the-shel
 	if [[ $_elapsed[-1] -ne 0 ]]; then
 		PS1+=' '
-		PS1+="%{$fg[green]%}$_elapsed[-1]s%{$reset_color%}"
+		PS1+="%{$fg[white]%}$_elapsed[-1]s%{$reset_color%}"
 	fi
 
 	# PID
@@ -53,7 +53,8 @@ set_prompt() {
 
 	# ]
 	# PS1+="%{$fg_bold[white]%}]: %{$reset_color%}% "
-	PS1+=" %(?.%(!.%F{white}❯%F{yellow}❯%F{red}.%F{blue}❯%F{cyan}❯%F{green})❯.%F{red}❯❯❯)%f "
+	# PS1+=" %(?.%(!.%F{white}❯%F{yellow}❯%F{red}.%F{blue}❯%F{cyan}❯%F{green})❯.%F{red}❯❯❯)%f "
+	PS1+=" %(?.%(!.%F{white}❯%F{yellow}❯%F{red}.%F{green})❯%f.%F{red}❯%f) "
 }
 
 precmd_functions+=set_prompt
