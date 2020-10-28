@@ -1,5 +1,7 @@
 # Reference for colors: http://stackoverflow.com/questions/689765/how-can-i-change-the-color-of-my-prompt-in-zsh-different-from-normal-text
 
+source $HOME/dotfiles/config/zsh/git-prompt.sh
+
 autoload -U colors && colors
 
 setopt PROMPT_SUBST
@@ -7,34 +9,37 @@ setopt PROMPT_SUBST
 set_prompt() {
 
 	# [
-	PS1="%{$fg_bold[white]%}[%{$reset_color%}"
+	PS1="%B%40<..<%~"
 
 	# Path: http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
-	PS1+="%{$fg_bold[cyan]%}{${PWD#"${PWD%/*/*/*}/"}}%{$reset_color%}"
+	# PS1+="%{$fg_bold[cyan]%}${PWD#"${PWD%/*/*/*}/"}%{$reset_color%}"
 
 	# Status Code
-	PS1+='%(?.., %{$fg[red]%}%?%{$reset_color%})'
+	PS1+='%(?.. %{$fg[red]%}%?%{$reset_color%})'
 
  	# Git
  	if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
- 		PS1+=', '
- 		PS1+="%{$fg_bold[white]%}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%{$reset_color%}"
-		STATUS=$(git status --short | wc -l)
-		if [ $STATUS -gt 0 ]; then
- 			PS1+=" %{$fg[red]%}+$(echo $STATUS | awk '{$1=$1};1')%{$reset_color%}"
- 		fi
- 	fi
+		PS1+=' %b$(gitprompt)'
+	fi
 
+ 	# if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
+ 	# 	PS1+=', '
+ 	# 	PS1+="%{$fg_bold[white]%}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%{$reset_color%}"
+		# STATUS=$(git status --short | wc -l)
+		# if [ $STATUS -gt 0 ]; then
+ 	# 		PS1+=" %{$fg[red]%}+$(echo $STATUS | awk '{$1=$1};1')%{$reset_color%}"
+ 	# 	fi
+ 	# fi
 
 	# Timer: http://stackoverflow.com/questions/2704635/is-there-a-way-to-find-the-running-time-of-the-last-executed-command-in-the-shel
 	if [[ $_elapsed[-1] -ne 0 ]]; then
-		PS1+=', '
+		PS1+=' '
 		PS1+="%{$fg[green]%}$_elapsed[-1]s%{$reset_color%}"
 	fi
 
 	# PID
 	if [[ $! -ne 0 ]]; then
-		PS1+=', '
+		PS1+=' '
 		PS1+="%{$fg[yellow]%}PID:$!%{$reset_color%}"
 	fi
 
@@ -42,12 +47,13 @@ set_prompt() {
 	CAN_I_RUN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
 	if [ ${CAN_I_RUN_SUDO} -gt 0 ]
 	then
-		PS1+=', '
+		PS1+=' '
 		PS1+="%{$fg_bold[red]%}SUDO%{$reset_color%}"
 	fi
 
 	# ]
-	PS1+="%{$fg_bold[white]%}]: %{$reset_color%}% "
+	# PS1+="%{$fg_bold[white]%}]: %{$reset_color%}% "
+	PS1+=" %(?.%(!.%F{white}❯%F{yellow}❯%F{red}.%F{blue}❯%F{cyan}❯%F{green})❯.%F{red}❯❯❯)%f "
 }
 
 precmd_functions+=set_prompt
