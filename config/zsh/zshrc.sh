@@ -30,6 +30,7 @@ export NVM_DIR="$HOME/.nvm"
   export PATH=$PATH:$ANDROID_HOME/tools
   export PATH=$PATH:$ANDROID_HOME/tools/bin
   export PATH=$PATH:$ANDROID_HOME/platform-tools
+
   source ~/dotfiles/config/zsh/plugins/fixls.zsh
 
 # Aliases
@@ -67,7 +68,7 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 fi
 
 source ~/dotfiles/config/zsh/prompt.sh
+export PATH=$PATH:$HOME/dotfiles/config/utils
 
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
-eval "$(starship init zsh)"
