@@ -22,7 +22,7 @@
 autoload -U colors && colors
 
 # Settings
-: "${ZSH_GIT_PROMPT_SHOW_UPSTREAM="full"}"
+: "${ZSH_GIT_PROMPT_SHOW_UPSTREAM=""}"
 : "${ZSH_GIT_PROMPT_SHOW_STASH=""}"
 : "${ZSH_GIT_PROMPT_ENABLE_SECONDARY=""}"
 : "${ZSH_GIT_PROMPT_NO_ASYNC=""}"
