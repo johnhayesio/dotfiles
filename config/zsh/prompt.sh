@@ -14,13 +14,13 @@ set_prompt() {
 	# Path: http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
 	# PS1+="%{$fg_bold[cyan]%}${PWD#"${PWD%/*/*/*}/"}%{$reset_color%}"
 
-	# Status Code
-	PS1+='%(?.. %{$fg[red]%}%?%{$reset_color%})'
-
  	# Git
  	if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
 		PS1+=' %b$(gitprompt)'
 	fi
+
+	# Status Code
+	PS1+='%(?.. %{$fg[red]%}%?%{$reset_color%})'
 
  	# if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
  	# 	PS1+=', '
