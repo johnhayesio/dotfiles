@@ -1,4 +1,4 @@
-# up
+# Up
 	function up_widget() {
 		BUFFER="cd .."
 		zle accept-line
@@ -6,7 +6,7 @@
 	zle -N up_widget
 	bindkey "^k" up_widget
 
-# git
+# Git
 	function git_prepare() {
 		if [ -n "$BUFFER" ];
 			then
@@ -23,7 +23,7 @@
 	zle -N git_prepare
 	bindkey "^g" git_prepare
 
-# home
+# Home
 	function goto_home() {
 		BUFFER="cd ~/"$BUFFER
 		zle end-of-line
@@ -32,7 +32,7 @@
 	zle -N goto_home
 	bindkey "^h" goto_home
 
-# clear
+# Clear
   function ctrl_n() {
     BUFFER="clear"
     zle accept-line
