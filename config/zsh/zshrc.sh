@@ -49,13 +49,13 @@
 # For Vim Mappings:
 	stty -ixon
 
-# ZSH Plugins
-  source ~/dotfiles/config/zsh/plugins/oh-my-zsh/lib/history.zsh
-  source ~/dotfiles/config/zsh/plugins/oh-my-zsh/lib/key-bindings.zsh
-  source ~/dotfiles/config/zsh/plugins/oh-my-zsh/lib/completion.zsh
+# ZSH/Oh-My-ZSH Plugins
   source ~/dotfiles/config/zsh/plugins/vi-mode.plugin.zsh
   source ~/dotfiles/config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
   source ~/dotfiles/config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source ~/dotfiles/config/zsh/plugins/oh-my-zsh/lib/history.zsh
+  source ~/dotfiles/config/zsh/plugins/oh-my-zsh/lib/key-bindings.zsh
+  source ~/dotfiles/config/zsh/plugins/oh-my-zsh/lib/completion.zsh
 
 # ZSH Keybindings
   source ~/dotfiles/config/zsh/keybindings.sh
