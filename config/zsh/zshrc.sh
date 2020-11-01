@@ -83,7 +83,6 @@ fi
 
 # ZSH Prompt
   source ~/dotfiles/config/zsh/prompt.sh
-  # source ~/dotfiles/config/terminal/liquidprompt
 
 # Zoxide/TheFuck initialization
   eval "$(zoxide init zsh)"

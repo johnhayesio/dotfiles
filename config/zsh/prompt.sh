@@ -1,6 +1,7 @@
 # Reference for colors: http://stackoverflow.com/questions/689765/how-can-i-change-the-color-of-my-prompt-in-zsh-different-from-normal-text
 
-source $HOME/dotfiles/config/zsh/git-prompt.sh
+# source $HOME/dotfiles/config/zsh/git-prompt.sh
+source $HOME/dotfiles/config/zsh/git-pro.sh
 
 autoload -U colors && colors
 
@@ -21,7 +22,7 @@ set_prompt() {
 
  	# Git
  	if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
-		PS1+=' %b$(gitprompt)'
+		PS1+=' %b$(gp_prompt)'
 	fi
 
 	# Custom git without using git-prompt
