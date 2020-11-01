@@ -50,7 +50,7 @@
 	stty -ixon
 
 # ZSH/Oh-My-ZSH Plugins
-  source ~/dotfiles/config/zsh/plugins/vi-mode.plugin.zsh
+  source ~/dotfiles/config/zsh/plugins/zsh-vim-mode.plugin.zsh
   source ~/dotfiles/config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
   source ~/dotfiles/config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   source ~/dotfiles/config/zsh/plugins/oh-my-zsh/lib/history.zsh
@@ -83,6 +83,7 @@ fi
 
 # ZSH Prompt
   source ~/dotfiles/config/zsh/prompt.sh
+  # source ~/dotfiles/config/terminal/liquidprompt
 
 # Zoxide/TheFuck initialization
   eval "$(zoxide init zsh)"
