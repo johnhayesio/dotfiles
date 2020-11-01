@@ -25,16 +25,6 @@ set_prompt() {
 		PS1+=' %b$(gp_prompt)'
 	fi
 
-	# Custom git without using git-prompt
- 	# if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
- 	# 	PS1+=', '
- 	# 	PS1+="%{$fg_bold[white]%}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%{$reset_color%}"
-		# STATUS=$(git status --short | wc -l)
-		# if [ $STATUS -gt 0 ]; then
- 	# 		PS1+=" %{$fg[red]%}+$(echo $STATUS | awk '{$1=$1};1')%{$reset_color%}"
- 	# 	fi
- 	# fi
-
 	# Status Code
 	PS1+='%(?.. %{$fg[red]%}[%?]%{$reset_color%})'
 
