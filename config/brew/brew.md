@@ -175,6 +175,7 @@ ncurses
 neovim
 nettle
 newsboat
+newt
 ninja
 node
 nspr
@@ -202,6 +203,7 @@ pinentry
 pixman
 pkg-config
 poppler
+popt
 postgresql
 procs
 pv
@@ -221,6 +223,7 @@ ripgrep
 rtmpdump
 rubberband
 ruby
+s-lang
 s-search
 s3cmd
 sc-im

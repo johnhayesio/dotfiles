@@ -34,6 +34,7 @@ Firework-f32a7d566d9e400d.app
 Firework.app
 Folx.app
 FontForge.app
+Gitify.app
 Git Streaks.app
 Google Chrome.app
 Google Chrome Canary.app
