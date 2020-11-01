@@ -1,6 +1,24 @@
+################################################################################
+# Git Pro Prompt
+# A zsh addon for customized prompts
+################################################################################
+
+# Licensed under the AGPL version 3
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 # Escape the given strings
-# Must be used for all strings injected in PS1 that may comes from remote sources,
-# like $PWD, VCS branch names...
 gp_escape() {
   arg="${1//\\/\\\\}"
   echo -nE "${arg//\%/%%}"
@@ -73,7 +91,7 @@ gp_git_branch_color() {
       commit_ahead="$(\git rev-list --count $remote_branch..HEAD 2>/dev/null)"
       commit_behind="$(\git rev-list --count HEAD..$remote_branch 2>/dev/null)"
         if [[ "$commit_ahead" -ne "0" && "$commit_behind" -ne "0" ]]; then
-            has_commit="%{$fg[yellow]%}+$commit_ahead%{$reset_color%}/%{$fg_bold[red]%}-$commit_behind%{$reset_color%}"
+          has_commit="%{$fg[yellow]%}+$commit_ahead%{$reset_color%}/%{$fg_bold[red]%}-$commit_behind%{$reset_color%}"
         elif [[ "$commit_ahead" -ne "0" ]]; then
           has_commit="%{$fg[yellow]%}$commit_ahead%{$reset_color%}"
         elif [[ "$commit_behind" -ne "0" ]]; then
@@ -84,36 +102,33 @@ gp_git_branch_color() {
 
   local ret
   local shortstat # only to check for uncommitted changes
-  shortstat="$(LC_ALL=C \git diff --shortstat HEAD -- 2>/dev/null)"
+  shortstat="$(LC_ALL=C \git status --short 2>/dev/null)"
 
   if [[ -n "$shortstat" ]]; then
-    local u_stat # shorstat of *unstaged* changes
-    u_stat="$(LC_ALL=C \git diff --shortstat 2>/dev/null)"
-    u_stat=${u_stat/*changed, /} # removing "n file(s) changed"
-
-    local i_lines # inserted lines
-    if [[ "$u_stat" = *insertion* ]]; then
-      i_lines=${u_stat/ inser*}
+    local m_files # modified files
+    m_files="$(LC_ALL=C \git status --short 2>/dev/null | \grep '^ M' | \wc -l)"
+    if [[ -n "$m_files" ]]; then
+      m_files=$(echo ${m_files} | awk '{$1=$1}1')
     else
-      i_lines=0
+      m_files=0
     fi
 
-    local d_lines # deleted lines
-    if [[ "$u_stat" = *deletion* ]]; then
-      d_lines=${u_stat/*\(+\), }
-      d_lines=${d_lines/ del*/}
+    local d_files # deleted files
+    d_files="$(LC_ALL=C \git status --short 2>/dev/null | \grep '^ D' | \wc -l)"
+    if [[ -n "$d_files" ]]; then
+      d_files=$(echo ${d_files} | awk '{$1=$1}1')
     else
-      d_lines=0
+      d_files=0
     fi
 
-    local has_lines
-    has_lines="+$i_lines/-$d_lines"
+    local has_files
+    has_files="+$m_files/-$d_files"
 
     if [[ -n "$has_commit" ]]; then
       # Changes to commit and commits to push
-      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[magenta]%}$has_lines%{$reset_color%},$has_commit)"
+      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[magenta]%}$has_files%{$reset_color%},$has_commit)"
     else
-      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[magenta]%}$has_lines%{$reset_color%})" # changes to commit
+      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[magenta]%}$has_files%{$reset_color%})" # changes to commit
     fi
   elif [[ -n "$has_commit" ]]; then
     # some commit(s) to push
