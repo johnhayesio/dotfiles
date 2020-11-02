@@ -14,8 +14,11 @@
 	HISTFILE=~/.zsh_history
   HISTSIZE=500000
 	SAVEHIST=500000
-	setopt inc_append_history # To save every command before it is executed
-	setopt share_history # setopt inc_append_history
+	setopt INC_APPEND_HISTORY # Save every command before it is executed
+	setopt SHARE_HISTORY # Share history across all sessions
+  setopt HIST_IGNORE_ALL_DUPS # Remove old dups and keep only the new one
+  setopt HIST_FIND_NO_DUPS # Only show one dup while cycling history
+  setopt HIST_IGNORE_SPACE # Do not store commands started with a space
 
 # Settings
   export VISUAL=nvim
