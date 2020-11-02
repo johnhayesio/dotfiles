@@ -19,6 +19,7 @@ cask
 cmake
 cmatrix
 cointop
+cowsay
 cpanminus
 ctags
 curl
@@ -40,6 +41,7 @@ findutils
 flac
 fontconfig
 fontforge
+fortune
 freetype
 frei0r
 fribidi
@@ -148,6 +150,7 @@ libyaml
 libzip
 litecli
 little-cms2
+lolcat
 lua
 lua@5.1
 luajit
