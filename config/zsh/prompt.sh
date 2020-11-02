@@ -32,8 +32,10 @@ set_prompt() {
 	_SUDO_EXISTS=$(sudo -n uptime 2>/dev/null|grep "load"|wc -l)
 	if [ ${_SUDO_EXISTS} -gt 0 ]; then
 		PS1="%{$fg_bold[red]%}SUDO%{$reset_color%}"
-		PS1+=" "
-		PS1+="$(_jp_prompt)"
+		if [[ -n "$(_jp_prompt)" ]]; then
+			PS1+=" "
+			PS1+="$(_jp_prompt)"
+		fi
 		PS1+=" "
 		PS1+="%B%40<..<%~"
 	else
