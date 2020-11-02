@@ -1,6 +1,6 @@
 ################################################################################
 # Git Pro Prompt
-# A zsh addon for customized prompts
+# A zsh addon for showing git status within customized prompts
 ################################################################################
 
 # Licensed under the AGPL version 3
@@ -19,20 +19,20 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Escape the given strings
-gp_escape() {
+_gp_escape() {
   arg="${1//\\/\\\\}"
   echo -nE "${arg//\%/%%}"
 }
 
 # Get the branch name of the current directory
-gp_git_branch() {
+_gp_git_branch() {
   \git rev-parse --is-inside-work-tree >/dev/null 2>&1 || return
 
   local branch
   # Recent versions of Git support the --short option for symbolic-ref, but
   # not 1.7.9 (Ubuntu 12.04)
   if branch="$(\git symbolic-ref -q HEAD)"; then
-    gp_escape "${branch#refs/heads/}"
+    _gp_escape "${branch#refs/heads/}"
   else
     # In detached head state, use commit instead
     # No escape needed
@@ -42,7 +42,7 @@ gp_git_branch() {
 
 # Display additional information if HEAD is in merging, rebasing
 # or cherry-picking state
-gp_git_head_status() {
+_gp_git_head_status() {
   local gitdir
   gitdir="$(\git rev-parse --git-dir 2>/dev/null)"
   if [[ -f "${gitdir}/MERGE_HEAD" ]]; then
@@ -60,13 +60,13 @@ gp_git_head_status() {
 # - red if there is changes to commit
 #
 # Add the number of pending commits and the impacted lines.
-gp_git_branch_color() {
+_gp_git_branch_color() {
   local branch
-  branch="$(gp_git_branch)"
+  branch="$(_gp_git_branch)"
   if [[ -n "$branch" ]]; then
 
   local end
-  end="%{$fg[red]%}$(gp_git_head_status)%{$reset_color%}"
+  end="%{$fg[red]%}$(_gp_git_head_status)%{$reset_color%}"
 
   if LC_ALL=C \git status --porcelain 2>/dev/null | \grep -q '^??'; then
     end="%{$fg[red]%}*$end"
@@ -126,9 +126,9 @@ gp_git_branch_color() {
 
     if [[ -n "$has_commit" ]]; then
       # Changes to commit and commits to push
-      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[magenta]%}$has_files%{$reset_color%},$has_commit)"
+      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[cyan]%}$has_files%{$reset_color%},$has_commit)"
     else
-      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[magenta]%}$has_files%{$reset_color%})" # changes to commit
+      ret="%{$fg[red]%}${branch}%{$reset_color%}(%{$fg[cyan]%}$has_files%{$reset_color%})" # changes to commit
     fi
   elif [[ -n "$has_commit" ]]; then
     # some commit(s) to push
@@ -144,8 +144,8 @@ gp_git_branch_color() {
   fi
 }
 
-gp_prompt() {
+_gp_prompt() {
   local prompt
-  prompt="$(gp_git_branch_color)"
+  prompt="$(_gp_git_branch_color)"
   echo -nE "$prompt"
 }
