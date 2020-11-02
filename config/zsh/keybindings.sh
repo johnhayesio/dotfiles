@@ -41,12 +41,12 @@
   bindkey "^n" ctrl_n
 
 # LS
-  function ctrl_e() {
+  function ctrl_l() {
     BUFFER="ls -l"
     zle accept-line
   }
-  zle -N ctrl_e
-  bindkey "^l" ctrl_e
+  zle -N ctrl_l
+  bindkey "^l" ctrl_l
 
 # Edit and rerun
 	function edit_and_run() {
