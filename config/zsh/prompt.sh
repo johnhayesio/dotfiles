@@ -30,23 +30,16 @@ set_prompt() {
 	# [
 	# Sudo and Jobs
 	_SUDO_EXISTS=$(sudo -n uptime 2>/dev/null|grep "load"|wc -l)
-	_JOBS_EXISTS=$(jobs|wc -l)
-	if ([ ${_SUDO_EXISTS} -gt 0 ] && [ ${_JOBS_EXISTS} -gt 0 ]); then
+	if [ ${_SUDO_EXISTS} -gt 0 ]; then
 		PS1="%{$fg_bold[red]%}SUDO%{$reset_color%}"
 		PS1+=" "
 		PS1+="$(_jp_prompt)"
 		PS1+=" "
 		PS1+="%B%40<..<%~"
-	elif [ ${_SUDO_EXISTS} -gt 0 ]; then
-		PS1="%{$fg_bold[red]%}SUDO%{$reset_color%}"
-		PS1+=" "
-		PS1+="%B%40<..<%~"
-	elif [ ${_JOBS_EXISTS} -gt 0 ]; then
+	else
 		PS1="$(_jp_prompt)"
 		PS1+=" "
 		PS1+="%B%40<..<%~"
-	else
-		PS1="%B%40<..<%~"
 	fi
 
  	# Git
