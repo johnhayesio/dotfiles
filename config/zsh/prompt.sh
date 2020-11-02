@@ -1,6 +1,4 @@
-# Reference for colors: http://stackoverflow.com/questions/689765/how-can-i-change-the-color-of-my-prompt-in-zsh-different-from-normal-text
-
-# source $HOME/dotfiles/config/zsh/git-prompt.sh
+source $HOME/dotfiles/config/zsh/jobs-pro.sh
 source $HOME/dotfiles/config/zsh/git-pro.sh
 
 autoload -U colors && colors
@@ -8,40 +6,47 @@ autoload -U colors && colors
 setopt PROMPT_SUBST
 
 set_prompt() {
-
 	# [
-	# Sudo: https://superuser.com/questions/195781/sudo-is-there-a-command-to-check-if-i-have-sudo-and-or-how-much-time-is-left
-	CAN_I_RUN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
-	if [ ${CAN_I_RUN_SUDO} -gt 0 ]
-	then
-		PS1="%{$fg_bold[red]%}SUDO%{$reset_color%} "
+	# Sudo and Jobs
+	_SUDO_EXISTS=$(sudo -n uptime 2>/dev/null|grep "load"|wc -l)
+	_JOBS_EXISTS=$(jobs|wc -l)
+	if ([ ${_SUDO_EXISTS} -gt 0 ] && [ ${_JOBS_EXISTS} -gt 0 ]); then
+		PS1="%{$fg_bold[red]%}SUDO%{$reset_color%}"
+		PS1+=" "
+		PS1+="$(_jp_prompt)"
+		PS1+=" "
+		PS1+="%B%40<..<%~"
+	elif [ ${_SUDO_EXISTS} -gt 0 ]; then
+		PS1="%{$fg_bold[red]%}SUDO%{$reset_color%}"
+		PS1+=" "
+		PS1+="%B%40<..<%~"
+	elif [ ${_JOBS_EXISTS} -gt 0 ]; then
+		PS1="$(_jp_prompt)"
+		PS1+=" "
 		PS1+="%B%40<..<%~"
 	else
 		PS1="%B%40<..<%~"
 	fi
 
  	# Git
- 	if git rev-parse --is-inside-work-tree 2> /dev/null | grep -q 'true' ; then
-		PS1+=' %b$(gp_prompt)'
+ 	if git rev-parse --is-inside-work-tree 2>/dev/null|grep -q "true"; then
+		PS1+=" "
+		PS1+="%b$(_gp_prompt)"
 	fi
 
 	# Status Code
-	PS1+='%(?.. %{$fg[red]%}[%?]%{$reset_color%})'
+	PS1+="%(?.. %{$fg[red]%}[%?]%{$reset_color%})"
 
-	# Timer: http://stackoverflow.com/questions/2704635/is-there-a-way-to-find-the-running-time-of-the-last-executed-command-in-the-shel
+	# Timer
 	if [[ $_elapsed[-1] -ne 0 ]]; then
-		PS1+=' '
+		PS1+=" "
 		PS1+="%{$fg[white]%}$_elapsed[-1]s%{$reset_color%}"
 	fi
 
-	# PID
-	if [[ $! -ne 0 ]]; then
-		PS1+=' '
-		PS1+="%{$fg[yellow]%}PID:$!%{$reset_color%}"
-	fi
-
 	# ]
-	PS1+=" %(?.%(!.%F{white}❯%F{yellow}❯%F{red}.%F{green})❯%f.%F{red}❯%f) "
+	PS1+=" "
+	PS1+="%(?.%(!.%F{white}❯%F{yellow}❯%F{red}.%F{green})❯%f.%F{red}❯%f)"
+	PS1+=" "
 }
 
 precmd_functions+=set_prompt
