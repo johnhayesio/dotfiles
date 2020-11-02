@@ -61,7 +61,7 @@ set_prompt() {
 
 	# ]
 	PS1+=" "
-	PS1+="%(?.%(!.%F{white}❯%F{yellow}❯%F{red}.%F{green})❯%f.%F{red}❯%f)"
+	PS1+="%(?.%(!.%F{red}❯%F{red}❯%F{red}.%F{green})❯%f.%F{red}❯%f)"
 	PS1+=" "
 }
 
