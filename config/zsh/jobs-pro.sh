@@ -19,7 +19,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Display the count of each if non-zero:
-# - detached screens sessions and/or tmux sessions running on the host
+# - detached screens sessions
 # - attached running jobs (started with $ myjob &)
 # - attached stopped jobs (suspended with Ctrl-Z)
 _jp_jobcount_color() {
@@ -34,8 +34,8 @@ _jp_jobcount_color() {
   # Count detached sessions
   if (( _JP_ENABLE_DETACHED_SESSIONS )); then
     local -i detached=0
-    (( _JP_ENABLE_SCREEN )) && detached=$(screen -ls 2> /dev/null | \grep -c "[Dd]etach[^)]*)$")
-    (( _JP_ENABLE_TMUX )) && detached+=$(tmux list-sessions 2> /dev/null | \grep -cv "attached")
+    (( _JP_ENABLE_SCREEN )) && detached=$(screen -ls 2> /dev/null | \grep -c '[Dd]etach[^)]*)$')
+    (( _JP_ENABLE_TMUX )) && detached+=$(tmux list-sessions 2> /dev/null | \grep -cv 'attached')
     (( detached > 0 )) && ret+="%{$fg[yellow]%}${detached}d%{$reset_color%}"
   fi
 
