@@ -1,5 +1,6 @@
 # System Info
-  pfetch
+  # pfetch
+  fortune -s computers | cowsay -f dragon | lolcat
 
 # Source FZF
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
