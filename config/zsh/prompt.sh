@@ -1,7 +1,13 @@
 ################################################################################
-# Zsh Custom Prompt
-# A custom zsh prompt showing sudo, jobs, git status, error codes, and
-# execution times in a super friendly layout
+#  _________  _   _   ____                            _
+# |__  / ___|| | | | |  _ \ _ __ ___  _ __ ___  _ __ | |_
+#   / /\___ \| |_| | | |_) | '__/ _ \| '_ ` _ \| '_ \| __|
+#  / /_ ___) |  _  | |  __/| | | (_) | | | | | | |_) | |_
+# /____|____/|_| |_| |_|   |_|  \___/|_| |_| |_| .__/ \__|
+#                                              |_|
+
+# http://johnhayes.io custom zsh prompt showing sudo, jobs, git status,
+# error codes, and execution times in a super friendly layout
 ################################################################################
 
 # Licensed under the AGPL version 3

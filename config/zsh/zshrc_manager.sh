@@ -1,11 +1,22 @@
+################################################################################
+#  _________  _   _    ____             __ _
+# |__  / ___|| | | |  / ___|___  _ __  / _(_) __ _
+#   / /\___ \| |_| | | |   / _ \| '_ \| |_| |/ _` |
+#  / /_ ___) |  _  | | |__| (_) | | | |  _| | (_| |
+# /____|____/|_| |_|  \____\___/|_| |_|_| |_|\__, |
+#                                            |___/
+
+# https://johnhayes.io personal zshrc_manager config
+################################################################################
+
 time_out () { perl -e 'alarm shift; exec @ARGV' "$@"; }
 
 # Run tmux if exists
-#if command -v tmux>/dev/null; then
-#	[ -z $TMUX ] && exec tmux
-#else
-#	echo "tmux not installed. Run ./deploy to configure dependencies"
-#fi
+# if command -v tmux>/dev/null; then
+# 	[ -z $TMUX ] && exec tmux
+# else
+# 	echo "tmux not installed. Run ./deploy to configure dependencies"
+# fi
 
 echo "Checking for updates."
 ({cd ~/dotfiles && git fetch -q} &> /dev/null)
