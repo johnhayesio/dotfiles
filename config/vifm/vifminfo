@@ -42,9 +42,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/Users/johnhayes/Documents/projects-FEWD
-	LectureSource
-1
 d/Users/johnhayes/Documents/projects-FEWD/LectureSource
 	file-preview
 2
@@ -342,6 +339,9 @@ d/Users/johnhayes/Documents/projects-FEWD
 d/Users/johnhayes/Documents/projects-FEWD/gist-code
 	..
 0
+d/Users/johnhayes/.nb/home
+	home_notebook_master_task_list.md
+36
 d
 
 # Right window history (oldest to newest):
@@ -485,6 +485,7 @@ D
 /.alfre
 /dotfil
 /gist
+/habit
 
 # Prompt history (oldest to newest):
 ptypescript-grider-24:38.txt
@@ -515,7 +516,7 @@ pMaroon 5 - Girls Like You.mp3
 # Local filter history (oldest to newest):
 
 # Registers:
-""/Users/johnhayes/go/bin/wuzz
+""/Users/johnhayes/.local/share/vifm/Trash/000_habit_record[auto].json
 
 # Directory stack (oldest to newest):
 
@@ -646,6 +647,8 @@ t/Users/johnhayes/.local/share/vifm/Trash/000_products_and_images.zip
 	/Users/johnhayes/Downloads/products_and_images.zip
 t/Users/johnhayes/.local/share/vifm/Trash/000___MACOSX
 	/Users/johnhayes/Downloads/__MACOSX
+t/Users/johnhayes/.local/share/vifm/Trash/000_habit_record[auto].json
+	/Users/johnhayes/.nb/home/habit_record[auto].json
 
 # State:
 f

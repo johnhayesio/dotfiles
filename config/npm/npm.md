@@ -28,6 +28,7 @@
 ├── markserv@1.17.4
 ├── moro@5.1.0
 ├── mup@1.5.1
+├── neovim@4.9.0
 ├── newsroom-cli@0.1.11
 ├── node-gyp@7.1.2
 ├── nodemon@2.0.6
