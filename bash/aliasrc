@@ -1,8 +1,7 @@
 # System
-alias ghs="history | rg"
-alias ths="history | awk '{print $2}' | awk 'BEGIN {FS=\"|\"}{print $1}' | sort | uniq -c | sort -n | tail | sort -nr"
+alias ghs="history | rg -ip"
+alias ths="history | awk '{print \$2}' | awk 'BEGIN {FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail | sort -nr"
 alias mem="top -l1 | rg PhysMem"
-alias ka="killall"
 alias sdn="sudo shutdown -h now"
 alias randpass="openssl rand -base64"
 alias grep="grep --color"
@@ -64,6 +63,7 @@ alias cvim="curl -s https://www.fprintf.net/vimCheatSheet.html | html2text"
 # System Apps
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias python="/usr/local/bin/python3"
+alias pip="/usr/local/bin/pip3"
 alias marked="open -a 'Marked 2'"
 
 # Terminal Apps
@@ -74,15 +74,15 @@ alias yt="newsboat"
 alias pc="castero"
 
 alias wtr='_getwtr() { curl -4 http://wttr.in/"$1"\?m; }; _getwtr'
-alias wtri='_getwtri() { curl -4 http://wttr.in/"$1"; }; _getwtri'
-alias awtr='_getawtr() { ansiweather -l '$1' -u metric -s true -a false; }; getawtr'
-alias awtri='_getawtri() { ansiweather -l '$1' -u imperial -s true -a false; }; getawtri'
-alias awtrf='_getawtrf() { ansiweather -l '$1' -u metric -s true -a false -F; }; getawtrf'
-alias awtrfi='_getawtrfi() { ansiweather -l '$1' -u imperial -s true -a false -F; }; getawtrfi'
+alias wtri='_getwtri() { curl -4 http://wttr.in/"$1"\?u; }; _getwtri'
+alias awtr='_getawtr() { ansiweather -l "$1" -u metric -s true -a false; }; _getawtr'
+alias awtri='_getawtri() { ansiweather -l "$1" -u imperial -s true -a false; }; _getawtri'
+alias awtrf='_getawtrf() { ansiweather -l "$1" -u metric -s true -a false -F; }; _getawtrf'
+alias awtrfi='_getawtrfi() { ansiweather -l "$1" -u imperial -s true -a false -F; }; _getawtrfi'
 
-alias rmd="_remind() { remind -m -b1 $@ ~/.nb/home/remind.rem; }; _remind"
-alias rmp="remind -m -b1 -c1 -p ~/.nb/home/remind.rem | rem2ps | ps2pdf - | open -f -a Preview"
-alias rmz="remind -z -k'terminal-notifier -title \"Remind\" -message %s' ~/.nb/home/remind.rem > /dev/null 2>&1 &"
+alias rmd="_remind() { remind -m -b1 $@ $HOME/.nb/home/remind.rem; }; _remind"
+alias rmp="remind -m -b1 -c1 -p $HOME/.nb/home/remind.rem | rem2ps | ps2pdf - | open -f -a Preview"
+alias rmz="remind -z -k'terminal-notifier -title \"Remind\" -message %s' $HOME/.nb/home/remind.rem > /dev/null 2>&1 &"
 
 # NPM
 alias nls="npm list --global --depth=0"
@@ -94,13 +94,19 @@ alias nus="npm uninstall"
 alias nug="npm uninstall --global"
 
 # Brew
-alias bud="brew update && brew upgrade && brew cleanup"
+alias bls="brew list --formula"
+alias buo="brew update && brew outdated"
+alias buc="brew upgrade && brew cleanup"
+alias bud="buo && buc"
 alias bip="brew search | fzf -m --header='[brew:install]' | xargs brew install"
 
 # GIT
+alias gcl="git config --list"
+
 alias gst="git status"
 alias gsh="git show"
 alias gd="git diff"
+alias gdc="git diff --cached"
 alias gm="git merge"
 
 alias gl="git log -3"
@@ -120,7 +126,7 @@ alias ga="git add"
 alias gaa="git add -A"
 alias gca="git commit -av"
 alias gcv="git commit -v"
-alias gcm='_gcm() { git commit -m "$1"; }; _gcm'
+alias gcm="git commit -m"
 alias gpi="git push -u origin master"
 alias gpb="git remote | xargs -L1 -I R git push R"
 alias gpm="git push origin master"
@@ -129,7 +135,7 @@ alias gpr="git remote | xargs -L1 git push --all"
 alias g-po="git pull origin --all"
 alias g-pm="git pull origin master"
 alias gp="gaa && gca && gpo"
-alias gr="gaa && gca && gpr"
+alias gpa="gaa && gca && gpr"
 
 alias g-="git checkout -"
 alias g--="git checkout --"
@@ -140,9 +146,12 @@ alias g-m="git checkout master"
 
 alias grm="git rebase master"
 alias grh="git reset --hard"
+alias grc="git rm --cached"
+alias gra="git remote add"
+alias grn="git remote set-url --add"
 
 # Copy last commit
-alias gcch="git log -1 --pretty=format:%H | pbcopy"
+alias gccs="git log -1 --pretty=format:%H | pbcopy"
 alias gccm="git log -1 --pretty=format:%s | pbcopy"
 
 # Code Starter Kits
