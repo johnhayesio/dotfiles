@@ -1,6 +1,6 @@
 # System
 alias ghs="history | rg -ip"
-alias ths="history | awk '{print \$2}' | awk 'BEGIN {FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail | sort -nr"
+alias ths="history | awk '{print \$2}' | sort | uniq -c | sort -nr | head -n 25"
 alias mem="top -l1 | rg PhysMem"
 alias sdn="sudo shutdown -h now"
 alias randpass="openssl rand -base64"
