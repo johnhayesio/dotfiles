@@ -147,8 +147,8 @@ let g:netrw_winsize = 15
 
 let g:fzf_layout = { 'down': '~40%' }
 
-map [q :cn<CR>
-map ]q :cp<CR>
+map [q :cprev<CR>
+map ]q :cnext<CR>
 
 " quickscope settings
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
@@ -157,15 +157,13 @@ highlight QuickScopeSecondary guifg='#afff5f' gui=underline ctermfg=81 cterm=und
 let g:qs_max_chars=150
 
 "vim TODO
-nmap <Leader>tu <Plug>BujoChecknormal
-nmap <Leader>th <Plug>BujoAddnormal
+nmap <leader>tu <Plug>BujoChecknormal
+nmap <leader>th <Plug>BujoAddnormal
 let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
 
 let g:closetag_filetypes = 'javascriptreact'
 
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>ca :Calendar<CR>:vertical resize +5<CR>
-nnoremap <leader>r :set ft=javascriptreact<CR>
 nnoremap <leader>pe :Files<CR>
 nnoremap <leader>pr :Rg<SPACE>
 nnoremap <leader>gxf :FloatermNew --name=
@@ -175,9 +173,7 @@ nnoremap <leader>gxt :60vs<CR>:term<CR>
 nnoremap <leader>ge :CocList diagnostics<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gh :diffget //3<CR>
-nnoremap <silent> <leader>gao :Git push origin --all<CR>:echo "Origin push complete"<CR>
-nnoremap <silent> <leader>gah :Git push github --all<CR>:echo "Github push complete"<CR>
-nnoremap <silent> <leader>gal :Git push gitlab --all<CR>:echo "Gitlab push complete"<CR>
+nnoremap <silent> <leader>gpo :Git push origin --all<CR>:echo "Origin push complete"<CR>
 nnoremap <silent> <Left> :vertical resize +10<CR>
 nnoremap <silent> <Right> :vertical resize -10<CR>
 
@@ -188,6 +184,7 @@ vnoremap X "_d
 inoremap <C-c> <ESC>
 inoremap jj <ESC>
 
+cnoremap <C-c> <ESC>
 cnoremap jj <ESC>
 
 tnoremap <C-w>h <C-\><C-n><C-w>h
@@ -198,12 +195,12 @@ tnoremap <C-w>l <C-\><C-n><C-w>l
 " Dasht Mappings
 let g:dasht_results_window = 'vnew'
 
-nnoremap <Leader>kc :Dasht<Space>
-nnoremap <Leader>ka :Dasht!<Space>
-nnoremap <silent> <Leader>KC :call Dasht([expand('<cword>'), expand('<cWORD>')])<Return>
-nnoremap <silent> <Leader>KA :call Dasht([expand('<cword>'), expand('<cWORD>')], '!')<Return>
-vnoremap <silent> <Leader>KC y:<C-U>call Dasht(getreg(0))<Return>
-vnoremap <silent> <Leader>KA y:<C-U>call Dasht(getreg(0), '!')<Return>
+nnoremap <leader>kc :Dasht<Space>
+nnoremap <leader>ka :Dasht!<Space>
+nnoremap <silent> <leader>KC :call Dasht([expand('<cword>'), expand('<cWORD>')])<Return>
+nnoremap <silent> <leader>KA :call Dasht([expand('<cword>'), expand('<cWORD>')], '!')<Return>
+vnoremap <silent> <leader>KC y:<C-U>call Dasht(getreg(0))<Return>
+vnoremap <silent> <leader>KA y:<C-U>call Dasht(getreg(0), '!')<Return>
 
 " Floaterm Mappings
 let g:floaterm_keymap_new    = '<F5>'
