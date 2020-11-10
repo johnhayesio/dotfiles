@@ -128,6 +128,7 @@ libogg
 libomp
 libpng
 libpq
+libpthread-stubs
 librsvg
 libsamplerate
 libsndfile
@@ -146,6 +147,11 @@ libvidstab
 libvorbis
 libvpx
 libvterm
+libx11
+libxau
+libxcb
+libxdmcp
+libxext
 libyaml
 libzip
 litecli
@@ -277,6 +283,7 @@ wp-cli
 x264
 x265
 xmlto
+xorgproto
 xvid
 xz
 yarn
