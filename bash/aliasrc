@@ -181,7 +181,6 @@ alias yts="youtube-dl --write-srt --sub-lang en -f 'bestvideo[ext=mp4]+bestaudio
 
 # Music & News
 alias lofi="mpv --no-video https://www.youtube.com/watch\?v\=5qap5aO4i9A > /dev/null 2>&1 &"
-alias jazz="mpv --no-video https://www.youtube.com/watch\?v\=DSGyEsJ17cI > /dev/null 2>&1 &"
 alias coffee="mpv --no-video https://www.youtube.com/watch\?v\=DSGyEsJ17cI > /dev/null 2>&1 &"
 alias cafe="mpv --no-video https://www.youtube.com/watch\?v\=eDrUEn8c4Rw > /dev/null 2>&1 &"
 alias restaurant="mpv --no-video https://www.youtube.com/watch\?v\=h2zkV-l_TbY > /dev/null 2>&1 &"
@@ -190,12 +189,23 @@ alias piano="mpv --no-video https://www.youtube.com/watch\?v\=XULUBg_ZcAU > /dev
 alias house="mpv --no-video https://www.youtube.com/watch\?v\=wKOEl_vwPSo > /dev/null 2>&1 &"
 alias life="mpv --no-video https://www.youtube.com/watch\?v\=36YnV9STBqc > /dev/null 2>&1 &"
 alias hiphop="mpv --no-video https://www.youtube.com/watch\?v\=L9Q1HUdUMp0 > /dev/null 2>&1 &"
-alias kozypop="mpv --no-video https://www.youtube.com/watch\?v\=F5v_VqxbQPI > /dev/null 2>&1 &"
 alias future="mpv --no-video https://www.youtube.com/watch\?v\=N1FuK9KC1vc > /dev/null 2>&1 &"
 alias starbucks="mpv --no-video https://www.youtube.com/watch\?v\=-5KAN9_CzSA > /dev/null 2>&1 &"
 alias reggae="mpv --no-video https://www.youtube.com/watch\?v\=u6kdx-Q61l0 > /dev/null 2>&1 &"
 alias rtnews="mpv --no-video https://www.youtube.com/watch\?v\=NvCSr7qzAAM > /dev/null 2>&1 &"
 alias r24news="mpv --no-video https://www.youtube.com/watch\?v\=8T9SFZDP60Q > /dev/null 2>&1 &"
+
+# Coding Playlist
+alias code1="mpv --no-video https://www.youtube.com/watch\?v\=5NVa4w-UXwA > /dev/null 2>&1 &"
+alias code2="mpv --no-video https://www.youtube.com/watch\?v\=f02mOEt11OQ > /dev/null 2>&1 &"
+alias code3="mpv --no-video https://www.youtube.com/watch\?v\=yhCuCqJbOVE > /dev/null 2>&1 &"
+alias code4="mpv --no-video https://www.youtube.com/watch\?v\=jrTMMG0zJyI > /dev/null 2>&1 &"
+alias code5="mpv --no-video https://www.youtube.com/watch\?v\=zcaskjhhXWQ > /dev/null 2>&1 &"
+alias code6="mpv --no-video https://www.youtube.com/watch\?v\=0r6C3z3TEKw > /dev/null 2>&1 &"
+alias code7="mpv --no-video https://www.youtube.com/watch\?v\=KNuoGeD9Qeo > /dev/null 2>&1 &"
+alias code8="mpv --no-video https://www.youtube.com/watch\?v\=oPVte6aMprI > /dev/null 2>&1 &"
+alias code9="mpv --no-video https://www.youtube.com/watch\?v\=iL2psQTS-lw > /dev/null 2>&1 &"
+alias code10="mpv --no-video https://www.youtube.com/watch\?v\=lCOF9LN_Zxs > /dev/null 2>&1 &"
 
 # Video Playback
 alias mfp="$HOME/dotfiles/bash/mfp"
