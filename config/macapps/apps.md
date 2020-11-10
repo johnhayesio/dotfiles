@@ -102,3 +102,4 @@ Webull Desktop.app
 XAMPP
 Xcode.app
 xScope.app
+zoom.us.app

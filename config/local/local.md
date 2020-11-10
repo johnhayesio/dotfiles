@@ -172,7 +172,7 @@ envsubst -> ../Cellar/gettext/0.21/bin/envsubst
 eps2eps -> ../Cellar/ghostscript/9.53.3/bin/eps2eps
 etags -> ../Cellar/emacs/27.1/bin/etags
 event_rpcgen.py -> ../Cellar/libevent/2.1.12/bin/event_rpcgen.py
-ex -> ../Cellar/vim/8.2.1900/bin/ex
+ex -> ../Cellar/vim/8.2.1950/bin/ex
 exa -> ../Cellar/exa/0.9.0/bin/exa
 exr2aces -> ../Cellar/openexr/2.5.3/bin/exr2aces
 exrenvmap -> ../Cellar/openexr/2.5.3/bin/exrenvmap
@@ -250,6 +250,7 @@ giftext -> ../Cellar/giflib/5.2.1/bin/giftext
 giftool -> ../Cellar/giflib/5.2.1/bin/giftool
 gio -> ../Cellar/glib/2.66.2_1/bin/gio
 gio-querymodules -> ../Cellar/glib/2.66.2_1/bin/gio-querymodules
+gist
 git -> ../Cellar/git/2.29.2/bin/git
 git-alias -> ../Cellar/git-extras/6.1.0/bin/git-alias
 git-archive-file -> ../Cellar/git-extras/6.1.0/bin/git-archive-file
@@ -813,8 +814,8 @@ rtmpsrv -> ../Cellar/rtmpdump/2.4+20151223_1/bin/rtmpsrv
 rtmpsuck -> ../Cellar/rtmpdump/2.4+20151223_1/bin/rtmpsuck
 rubberband -> ../Cellar/rubberband/1.9.0/bin/rubberband
 run-with-aspell -> ../Cellar/aspell/0.60.8/bin/run-with-aspell
-rview -> ../Cellar/vim/8.2.1900/bin/rview
-rvim -> ../Cellar/vim/8.2.1900/bin/rvim
+rview -> ../Cellar/vim/8.2.1950/bin/rview
+rvim -> ../Cellar/vim/8.2.1950/bin/rvim
 s -> ../Cellar/s-search/0.5.14/bin/s
 s3cmd -> ../Cellar/s3cmd/2.1.0_2/bin/s3cmd
 s3put
@@ -945,15 +946,15 @@ vboxwebsrv
 venc_data_dump -> ../Cellar/ffmpeg/4.3.1_2/bin/venc_data_dump
 vfychain -> ../Cellar/nss/3.58/bin/vfychain
 vfyserv -> ../Cellar/nss/3.58/bin/vfyserv
-vi -> ../Cellar/vim/8.2.1900/bin/vi
-view -> ../Cellar/vim/8.2.1900/bin/view
-vifm -> ../Cellar/vifm/0.10.1/bin/vifm
-vifm-convert-dircolors -> ../Cellar/vifm/0.10.1/bin/vifm-convert-dircolors
-vifm-pause -> ../Cellar/vifm/0.10.1/bin/vifm-pause
-vifm-screen-split -> ../Cellar/vifm/0.10.1/bin/vifm-screen-split
-vim -> ../Cellar/vim/8.2.1900/bin/vim
-vimdiff -> ../Cellar/vim/8.2.1900/bin/vimdiff
-vimtutor -> ../Cellar/vim/8.2.1900/bin/vimtutor
+vi -> ../Cellar/vim/8.2.1950/bin/vi
+view -> ../Cellar/vim/8.2.1950/bin/view
+vifm -> ../Cellar/vifm/0.11/bin/vifm
+vifm-convert-dircolors -> ../Cellar/vifm/0.11/bin/vifm-convert-dircolors
+vifm-pause -> ../Cellar/vifm/0.11/bin/vifm-pause
+vifm-screen-split -> ../Cellar/vifm/0.11/bin/vifm-screen-split
+vim -> ../Cellar/vim/8.2.1950/bin/vim
+vimdiff -> ../Cellar/vim/8.2.1950/bin/vimdiff
+vimtutor -> ../Cellar/vim/8.2.1950/bin/vimtutor
 VirtualBox
 VirtualBoxVM
 vspipe -> ../Cellar/vapoursynth/50_3/bin/vspipe
@@ -986,7 +987,7 @@ xmlif -> ../Cellar/xmlto/0.0.28/bin/xmlif
 xmlto -> ../Cellar/xmlto/0.0.28/bin/xmlto
 xsubpp -> ../Cellar/perl/5.32.0/bin/xsubpp
 xtractprotos -> ../Cellar/leptonica/1.80.0/bin/xtractprotos
-xxd -> ../Cellar/vim/8.2.1900/bin/xxd
+xxd -> ../Cellar/vim/8.2.1950/bin/xxd
 xz -> ../Cellar/xz/5.2.5/bin/xz
 xzcat -> ../Cellar/xz/5.2.5/bin/xzcat
 xzcmp -> ../Cellar/xz/5.2.5/bin/xzcmp
