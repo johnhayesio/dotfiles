@@ -33,6 +33,7 @@
 ├── newsroom-cli@0.1.11
 ├── node-gyp@7.1.2
 ├── nodemon@2.0.6
+├── np@7.0.0
 ├── npkill@0.7.2
 ├── npm@6.14.8
 ├── npm-check-updates@9.2.4
@@ -43,6 +44,7 @@
 ├── prettier@2.1.2
 ├── purgecss@3.0.0
 ├── release-it@14.2.1
+├── scaffolder-cli@1.7.0
 ├── surge@0.21.6
 ├── svg-term-cli@2.1.1
 ├── vercel@20.1.2
