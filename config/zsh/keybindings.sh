@@ -81,3 +81,7 @@
 	}
 	zle -N add_sudo
 	bindkey "^s" add_sudo
+
+# Set vi-cmd-mode to jj
+  bindkey "jj" vi-cmd-mode
+  bindkey "\e" vi-cmd-mode
