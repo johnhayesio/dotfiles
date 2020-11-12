@@ -21,6 +21,7 @@ alias sl="screen -ls"
 # Terminal
 alias o="open"
 alias q="exit"
+alias j='_jump() { clear && z $@; }; _jump'
 alias c="clear && l"
 alias cl="clear"
 alias h="cd && clear && l"
