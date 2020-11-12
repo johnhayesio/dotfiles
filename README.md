@@ -1,6 +1,8 @@
-# Dotfiles Config
+# ```Dotfiles Config```
 
-Simple, but extensive customization of ZSH, TMUX, and Neovim.
+[![Patreon](https://img.shields.io/badge/-Patreon-red?logo=patreon&colorA=gray)](https://patreon.com/lifefullofchange) [![Ko-fi](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange?logo=ko-fi&logoColor=orange&colorA=gray)](https://ko-fi.com/lifefullofchange) [![Ask me anything!](https://img.shields.io/badge/Ask%20me-ANYTHING-1abc9c.svg)](https://github.com/johnhayesio/ama) ![GitHub Repo Size](https://img.shields.io/github/repo-size/johnhayesio/dotfiles) ![GitHub language count](https://img.shields.io/github/languages/count/johnhayesio/dotfiles) ![GitHub top language](https://img.shields.io/github/languages/top/johnhayesio/dotfiles) ![GitHub last commit](https://img.shields.io/github/last-commit/johnhayesio/dotfiles?color=red) [![Analytics](https://ga-beacon.appspot.com/UA-158277243-2/github.com/johnhayesio/dotfiles/README.md?pixel)](https://github.com/johnhayesio/dotfiles)
+
+> Simple, but extensive customization of ZSH, TMUX, and Neovim.
 
 ## Setup Options
 
