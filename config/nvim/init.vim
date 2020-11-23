@@ -88,6 +88,7 @@ Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'sheerun/vim-polyglot'
 Plug 'stephpy/vim-php-cs-fixer'
+Plug 'kiteco/vim-plugin'
 Plug 'shime/vim-livedown'
 Plug 'sunaku/vim-dasht'
 Plug 'tpope/vim-surround'
@@ -122,6 +123,9 @@ let g:go_highlight_generate_tags = 1
 let g:go_highlight_format_strings = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_auto_sameids = 1
+
+" --- kite settings
+let g:kite_supported_languages = ['*']
 
 colorscheme gruvbox
 set background=dark
@@ -276,6 +280,7 @@ augroup cmdline
 augroup end
 augroup filetypedetect
   au BufRead,BufNewFile *.js set filetype=javascriptreact
+  au BufRead,BufNewFile *.ts set filetype=typescriptreact
 augroup END
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 autocmd BufWritePre * :call TrimWhitespace()
