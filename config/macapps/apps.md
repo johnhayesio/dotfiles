@@ -32,10 +32,10 @@ Firework-db3db5a7500e01fe.app
 Firework-ee6eff442aa28099.app
 Firework-f32a7d566d9e400d.app
 Firework.app
-Folx.app
 FontForge.app
 Gitify.app
 Git Streaks.app
+GitX.app
 Google Chrome.app
 Google Chrome Canary.app
 Grammarly for Safari.app
@@ -44,6 +44,7 @@ Hewlett-Packard -> /Applications/HP
 HP
 HP Easy Scan.app
 ImageOptim.app
+Insomnia.app
 iTerm.app
 iZotope RX 7 Audio Editor.app
 Jiggler.app
@@ -52,6 +53,7 @@ Karabiner-EventViewer.app
 Keka.app
 Keyboard Maestro.app
 Keynote.app
+Kite.app
 krisp.app
 LibreOffice.app
 Logic Pro X.app
