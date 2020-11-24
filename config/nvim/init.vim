@@ -145,9 +145,22 @@ endif
 let loaded_matchparen = 1
 let mapleader = " "
 
+" -- netrw settings
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 15
+
+function! CloseNetrw()
+  let i = bufnr("$")
+  while (i >= 1)
+    if (getbufvar(i, "&filetype") == "netrw")
+      silent exe "bwipeout " . i
+    endif
+    let i-=1
+  endwhile
+endfunction
+
+autocmd BufWinEnter * call CloseNetrw()
 
 let g:fzf_layout = { 'down': '~40%' }
 
