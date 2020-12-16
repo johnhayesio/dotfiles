@@ -44,20 +44,20 @@
 	bindkey "^h" goto_home
 
 # Clear
-  function ctrl_n() {
-    BUFFER="clear"
-    zle accept-line
-  }
-  zle -N ctrl_n
-  bindkey "^n" ctrl_n
+  # function ctrl_n() {
+  #   BUFFER="clear"
+  #   zle accept-line
+  # }
+  # zle -N ctrl_n
+  # bindkey "^n" ctrl_n
 
 # LS
-  function ctrl_l() {
-    BUFFER="ls -l"
-    zle accept-line
-  }
-  zle -N ctrl_l
-  bindkey "^l" ctrl_l
+  # function ctrl_l() {
+  #   BUFFER="ls -l"
+  #   zle accept-line
+  # }
+  # zle -N ctrl_l
+  # bindkey "^l" ctrl_l
 
 # Edit and rerun
 	function edit_and_run() {
