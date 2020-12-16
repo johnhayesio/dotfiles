@@ -42,10 +42,10 @@ alias zshrc="nvim $HOME/dotfiles/config/zsh/zshrc.sh"
 alias aliasrc="nvim $HOME/dotfiles/bash/aliasrc"
 
 # List
-alias ls="exa -lFh --git"
+alias ls="exa"
 alias la="exa -laFh --git"
 alias lr="exa -tRFh --git"
-alias ll="exa -l --git"
+alias ll="exa -lFh --git"
 alias lh="exa -a --git"
 alias ldot="exa -ld .* --git"
 
