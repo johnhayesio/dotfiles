@@ -13,13 +13,17 @@ Audacity.app
 Audio Hijack.app
 BetterTouchTool.app
 Bitwarden.app
+calibre.app
 CleanMyMac X.app
 CloudApp.app
 Contexts.app
+CSS Scan.app
 Cyberduck.app
 Dato.app
+Docker.app
 Exodus.app
 ExpressVPN.app
+fig.app
 Final Cut Pro.app
 Finder.app
 Firework-7bf97a6260ceafc0.app
@@ -34,9 +38,9 @@ Firework-f32a7d566d9e400d.app
 Firework.app
 FontForge.app
 Gitify.app
+GitKraken.app
 Git Streaks.app
 GitX.app
-Google Chrome.app
 Google Chrome Canary.app
 Grammarly for Safari.app
 Headset.app
@@ -53,7 +57,6 @@ Karabiner-EventViewer.app
 Keka.app
 Keyboard Maestro.app
 Keynote.app
-Kite.app
 krisp.app
 LibreOffice.app
 Logic Pro X.app
@@ -84,6 +87,7 @@ ResponsivelyApp.app
 Safari.app
 ScreenFlow.app
 Send to Kindle
+Sidekick.app
 Sip.app
 SkyFonts
 Skype.app

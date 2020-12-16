@@ -1,4 +1,4 @@
-/Users/johnhayes/.nvm/versions/node/v12.18.4/lib
+/Users/johnhayes/.nvm/versions/node/v12.20.0/lib
 ├── @prettier/plugin-php@0.16.0
 ├── asciicast2gif@0.2.1
 ├── caniuse-cmd@1.3.1
@@ -10,10 +10,10 @@
 ├── degit@2.8.0
 ├── devstats@1.3.2
 ├── diffchecker@0.1.4
-├── eslint@7.14.0
-├── expo-cli@3.28.5
+├── eslint@7.15.0
+├── expo-cli@4.0.13
 ├── fkill-cli@6.0.1
-├── gatsby-cli@2.14.0
+├── gatsby-cli@2.15.1
 ├── gifify@2.4.3
 ├── gistup@0.2.0
 ├── git-stats-importer@2.4.11
@@ -29,7 +29,7 @@
 ├── markdown-to-medium@1.4.4
 ├── markserv@1.17.4
 ├── moro@5.1.0
-├── mup@1.5.1
+├── mup@1.5.3
 ├── neovim@4.9.0
 ├── newsroom-cli@0.1.11
 ├── node-gyp@7.1.2
@@ -37,16 +37,20 @@
 ├── np@7.0.0
 ├── npkill@0.7.3
 ├── npm@6.14.9
-├── npm-check-updates@10.2.2
+├── npm-check-updates@10.2.5
 ├── npm-name-cli@3.0.0
 ├── overtime-cli@0.4.0
 ├── pageres-cli@5.0.0
 ├── parcel-bundler@1.12.4
+├── prettier@2.2.1
 ├── purgecss@3.0.0
-├── release-it@14.2.1
-├── scaffolder-cli@1.9.2
+├── release-it@14.2.2
+├── scaffolder-cli@1.9.3
+├── serverless@2.15.0
 ├── surge@0.21.7
 ├── svg-term-cli@2.1.1
+├── ts-node@9.1.1
+├── typescript@4.1.3
 ├── vercel@21.0.1
 ├── wikit@4.4.1
 └── yarn@1.22.10

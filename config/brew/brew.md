@@ -13,6 +13,8 @@ bdw-gc
 boost
 bottom
 brightness
+brotli
+c-ares
 cairo
 calcurse
 cask
@@ -113,6 +115,7 @@ libcaca
 libcroco
 libde265
 libepoxy
+libev
 libevent
 libexif
 libffi
@@ -123,6 +126,7 @@ libiconv
 libidn2
 liblqr
 libmagic
+libmetalink
 libnotify
 libogg
 libomp
@@ -164,6 +168,7 @@ luarocks
 lynx
 lz4
 lzo
+m-cli
 mad
 mailhog
 mas
@@ -185,6 +190,7 @@ neovim
 nettle
 newsboat
 newt
+nghttp2
 ninja
 node
 nspr
@@ -193,6 +199,7 @@ oniguruma
 opencore-amr
 openexr
 openjpeg
+openldap
 openssl@1.1
 opus
 osx-cpu-temp

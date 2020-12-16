@@ -36,6 +36,7 @@ Gulp.docset
 Gulp.tgz
 HTML.docset
 HTML.tgz
+HTML.tgz.last_modified_at
 Jade.docset
 Jade.tgz
 Jasmine.docset
