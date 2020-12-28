@@ -3,10 +3,10 @@ Package         Version
 bson            0.5.10
 greenlet        0.4.17
 meson           0.56.0
-msgpack         1.0.0
-pip             20.2.4
+msgpack         1.0.2
+pip             20.3.3
 pynvim          0.4.2
 python-dateutil 2.8.1
-setuptools      50.3.2
+setuptools      51.1.0
 six             1.15.0
-wheel           0.35.1
+wheel           0.36.2

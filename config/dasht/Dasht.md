@@ -36,7 +36,6 @@ Gulp.docset
 Gulp.tgz
 HTML.docset
 HTML.tgz
-HTML.tgz.last_modified_at
 Jade.docset
 Jade.tgz
 Jasmine.docset
@@ -115,3 +114,4 @@ VueJS.docset
 VueJS.tgz
 WordPress.docset
 WordPress.tgz
+WordPress.tgz.last_modified_at

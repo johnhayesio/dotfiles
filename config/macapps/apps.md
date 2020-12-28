@@ -1,9 +1,5 @@
-4K Stogram.app
-4K Video Downloader.app
-4K YouTube to MP3.app
 __MACOSX
 Adapter.app
-Adobe Creative Cloud
 Adobe Photoshop 2020
 Adobe XD
 Alfred 4.app
@@ -21,11 +17,13 @@ CSS Scan.app
 Cyberduck.app
 Dato.app
 Docker.app
+Elmedia Player.app
 Exodus.app
 ExpressVPN.app
 fig.app
 Final Cut Pro.app
 Finder.app
+Firefox Developer Edition.app
 Firework-7bf97a6260ceafc0.app
 Firework-806cea9a6e400f7c.app
 Firework-469756cb1f4b084d.app
@@ -38,9 +36,7 @@ Firework-f32a7d566d9e400d.app
 Firework.app
 FontForge.app
 Gitify.app
-GitKraken.app
 Git Streaks.app
-GitX.app
 Google Chrome Canary.app
 Grammarly for Safari.app
 Headset.app
@@ -58,7 +54,6 @@ Keka.app
 Keyboard Maestro.app
 Keynote.app
 krisp.app
-LibreOffice.app
 Logic Pro X.app
 Logitech
 Loopback.app
@@ -68,22 +63,17 @@ Mate Translate.app
 Microsoft Excel.app
 Microsoft PowerPoint.app
 Microsoft Word.app
-Mimestream.app
 mmhmm.app
 MongoDB Compass.app
 Moom.app
 MusicManager.app
 Numbers.app
-Numi.app
 One Switch.app
 Pages.app
 PDF Expert.app
 PDF Squeezer.app
-Poolside FM.app
 PopClip.app
 Postman.app
-Radio Silence.app
-ResponsivelyApp.app
 Safari.app
 ScreenFlow.app
 Send to Kindle
@@ -100,12 +90,10 @@ Ukelele.app
 Upwork.app
 Utilities
 Vanilla.app
-VirtualBox.app
 Visual Studio Code.app
-VLC.app
 Wattagio.app
-Webull Desktop.app
 XAMPP
 Xcode.app
 xScope.app
+Yandex.Disk.2.app
 zoom.us.app
