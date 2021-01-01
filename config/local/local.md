@@ -1,5 +1,3 @@
-2to3 -> ../Cellar/python@3.9/3.9.1_2/bin/2to3
-2to3-3.9 -> ../Cellar/python@3.9/3.9.1_2/bin/2to3-3.9
 7z -> ../Cellar/p7zip/16.02_2/bin/7z
 7za -> ../Cellar/p7zip/16.02_2/bin/7za
 7zr -> ../Cellar/p7zip/16.02_2/bin/7zr
@@ -28,7 +26,7 @@ aspell -> ../Cellar/aspell/0.60.8/bin/aspell
 aspell-import -> ../Cellar/aspell/0.60.8/bin/aspell-import
 atob -> ../Cellar/nss/3.60/bin/atob
 autopoint -> ../Cellar/gettext/0.21/bin/autopoint
-aviocat -> ../Cellar/ffmpeg/4.3.1_4/bin/aviocat
+aviocat -> ../Cellar/ffmpeg/4.3.1_6/bin/aviocat
 aws -> /usr/local/aws-cli/aws
 aws.cmd
 aws_bash_completer
@@ -41,7 +39,7 @@ bat -> ../Cellar/bat/0.17.1/bin/bat
 bd_info -> ../Cellar/libbluray/1.2.1/bin/bd_info
 bd_list_titles -> ../Cellar/libbluray/1.2.1/bin/bd_list_titles
 bd_splice -> ../Cellar/libbluray/1.2.1/bin/bd_splice
-bisect-create -> ../Cellar/ffmpeg/4.3.1_4/bin/bisect-create
+bisect-create -> ../Cellar/ffmpeg/4.3.1_6/bin/bisect-create
 bjoentegaard -> ../Cellar/libde265/1.0.8/bin/bjoentegaard
 bltest -> ../Cellar/nss/3.60/bin/bltest
 bookmark -> ../Cellar/nb/5.7.8/bin/bookmark
@@ -81,8 +79,8 @@ check-regexp -> ../Cellar/source-highlight/3.1.9_4/bin/check-regexp
 chkfont -> ../Cellar/figlet/2.2.5/bin/chkfont
 chktest -> ../Cellar/nss/3.60/bin/chktest
 cjpeg -> ../Cellar/jpeg/9d/bin/cjpeg
-cl2c -> ../Cellar/ffmpeg/4.3.1_4/bin/cl2c
-clean-diff -> ../Cellar/ffmpeg/4.3.1_4/bin/clean-diff
+cl2c -> ../Cellar/ffmpeg/4.3.1_6/bin/cl2c
+clean-diff -> ../Cellar/ffmpeg/4.3.1_6/bin/clean-diff
 clusterdb -> ../Cellar/postgresql/13.1/bin/clusterdb
 cm2rem.tcl -> ../Cellar/remind/03.03.03/bin/cm2rem.tcl
 cmake -> ../Cellar/cmake/3.19.2/bin/cmake
@@ -119,14 +117,15 @@ createuser -> ../Cellar/postgresql/13.1/bin/createuser
 crlutil -> ../Cellar/nss/3.60/bin/crlutil
 crmftest -> ../Cellar/nss/3.60/bin/crmftest
 croco-0.6-config -> ../Cellar/libcroco/0.6.13_1/bin/croco-0.6-config
-crypto_bench -> ../Cellar/ffmpeg/4.3.1_4/bin/crypto_bench
+crypto_bench -> ../Cellar/ffmpeg/4.3.1_6/bin/crypto_bench
 cryptohi_gtest -> ../Cellar/nss/3.60/bin/cryptohi_gtest
 csslint-0.6 -> ../Cellar/libcroco/0.6.13_1/bin/csslint-0.6
 ctags -> ../Cellar/ctags/5.8_1/bin/ctags
 ctest -> ../Cellar/cmake/3.19.2/bin/ctest
+curve_keygen -> ../Cellar/zeromq/4.3.3_1/bin/curve_keygen
 cwebp -> ../Cellar/webp/1.1.0/bin/cwebp
 cwiki
-cws2fws -> ../Cellar/ffmpeg/4.3.1_4/bin/cws2fws
+cws2fws -> ../Cellar/ffmpeg/4.3.1_6/bin/cws2fws
 cwutil
 danetool -> ../Cellar/gnutls/3.6.15/bin/danetool
 dasht -> ../Cellar/dasht/2.4.0/bin/dasht
@@ -143,7 +142,7 @@ dasht-server-http -> ../Cellar/dasht/2.4.0/bin/dasht-server-http
 dav1d -> ../Cellar/dav1d/0.7.1/bin/dav1d
 dbtest -> ../Cellar/nss/3.60/bin/dbtest
 dbtoepub -> ../Cellar/docbook-xsl/1.79.2_1/bin/dbtoepub
-delta -> ../Cellar/git-delta/0.4.5_1/bin/delta
+delta -> ../Cellar/git-delta/0.5.0/bin/delta
 der_gtest -> ../Cellar/nss/3.60/bin/der_gtest
 derdump -> ../Cellar/nss/3.60/bin/derdump
 dertimetest -> ../Cellar/nss/3.60/bin/dertimetest
@@ -165,8 +164,8 @@ docker-credential-osxkeychain -> /Applications/Docker.app/Contents/Resources/bin
 doing
 dropdb -> ../Cellar/postgresql/13.1/bin/dropdb
 dropuser -> ../Cellar/postgresql/13.1/bin/dropuser
-dumpsexp -> ../Cellar/libgcrypt/1.8.7/bin/dumpsexp
-dvd2concat -> ../Cellar/ffmpeg/4.3.1_4/bin/dvd2concat
+dumpsexp -> ../Cellar/libgcrypt/1.8.7_1/bin/dumpsexp
+dvd2concat -> ../Cellar/ffmpeg/4.3.1_6/bin/dvd2concat
 dvipdf -> ../Cellar/ghostscript/9.53.3_1/bin/dvipdf
 dwebp -> ../Cellar/webp/1.1.0/bin/dwebp
 dynamodb_dump
@@ -174,7 +173,7 @@ dynamodb_load
 easy_install
 easy_install-2.7
 easy_install-3.8
-easy_install-3.9 -> ../Cellar/python@3.9/3.9.1_2/bin/easy_install-3.9
+easy_install-3.9 -> ../Cellar/python@3.9/3.9.1_3/bin/easy_install-3.9
 ebook-convert -> /Applications/calibre.app/Contents/MacOS/ebook-convert
 ebrowse -> ../Cellar/emacs/27.1/bin/ebrowse
 ecperf -> ../Cellar/nss/3.60/bin/ecperf
@@ -191,7 +190,7 @@ envsubst -> ../Cellar/gettext/0.21/bin/envsubst
 eps2eps -> ../Cellar/ghostscript/9.53.3_1/bin/eps2eps
 etags -> ../Cellar/emacs/27.1/bin/etags
 event_rpcgen.py -> ../Cellar/libevent/2.1.12/bin/event_rpcgen.py
-ex -> ../Cellar/vim/8.2.2200_2/bin/ex
+ex -> ../Cellar/vim/8.2.2250_1/bin/ex
 exa -> ../Cellar/exa/0.9.0_1/bin/exa
 exr2aces -> ../Cellar/openexr/2.5.3/bin/exr2aces
 exrenvmap -> ../Cellar/openexr/2.5.3/bin/exrenvmap
@@ -217,12 +216,12 @@ fc-validate -> ../Cellar/fontconfig/2.13.1/bin/fc-validate
 fd -> ../Cellar/fd/8.2.1/bin/fd
 fdupes -> ../Cellar/fdupes/2.1.2/bin/fdupes
 fetch_file
-ffescape -> ../Cellar/ffmpeg/4.3.1_4/bin/ffescape
-ffeval -> ../Cellar/ffmpeg/4.3.1_4/bin/ffeval
-ffhash -> ../Cellar/ffmpeg/4.3.1_4/bin/ffhash
-ffmpeg -> ../Cellar/ffmpeg/4.3.1_4/bin/ffmpeg
-ffplay -> ../Cellar/ffmpeg/4.3.1_4/bin/ffplay
-ffprobe -> ../Cellar/ffmpeg/4.3.1_4/bin/ffprobe
+ffescape -> ../Cellar/ffmpeg/4.3.1_6/bin/ffescape
+ffeval -> ../Cellar/ffmpeg/4.3.1_6/bin/ffeval
+ffhash -> ../Cellar/ffmpeg/4.3.1_6/bin/ffhash
+ffmpeg -> ../Cellar/ffmpeg/4.3.1_6/bin/ffmpeg
+ffplay -> ../Cellar/ffmpeg/4.3.1_6/bin/ffplay
+ffprobe -> ../Cellar/ffmpeg/4.3.1_6/bin/ffprobe
 fig -> /Applications/fig.app/Contents/MacOS/figcli
 figlet -> ../Cellar/figlet/2.2.5/bin/figlet
 figlist -> ../Cellar/figlet/2.2.5/bin/figlist
@@ -237,7 +236,7 @@ fontimage -> ../Cellar/fontforge/20201107/bin/fontimage
 fontlint -> ../Cellar/fontforge/20201107/bin/fontlint
 fonttools
 fortune -> ../Cellar/fortune/9708/bin/fortune
-fourcc2pixfmt -> ../Cellar/ffmpeg/4.3.1_4/bin/fourcc2pixfmt
+fourcc2pixfmt -> ../Cellar/ffmpeg/4.3.1_6/bin/fourcc2pixfmt
 freetype-config -> ../Cellar/freetype/2.10.4/bin/freetype-config
 fribidi -> ../Cellar/fribidi/1.0.10/bin/fribidi
 fuck -> ../Cellar/thefuck/3.30_1/bin/fuck
@@ -258,7 +257,7 @@ gdk-pixbuf-pixdata -> ../Cellar/gdk-pixbuf/2.42.2/bin/gdk-pixbuf-pixdata
 gdk-pixbuf-query-loaders -> ../Cellar/gdk-pixbuf/2.42.2/bin/gdk-pixbuf-query-loaders
 gdk-pixbuf-thumbnailer -> ../Cellar/gdk-pixbuf/2.42.2/bin/gdk-pixbuf-thumbnailer
 gen-enc-table -> ../Cellar/libde265/1.0.8/bin/gen-enc-table
-gen-rc -> ../Cellar/ffmpeg/4.3.1_4/bin/gen-rc
+gen-rc -> ../Cellar/ffmpeg/4.3.1_6/bin/gen-rc
 gettext -> ../Cellar/gettext/0.21/bin/gettext
 gettext.sh -> ../Cellar/gettext/0.21/bin/gettext.sh
 gettextize -> ../Cellar/gettext/0.21/bin/gettextize
@@ -275,7 +274,7 @@ giftool -> ../Cellar/giflib/5.2.1/bin/giftool
 gio -> ../Cellar/glib/2.66.4/bin/gio
 gio-querymodules -> ../Cellar/glib/2.66.4/bin/gio-querymodules
 gist
-git -> ../Cellar/git/2.29.2/bin/git
+git -> ../Cellar/git/2.30.0/bin/git
 git-alias -> ../Cellar/git-extras/6.1.0/bin/git-alias
 git-archive-file -> ../Cellar/git-extras/6.1.0/bin/git-archive-file
 git-authors -> ../Cellar/git-extras/6.1.0/bin/git-authors
@@ -292,7 +291,7 @@ git-count -> ../Cellar/git-extras/6.1.0/bin/git-count
 git-cp -> ../Cellar/git-extras/6.1.0/bin/git-cp
 git-create-branch -> ../Cellar/git-extras/6.1.0/bin/git-create-branch
 git-credential-osxkeychain -> ../git/bin/git-credential-osxkeychain
-git-cvsserver -> ../Cellar/git/2.29.2/bin/git-cvsserver
+git-cvsserver -> ../Cellar/git/2.30.0/bin/git-cvsserver
 git-delete-branch -> ../Cellar/git-extras/6.1.0/bin/git-delete-branch
 git-delete-merged-branches -> ../Cellar/git-extras/6.1.0/bin/git-delete-merged-branches
 git-delete-submodule -> ../Cellar/git-extras/6.1.0/bin/git-delete-submodule
@@ -325,7 +324,7 @@ git-psykorebase -> ../Cellar/git-extras/6.1.0/bin/git-psykorebase
 git-pull-request -> ../Cellar/git-extras/6.1.0/bin/git-pull-request
 git-reauthor -> ../Cellar/git-extras/6.1.0/bin/git-reauthor
 git-rebase-patch -> ../Cellar/git-extras/6.1.0/bin/git-rebase-patch
-git-receive-pack -> ../Cellar/git/2.29.2/bin/git-receive-pack
+git-receive-pack -> ../Cellar/git/2.30.0/bin/git-receive-pack
 git-release -> ../Cellar/git-extras/6.1.0/bin/git-release
 git-rename-branch -> ../Cellar/git-extras/6.1.0/bin/git-rename-branch
 git-rename-remote -> ../Cellar/git-extras/6.1.0/bin/git-rename-remote
@@ -337,7 +336,7 @@ git-rscp -> ../Cellar/git-extras/6.1.0/bin/git-rscp
 git-scp -> ../Cellar/git-extras/6.1.0/bin/git-scp
 git-sed -> ../Cellar/git-extras/6.1.0/bin/git-sed
 git-setup -> ../Cellar/git-extras/6.1.0/bin/git-setup
-git-shell -> ../Cellar/git/2.29.2/bin/git-shell
+git-shell -> ../Cellar/git/2.30.0/bin/git-shell
 git-show-merged-branches -> ../Cellar/git-extras/6.1.0/bin/git-show-merged-branches
 git-show-tree -> ../Cellar/git-extras/6.1.0/bin/git-show-tree
 git-show-unmerged-branches -> ../Cellar/git-extras/6.1.0/bin/git-show-unmerged-branches
@@ -349,8 +348,8 @@ git-sync -> ../Cellar/git-extras/6.1.0/bin/git-sync
 git-touch -> ../Cellar/git-extras/6.1.0/bin/git-touch
 git-undo -> ../Cellar/git-extras/6.1.0/bin/git-undo
 git-unlock -> ../Cellar/git-extras/6.1.0/bin/git-unlock
-git-upload-archive -> ../Cellar/git/2.29.2/bin/git-upload-archive
-git-upload-pack -> ../Cellar/git/2.29.2/bin/git-upload-pack
+git-upload-archive -> ../Cellar/git/2.30.0/bin/git-upload-archive
+git-upload-pack -> ../Cellar/git/2.30.0/bin/git-upload-pack
 github-markup
 gitk -> ../git/bin/gitk
 gitui -> ../Cellar/gitui/0.11.0/bin/gitui
@@ -382,7 +381,7 @@ gpg-error -> ../Cellar/libgpg-error/1.41/bin/gpg-error
 gpg-error-config -> ../Cellar/libgpg-error/1.41/bin/gpg-error-config
 gpgrt-config -> ../Cellar/libgpg-error/1.41/bin/gpgrt-config
 gr2fonttest -> ../Cellar/graphite2/1.3.14/bin/gr2fonttest
-graph2dot -> ../Cellar/ffmpeg/4.3.1_4/bin/graph2dot
+graph2dot -> ../Cellar/ffmpeg/4.3.1_6/bin/graph2dot
 GraphicsMagick++-config -> ../Cellar/graphicsmagick/1.3.36/bin/GraphicsMagick++-config
 GraphicsMagick-config -> ../Cellar/graphicsmagick/1.3.36/bin/GraphicsMagick-config
 GraphicsMagickWand-config -> ../Cellar/graphicsmagick/1.3.36/bin/GraphicsMagickWand-config
@@ -440,7 +439,7 @@ heif-enc -> ../Cellar/libheif/1.10.0/bin/heif-enc
 heif-info -> ../Cellar/libheif/1.10.0/bin/heif-info
 heif-thumbnailer -> ../Cellar/libheif/1.10.0/bin/heif-thumbnailer
 heroku -> ../Cellar/heroku/7.47.6/bin/heroku
-hmac256 -> ../Cellar/libgcrypt/1.8.7/bin/hmac256
+hmac256 -> ../Cellar/libgcrypt/1.8.7_1/bin/hmac256
 hn
 hors -> ../Cellar/hors/0.7.2/bin/hors
 html2text -> ../Cellar/html2text/2.0.0/bin/html2text
@@ -452,8 +451,6 @@ hub-tool -> /Applications/Docker.app/Contents/Resources/bin/hub-tool
 hyperfine -> ../Cellar/hyperfine/1.11.0/bin/hyperfine
 hyperkit -> /Applications/Docker.app/Contents/Resources/bin/com.docker.hyperkit
 identify -> ../Cellar/imagemagick/7.0.10-53_1/bin/identify
-idle3 -> ../Cellar/python@3.9/3.9.1_2/bin/idle3
-idle3.9 -> ../Cellar/python@3.9/3.9.1_2/bin/idle3.9
 idn2 -> ../Cellar/libidn2/2.3.0/bin/idn2
 imagetops -> ../Cellar/leptonica/1.80.0/bin/imagetops
 img2txt -> ../Cellar/libcaca/0.99b19_3/bin/img2txt
@@ -481,7 +478,7 @@ intltool-merge -> ../Cellar/intltool/0.51.0/bin/intltool-merge
 intltool-prepare -> ../Cellar/intltool/0.51.0/bin/intltool-prepare
 intltool-update -> ../Cellar/intltool/0.51.0/bin/intltool-update
 intltoolize -> ../Cellar/intltool/0.51.0/bin/intltoolize
-ismindex -> ../Cellar/ffmpeg/4.3.1_4/bin/ismindex
+ismindex -> ../Cellar/ffmpeg/4.3.1_6/bin/ismindex
 jasper -> ../Cellar/jasper/2.0.23/bin/jasper
 java2html -> ../Cellar/source-highlight/3.1.9_4/bin/java2html
 jemalloc-config -> ../Cellar/jemalloc/5.2.1_1/bin/jemalloc-config
@@ -505,8 +502,8 @@ lazygit -> ../Cellar/lazygit/0.24.2/bin/lazygit
 lazynpm -> ../Cellar/lazynpm/0.1.4/bin/lazynpm
 ldrdf -> ../Cellar/nasm/2.15.05/bin/ldrdf
 libassuan-config -> ../Cellar/libassuan/2.5.4/bin/libassuan-config
-libav-merge-next-commit -> ../Cellar/ffmpeg/4.3.1_4/bin/libav-merge-next-commit
-libgcrypt-config -> ../Cellar/libgcrypt/1.8.7/bin/libgcrypt-config
+libav-merge-next-commit -> ../Cellar/ffmpeg/4.3.1_6/bin/libav-merge-next-commit
+libgcrypt-config -> ../Cellar/libgcrypt/1.8.7_1/bin/libgcrypt-config
 libnetcfg -> ../Cellar/perl/5.32.0/bin/libnetcfg
 libpng-config -> ../Cellar/libpng/1.6.37/bin/libpng-config
 libpng16-config -> ../Cellar/libpng/1.6.37/bin/libpng16-config
@@ -515,7 +512,7 @@ list_instances
 listsuites -> ../Cellar/nss/3.60/bin/listsuites
 litecli -> ../Cellar/litecli/1.5.0/bin/litecli
 lolcat -> ../Cellar/lolcat/100.0.1/bin/lolcat
-loudnorm.rb -> ../Cellar/ffmpeg/4.3.1_4/bin/loudnorm.rb
+loudnorm.rb -> ../Cellar/ffmpeg/4.3.1_6/bin/loudnorm.rb
 lprsetup.sh -> ../Cellar/ghostscript/9.53.3_1/bin/lprsetup.sh
 lss3
 lua -> ../Cellar/lua/5.4.2/bin/lua
@@ -556,7 +553,7 @@ magick-script -> ../Cellar/imagemagick/7.0.10-53_1/bin/magick-script
 MagickCore-config -> ../Cellar/imagemagick/7.0.10-53_1/bin/MagickCore-config
 MagickWand-config -> ../Cellar/imagemagick/7.0.10-53_1/bin/MagickWand-config
 MailHog -> ../Cellar/mailhog/1.0.1/bin/MailHog
-make_chlayout_test -> ../Cellar/ffmpeg/4.3.1_4/bin/make_chlayout_test
+make_chlayout_test -> ../Cellar/ffmpeg/4.3.1_6/bin/make_chlayout_test
 makepqg -> ../Cellar/nss/3.60/bin/makepqg
 mangle -> ../Cellar/nss/3.60/bin/mangle
 mas -> ../Cellar/mas/1.7.1/bin/mas
@@ -564,7 +561,7 @@ mencoder -> ../Cellar/mplayer/1.4_2/bin/mencoder
 meson -> ../Cellar/meson/0.56.0/bin/meson
 metaflac -> ../Cellar/flac/1.3.3/bin/metaflac
 meteor
-missing_codec_desc -> ../Cellar/ffmpeg/4.3.1_4/bin/missing_codec_desc
+missing_codec_desc -> ../Cellar/ffmpeg/4.3.1_6/bin/missing_codec_desc
 modutil -> ../Cellar/nss/3.60/bin/modutil
 mogrify -> ../Cellar/imagemagick/7.0.10-53_1/bin/mogrify
 mongo -> ../Cellar/mongodb/4.0.3_1/bin/mongo
@@ -583,7 +580,7 @@ movies
 mpg123 -> ../Cellar/mpg123/1.26.4/bin/mpg123
 mpg123-id3dump -> ../Cellar/mpg123/1.26.4/bin/mpg123-id3dump
 mpg123-strip -> ../Cellar/mpg123/1.26.4/bin/mpg123-strip
-mpicalc -> ../Cellar/libgcrypt/1.8.7/bin/mpicalc
+mpicalc -> ../Cellar/libgcrypt/1.8.7_1/bin/mpicalc
 mplayer -> ../Cellar/mplayer/1.4_2/bin/mplayer
 mpv -> ../Cellar/mpv/0.33.0/bin/mpv
 msgattrib -> ../Cellar/gettext/0.21/bin/msgattrib
@@ -603,7 +600,7 @@ msguniq -> ../Cellar/gettext/0.21/bin/msguniq
 mturk
 mujs -> ../Cellar/mujs/1.0.9/bin/mujs
 multinit -> ../Cellar/nss/3.60/bin/multinit
-murge -> ../Cellar/ffmpeg/4.3.1_4/bin/murge
+murge -> ../Cellar/ffmpeg/4.3.1_6/bin/murge
 mustache
 mycli -> ../Cellar/mycli/1.22.2_1/bin/mycli
 nasm -> ../Cellar/nasm/2.15.05/bin/nasm
@@ -623,7 +620,7 @@ ninja -> ../Cellar/ninja/1.10.2/bin/ninja
 nnn
 node-gyp -> ../../../Users/johnhayes/.config/yarn/global/node_modules/.bin/node-gyp
 nonspr10 -> ../Cellar/nss/3.60/bin/nonspr10
-normalize.py -> ../Cellar/ffmpeg/4.3.1_4/bin/normalize.py
+normalize.py -> ../Cellar/ffmpeg/4.3.1_6/bin/normalize.py
 notary -> /Applications/Docker.app/Contents/Resources/bin/notary
 notify-send -> ../Cellar/libnotify/0.7.9/bin/notify-send
 npm -> /usr/local/lib/node_modules/npm/bin/npm-cli.js
@@ -652,10 +649,10 @@ p7verify -> ../Cellar/nss/3.60/bin/p7verify
 p11-kit -> ../Cellar/p11-kit/0.23.22/bin/p11-kit
 p11tool -> ../Cellar/gnutls/3.6.15/bin/p11tool
 pal2rgb -> ../Cellar/libtiff/4.2.0/bin/pal2rgb
-pandoc -> ../Cellar/pandoc/2.11.3.1/bin/pandoc
+pandoc -> ../Cellar/pandoc/2.11.3.2/bin/pandoc
 pango-list -> ../Cellar/pango/1.48.0/bin/pango-list
 pango-view -> ../Cellar/pango/1.48.0/bin/pango-view
-patcheck -> ../Cellar/ffmpeg/4.3.1_4/bin/patcheck
+patcheck -> ../Cellar/ffmpeg/4.3.1_6/bin/patcheck
 pcl2ttf -> ../Cellar/fontforge/20201107/bin/pcl2ttf
 pcre-config -> ../Cellar/pcre/8.44/bin/pcre-config
 pcre2-config -> ../Cellar/pcre2/10.36/bin/pcre2-config
@@ -720,9 +717,9 @@ pinentry-tty -> ../Cellar/pinentry/1.1.0_1/bin/pinentry-tty
 pip
 pip2
 pip2.7
-pip3 -> ../Cellar/python@3.9/3.9.1_2/bin/pip3
+pip3 -> ../Cellar/python@3.9/3.9.1_3/bin/pip3
 pip3.8
-pip3.9 -> ../Cellar/python@3.9/3.9.1_2/bin/pip3.9
+pip3.9 -> ../Cellar/python@3.9/3.9.1_3/bin/pip3.9
 pk1sign -> ../Cellar/nss/3.60/bin/pk1sign
 pk11_gtest -> ../Cellar/nss/3.60/bin/pk11_gtest
 pk11ectest -> ../Cellar/nss/3.60/bin/pk11ectest
@@ -733,9 +730,9 @@ pk12util -> ../Cellar/nss/3.60/bin/pk12util
 pkcs1-conv -> ../Cellar/nettle/3.6/bin/pkcs1-conv
 pkg-config -> ../Cellar/pkg-config/0.29.2_3/bin/pkg-config
 pkix-errcodes -> ../Cellar/nss/3.60/bin/pkix-errcodes
-pktdumper -> ../Cellar/ffmpeg/4.3.1_4/bin/pktdumper
+pktdumper -> ../Cellar/ffmpeg/4.3.1_6/bin/pktdumper
 pl2pm -> ../Cellar/perl/5.32.0/bin/pl2pm
-plotframes -> ../Cellar/ffmpeg/4.3.1_4/bin/plotframes
+plotframes -> ../Cellar/ffmpeg/4.3.1_6/bin/plotframes
 png-fix-itxt -> ../Cellar/libpng/1.6.37/bin/png-fix-itxt
 pngfix -> ../Cellar/libpng/1.6.37/bin/pngfix
 pod2html -> ../Cellar/perl/5.32.0/bin/pod2html
@@ -757,7 +754,7 @@ prezip-bin -> ../Cellar/aspell/0.60.8/bin/prezip-bin
 printafm -> ../Cellar/ghostscript/9.53.3_1/bin/printafm
 printershare-sender
 prnAnyPSConvert
-probetest -> ../Cellar/ffmpeg/4.3.1_4/bin/probetest
+probetest -> ../Cellar/ffmpeg/4.3.1_6/bin/probetest
 procan -> ../Cellar/socat/1.7.3.4/bin/procan
 procs -> ../Cellar/procs/0.10.10/bin/procs
 prove -> ../Cellar/perl/5.32.0/bin/prove
@@ -786,8 +783,6 @@ pv -> ../Cellar/pv/1.6.6/bin/pv
 pwdecrypt -> ../Cellar/nss/3.60/bin/pwdecrypt
 pyami_sendmail
 pybabel
-pydoc3 -> ../Cellar/python@3.9/3.9.1_2/bin/pydoc3
-pydoc3.9 -> ../Cellar/python@3.9/3.9.1_2/bin/pydoc3.9
 pyftmerge
 pyftsubset
 pygmentize
@@ -798,16 +793,12 @@ pyrsa-keygen
 pyrsa-priv2pub
 pyrsa-sign
 pyrsa-verify
-python3 -> ../Cellar/python@3.9/3.9.1_2/bin/python3
-python3-config -> ../Cellar/python@3.9/3.9.1_2/bin/python3-config
-python3.9 -> ../Cellar/python@3.9/3.9.1_2/bin/python3.9
-python3.9-config -> ../Cellar/python@3.9/3.9.1_2/bin/python3.9-config
 pzstd -> ../Cellar/zstd/1.4.8/bin/pzstd
-qt-faststart -> ../Cellar/ffmpeg/4.3.1_4/bin/qt-faststart
+qt-faststart -> ../Cellar/ffmpeg/4.3.1_6/bin/qt-faststart
 rackup
 rake
 ranger -> ../Cellar/ranger/1.9.3/bin/ranger
-rav1e -> ../Cellar/rav1e/0.3.4/bin/rav1e
+rav1e -> ../Cellar/rav1e/0.3.5/bin/rav1e
 raw2tiff -> ../Cellar/libtiff/4.2.0/bin/raw2tiff
 rd-curves -> ../Cellar/libde265/1.0.8/bin/rd-curves
 rdf2bin -> ../Cellar/nasm/2.15.05/bin/rdf2bin
@@ -854,8 +845,8 @@ rtmpsrv -> ../Cellar/rtmpdump/2.4+20151223_1/bin/rtmpsrv
 rtmpsuck -> ../Cellar/rtmpdump/2.4+20151223_1/bin/rtmpsuck
 rubberband -> ../Cellar/rubberband/1.9.0/bin/rubberband
 run-with-aspell -> ../Cellar/aspell/0.60.8/bin/run-with-aspell
-rview -> ../Cellar/vim/8.2.2200_2/bin/rview
-rvim -> ../Cellar/vim/8.2.2200_2/bin/rvim
+rview -> ../Cellar/vim/8.2.2250_1/bin/rview
+rvim -> ../Cellar/vim/8.2.2250_1/bin/rvim
 s -> ../Cellar/s-search/0.5.14/bin/s
 s3cmd -> ../Cellar/s3cmd/2.1.0_2/bin/s3cmd
 s3put
@@ -872,7 +863,7 @@ sdbadmin
 sdl2-config -> ../Cellar/sdl2/2.0.14_1/bin/sdl2-config
 sdrtest -> ../Cellar/nss/3.60/bin/sdrtest
 secmodtest -> ../Cellar/nss/3.60/bin/secmodtest
-seek_print -> ../Cellar/ffmpeg/4.3.1_4/bin/seek_print
+seek_print -> ../Cellar/ffmpeg/4.3.1_6/bin/seek_print
 selfserv -> ../Cellar/nss/3.60/bin/selfserv
 sexp-conv -> ../Cellar/nettle/3.6/bin/sexp-conv
 sfddiff -> ../Cellar/fontforge/20201107/bin/sfddiff
@@ -880,7 +871,7 @@ shasum -> ../Cellar/perl/5.32.0/bin/shasum
 shlibsign -> ../Cellar/nss/3.60/bin/shlibsign
 showfigfonts -> ../Cellar/figlet/2.2.5/bin/showfigfonts
 showttf -> ../Cellar/fontforge/20201107/bin/showttf
-sidxindex -> ../Cellar/ffmpeg/4.3.1_4/bin/sidxindex
+sidxindex -> ../Cellar/ffmpeg/4.3.1_6/bin/sidxindex
 signtool -> ../Cellar/nss/3.60/bin/signtool
 signver -> ../Cellar/nss/3.60/bin/signver
 slsh -> ../Cellar/s-lang/2.3.2/bin/slsh
@@ -915,14 +906,14 @@ ssltap -> ../Cellar/nss/3.60/bin/ssltap
 starship -> ../Cellar/starship/0.47.0/bin/starship
 stkLaunchAgent.sh
 stream -> ../Cellar/imagemagick/7.0.10-53_1/bin/stream
-streamlink -> ../Cellar/streamlink/2.0.0/bin/streamlink
+streamlink -> ../Cellar/streamlink/2.0.0_1/bin/streamlink
 streamzip -> ../Cellar/perl/5.32.0/bin/streamzip
 strfile -> ../Cellar/fortune/9708/bin/strfile
 stripttc -> ../Cellar/fontforge/20201107/bin/stripttc
 strsclnt -> ../Cellar/nss/3.60/bin/strsclnt
 symkeyutil -> ../Cellar/nss/3.60/bin/symkeyutil
 systestdriver -> ../Cellar/fontforge/20201107/bin/systestdriver
-target_dec_fate.sh -> ../Cellar/ffmpeg/4.3.1_4/bin/target_dec_fate.sh
+target_dec_fate.sh -> ../Cellar/ffmpeg/4.3.1_6/bin/target_dec_fate.sh
 task -> ../Cellar/task/2.5.1/bin/task
 taskadmin
 taskopen
@@ -951,9 +942,9 @@ timew -> ../Cellar/timewarrior/1.4.2/bin/timew
 tkremind -> ../Cellar/remind/03.03.03/bin/tkremind
 tldr -> ../Cellar/tealdeer/1.4.1/bin/tldr
 tmux -> ../Cellar/tmux/3.1c_1/bin/tmux
-tokei -> ../Cellar/tokei/12.1.0/bin/tokei
+tokei -> ../Cellar/tokei/12.1.1/bin/tokei
 transicc -> ../Cellar/little-cms2/2.11/bin/transicc
-trasher -> ../Cellar/ffmpeg/4.3.1_4/bin/trasher
+trasher -> ../Cellar/ffmpeg/4.3.1_6/bin/trasher
 tree -> ../Cellar/tree/1.8.0/bin/tree
 tstclnt -> ../Cellar/nss/3.60/bin/tstclnt
 ttf2eps -> ../Cellar/fontforge/20201107/bin/ttf2eps
@@ -961,13 +952,13 @@ ttx
 tuir
 twitchy
 uchardet -> ../Cellar/uchardet/0.0.7/bin/uchardet
-uncoded_frame -> ../Cellar/ffmpeg/4.3.1_4/bin/uncoded_frame
+uncoded_frame -> ../Cellar/ffmpeg/4.3.1_6/bin/uncoded_frame
 unix-lpr.sh -> ../Cellar/ghostscript/9.53.3_1/bin/unix-lpr.sh
 unlz4 -> ../Cellar/lz4/1.9.3/bin/unlz4
 unlzma -> ../Cellar/xz/5.2.5/bin/unlzma
 unstr -> ../Cellar/fortune/9708/bin/unstr
 unterm -> ../Cellar/libvterm/0.1.4/bin/unterm
-unwrap-diff -> ../Cellar/ffmpeg/4.3.1_4/bin/unwrap-diff
+unwrap-diff -> ../Cellar/ffmpeg/4.3.1_6/bin/unwrap-diff
 unxz -> ../Cellar/xz/5.2.5/bin/unxz
 unzstd -> ../Cellar/zstd/1.4.8/bin/unzstd
 update-desktop-database -> ../Cellar/desktop-file-utils/0.26/bin/update-desktop-database
@@ -988,18 +979,18 @@ vboximg-mount
 VBoxManage
 VBoxVRDP
 vboxwebsrv
-venc_data_dump -> ../Cellar/ffmpeg/4.3.1_4/bin/venc_data_dump
+venc_data_dump -> ../Cellar/ffmpeg/4.3.1_6/bin/venc_data_dump
 vfychain -> ../Cellar/nss/3.60/bin/vfychain
 vfyserv -> ../Cellar/nss/3.60/bin/vfyserv
-vi -> ../Cellar/vim/8.2.2200_2/bin/vi
-view -> ../Cellar/vim/8.2.2200_2/bin/view
+vi -> ../Cellar/vim/8.2.2250_1/bin/vi
+view -> ../Cellar/vim/8.2.2250_1/bin/view
 vifm -> ../Cellar/vifm/0.11/bin/vifm
 vifm-convert-dircolors -> ../Cellar/vifm/0.11/bin/vifm-convert-dircolors
 vifm-pause -> ../Cellar/vifm/0.11/bin/vifm-pause
 vifm-screen-split -> ../Cellar/vifm/0.11/bin/vifm-screen-split
-vim -> ../Cellar/vim/8.2.2200_2/bin/vim
-vimdiff -> ../Cellar/vim/8.2.2200_2/bin/vimdiff
-vimtutor -> ../Cellar/vim/8.2.2200_2/bin/vimtutor
+vim -> ../Cellar/vim/8.2.2250_1/bin/vim
+vimdiff -> ../Cellar/vim/8.2.2250_1/bin/vimdiff
+vimtutor -> ../Cellar/vim/8.2.2250_1/bin/vimtutor
 VirtualBox
 VirtualBoxVM
 vpnkit -> /Applications/Docker.app/Contents/Resources/bin/com.docker.vpnkit
@@ -1019,8 +1010,8 @@ weechat -> ../Cellar/weechat/3.0_3/bin/weechat
 weechat-curses -> ../Cellar/weechat/3.0_3/bin/weechat-curses
 weechat-headless -> ../Cellar/weechat/3.0_3/bin/weechat-headless
 wget -> ../Cellar/wget/1.20.3_2/bin/wget
-wheel -> ../Cellar/python@2/2.7.17/bin/wheel
-wheel3 -> ../Cellar/python@3.9/3.9.1_2/bin/wheel3
+wheel
+wheel3 -> ../Cellar/python@3.9/3.9.1_3/bin/wheel3
 whiptail -> ../Cellar/newt/0.52.21/bin/whiptail
 wifi-password -> ../Cellar/wifi-password/0.1.0/bin/wifi-password
 woff -> ../Cellar/fontforge/20201107/bin/woff
@@ -1034,7 +1025,7 @@ xmlif -> ../Cellar/xmlto/0.0.28/bin/xmlif
 xmlto -> ../Cellar/xmlto/0.0.28/bin/xmlto
 xsubpp -> ../Cellar/perl/5.32.0/bin/xsubpp
 xtractprotos -> ../Cellar/leptonica/1.80.0/bin/xtractprotos
-xxd -> ../Cellar/vim/8.2.2200_2/bin/xxd
+xxd -> ../Cellar/vim/8.2.2250_1/bin/xxd
 xz -> ../Cellar/xz/5.2.5/bin/xz
 xzcat -> ../Cellar/xz/5.2.5/bin/xzcat
 xzcmp -> ../Cellar/xz/5.2.5/bin/xzcmp
@@ -1048,14 +1039,15 @@ xzmore -> ../Cellar/xz/5.2.5/bin/xzmore
 yarn -> ../Cellar/yarn/1.22.10/bin/yarn
 yarnpkg -> ../Cellar/yarn/1.22.10/bin/yarnpkg
 yat2m -> ../Cellar/libgpg-error/1.41/bin/yat2m
-youtube-dl -> ../Cellar/youtube-dl/2020.12.26/bin/youtube-dl
+youtube-dl -> ../Cellar/youtube-dl/2020.12.31/bin/youtube-dl
 yuv-distortion -> ../Cellar/libde265/1.0.8/bin/yuv-distortion
 zathura -> ../Cellar/zathura/0.4.7/bin/zathura
 zipcmp -> ../Cellar/libzip/1.7.3/bin/zipcmp
 zipdetails -> ../Cellar/perl/5.32.0/bin/zipdetails
 zipmerge -> ../Cellar/libzip/1.7.3/bin/zipmerge
 ziptool -> ../Cellar/libzip/1.7.3/bin/ziptool
-zmqshell.py -> ../Cellar/ffmpeg/4.3.1_4/bin/zmqshell.py
+zmqsend -> ../Cellar/ffmpeg/4.3.1_6/bin/zmqsend
+zmqshell.py -> ../Cellar/ffmpeg/4.3.1_6/bin/zmqshell.py
 zoxide -> ../Cellar/zoxide/0.5.0/bin/zoxide
 zsh -> ../Cellar/zsh/5.8_1/bin/zsh
 zsh-5.8 -> ../Cellar/zsh/5.8_1/bin/zsh-5.8

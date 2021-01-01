@@ -114,4 +114,3 @@ VueJS.docset
 VueJS.tgz
 WordPress.docset
 WordPress.tgz
-WordPress.tgz.last_modified_at

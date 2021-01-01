@@ -7,6 +7,6 @@ msgpack         1.0.2
 pip             20.3.3
 pynvim          0.4.2
 python-dateutil 2.8.1
-setuptools      51.1.0
+setuptools      51.1.1
 six             1.15.0
 wheel           0.36.2
