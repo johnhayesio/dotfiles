@@ -1,15 +1,19 @@
 __MACOSX
 Adapter.app
+Adobe Audition 2020
+Adobe Creative Cloud
 Adobe Photoshop 2020
 Adobe XD
 Alfred 4.app
+Android File Transfer.app
 Android Studio.app
 Around.app
 Audacity.app
 Audio Hijack.app
 BetterTouchTool.app
 Bitwarden.app
-calibre.app
+Brave Browser.app
+Cinema Grade.app
 CleanMyMac X.app
 CloudApp.app
 Contexts.app
@@ -20,26 +24,17 @@ Docker.app
 Elmedia Player.app
 Exodus.app
 ExpressVPN.app
-fig.app
 Final Cut Pro.app
 Finder.app
-Firefox Developer Edition.app
-Firework-7bf97a6260ceafc0.app
-Firework-806cea9a6e400f7c.app
-Firework-469756cb1f4b084d.app
 Firework-b8ec90b0119c2a27.app
-Firework-b1297fb01997d9f8.app
 Firework-c5ac6ed82f2619b5.app
 Firework-db3db5a7500e01fe.app
-Firework-ee6eff442aa28099.app
-Firework-f32a7d566d9e400d.app
+Firework-de7671dc56ac99a6.app
 Firework.app
 FontForge.app
-Gitify.app
 Git Streaks.app
 Google Chrome Canary.app
 Grammarly for Safari.app
-Headset.app
 Hewlett-Packard -> /Applications/HP
 HP
 HP Easy Scan.app
@@ -47,14 +42,13 @@ ImageOptim.app
 Insomnia.app
 iTerm.app
 iZotope RX 7 Audio Editor.app
-Jiggler.app
 Karabiner-Elements.app
 Karabiner-EventViewer.app
+KeePassXC.app
 Keka.app
 Keyboard Maestro.app
 Keynote.app
 krisp.app
-Logic Pro X.app
 Logitech
 Loopback.app
 ManyCam
@@ -66,7 +60,6 @@ Microsoft Word.app
 mmhmm.app
 MongoDB Compass.app
 Moom.app
-MusicManager.app
 Numbers.app
 One Switch.app
 Pages.app
@@ -83,15 +76,19 @@ SkyFonts
 Skype.app
 Slack.app
 Sourcetree.app
+Spotify.app
 SyphonInject.app
 thinkorswim
+TickTick.app
 TriggerClientUI.app
 Ukelele.app
 Upwork.app
 Utilities
 Vanilla.app
 Visual Studio Code.app
+Wacom Tablet.localized
 Wattagio.app
+Webull Desktop.app
 XAMPP
 Xcode.app
 xScope.app

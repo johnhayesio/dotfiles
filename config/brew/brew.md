@@ -136,6 +136,7 @@ libpthread-stubs
 librsvg
 libsamplerate
 libsndfile
+libsodium
 libsoxr
 libspiro
 libssh2
@@ -164,6 +165,7 @@ lolcat
 lua
 lua@5.1
 luajit
+luajit-openresty
 luarocks
 lynx
 lz4
@@ -259,6 +261,7 @@ srt
 starship
 streamlink
 task
+tcl-tk
 tealdeer
 terminal-notifier
 tesseract
@@ -298,6 +301,7 @@ youtube-dl
 z
 zathura
 zathura-pdf-poppler
+zeromq
 zimg
 zoxide
 zsh
