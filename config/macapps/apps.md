@@ -54,6 +54,7 @@ Loopback.app
 ManyCam
 Marked 2.app
 Mate Translate.app
+MeetingBar.app
 Microsoft Excel.app
 Microsoft PowerPoint.app
 Microsoft Word.app
@@ -78,6 +79,7 @@ Slack.app
 Sourcetree.app
 Spotify.app
 SyphonInject.app
+Telegram.app
 thinkorswim
 TickTick.app
 TriggerClientUI.app
