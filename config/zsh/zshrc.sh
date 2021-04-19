@@ -47,6 +47,7 @@
   export FZF_CTRL_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
 
   # Android PATH Additions
+  export PATH=$PATH:/Users/johnhayes/Library/Python/3.8/bin
   export PATH=$PATH:$ANDROID_HOME/emulator
   export PATH=$PATH:$ANDROID_HOME/tools
   export PATH=$PATH:$ANDROID_HOME/tools/bin
