@@ -24,6 +24,7 @@ Docker.app
 Elmedia Player.app
 Exodus.app
 ExpressVPN.app
+Figma.app
 Final Cut Pro.app
 Finder.app
 Firework-b8ec90b0119c2a27.app
@@ -32,8 +33,10 @@ Firework-db3db5a7500e01fe.app
 Firework-de7671dc56ac99a6.app
 Firework.app
 FontForge.app
+GIMP-2.10.app
 Git Streaks.app
 Google Chrome Canary.app
+Grain.app
 Grammarly for Safari.app
 Hewlett-Packard -> /Applications/HP
 HP
@@ -55,6 +58,7 @@ ManyCam
 Marked 2.app
 Mate Translate.app
 MeetingBar.app
+MEGAsync.app
 Microsoft Excel.app
 Microsoft PowerPoint.app
 Microsoft Word.app
@@ -66,6 +70,9 @@ One Switch.app
 Pages.app
 PDF Expert.app
 PDF Squeezer.app
+Perfect Recall.app
+Perfect Recall Menubar (Beta).app
+PhotoStickies.app
 PopClip.app
 Postman.app
 Safari.app
@@ -88,6 +95,7 @@ Upwork.app
 Utilities
 Vanilla.app
 Visual Studio Code.app
+VLC.app
 Wacom Tablet.localized
 Wattagio.app
 Webull Desktop.app

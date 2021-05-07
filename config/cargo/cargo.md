@@ -1,9 +1,9 @@
-bottom v0.5.6:
+bottom v0.5.7:
     btm
-cargo-update v5.0.0:
+cargo-update v6.0.0:
     cargo-install-update
     cargo-install-update-config
-dijo v0.2.3:
+dijo v0.2.7:
     dijo
 rm-improved v0.13.1:
     rip
