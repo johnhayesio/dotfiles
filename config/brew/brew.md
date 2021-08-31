@@ -48,6 +48,8 @@ ffmpeg
 figlet
 findutils
 flac
+fmt
+folly
 fontconfig
 fontforge
 fortune
@@ -58,6 +60,7 @@ fzf
 gdbm
 gdk-pixbuf
 gettext
+gflags
 ghostscript
 giflib
 giflossy
@@ -70,6 +73,7 @@ git-standup
 gitui
 glances
 glib
+glog
 gmp
 gnu-getopt
 gnu-sed
@@ -98,10 +102,12 @@ icu4c
 ilmbase
 imagemagick
 imageoptim-cli
+imath
 imlib2
 intltool
 jansson
 jasper
+jbig2dec
 jemalloc
 jpeg
 jq
@@ -130,6 +136,7 @@ libgcrypt
 libgpg-error
 libheif
 libiconv
+libidn
 libidn2
 liblqr
 libmagic
@@ -176,11 +183,13 @@ lua@5.1
 luajit
 luajit-openresty
 luarocks
+luv
 lynx
 lz4
 lzo
 m-cli
 m4
+macos-term-size
 mad
 mailhog
 mas
@@ -188,6 +197,7 @@ meson
 mongodb
 mongodb-community
 mongodb-database-tools
+mongosh
 mpdecimal
 mpg123
 mplayer
@@ -207,6 +217,7 @@ nghttp2
 ninja
 nmap
 node
+node@14
 nspr
 nss
 oniguruma
@@ -264,6 +275,7 @@ screenresolution
 sd
 sdl2
 shared-mime-info
+six
 snappy
 socat
 source-highlight
@@ -288,6 +300,7 @@ timewarrior
 tmux
 tokei
 tree
+tree-sitter
 uchardet
 unbound
 unibilium

@@ -1,3 +1,4 @@
+1-Click Video Converter.app
 __MACOSX
 Adapter.app
 Adobe Audition 2020
@@ -24,19 +25,15 @@ Docker.app
 Elmedia Player.app
 Exodus.app
 ExpressVPN.app
+Ferdi.app
 Figma.app
 Final Cut Pro.app
 Finder.app
-Firework-b8ec90b0119c2a27.app
-Firework-c5ac6ed82f2619b5.app
-Firework-db3db5a7500e01fe.app
-Firework-de7671dc56ac99a6.app
-Firework.app
+Focus.app
 FontForge.app
 GIMP-2.10.app
 Git Streaks.app
-Google Chrome Canary.app
-Grain.app
+Google Chrome.app
 Grammarly for Safari.app
 Hewlett-Packard -> /Applications/HP
 HP
@@ -65,9 +62,11 @@ Microsoft Word.app
 mmhmm.app
 MongoDB Compass.app
 Moom.app
+Newton.app
 Numbers.app
 One Switch.app
 Pages.app
+PDFelement.app
 PDF Expert.app
 PDF Squeezer.app
 Perfect Recall.app
@@ -82,13 +81,11 @@ Sidekick.app
 Sip.app
 SkyFonts
 Skype.app
-Slack.app
 Sourcetree.app
 Spotify.app
 SyphonInject.app
 Telegram.app
 thinkorswim
-TickTick.app
 TriggerClientUI.app
 Ukelele.app
 Upwork.app

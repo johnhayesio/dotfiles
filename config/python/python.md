@@ -1,8 +1,9 @@
 Package    Version
 ---------- -------
-msgpack    1.0.0
-pip        21.0.1
-pynvim     0.4.2
-setuptools 41.2.0
-six        1.15.0
-wheel      0.33.1
+greenlet   1.1.1
+msgpack    1.0.2
+pip        21.2.4
+pynvim     0.4.3
+setuptools 57.4.0
+six        1.16.0
+wheel      0.37.0
