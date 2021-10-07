@@ -21,6 +21,7 @@ Contexts.app
 CSS Scan.app
 Cyberduck.app
 Dato.app
+Descript.app
 Docker.app
 Elmedia Player.app
 Exodus.app
@@ -29,6 +30,7 @@ Ferdi.app
 Figma.app
 Final Cut Pro.app
 Finder.app
+Flux.app
 Focus.app
 FontForge.app
 GIMP-2.10.app
@@ -40,6 +42,7 @@ HP
 HP Easy Scan.app
 ImageOptim.app
 Insomnia.app
+Install macOS Big Sur.app
 iTerm.app
 iZotope RX 7 Audio Editor.app
 Karabiner-Elements.app
@@ -49,6 +52,7 @@ Keka.app
 Keyboard Maestro.app
 Keynote.app
 krisp.app
+LibreOffice.app
 Logitech
 Loopback.app
 ManyCam
@@ -77,7 +81,6 @@ Postman.app
 Safari.app
 ScreenFlow.app
 Send to Kindle
-Sidekick.app
 Sip.app
 SkyFonts
 Skype.app

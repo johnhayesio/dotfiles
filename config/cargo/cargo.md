@@ -1,6 +1,6 @@
-bottom v0.5.7:
+bottom v0.6.4:
     btm
-cargo-update v6.0.0:
+cargo-update v7.0.1:
     cargo-install-update
     cargo-install-update-config
 dijo v0.2.7:

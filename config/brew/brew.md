@@ -19,6 +19,7 @@ bottom
 brightness
 brotli
 c-ares
+ca-certificates
 cairo
 calcurse
 cask
@@ -97,6 +98,7 @@ hors
 html2text
 httpie
 hub
+hunspell
 hyperfine
 icu4c
 ilmbase
@@ -141,6 +143,7 @@ libidn2
 liblqr
 libmagic
 libmetalink
+libnghttp2
 libnotify
 libogg
 libomp
@@ -172,6 +175,8 @@ libxau
 libxcb
 libxdmcp
 libxext
+libxlsxwriter
+libxml2
 libxrender
 libyaml
 libzip
@@ -253,6 +258,7 @@ python
 python-tabulate
 python3
 python@2
+python@3.10
 python@3.8
 python@3.9
 qt
