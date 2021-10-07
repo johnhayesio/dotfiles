@@ -83,6 +83,7 @@ alias awtrfi='_getawtrfi() { ansiweather -l "$1" -u imperial -s true -a false -F
 alias rmd="_remind() { remind -m -b1 $@ $HOME/.nb/home/remind.rem; }; _remind"
 alias rmp="remind -m -b1 -c1 -p $HOME/.nb/home/remind.rem | rem2ps | ps2pdf - | open -f -a Preview"
 alias rmz="remind -z -k'terminal-notifier -title \"Remind\" -message %s' $HOME/.nb/home/remind.rem > /dev/null 2>&1 &"
+alias rme="nvim $HOME/.nb/home/remind.rem"
 
 # NPM
 alias nls="npm list --global --depth=0"
