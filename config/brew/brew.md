@@ -198,6 +198,7 @@ macos-term-size
 mad
 mailhog
 mas
+md4c
 meson
 mongodb
 mongodb-community
