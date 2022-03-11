@@ -112,6 +112,7 @@ jasper
 jbig2dec
 jemalloc
 jpeg
+jpeg-xl
 jq
 json-c
 krb5
@@ -167,6 +168,7 @@ libuninameslist
 libunistring
 libuv
 libvidstab
+libvmaf
 libvorbis
 libvpx
 libvterm

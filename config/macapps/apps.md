@@ -1,4 +1,5 @@
 1-Click Video Converter.app
+4K Video Downloader.app
 __MACOSX
 Adapter.app
 Adobe Audition 2020
@@ -8,22 +9,16 @@ Adobe XD
 Alfred 4.app
 Android File Transfer.app
 Android Studio.app
-Around.app
-Audacity.app
 Audio Hijack.app
 BetterTouchTool.app
-Bitwarden.app
 Brave Browser.app
-Cinema Grade.app
 CleanMyMac X.app
 CloudApp.app
 Contexts.app
 CSS Scan.app
-Cyberduck.app
 Dato.app
 Descript.app
 Docker.app
-Elmedia Player.app
 Exodus.app
 ExpressVPN.app
 Ferdi.app
@@ -31,7 +26,6 @@ Figma.app
 Final Cut Pro.app
 Finder.app
 Flux.app
-Focus.app
 FontForge.app
 GIMP-2.10.app
 Git Streaks.app
@@ -40,9 +34,7 @@ Grammarly for Safari.app
 Hewlett-Packard -> /Applications/HP
 HP
 HP Easy Scan.app
-ImageOptim.app
-Insomnia.app
-Install macOS Big Sur.app
+Install macOS Monterey.app
 iTerm.app
 iZotope RX 7 Audio Editor.app
 Karabiner-Elements.app
@@ -52,11 +44,8 @@ Keka.app
 Keyboard Maestro.app
 Keynote.app
 krisp.app
-LibreOffice.app
 Logitech
 Loopback.app
-ManyCam
-Marked 2.app
 Mate Translate.app
 MeetingBar.app
 MEGAsync.app
@@ -64,31 +53,29 @@ Microsoft Excel.app
 Microsoft PowerPoint.app
 Microsoft Word.app
 mmhmm.app
+mmhmm.localized
 MongoDB Compass.app
 Moom.app
 Newton.app
+NordVPN.app
 Numbers.app
 One Switch.app
 Pages.app
-PDFelement.app
-PDF Expert.app
-PDF Squeezer.app
+PDFpenPro.app
 Perfect Recall.app
-Perfect Recall Menubar (Beta).app
-PhotoStickies.app
 PopClip.app
 Postman.app
+Private Internet Access.app
 Safari.app
 ScreenFlow.app
 Send to Kindle
 Sip.app
-SkyFonts
 Skype.app
-Sourcetree.app
 Spotify.app
 SyphonInject.app
 Telegram.app
 thinkorswim
+Tor Browser.app
 TriggerClientUI.app
 Ukelele.app
 Upwork.app
