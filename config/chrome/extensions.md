@@ -1,21 +1,43 @@
 ## General Extensions
-Google Translate
-Honey
-Vimium
+Honey: Automatic Coupons & Cash Back
 Bypass Paywalls
+Podcastle AI
+Momentum
+Bitwarden - Free Password Manager
+Don't track me Google
+Buster: Captcha Solver for Humans
+News Feed Eradicator
+Raindrop.io
+Extensify
+Pop up blocker for Chrome™
+Hypothesis - Web & PDF Annotator
+Video Speed Controller
+Enhancer for YouTube™
+
+ListenLater.fm
+Tango: screenshots, training, & documentation
+My Ad Finder
+Say Less: AI Summarization Tool for Gmail
+
 Mailbrew Read Later
+Toucan
+Meetingbird: Calendar and Scheduling
+Grammarly for Chrome
+Keywords Everywhere - Keyword Tool
+Tag Assistant Legacy (by Google)
+
+Google Translate
+Vimium
 SpiderTab
 Picture-in-Picture Extension (by Google)
-Podcastle AI
-Grammarly for Chrome
-Momentum
-Toucan
-Bitwarden - Free Password Manager
-Buster: Captcha Solver for Humans
-Say Less: AI Summarization Tool for Gmail
 gruvbox theme
-Meetingbird: Calendar and Scheduling
-Enhancer for YouTube™
+ClearURLS
+Discussion button for Google Search™
+Dualless
+GoFullPage
+Video Downloader for Vimeo
+Wistia Video Downloader
+vidIQ Vision for YouTube
 
 ## Job Search Extensions
 Meerkad
@@ -42,3 +64,6 @@ Wappalyzer
 Web Developer Checklist
 Web Developer
 WhatFont
+WhatRuns
+User-Agent Switcher for Chrome
+Window Resizer
