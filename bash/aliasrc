@@ -99,7 +99,7 @@ alias bls="brew list --formula"
 alias buo="brew update && brew outdated"
 alias buc="brew upgrade && brew cleanup"
 alias bud="buo && buc"
-alias bip="brew search | fzf -m --header='[brew:install]' | xargs brew install"
+alias bip="brew formulae | fzf -m --header='[brew:install]' | xargs brew install"
 
 # GIT
 alias gcl="git config --list"

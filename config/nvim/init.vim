@@ -288,8 +288,7 @@ augroup cmdline
   autocmd CmdlineLeave : echo ''
 augroup end
 augroup filetypedetect
-  au BufRead,BufNewFile *.js set filetype=javascriptreact
-  au BufRead,BufNewFile *.ts set filetype=typescriptreact
+  au BufRead,BufNewFile *.{js,jsx,ts,tsx,mjs} set filetype=typescriptreact
 augroup END
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 autocmd BufWritePre * :call TrimWhitespace()
