@@ -3,12 +3,14 @@ ansiweather
 aom
 apr
 apr-util
+argon2
 aria2
 asciidoc
 asciinema
 aspell
 assimp
 atk
+autoconf
 bash
 bash-completion
 bat
@@ -23,8 +25,10 @@ ca-certificates
 cairo
 calcurse
 cask
+cjson
 cmake
 cmatrix
+cmocka
 cointop
 coreutils
 cowsay
@@ -42,22 +46,28 @@ double-conversion
 emacs
 exa
 faad2
+fb303
+fbthrift
 fd
 fdk-aac
 fdupes
 ffmpeg
+ffmpeg@4
 figlet
 findutils
+fizz
 flac
 fmt
 folly
 fontconfig
 fontforge
 fortune
+freetds
 freetype
 frei0r
 fribidi
 fzf
+gd
 gdbm
 gdk-pixbuf
 gettext
@@ -112,6 +122,7 @@ jasper
 jbig2dec
 jemalloc
 jpeg
+jpeg-turbo
 jpeg-xl
 jq
 json-c
@@ -125,6 +136,7 @@ libao
 libarchive
 libass
 libassuan
+libavif
 libb2
 libbluray
 libcaca
@@ -141,9 +153,11 @@ libheif
 libiconv
 libidn
 libidn2
+liblinear
 liblqr
 libmagic
 libmetalink
+libmng
 libnghttp2
 libnotify
 libogg
@@ -152,6 +166,9 @@ libpng
 libpq
 libproxy
 libpthread-stubs
+libpython-tabulate
+libraw
+librist
 librsvg
 libsamplerate
 libsndfile
@@ -177,6 +194,7 @@ libxau
 libxcb
 libxdmcp
 libxext
+libxls
 libxlsxwriter
 libxml2
 libxrender
@@ -187,6 +205,7 @@ little-cms2
 lolcat
 lua
 lua@5.1
+lua@5.3
 luajit
 luajit-openresty
 luarocks
@@ -200,6 +219,7 @@ macos-term-size
 mad
 mailhog
 mas
+mbedtls
 md4c
 meson
 mongodb
@@ -226,6 +246,7 @@ ninja
 nmap
 node
 node@14
+node@16
 nspr
 nss
 oniguruma
@@ -246,6 +267,7 @@ pdfgrep
 perl
 pfetch
 pgcli
+php
 php-cs-fixer
 pianobar
 pinentry
@@ -254,6 +276,7 @@ pkg-config
 poppler
 popt
 postgresql
+postgresql@14
 procs
 pv
 pygments
@@ -275,6 +298,7 @@ ripgrep
 rtmpdump
 rubberband
 ruby
+ruby@3.0
 s-lang
 s-search
 s3cmd
@@ -303,7 +327,9 @@ terminal-notifier
 tesseract
 texi2html
 thefuck
+themekit
 theora
+tidy-html5
 tig
 timewarrior
 tmux
@@ -313,6 +339,7 @@ tree-sitter
 uchardet
 unbound
 unibilium
+unixodbc
 urlview
 utf8proc
 util-linux
@@ -320,6 +347,7 @@ vapoursynth
 vifm
 vim
 w3m
+wangle
 watch
 watchman
 webp
@@ -335,6 +363,7 @@ xvid
 xz
 yarn
 youtube-dl
+yt-dlp
 z
 zathura
 zathura-pdf-poppler

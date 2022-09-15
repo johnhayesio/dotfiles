@@ -38,6 +38,7 @@
   export ANDROID_HOME=/Volumes/Expansion/Android/sdk
 	export GOPATH=/Users/$USER/go
 	export BROWSER=lynx
+  export THE_WAY_GITHUB_TOKEN=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
 
   # FZF/FD Options
   export FD_OPTIONS="--follow --exclude .git --exclude node_modules"

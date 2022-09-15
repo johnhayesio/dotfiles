@@ -4,5 +4,5 @@
 d() {
 cd $1;
   clear;
-  l;
+  ll;
 }
